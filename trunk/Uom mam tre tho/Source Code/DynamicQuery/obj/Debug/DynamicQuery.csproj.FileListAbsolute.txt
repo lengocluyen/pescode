@@ -1,0 +1,15 @@
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\DynamicQuery\bin\Debug\DynamicQuery.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\DynamicQuery\bin\Debug\DynamicQuery.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\DynamicQuery.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\DynamicQuery\bin\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\DynamicQuery\bin\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\DynamicQuery\obj\Debug\DynamicQuery.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.dll
+I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
+I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb

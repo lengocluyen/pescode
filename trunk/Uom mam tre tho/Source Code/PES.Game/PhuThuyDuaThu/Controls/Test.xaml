@@ -1,0 +1,9 @@
+﻿<UserControl x:Class="PhuThuyDuaThu.Controls.Test"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="auto" Width="auto">
+    <StackPanel x:Name="spMain" Orientation="Horizontal" Margin="0">
+        <Image Source="../Images/NineBYellow.png" Height="15" Width="15"></Image>
+        <Image Source="../Images/ZeroBYellow.png" Height="15" Width="15"></Image>
+        <Image Source="../Images/SevenBYellow.png" Height="15" Width="15"></Image>
+    </StackPanel>
+</UserControl>

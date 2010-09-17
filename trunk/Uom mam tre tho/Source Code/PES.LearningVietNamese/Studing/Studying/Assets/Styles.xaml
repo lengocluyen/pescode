@@ -1,0 +1,80 @@
+﻿<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+
+    <!--Menu Studing TextBlock-->
+    <Style x:Key="MenuStudingTextBoxStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="#FFFF6700"/>
+        <Setter Property="FontWeight" Value="Black"/>
+    </Style>
+
+    <!--ListBox Style-->
+    <Style x:Key="ListBoxStyle" TargetType="ListBox">
+        <Setter Property="BorderBrush" Value="#FF205D00"/>
+        <Setter Property="Background" Value="{x:Null}"/>
+        <Setter Property="Foreground" Value="{x:Null}"/>
+        <Setter Property="Cursor" Value="Hand"/>
+    </Style>
+
+    <!--Studying textblock style-->
+    <Style x:Key="TexBlockStyle1" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF88FC" Offset="0"/>
+                    <GradientStop Color="#FFF800FF" Offset="1"/>
+                    <GradientStop Color="#FEFEC3FE" Offset="0.51"/>
+                    <GradientStop Color="#FEF92FFE" Offset="0.546"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="TexBlockStyle2" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF88FC" Offset="0"/>
+                    <GradientStop Color="#FFF800FF" Offset="1"/>
+                    <GradientStop Color="#FEFEC3FE" Offset="0.5"/>
+                    <GradientStop Color="#FEF92FFE" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <Style x:Key="TexBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="10"/>
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFF88FC" Offset="0"/>
+                    <GradientStop Color="#FFF800FF" Offset="1"/>
+                    <GradientStop Color="#FEFEC3FE" Offset="0.5"/>
+                    <GradientStop Color="#FEF92FFE" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    
+
+    <!--Image in list Style-->
+    <Style x:Key="ImagesinListStyle" TargetType="Image">
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Margin" Value = "2,2,3,3"/>
+    </Style>
+
+    <!--Border Style-->
+    <Style x:Key="BorderStyle" TargetType="Border">
+        <Setter Property="BorderBrush" Value="#FF000BFF"/>
+        <Setter Property="BorderThickness" Value="1,0,0,1"/>
+    </Style>
+
+</ResourceDictionary>

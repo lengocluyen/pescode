@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Pes.TestsSite", "Pes.TestsSite\", "{8DF66B10-CF61-43F5-9BCC-1B6A77FC0D87}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/Pes.TestsSite"
+		Debug.AspNetCompiler.PhysicalPath = "Pes.TestsSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Pes.TestsSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Pes.TestsSite"
+		Release.AspNetCompiler.PhysicalPath = "Pes.TestsSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Pes.TestsSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2940"
+		ProjOutputReferences = "{b487e855-5b8e-4ffd-aac2-a807ed9cb058}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pes.Tests", "Pes.Tests\Pes.Tests.csproj", "{B487E855-5B8E-4FFD-AAC2-A807ED9CB058}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testad", "Testad\Testad.csproj", "{D79145D0-63DE-48E6-9C71-242FACE24D24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DF66B10-CF61-43F5-9BCC-1B6A77FC0D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF66B10-CF61-43F5-9BCC-1B6A77FC0D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF66B10-CF61-43F5-9BCC-1B6A77FC0D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF66B10-CF61-43F5-9BCC-1B6A77FC0D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B487E855-5B8E-4FFD-AAC2-A807ED9CB058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B487E855-5B8E-4FFD-AAC2-A807ED9CB058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B487E855-5B8E-4FFD-AAC2-A807ED9CB058}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B487E855-5B8E-4FFD-AAC2-A807ED9CB058}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D79145D0-63DE-48E6-9C71-242FACE24D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D79145D0-63DE-48E6-9C71-242FACE24D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D79145D0-63DE-48E6-9C71-242FACE24D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D79145D0-63DE-48E6-9C71-242FACE24D24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,153 @@
+﻿<UserControl x:Class="PhuThuyDuaThu.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="600" Height="470"
+    xmlns:ptControl="clr-namespace:PhuThuyDuaThu.Controls">
+	<UserControl.Resources>
+		<Storyboard x:Name="stbSendMail">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgHand02" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgHand03" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgDefaultHand" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-175.874"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="111.941"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Canvas x:Name="canvasPlay">
+            <Canvas.Background>
+                <ImageBrush x:Name="backgroundImageBrush" 
+                        Stretch="UniformToFill" 
+                        ImageSource="Images/PlayBG.png"/>
+            </Canvas.Background>
+            <Image x:Name="imgTopFrame" Source="Images/FramePoint.png" Height="50" Width="600"></Image>
+            <Image x:Name="imgTextCapDo" Source="Images/TextCapDo.png" Height="30" Width="71" Canvas.Left="12" Canvas.Top="10"></Image>
+            <Image x:Name="imgDauXiec" Source="Images/DauXiec.png" Height="23" Width="17" Canvas.Left="302" Canvas.Top="12"></Image>
+            <!--<ptControl:Test x:Name="ctrlTest" Height="24" Width="30" Canvas.Left="315" Canvas.Top="12"></ptControl:Test>-->           
+            
+            <!-- Mail Box -->
+            <Image x:Name="imgCotHomThu1" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="71" Canvas.Top="170"></Image>
+            <Image x:Name="imgCotHomThu2" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="211" Canvas.Top="170"></Image>
+            <Image x:Name="imgCotHomThu3" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="357" Canvas.Top="170"></Image>
+            <Image x:Name="imgCotHomThu4" Source="Images/CotHomThu.png" Canvas.Left="497" Canvas.Top="170" Height="292" Width="36"></Image>
+                <!--Row 01-->
+            <Image x:Name="imgMailBox01" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="80"></Image>            
+            <ptControl:Test x:Name="ctrlMailBoxNumber01" Height="26" Width="53" Canvas.Left="66" Canvas.Top="135"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox1" IsTabStop="False" Height="84" Width="100" Canvas.Left="39" Canvas.Top="90"/>
+            <Image x:Name="imgMailBox02" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="80"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber02" Height="26" Width="51" Canvas.Left="206" Canvas.Top="135"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox2" IsTabStop="False" Height="76" Width="100" Canvas.Left="179" Canvas.Top="98"/>            
+            <Image x:Name="imgMailBox03" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="80"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber03" Height="26" Width="43" Canvas.Left="350" Canvas.Top="135"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox3" IsTabStop="False" Height="76" Width="100" Canvas.Left="323" Canvas.Top="98"/>            
+            <Image x:Name="imgMailBox04" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="80"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber04" Height="26" Width="42" Canvas.Left="491" Canvas.Top="135"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox4" IsTabStop="False" Height="84" Width="100" Canvas.Left="464" Canvas.Top="90"/>            
+                <!--Row 02-->
+            <Image x:Name="imgMailBox05" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="190"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber05" Height="26" Width="41" Canvas.Left="66" Canvas.Top="247"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox5" IsTabStop="False" Height="83" Width="98" Canvas.Left="41" Canvas.Top="201"/>
+            <Image x:Name="imgMailBox06" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="190"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber06" Height="26" Width="49" Canvas.Left="206" Canvas.Top="247"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox6" IsTabStop="False" Height="83" Width="100" Canvas.Left="179" Canvas.Top="201"/>
+            <Image x:Name="imgMailBox07" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="190"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber07" Height="26" Width="41" Canvas.Left="350" Canvas.Top="247"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox7" IsTabStop="False" Height="83" Width="100" Canvas.Left="323" Canvas.Top="201"/>
+            <Image x:Name="imgMailBox08" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="190"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber08" Height="26" Width="42" Canvas.Left="491" Canvas.Top="247"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox8" IsTabStop="False" Height="83" Width="100" Canvas.Left="464" Canvas.Top="201"/>
+            <!--Row 03-->
+            <Image x:Name="imgMailBox09" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="298"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber09" Height="26" Width="41" Canvas.Left="66" Canvas.Top="354"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox9" IsTabStop="False" Height="83" Width="98" Canvas.Left="41" Canvas.Top="309"/>
+            <Image x:Name="imgMailBox10" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="298"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber10" Height="26" Width="49" Canvas.Left="208" Canvas.Top="354"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox10" IsTabStop="False" Height="83" Width="100" Canvas.Left="179" Canvas.Top="309"/>
+            <Image x:Name="imgMailBox11" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="298"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber11" Height="26" Width="43" Canvas.Left="350" Canvas.Top="354"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox11" IsTabStop="False" Height="83" Width="100" Canvas.Left="323" Canvas.Top="309"/>
+            <Image x:Name="imgMailBox12" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="298"></Image>
+            <ptControl:Test x:Name="ctrlMailBoxNumber12" Height="22" Width="42" Canvas.Left="491" Canvas.Top="356"></ptControl:Test>
+            <HyperlinkButton x:Name="hplMailBox12" IsTabStop="False" Height="83" Width="100" Canvas.Left="464" Canvas.Top="309"/>
+            <!-- End mail box -->
+            
+            <!--Time Out-->
+            <Image x:Name="imgTimeOut" Source="Images/TimeOut.png" Canvas.Left="159" Canvas.Top="56" Height="34" Width="283"></Image>
+            <Image x:Name="imgTimeOut1" Source="Images/TimeOut1.png" Canvas.Left="159" Canvas.Top="56" Height="34" Width="283"/>
+            <Image x:Name="imgTimeOut2" Source="Images/TimeOut2.png" Canvas.Left="161" Canvas.Top="56" Height="34" Width="266"></Image>
+            <Image x:Name="imgTimeOutFrame" Source="Images/TimeoutFrame.png" Height="47" Width="296" Canvas.Left="151" Canvas.Top="51"/>
+            <!--End Timeout-->
+            <Image x:Name="imgWall" Source="Images/Wall.png" Height="72" Width="600" Canvas.Top="401"></Image>
+            
+            <Image x:Name="imgMailFrame" Source="Images/FrameQuestion.png" Canvas.Top="420" Height="50" Width="213"></Image>
+            <Image x:Name="imgHomThuText" Source="Images/TextHomThu.png" Height="27" Width="80" Canvas.Left="20" Canvas.Top="431"></Image>            
+            <Image x:Name="imgMail" Source="Images/Mail.png" Height="72" Width="92" Canvas.Left="335" Canvas.Top="371" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform>
+            </Image>
+            <Image x:Name="imgLetters" Source="Images/Letters.png" Height="75" Width="109" Canvas.Top="443" Canvas.Left="235"></Image>
+            <Image x:Name="imgDefaultHand" Source="Images/Hand01.png" Height="118" Width="132" Canvas.Left="279" Canvas.Top="369"/>
+            <Image x:Name="imgHand02" Source="Images/Hand02.png"  Height="139" Width="156" Canvas.Left="291" Canvas.Top="352" Visibility="Collapsed"/>
+            <Image x:Name="imgHand03" Source="Images/Hand03.png"  Height="95" Width="107" Canvas.Left="350" Canvas.Top="396" Visibility="Collapsed"/>
+            <Image x:Name="imgMute" Source="Images/Mute.png" Canvas.Left="557" Canvas.Top="426" Height="32" Width="31" Visibility="Collapsed"></Image>            
+            <Image x:Name="imgSound" Source="Images/Sound.png" Height="31" Width="31" Canvas.Left="557" Canvas.Top="427"/>
+            <HyperlinkButton x:Name="hplMute" IsTabStop="False" Click="hplMute_Click" Height="32" Width="31" Canvas.Left="557" Canvas.Top="426"></HyperlinkButton>
+            
+            <!--Media Element-->
+            <MediaElement x:Name="meBGMusic" Source="Sounds/main_snd.mp3" AutoPlay="False"/>
+            <MediaElement x:Name="meThankyou" Source="Sounds/thankyou.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meSendMail" Source="Sounds/post_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meOK" Source="Sounds/ok_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meNoSound" Source="Sounds/no_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meLevelUp" Source="Sounds/levelUp.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meFail" Source="Sounds/fail.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meEnd" Source="Sounds/end.mp3" AutoPlay="False"></MediaElement>            
+        </Canvas>
+    </Grid>
+</UserControl>

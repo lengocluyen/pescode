@@ -1,0 +1,580 @@
+﻿body
+{
+    font-family: Tahoma,Arial, "Times New Roman";
+    font-size: 10pt;
+    background: #ffffff url('images/background_bottom.jpg') no-repeat center bottom;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+}
+
+img
+{
+    border: 0px;
+}
+
+a
+{
+    text-decoration: none;
+    color: #00B40F;
+}
+
+a:hover
+{
+    color: #438ef3;
+}
+
+#divMain
+{
+    background: transparent url('images/background_top.jpg') no-repeat center top;
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#divContent
+{
+    width: 980px;
+    margin: 0 auto;
+}
+
+.divMainContent
+{
+    background-image: url('images/HomeTopBG.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.divMainContentGame
+{
+    background-image: url('images/GameHomeTopBG.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.divContentContent
+{
+    background-image: url('images/HomeContentBG.png');
+    background-repeat: no-repeat;
+    background-position: 0px 314px;
+}
+
+.divContentContentGame
+{
+    background-image: url('images/HomeContentBG.png');
+    background-repeat: no-repeat;
+    background-position: 0px 852px;
+}
+
+.divContent_Content
+{
+    margin-left: 65px;
+}
+
+/*===== LOGIN ======*/
+
+#divLogin_UserAccount
+{
+    height: 45px;
+}
+
+#divLogin
+{
+    margin-left: 140px;
+    padding-top: 20px;
+}
+
+#divLogin div
+{
+    float: left;
+    margin-left: 10px;
+}
+
+#divLogin #divLinkLogin
+{
+    border-right: dotted 1px white;
+    padding-right: 10px;
+    height: 20px;
+}
+
+#divLogin #divLinkForgotPass
+{
+    height: 20px;
+}
+
+#divLogin input
+{
+    background-color: #c8e1e8;
+    border: solid 1px white;
+}
+
+#divUserAccount
+{
+    color: White;
+    padding-top: 10px;
+    margin-left: 200px;
+}
+
+.divHide
+{
+    display: none;
+}
+
+/*===== MENU ======*/
+
+#divMenu
+{
+    clear: both;
+    height: 88px;
+}
+
+.divMenuChildHome
+{
+    float: left;
+}
+
+.divMenuChildHome a
+{
+    background-image: url('images/menuHome.png');
+    display: block;
+    height: 85px;
+    width: 182px;
+}
+
+.divMenuChildHome a:hover
+{
+    background-position: 0px 87px;
+}
+
+.divMenuChildGames
+{
+    float: left;
+}
+
+.divMenuChildGames a
+{
+    background-image: url('images/menuGames.png');
+    display: block;
+    height: 85px;
+    width: 182px;
+}
+
+.divMenuChildGames a:hover
+{
+    background-position: 0px 87px;
+}
+
+.divMenuChildNews
+{
+    float: left;
+}
+
+.divMenuChildNews a
+{
+    background-image: url('images/menuNews.png');
+    display: block;
+    height: 85px;
+    width: 182px;
+}
+
+.divMenuChildNews a:hover
+{
+    background-position: 0px 87px;
+}
+
+.divMenuChildRegister
+{
+    float: left;
+}
+
+.divMenuChildRegister a
+{
+    background-image: url('images/menuRegister.png');
+    display: block;
+    height: 85px;
+    width: 182px;
+}
+
+.divMenuChildRegister a:hover
+{
+    background-position: 0px 87px;
+}
+
+/*===== DIV HOT GAME ======*/
+
+#divHotGame
+{
+    clear: both;
+    width: 100%;
+    height: 210px;
+}
+
+#divHotGame .divHotGameImg
+{
+    float: left;
+    vertical-align: middle;
+    padding-top: 20px;
+}
+
+.divHotGameContentFrame
+{
+    float: left;
+    background-image: url('images/hotGameContentBG.png');
+    background-repeat: no-repeat;
+    width: 563px;
+    height: 209px;
+}
+
+.divHotGameContentFrame .divHotGameContent
+{
+    margin-top: 25px;
+    margin-left: 60px;
+    height: 153px;
+    width: 495px;
+    vertical-align: top;
+}
+
+*html .divHotGameContentFrame .divHotGameContent
+{
+    padding-top: 40px;
+}
+
+.divHotGameGames
+{
+    float: left;
+    margin-left: 5px;
+}
+
+.divHotGameGames #divPadding
+{
+    clear: both;
+    height: 20px;
+}
+
+.divHotGameGames .divHotGameChildFrame
+{
+    background-image: url('images/hotGameChildFrameBG.png');
+    margin: 5px;
+    height: 56px;
+    width: 56px;
+}
+
+.divHotGameGames .divHotGameChildFrame img
+{
+    height: 50px;
+    margin-left: 3px;
+    margin-top: 3px;
+    width: 50px;
+}
+
+/*===== NEWS AND TOP GAME ======*/
+
+#divNewsTopGame
+{
+    clear: both;
+}
+
+#divNewsTopGame a img:hover
+{
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.divHomeNews_NewsFrame
+{
+    height: 310px;
+    width: 420px;
+    background-image: url('images/homenews_bg_TinGame.gif');
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.divNewsFrame_ImgTextTinGame
+{
+    margin-left: 135px;
+    margin-top: 65px;
+    clear: both;
+}
+
+.divNewsFrame_Content
+{
+    height: 120px;
+    width: 285px;
+    margin-top: 5px;
+    margin-left: 79px;
+}
+
+.divNewsFrame_NextForward
+{
+    height: 28px;
+    margin-top: 7px;
+    margin-left: 260px;
+}
+
+.divNewsFrame_NextForward div
+{
+    padding: 5px;
+    float: left;
+}
+
+.divTopTen_Frame
+{
+    height: 310px;
+    width: 416px;
+    background-image: url('images/homenews_bg_TopTen.gif');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    float: left;
+}
+.divTopTenFrame_ImgTextTopTen
+{
+    margin-left: 155px;
+    margin-top: 65px;
+}
+
+.divTopTen_Content
+{
+    height: 152px;
+    width: 283px;
+    margin-left: 90px;
+}
+
+.divTopTen_Content_Half
+{
+    width: 50%;
+    height: 110px;
+    float: left;
+}
+
+.divTopFrame_NextForward
+{
+    clear: both;
+    height: 28px;
+    margin-left: 200px;
+}
+
+.divTopFrame_NextForward div
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.divTopTen_Content_Half_Content
+{
+    width: 100%; /*margin-top: 5px;*/
+    clear: both;
+}
+
+*html .divTopTen_Content_Half_Content
+{
+    margin-bottom: -3px;
+}
+
+.divTopTen_Content_Haft_Content01
+{
+    height: 28px;
+    width: 28px;
+    float: left;
+}
+
+.divTopTen_Content_Haft_Content01 img
+{
+    height: 28px;
+    width: 28px;
+}
+
+.divTopTen_Content_Haft_Content02
+{
+    padding-left: 5px;
+    line-height: 28px;
+    vertical-align: middle;
+    float: left;
+}
+
+/*===== GAME CATEGORY =====*/
+#divCategory
+{
+    clear: both;
+}
+
+.divGameCategoryContent
+{
+    margin-top: 15px;
+}
+
+.divGameCategoryContent a img:hover
+{
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.divCategoryImage
+{
+    clear: both;
+}
+
+.divCategoryImage img
+{
+    margin-left: 30px;
+}
+
+.divGameInCategory
+{
+    margin-left: 60px;
+}
+
+.divShowAGame
+{
+    background-image: url('images/GameFrameBG.gif');
+    background-repeat: no-repeat;
+    height: 161px;
+    width: 173px;
+    margin: 5px;
+    float: left;
+}
+
+.divShowAGame img
+{
+    height: 144px;
+    margin-left: 9px;
+    margin-top: 9px;
+    width: 155px;
+    border: 0px;
+}
+
+/*===== FOOTER =====*/
+#divContentFooter
+{
+    clear: both;
+    height: 431px;
+    background-image: url('images/HomeBottomBG.png');
+    background-repeat: no-repeat;
+}
+
+#divFooterContent
+{
+    text-align: center;
+    font-weight: bold;
+    color: #84c1f0;
+    padding-top: 220px;
+}
+
+.textHead1 a
+{
+    text-align: right;
+    color: #65960F;
+    font-family: "Arial";
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*STYLE FOR NEWS*/
+#divNews
+{
+    width: 800px;
+    margin-top: 20px;
+}
+
+#divNews #divNewsTitle
+{
+    border-bottom: dotted 1px #008304;
+}
+
+#divNews .divNewsContent
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#divNews .divNewsContent .divNewsIMG
+{
+    float: left;
+    width: 115px;
+}
+
+#divNews .divNewsContent .divNewsIMG img
+{
+    height: 112px;
+    width: 112px;
+}
+
+#divNews .divNewsContent .divNewsText
+{
+    float: left;
+    margin-left: 10px;
+    width: 660px;
+}
+
+#divNews .divNewsContent .divNewsTextTitle
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#divNews .divNewsContent .divNewsTextText
+{
+    margin-top: 5px;
+}
+
+#divNews .divNewsContent .divNewsAdded
+{
+    color: #959595;
+    font-style: italic;
+    padding-top: 10px;
+    float:right;
+}
+
+#divNews .divNewsContent .divNewsTextBottom
+{
+    clear: both;
+    border-bottom: dotted 1px #e6e6e6;
+    height: 10px;
+}
+
+#divNews .divNewsDetailContent
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 780px;
+}
+
+#divNews .divNewsDetailContent .divNewsDetailTitle
+{
+    font-size: 15px;
+    color: #00B40F;
+    font-weight: bold;
+}
+
+#divNews .divNewsDetailContent .divNewsDetailHtml
+{
+}
+
+#divNews .divNewsDetailContent .divOtherNews
+{
+    padding-top: 10px;
+}
+
+#divNews .divNewsDetailContent .divNewsTextBottom
+{
+    clear: both;
+    border-bottom: dotted 1px #e6e6e6;
+    height: 10px;
+}
+
+.divNewsTextBottom
+{
+    clear: both;
+}

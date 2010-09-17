@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetUserLoginID">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserLoginIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserLoginIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPupilLoginID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="uID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetPupilLoginIDResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetLanguageState">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lgID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetLanguageStateResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLanguageState">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLanguageStateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetLanguageStateResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMail_ActivePass">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="uID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendMail_ActivePassResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SendMail_ActivePassResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SessionVariable">
+        <s:complexType />
+      </s:element>
+      <s:element name="SessionVariableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SessionVariableResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgrammingDropDownContents">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="knownCategoryValues" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="category" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgrammingDropDownContentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgrammingDropDownContentsResult" type="tns:ArrayOfCascadingDropDownNameValue" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCascadingDropDownNameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CascadingDropDownNameValue" nillable="true" type="tns:CascadingDropDownNameValue" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CascadingDropDownNameValue">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="isDefaultValue" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="optionTitle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUserLoginIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserLoginID" />
+  </wsdl:message>
+  <wsdl:message name="GetUserLoginIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserLoginIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetPupilLoginIDSoapIn">
+    <wsdl:part name="parameters" element="tns:SetPupilLoginID" />
+  </wsdl:message>
+  <wsdl:message name="SetPupilLoginIDSoapOut">
+    <wsdl:part name="parameters" element="tns:SetPupilLoginIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetLanguageStateSoapIn">
+    <wsdl:part name="parameters" element="tns:SetLanguageState" />
+  </wsdl:message>
+  <wsdl:message name="SetLanguageStateSoapOut">
+    <wsdl:part name="parameters" element="tns:SetLanguageStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguageStateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLanguageState" />
+  </wsdl:message>
+  <wsdl:message name="GetLanguageStateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLanguageStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendMail_ActivePassSoapIn">
+    <wsdl:part name="parameters" element="tns:SendMail_ActivePass" />
+  </wsdl:message>
+  <wsdl:message name="SendMail_ActivePassSoapOut">
+    <wsdl:part name="parameters" element="tns:SendMail_ActivePassResponse" />
+  </wsdl:message>
+  <wsdl:message name="SessionVariableSoapIn">
+    <wsdl:part name="parameters" element="tns:SessionVariable" />
+  </wsdl:message>
+  <wsdl:message name="SessionVariableSoapOut">
+    <wsdl:part name="parameters" element="tns:SessionVariableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgrammingDropDownContentsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgrammingDropDownContents" />
+  </wsdl:message>
+  <wsdl:message name="GetProgrammingDropDownContentsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgrammingDropDownContentsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PESServicesSessionSoap">
+    <wsdl:operation name="GetUserLoginID">
+      <wsdl:input message="tns:GetUserLoginIDSoapIn" />
+      <wsdl:output message="tns:GetUserLoginIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetPupilLoginID">
+      <wsdl:input message="tns:SetPupilLoginIDSoapIn" />
+      <wsdl:output message="tns:SetPupilLoginIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguageState">
+      <wsdl:input message="tns:SetLanguageStateSoapIn" />
+      <wsdl:output message="tns:SetLanguageStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageState">
+      <wsdl:input message="tns:GetLanguageStateSoapIn" />
+      <wsdl:output message="tns:GetLanguageStateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendMail_ActivePass">
+      <wsdl:input message="tns:SendMail_ActivePassSoapIn" />
+      <wsdl:output message="tns:SendMail_ActivePassSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SessionVariable">
+      <wsdl:input message="tns:SessionVariableSoapIn" />
+      <wsdl:output message="tns:SessionVariableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgrammingDropDownContents">
+      <wsdl:input message="tns:GetProgrammingDropDownContentsSoapIn" />
+      <wsdl:output message="tns:GetProgrammingDropDownContentsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PESServicesSessionSoap" type="tns:PESServicesSessionSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserLoginID">
+      <soap:operation soapAction="http://tempuri.org/GetUserLoginID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPupilLoginID">
+      <soap:operation soapAction="http://tempuri.org/SetPupilLoginID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguageState">
+      <soap:operation soapAction="http://tempuri.org/SetLanguageState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageState">
+      <soap:operation soapAction="http://tempuri.org/GetLanguageState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMail_ActivePass">
+      <soap:operation soapAction="http://tempuri.org/SendMail_ActivePass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionVariable">
+      <soap:operation soapAction="http://tempuri.org/SessionVariable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgrammingDropDownContents">
+      <soap:operation soapAction="http://tempuri.org/GetProgrammingDropDownContents" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PESServicesSessionSoap12" type="tns:PESServicesSessionSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUserLoginID">
+      <soap12:operation soapAction="http://tempuri.org/GetUserLoginID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetPupilLoginID">
+      <soap12:operation soapAction="http://tempuri.org/SetPupilLoginID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetLanguageState">
+      <soap12:operation soapAction="http://tempuri.org/SetLanguageState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLanguageState">
+      <soap12:operation soapAction="http://tempuri.org/GetLanguageState" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendMail_ActivePass">
+      <soap12:operation soapAction="http://tempuri.org/SendMail_ActivePass" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SessionVariable">
+      <soap12:operation soapAction="http://tempuri.org/SessionVariable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgrammingDropDownContents">
+      <soap12:operation soapAction="http://tempuri.org/GetProgrammingDropDownContents" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PESServicesSession">
+    <wsdl:port name="PESServicesSessionSoap" binding="tns:PESServicesSessionSoap">
+      <soap:address location="http://localhost:9999/services/PESServicesSession.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PESServicesSessionSoap12" binding="tns:PESServicesSessionSoap12">
+      <soap12:address location="http://localhost:9999/services/PESServicesSession.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

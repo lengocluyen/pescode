@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="Khung_long_bat_chu.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              Width="856" Height="558"
+    >
+    <Canvas x:Name="LayoutRoot" Background="Transparent" Width="856" Height="558" RenderTransformOrigin="0.5 0.5">
+
+        <Canvas.RenderTransform>
+            <ScaleTransform x:Name="PageScale" ScaleX="1" ScaleY="1"/>
+        </Canvas.RenderTransform>
+
+        <Canvas x:Name="canvasBackground">
+            <Image Height="522" Width="1055" Canvas.Left="-100" Source="Images/background.png" Stretch="Fill" Canvas.Top="1"/>
+            <Image Height="206" Width="929" Canvas.Left="-6" Canvas.Top="408" Source="Images/bgbelow.png" Stretch="Fill" Canvas.ZIndex="1"/>
+            <Image Height="51" Width="852" Canvas.Top="388" Source="Images/grass.png" Stretch="Fill" Canvas.Left="4"/>
+        </Canvas>
+        <TextBlock x:Name="txtText" Width="605" FontFamily="Fonts/HLHOCTRO.TTF#HL Hoctro" FontSize="53.333" TextWrapping="Wrap" Canvas.Left="238" Canvas.Top="464" Canvas.ZIndex="6" Height="53" Text="hoåc tiïëng viïåt" FontWeight="Bold" Foreground="#FF6A317E"/>
+        <Canvas x:Name="canvasTimeBar" Height="48" Width="431" Canvas.Left="417" Canvas.Top="8"/>
+        <Canvas x:Name="canvasDinosaur" Height="192" Width="144" Canvas.Left="417" Canvas.Top="284"/>
+        <Image Width="90" Canvas.Top="5" Source="Images/diem.png" Stretch="Fill" Canvas.Left="4"/>
+        <Canvas x:Name="canvasScore" Height="48" Width="272" Canvas.Left="105" Canvas.Top="9"/>
+        <Canvas x:Name="canvasBalloons" Height="292" Width="856" Canvas.Top="61"/>
+        <Image Height="203" Width="858" Canvas.Left="-6" Canvas.Top="399" Source="Images/teacher.png" Stretch="Fill" Canvas.ZIndex="5"/>
+
+        <MediaElement x:Name="_backgroundSound" Source="/Sound/background.mp3" Volume="1" MediaEnded="_backgroundSound_MediaEnded" />
+        <MediaElement x:Name="_effectSound" Volume="1" AutoPlay="True" />
+        <Canvas x:Name="canvasTutBoard" Height="475" Width="500" Canvas.Left="238" Canvas.Top="18" Canvas.ZIndex="9"/>
+    </Canvas>
+</UserControl>

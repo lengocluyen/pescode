@@ -1,0 +1,24 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="PESServicesSessionSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ILearningServices" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:9999/services/PESServicesSession.asmx"
+                binding="basicHttpBinding" bindingConfiguration="PESServicesSessionSoap"
+                contract="PESServicesSession.PESServicesSessionSoap" name="PESServicesSessionSoap" />
+            <endpoint address="http://localhost:9999/services/LearningServices.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ILearningServices"
+                contract="LearningServices.ILearningServices" name="BasicHttpBinding_ILearningServices" />
+        </client>
+    </system.serviceModel>
+</configuration>

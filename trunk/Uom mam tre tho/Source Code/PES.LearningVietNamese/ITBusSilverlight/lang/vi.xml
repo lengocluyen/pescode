@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+  <LessionMediaNext>Sounds/DSachBaiHoc/XemBHTiepTheo.mp3</LessionMediaNext>
+  <LessionMediaBack>Sounds/DSachBaiHoc/TroVeBHTruoc.mp3</LessionMediaBack>
+  <LessionMediaLoadFirst>Sounds/Begin_DSNhomBH.mp3</LessionMediaLoadFirst>
+  <MenuGoHomePage>Sounds/Link_GoHomepage.mp3</MenuGoHomePage>
+  <MenuHowToWrite>Sounds/Link_HocVietChu.mp3</MenuHowToWrite>
+  <MenuLessionGroupList>Sounds/Link_DSNhomBH.mp3</MenuLessionGroupList>
+  <PartTellStory>Sounds/MotBaiHoc/KeChuyen.mp3</PartTellStory>
+  <PartLearnTalking>Sounds/MotBaiHoc/LuyenNoi.mp3</PartLearnTalking>
+  <PartLearnWriting>Sounds/MotBaiHoc/TapViet.mp3</PartLearnWriting>
+  <PartLearnReading>Sounds/MotBaiHoc/TapDoc.mp3</PartLearnReading>
+  <PartPreviousLession>Sounds/MotBaiHoc/TroVeBHTruoc.mp3</PartPreviousLession>
+  <PartNextLession>Sounds/MotBaiHoc/HocBaiTiepTheo.mp3</PartNextLession>
+</Language>

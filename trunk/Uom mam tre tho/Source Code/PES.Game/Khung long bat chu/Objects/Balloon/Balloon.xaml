@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Khung_long_bat_chu.Objects.Balloon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    >
+	<UserControl.Resources>
+		<Storyboard x:Name="stbBoom"/>
+	</UserControl.Resources>
+    <Canvas x:Name="LayoutRoot" Background="Transparent" Width="90" Height="121">
+    	<Image x:Name="imgBalloon" Height="121" Width="90" Source="balloonBlue.png" Stretch="Fill"/>
+    	<TextBlock x:Name="txtChar" Height="88" Width="46" Text="ô" TextWrapping="Wrap" FontSize="96" FontFamily="../../Fonts/HLHOCTRO.TTF#HL Hoctro" Canvas.Left="27" Canvas.Top="-37"/>
+        
+        <MediaElement x:Name="_effectSound" Volume="1" AutoPlay="True" />
+    </Canvas>
+</UserControl>

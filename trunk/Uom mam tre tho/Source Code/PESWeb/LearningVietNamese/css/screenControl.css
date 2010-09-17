@@ -1,0 +1,388 @@
+body
+{
+	font-size: 12px;
+}
+
+.tipPopup
+{
+	color: #153044;
+  	font: 11px "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	border:solid 1px #C8D3DB; 
+	width:200px; 
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	position:absolute; 
+	z-index:100;
+	visibility:hidden; 
+	top:20px;
+	left:0px; 
+	background-color:#E7ECEF;
+}
+.PasswordOption
+{
+	background-color:#D1DCE2;
+	cursor:pointer;
+	
+}
+.PasswordOption_sub
+{
+	background-color:#E7ECEF;
+	
+}
+#HeaderFormat
+{
+	color: #420723; 
+	font-size: 14px; 
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#HeaderFormat a
+{
+	color: #420723;
+	text-decoration:none;
+}
+#HeaderFormat a:hover
+{
+	color: #420723;
+	text-decoration:underline;
+}
+.tableHeaderReview
+{
+	font-weight:bold;
+}
+.tableFormat
+{
+	border: solid 1px #583B1D;
+	text-transform:uppercase;
+	font-size:9px;
+	color: #573B1C;
+	font-weight:bold;
+}
+.tableFormat_bg
+{	
+	background: #583B1D;
+	border: solid 1px #583B1D;
+	text-transform:uppercase;
+	font-size:9px;
+	color: #FFFFFF;
+	font-weight:bold;
+	
+}
+.linkFormat
+{	
+	text-decoration: underline;
+}
+
+.linkFormat a:hower
+{	
+	text-decoration: none;
+}
+.borders {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #9A682C;
+	border-left-color: #9A682C;
+}
+.imageborders {
+    border-color:#A4ADB6; 
+    border-width:1px;
+    border-bottom-style:solid;       
+}
+.product-item p {
+	margin-top: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.ErrorMessageColor
+{
+    text-align: left;
+	Color: #FF0000;	
+}
+.successMessagecolor
+{
+	Color: #0099ff;	
+}
+.BackGroundColor
+{
+	background-color:#D1DCE2;
+}
+
+.labelColor
+{
+	color: #F3FBFF;	
+}
+.borderformat
+{
+	border-color: #583B1D;
+	border-style:solid;
+	border-width:1px;
+}
+.itemborderformat
+{
+	border-bottom-color:#583B1D;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+	
+	border-left-color:#583B1D;	
+	border-left-style:solid;
+	border-left-width:1px;
+	
+	border-right-color:#583B1D;
+	border-right-style:solid;	
+	border-right-width:1px;
+	
+	border-top-color:#583B1D;
+	border-top-style:solid;
+	border-top-width:1px;
+}
+#LinkFormatOther
+{
+	color:#2C4353;
+	text-decoration: none;
+	font-weight:normal;
+}
+#LinkFormatOther a
+{
+	color:#2C4353;
+	text-decoration: none;
+}
+#LinkFormatOther a:hover
+{
+	color:#6796B1;
+	text-decoration: none;
+}
+#ShowProductList
+{
+	color: #2C4353;
+}
+#ShowProductList a:link {
+	color: #2C4353;
+	text-decoration: none;
+	text-decoration: underline;
+}
+#ShowProductList a:visited {
+	text-decoration: none;
+	color: #2C4353;
+}
+#ShowProductList a:hover {
+	text-decoration: none;
+	color: #2C4353;
+}
+#ShowProductList a:active {
+	text-decoration: none;
+	color: #2C4353;
+}
+#ViewProducts a:visited {
+	text-decoration: none;
+	color: #2C4353;
+}
+#ViewProducts a:hover {
+	text-decoration: none;
+	color: #6796B1;
+}
+#ViewProducts a:active {
+	text-decoration: none;
+	color: #2C4353;
+}
+#shoppingcart
+{
+	color: #2C4353;
+	text-align:left;
+	font-size:11px;		
+}
+#shoppingcart a:link {
+	color: #2C4353;
+	text-decoration: none;
+}
+#shoppingcart a:visited {
+	text-decoration: none;
+	color: #2C4353;
+}
+#shoppingcart a:hover {
+	text-decoration: none;
+	color: #6796B1;
+}
+#shoppingcart a:active {
+	text-decoration: none;
+	color: #2C4353;
+}
+
+.textbox
+{
+	font-family: "Arial", Arial,Helvetica,sans-serif;
+	font-size:12px;	
+	color:Black;
+	border: 1px solid #BBBBBB;
+	/*
+	border-style: solid;
+	border-color: #00679d;
+	border-width: 1px;*/
+}
+
+textarea 
+{
+	font-family: "Arial", Arial,Helvetica,sans-serif;
+	border: 1px solid #BBBBBB;	
+	font-size:12px;
+}
+.checkbox
+{
+	font-family: "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:11px;	
+	color:Black;
+}
+
+.button
+{
+	font-family: "Arial",Arial,Helvetica,sans-serif;
+	font-size:11px;	
+	color:Black;	
+}
+.dropdownlist
+{
+	font-family: "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:11px;	
+	color:Black;
+	text-align:left;
+}
+.dropdownlist_paymethod
+{
+	font-family: "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:11px;	
+	color:Black;
+	text-align:left;
+}
+.label
+{
+	font-family: "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:11px;	
+}
+.linkbutton
+{
+	font-family: "Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:11px;	
+	color:Black;
+}
+.productimage
+{
+	border: 1px solid #2C4353; 
+}
+
+select
+{	
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: solid  #BBBBBB 1px;
+}
+.price
+{
+	font-weight: bold;
+	color: #E8E8E8;	
+}
+#account
+{
+	text-align:right;
+	font-family:"Lucida Grande", Lucida Sans Unicode, Helvetica, Arial, Verdana, sans-serif;
+	font-size:8.3pt;
+	font-weight:bold;
+	color:White;
+}
+
+.gridview
+{
+	background-color: #583B1D;
+	font-weight: bold;	
+	padding-left: 5px;
+	color: #FFFFFF;
+}
+
+.gridview th
+{
+	padding-left: 5px;
+}
+
+.gridview th a
+{
+	color:#FFFFFF;
+}
+
+.atlrow
+{
+	background-color:#583B1D;
+	color: #FFFFFF;
+}
+
+.GridviewStyle
+{
+	border-color:#D1DCE2;
+	border-width:1px;
+	border-style:solid;
+}
+.bottomline
+{
+	border-bottom:solid 1px #F3FBFF;	
+}
+#PRINT ,#CLOSE
+{
+	visibility:hidden;
+}
+
+.texbox_MultiLine{
+	background-color: #BBBBBB;	
+	font-family: Verdana, Arial;
+	
+	width: 250px;
+	color: #34393b;
+}
+.titleAdmin
+{
+	color:#338585;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:14px;
+	font-variant:small-caps;
+}
+.content_PrintCart {
+  margin: 0 auto;
+  padding: 0;
+  width: 900px;
+  text-align: left;
+}
+
+.someClass
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.GridViewColumn
+{
+	padding-left: 5px;
+}
+
+.BorderStyle
+{
+	border: solid 1px #583B1D;
+}
+
+.gvRowStyleCSS td, .gv_AltRowStyle td
+{
+	border-right: solid 1px #583B1D;
+}
+
+.OtherLink
+{
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.OtherLink
+{
+	text-decoration: none;
+	font-weight: bold;
+}

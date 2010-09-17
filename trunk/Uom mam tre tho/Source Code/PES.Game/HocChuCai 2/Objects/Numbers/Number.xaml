@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="HocChuCai_2.Objects.Number"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="500" Height="48">
+	<UserControl.Resources>
+		<Storyboard x:Name="stbAppear" Completed="stbAppear_Completed">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-20"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-30"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="LayoutRoot" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    <StackPanel x:Name="LayoutRoot" Background="Transparent" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5">
+    	<StackPanel.RenderTransform>
+    		<TransformGroup>
+    			<ScaleTransform/>
+    			<SkewTransform/>
+    			<RotateTransform/>
+    			<TranslateTransform/>
+    		</TransformGroup>
+    	</StackPanel.RenderTransform>
+    </StackPanel>
+</UserControl>

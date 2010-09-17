@@ -1,0 +1,90 @@
+E:\IMAGINE CUP\SourceCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\IMAGINE CUP\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\IMAGINE CUP\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\IMAGINE CUP\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\IMAGINE CUP\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\LIVE CLUB NEW VERSION\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\LIVE CLUB NEW VERSION\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\LIVE CLUB NEW VERSION\SourceCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\LIVE CLUB NEW VERSION\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\LIVE CLUB NEW VERSION\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+D:\PROJECTS\LIVE CLUB\SourceCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\LIVE CLUB\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+D:\PROJECTS\LIVE CLUB\SourceCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\New30102009\HocTiengVietCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\MultiLanguages\obj\Debug\MultiLanguages.pdb
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\MultiLanguages\Bin\Debug\MultiLanguages.dll
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\MultiLanguages\obj\Debug\MultiLanguages.dll
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\MultiLanguages\obj\Debug\MultiLanguages.pdb
+F:\ITBus\03. SOURCE CODE\MultiLanguages\Bin\Debug\MultiLanguages.dll
+F:\ITBus\03. SOURCE CODE\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+F:\ITBus\03. SOURCE CODE\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+F:\ITBus\03. SOURCE CODE\MultiLanguages\obj\Debug\MultiLanguages.dll
+F:\ITBus\03. SOURCE CODE\MultiLanguages\obj\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\MultiLanguages\Bin\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\MultiLanguages\obj\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\MultiLanguages\obj\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\MultiLanguages\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\MultiLanguages\obj\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\MultiLanguages\obj\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\Bin\Debug\MultiLanguages.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\MultiLanguages\obj\Debug\MultiLanguages.pdb

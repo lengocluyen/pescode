@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="PhuThuyDuaThu.Controls.GameOver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="600" Height="470">
+    <Canvas x:Name="canvasGameOver">
+        <Canvas.Background>
+            <ImageBrush x:Name="backgroundImageBrush" 
+                        Stretch="UniformToFill" 
+                        ImageSource="../Images/PlayBG.png"/>
+        </Canvas.Background>
+        <Image x:Name="imgGameOverFrame" Source="../Images/ResultFrame.png" Canvas.Left="108" Canvas.Top="92"></Image>
+        <Image x:Name="imgTextGameOver" Source="../Images/TextResult.png" Canvas.Left="206" Canvas.Top="112" Height="69" Width="197"></Image>
+        
+        <Image x:Name="imgBtnReplay" Source="../Images/BtnReplay.png" Height="54" Width="108" Canvas.Left="154" Canvas.Top="316"></Image>
+        <Image x:Name="imgBtnReplaySelected" Source="../Images/btnReplaySelected.png" Height="54" Width="108" Canvas.Left="154" Canvas.Top="316" Visibility="Collapsed"></Image>
+        <HyperlinkButton x:Name="hplReplay" Content="" Height="54" Width="108" Canvas.Left="154" Canvas.Top="316" MouseEnter="hplReplay_MouseEnter" MouseLeave="hplReplay_MouseLeave" Click="hplReplay_Click"></HyperlinkButton>
+        
+        <Image x:Name="imgBtnSavePoint" Source="../Images/BtnSavePoint.png" Height="54" Width="108" Canvas.Left="322" Canvas.Top="316"></Image>
+        <Image x:Name="imgBtnSavePointSelected" Source="../Images/BtnSavePointSelected.png" Height="54" Width="108" Canvas.Left="322" Canvas.Top="316" Visibility="Collapsed"></Image>
+        <HyperlinkButton x:Name="hplSavePoint" Content="" Height="54" Width="108" Canvas.Left="322" Canvas.Top="316" MouseEnter="hplSavePoint_MouseEnter" MouseLeave="hplSavePoint_MouseLeave" Click="hplSavePoint_Click"></HyperlinkButton>
+    </Canvas>
+</UserControl>

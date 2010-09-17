@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A97BFB5D-157F-42CF-AB97-58CF7F3948F8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pes.Core</RootNamespace>
+    <AssemblyName>Pes.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="StructureMap, Version=2.5.4.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\StructureMap.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Classes\Account.cs" />
+    <Compile Include="Core\Classes\AccountFile.cs" />
+    <Compile Include="Core\Classes\AccountFolder.cs" />
+    <Compile Include="Core\Classes\AccountPermission.cs" />
+    <Compile Include="Core\Classes\Alert.cs" />
+    <Compile Include="Core\Classes\AlertType.cs" />
+    <Compile Include="Core\Classes\Blog.cs" />
+    <Compile Include="Core\Classes\BoardCategory.cs" />
+    <Compile Include="Core\Classes\BoardForum.cs" />
+    <Compile Include="Core\Classes\BoardPost.cs" />
+    <Compile Include="Core\Classes\Comment.cs" />
+    <Compile Include="Core\Classes\ContentFilter.cs" />
+    <Compile Include="Core\Classes\File.cs" />
+    <Compile Include="Core\Classes\FileSystemFolder.cs" />
+    <Compile Include="Core\Classes\FileType.cs" />
+    <Compile Include="Core\Classes\Folder.cs" />
+    <Compile Include="Core\Classes\FolderFile.cs" />
+    <Compile Include="Core\Classes\FolderType.cs" />
+    <Compile Include="Core\Classes\Friend.cs" />
+    <Compile Include="Core\Classes\FriendInvitation.cs" />
+    <Compile Include="Core\Classes\FriendshipDefinition.cs" />
+    <Compile Include="Core\Classes\FriendshipDefinitionType.cs" />
+    <Compile Include="Core\Classes\Gag.cs" />
+    <Compile Include="Core\Classes\Group.cs" />
+    <Compile Include="Core\Classes\GroupForum.cs" />
+    <Compile Include="Core\Classes\GroupMember.cs" />
+    <Compile Include="Core\Classes\GroupToGroupType.cs" />
+    <Compile Include="Core\Classes\GroupType.cs" />
+    <Compile Include="Core\Classes\LevelOfExperienceType.cs" />
+    <Compile Include="Core\Classes\MailQueue_History.cs" />
+    <Compile Include="Core\Classes\MailQueue_Receiving.cs" />
+    <Compile Include="Core\Classes\MailQueue_Working.cs" />
+    <Compile Include="Core\Classes\MessageFolder.cs" />
+    <Compile Include="Core\Classes\MessageRecipient.cs" />
+    <Compile Include="Core\Classes\MessageRecipientType.cs" />
+    <Compile Include="Core\Classes\Messages.cs" />
+    <Compile Include="Core\Classes\MessageStatusType.cs" />
+    <Compile Include="Core\Classes\MessageType.cs" />
+    <Compile Include="Core\Classes\MessageWithRecipient.cs" />
+    <Compile Include="Core\Classes\Moderation.cs" />
+    <Compile Include="Core\Classes\Permission.cs" />
+    <Compile Include="Core\Classes\PES\Answer.cs" />
+    <Compile Include="Core\Classes\PES\Book.cs" />
+    <Compile Include="Core\Classes\PES\BookType.cs" />
+    <Compile Include="Core\Classes\PES\Game.cs" />
+    <Compile Include="Core\Classes\PES\GameAnnoucement.cs" />
+    <Compile Include="Core\Classes\PES\GameCategory.cs" />
+    <Compile Include="Core\Classes\PES\GameResult.cs" />
+    <Compile Include="Core\Classes\PES\Lesson.cs" />
+    <Compile Include="Core\Classes\PES\LessonTestType.cs" />
+    <Compile Include="Core\Classes\PES\MultipleChoice.cs" />
+    <Compile Include="Core\Classes\PES\Part.cs" />
+    <Compile Include="Core\Classes\PES\PartTestType.cs" />
+    <Compile Include="Core\Classes\PES\Pupils.cs" />
+    <Compile Include="Core\Classes\PES\StudyLevel.cs" />
+    <Compile Include="Core\Classes\PES\StudyLevelType.cs" />
+    <Compile Include="Core\Classes\PES\StudyProgramming.cs" />
+    <Compile Include="Core\Classes\PES\StudyTool.cs" />
+    <Compile Include="Core\Classes\PES\Subject.cs" />
+    <Compile Include="Core\Classes\PES\SubjectTestType.cs" />
+    <Compile Include="Core\Classes\PES\Test.cs" />
+    <Compile Include="Core\Classes\PES\TestQuestion.cs" />
+    <Compile Include="Core\Classes\PES\TestQuestionType.cs" />
+    <Compile Include="Core\Classes\PES\TestResult.cs" />
+    <Compile Include="Core\Classes\PES\ToolsType.cs" />
+    <Compile Include="Core\Classes\PES\VAnswers.cs" />
+    <Compile Include="Core\Classes\PES\VLession.cs" />
+    <Compile Include="Core\Classes\PES\VLessionGroup.cs" />
+    <Compile Include="Core\Classes\PES\VLevels.cs" />
+    <Compile Include="Core\Classes\PES\VModule.cs" />
+    <Compile Include="Core\Classes\PES\VPart.cs" />
+    <Compile Include="Core\Classes\PES\VQuestions.cs" />
+    <Compile Include="Core\Classes\PES\VTestResults.cs" />
+    <Compile Include="Core\Classes\PrivacyFlag.cs" />
+    <Compile Include="Core\Classes\PrivacyFlagType.cs" />
+    <Compile Include="Core\Classes\Profile.cs" />
+    <Compile Include="Core\Classes\ProfileAttribute.cs" />
+    <Compile Include="Core\Classes\ProfileAttributeType.cs" />
+    <Compile Include="Core\Classes\Rating.cs" />
+    <Compile Include="Core\Classes\StatusUpdate.cs" />
+    <Compile Include="Core\Classes\SystemObject.cs" />
+    <Compile Include="Core\Classes\SystemObjectRatingOption.cs" />
+    <Compile Include="Core\Classes\SystemObjectTag.cs" />
+    <Compile Include="Core\Classes\SystemObjectTagWithObjects.cs" />
+    <Compile Include="Core\Classes\Tag.cs" />
+    <Compile Include="Core\Classes\TagWithState.cs" />
+    <Compile Include="Core\Classes\Term.cs" />
+    <Compile Include="Core\Classes\VisibilityLevel.cs" />
+    <Compile Include="Core\Extensions\Extensions.cs" />
+    <Compile Include="Core\Frameworks\CoreSupport.cs" />
+    <Compile Include="Core\Frameworks\DirectoryHelper.cs" />
+    <Compile Include="Core\Frameworks\FileHelper.cs" />
+    <Compile Include="Core\Frameworks\PESSession.cs" />
+    <Compile Include="Core\Frameworks\SessionConstants.cs" />
+    <Compile Include="Core\Generated\Account.cs" />
+    <Compile Include="Core\Generated\AccountFile.cs" />
+    <Compile Include="Core\Generated\AccountFolder.cs" />
+    <Compile Include="Core\Generated\AccountPermission.cs" />
+    <Compile Include="Core\Generated\Alert.cs" />
+    <Compile Include="Core\Generated\AlertType.cs" />
+    <Compile Include="Core\Generated\Blog.cs" />
+    <Compile Include="Core\Generated\BoardCategory.cs" />
+    <Compile Include="Core\Generated\BoardForum.cs" />
+    <Compile Include="Core\Generated\BoardPost.cs" />
+    <Compile Include="Core\Generated\Comment.cs" />
+    <Compile Include="Core\Generated\ContentFilter.cs" />
+    <Compile Include="Core\Generated\File.cs" />
+    <Compile Include="Core\Generated\FileSystemFolder.cs" />
+    <Compile Include="Core\Generated\FileType.cs" />
+    <Compile Include="Core\Generated\Folder.cs" />
+    <Compile Include="Core\Generated\FolderFile.cs" />
+    <Compile Include="Core\Generated\FolderType.cs" />
+    <Compile Include="Core\Generated\Friend.cs" />
+    <Compile Include="Core\Generated\FriendInvitation.cs" />
+    <Compile Include="Core\Generated\FriendshipDefinition.cs" />
+    <Compile Include="Core\Generated\FriendshipDefinitionType.cs" />
+    <Compile Include="Core\Generated\Gag.cs" />
+    <Compile Include="Core\Generated\Group.cs" />
+    <Compile Include="Core\Generated\GroupForum.cs" />
+    <Compile Include="Core\Generated\GroupMember.cs" />
+    <Compile Include="Core\Generated\GroupToGroupType.cs" />
+    <Compile Include="Core\Generated\GroupType.cs" />
+    <Compile Include="Core\Generated\LevelOfExperienceType.cs" />
+    <Compile Include="Core\Generated\MailQueue_History.cs" />
+    <Compile Include="Core\Generated\MailQueue_Receiving.cs" />
+    <Compile Include="Core\Generated\MailQueue_Working.cs" />
+    <Compile Include="Core\Generated\Messages.cs" />
+    <Compile Include="Core\Generated\MessageFolder.cs" />
+    <Compile Include="Core\Generated\MessageRecipient.cs" />
+    <Compile Include="Core\Generated\MessageRecipientType.cs" />
+    <Compile Include="Core\Generated\MessageStatusType.cs" />
+    <Compile Include="Core\Generated\MessageType.cs" />
+    <Compile Include="Core\Generated\Moderation.cs" />
+    <Compile Include="Core\Generated\Permission.cs" />
+    <Compile Include="Core\Generated\PES\Answer.cs" />
+    <Compile Include="Core\Generated\PES\Book.cs" />
+    <Compile Include="Core\Generated\PES\BookType.cs" />
+    <Compile Include="Core\Generated\PES\Game.cs" />
+    <Compile Include="Core\Generated\PES\GameAnnoucement.cs" />
+    <Compile Include="Core\Generated\PES\GameCategory.cs" />
+    <Compile Include="Core\Generated\PES\GameResult.cs" />
+    <Compile Include="Core\Generated\PES\Lesson.cs" />
+    <Compile Include="Core\Generated\PES\LessonTestType.cs" />
+    <Compile Include="Core\Generated\PES\MultipleChoice.cs" />
+    <Compile Include="Core\Generated\PES\Part.cs" />
+    <Compile Include="Core\Generated\PES\PartTestType.cs" />
+    <Compile Include="Core\Generated\PES\Pupils.cs" />
+    <Compile Include="Core\Generated\PES\StudyLevel.cs" />
+    <Compile Include="Core\Generated\PES\StudyLevelType.cs" />
+    <Compile Include="Core\Generated\PES\StudyProgramming.cs" />
+    <Compile Include="Core\Generated\PES\StudyTool.cs" />
+    <Compile Include="Core\Generated\PES\Subject.cs" />
+    <Compile Include="Core\Generated\PES\SubjectTestType.cs" />
+    <Compile Include="Core\Generated\PES\Test.cs" />
+    <Compile Include="Core\Generated\PES\TestQuestion.cs" />
+    <Compile Include="Core\Generated\PES\TestQuestionType.cs" />
+    <Compile Include="Core\Generated\PES\TestResult.cs" />
+    <Compile Include="Core\Generated\PES\ToolsType.cs" />
+    <Compile Include="Core\Generated\PES\VAnswers.cs" />
+    <Compile Include="Core\Generated\PES\VLession.cs" />
+    <Compile Include="Core\Generated\PES\VLessionGroup.cs" />
+    <Compile Include="Core\Generated\PES\VLevels.cs" />
+    <Compile Include="Core\Generated\PES\VModule.cs" />
+    <Compile Include="Core\Generated\PES\VPart.cs" />
+    <Compile Include="Core\Generated\PES\VQuestions.cs" />
+    <Compile Include="Core\Generated\PES\VTestResults.cs" />
+    <Compile Include="Core\Generated\PrivacyFlag.cs" />
+    <Compile Include="Core\Generated\PrivacyFlagType.cs" />
+    <Compile Include="Core\Generated\Profile.cs" />
+    <Compile Include="Core\Generated\ProfileAttribute.cs" />
+    <Compile Include="Core\Generated\ProfileAttributeType.cs" />
+    <Compile Include="Core\Generated\Rating.cs" />
+    <Compile Include="Core\Generated\StatusUpdate.cs" />
+    <Compile Include="Core\Generated\SystemObject.cs" />
+    <Compile Include="Core\Generated\SystemObjectRatingOption.cs" />
+    <Compile Include="Core\Generated\SystemObjectTag.cs" />
+    <Compile Include="Core\Generated\Tag.cs" />
+    <Compile Include="Core\Generated\Term.cs" />
+    <Compile Include="Core\Generated\VisibilityLevel.cs" />
+    <Compile Include="Core\IAccountService.cs" />
+    <Compile Include="Core\IAlertService.cs" />
+    <Compile Include="Core\ICaptcha.cs" />
+    <Compile Include="Core\IConfiguration.cs" />
+    <Compile Include="Core\IEmail.cs" />
+    <Compile Include="Core\IEmailService.cs" />
+    <Compile Include="Core\IFileService.cs" />
+    <Compile Include="Core\IFolderService.cs" />
+    <Compile Include="Core\IFriendService.cs" />
+    <Compile Include="Core\IGameService.cs" />
+    <Compile Include="Core\IMessageService.cs" />
+    <Compile Include="Core\Impl\AccountService.cs" />
+    <Compile Include="Core\Impl\AlertService.cs" />
+    <Compile Include="Core\Impl\Captcha.cs" />
+    <Compile Include="Core\Impl\Configuration.cs" />
+    <Compile Include="Core\Impl\Email.cs" />
+    <Compile Include="Core\Impl\EmailService.cs" />
+    <Compile Include="Core\Impl\FileService.cs" />
+    <Compile Include="Core\Impl\FolderService.cs" />
+    <Compile Include="Core\Impl\FriendService.cs" />
+    <Compile Include="Core\Impl\GameService.cs" />
+    <Compile Include="Core\Impl\GroupService.cs" />
+    <Compile Include="Core\IGroupService.cs" />
+    <Compile Include="Core\Impl\MessageService.cs" />
+    <Compile Include="Core\Impl\Navigation.cs" />
+    <Compile Include="Core\Impl\PrivacyService.cs" />
+    <Compile Include="Core\Impl\ProfileAttributeService.cs" />
+    <Compile Include="Core\Impl\ProfileService.cs" />
+    <Compile Include="Core\Impl\Redirector.cs" />
+    <Compile Include="Core\Impl\TagService.cs" />
+    <Compile Include="Core\Impl\UserSession.cs" />
+    <Compile Include="Core\Impl\WebContext.cs" />
+    <Compile Include="Core\INavigation.cs" />
+    <Compile Include="Core\IPrivacyService.cs" />
+    <Compile Include="Core\IProfileAttributeService.cs" />
+    <Compile Include="Core\IProfileService.cs" />
+    <Compile Include="Core\IRedirector.cs" />
+    <Compile Include="Core\ITagService.cs" />
+    <Compile Include="Core\IUserSession.cs" />
+    <Compile Include="Core\IWebContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DynamicQuery\DynamicQuery.csproj">
+      <Project>{7B92EBAD-8370-4BA0-9371-1C029984203C}</Project>
+      <Name>DynamicQuery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SubSonic.Core\SubSonic.Core.csproj">
+      <Project>{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}</Project>
+      <Name>SubSonic.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core\Frameworks\.svn\all-wcprops" />
+    <None Include="Core\Frameworks\.svn\entries" />
+    <None Include="Core\Frameworks\.svn\text-base\CoreSupport.cs.svn-base" />
+    <None Include="Core\Frameworks\.svn\text-base\DirectoryHelper.cs.svn-base" />
+    <None Include="Core\Frameworks\.svn\text-base\FileHelper.cs.svn-base" />
+    <None Include="Core\Frameworks\.svn\text-base\PESSession.cs.svn-base" />
+    <None Include="Core\Frameworks\.svn\text-base\SessionConstants.cs.svn-base" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Frameworks\.svn\prop-base\" />
+    <Folder Include="Core\Frameworks\.svn\props\" />
+    <Folder Include="Core\Frameworks\.svn\tmp\prop-base\" />
+    <Folder Include="Core\Frameworks\.svn\tmp\props\" />
+    <Folder Include="Core\Frameworks\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

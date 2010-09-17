@@ -1,0 +1,197 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions" xmlns:dataInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input"
+	x:Class="PesHome.Menu"
+    Loaded="UserControl_Loaded"
+	d:DesignWidth="117" d:DesignHeight="300">
+
+	<UserControl.Resources>
+		<Storyboard x:Name="LoadingST">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Helpimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="93"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="122.915">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="9"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Exitimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="29.5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="50.417">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="8"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Contactimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="181.5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02.3000000" Value="203.5">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="8"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="HelpST">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Helpimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="120"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="114.108"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.89"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-8.5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="ExitST">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Exitimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="40"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="28"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.868"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="ContactST">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Contactimage" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="210"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="188"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.929"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rectangle" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-8.5"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Canvas>
+			<Rectangle x:Name="rectangle2" Fill="White" Stroke="Black" Height="91" Width="1" Canvas.Left="82" StrokeThickness="0" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Rectangle x:Name="rectangle" Fill="White" Stroke="Black" Height="240" Width="1" Canvas.Left="57" StrokeThickness="0" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Rectangle x:Name="rectangle1" Fill="White" Stroke="Black" Height="154" Width="1" Canvas.Left="24" StrokeThickness="0" RenderTransformOrigin="0.5,0.5">
+				<Rectangle.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Rectangle.RenderTransform>
+			</Rectangle>
+			<Image x:Name="Contactimage" Height="51" Width="57" Canvas.Left="24" Canvas.Top="19" Source="../Images/diploma.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Cursor="Hand" MouseEnter="Contactimage_MouseEnter" MouseLeave="Contactimage_MouseLeave" MouseLeftButtonDown="Contactimage_MouseLeftButtonDown">
+				<Image.Projection>
+					<PlaneProjection/>
+				</Image.Projection>
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform Y="210"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeave">
+						<ic:ChangePropertyAction TargetName="ContactLabel" PropertyName="Visibility">
+							<ic:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ic:ChangePropertyAction.Value>
+						</ic:ChangePropertyAction>
+					</i:EventTrigger>
+					<i:EventTrigger EventName="MouseEnter">
+						<ic:ChangePropertyAction TargetName="ContactLabel" PropertyName="Visibility"/>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+			</Image>
+			<Image x:Name="Exitimage" Height="49" Width="62" Canvas.Left="53" Source="../Images/caja_estrellas.png" Stretch="Fill" Canvas.Top="28" RenderTransformOrigin="0.5,0.5" Cursor="Hand" MouseEnter="Exitimage_MouseEnter" MouseLeave="Exitimage_MouseLeave" MouseLeftButtonDown="Exitimage_MouseLeftButtonDown">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeave">
+						<ic:ChangePropertyAction TargetName="ExitLabel" PropertyName="Visibility">
+							<ic:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ic:ChangePropertyAction.Value>
+						</ic:ChangePropertyAction>
+					</i:EventTrigger>
+					<i:EventTrigger EventName="MouseEnter">
+						<ic:ChangePropertyAction TargetName="ExitLabel" PropertyName="Visibility">
+							<ic:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ic:ChangePropertyAction.Value>
+						</ic:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform Y="40"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+				<Image.Projection>
+					<PlaneProjection/>
+				</Image.Projection>
+			</Image>
+			<Image x:Name="Helpimage" Height="60" Width="52" Canvas.Top="6" Source="../Images/amor.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Cursor="Hand" MouseEnter="Helpimage_MouseEnter" MouseLeave="Helpimage_MouseLeave"  MouseLeftButtonDown="Helpimage_MouseLeftButtonDown">
+				<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeave">
+						<ic:ChangePropertyAction TargetName="HelpLabel" PropertyName="Visibility">
+							<ic:ChangePropertyAction.Value>
+								<Visibility>Collapsed</Visibility>
+							</ic:ChangePropertyAction.Value>
+						</ic:ChangePropertyAction>
+					</i:EventTrigger>
+					<i:EventTrigger EventName="MouseEnter">
+						<ic:ChangePropertyAction TargetName="HelpLabel" PropertyName="Visibility">
+							<ic:ChangePropertyAction.Value>
+								<Visibility>Visible</Visibility>
+							</ic:ChangePropertyAction.Value>
+						</ic:ChangePropertyAction>
+					</i:EventTrigger>
+				</i:Interaction.Triggers>
+				<Image.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform Y="120"/>
+					</TransformGroup>
+				</Image.RenderTransform>
+				<Image.Projection>
+					<PlaneProjection/>
+				</Image.Projection>
+			</Image>
+			<dataInput:Label x:Name="ContactLabel" Height="17" Style="{StaticResource menuLabelStyle}" Width="53" Canvas.Left="81" Canvas.Top="238" Content="Liên hệ" FontWeight="Bold" Visibility="Collapsed"/>
+			<dataInput:Label x:Name="ExitLabel" Height="17" Style="{StaticResource menuLabelStyle}" Width="43" FontWeight="Bold" Canvas.Left="105" Canvas.Top="88" Content="Thoát" Visibility="Collapsed"/>
+			<dataInput:Label x:Name="HelpLabel" Height="17" Style="{StaticResource menuLabelStyle}" Width="67" FontWeight="Bold" Canvas.Left="-67" Canvas.Top="147" Content="Hướng dẫn" Visibility="Collapsed"/>
+		</Canvas>
+	</Grid>
+</UserControl>

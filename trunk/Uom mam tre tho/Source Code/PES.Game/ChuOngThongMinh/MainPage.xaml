@@ -1,0 +1,160 @@
+﻿<UserControl xmlns:my="clr-namespace:Microsoft.Expression.Prototyping.Workspace;assembly=Microsoft.Expression.Prototyping.Runtime"  x:Class="ChuOngThongMinh.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ChuOngThongMinh="clr-namespace:ChuOngThongMinh" 
+    mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="470">
+    <UserControl.Resources>
+        <Storyboard x:Name="StbDefault">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgClould2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:01:00" Value="-474"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="stbBeeMove">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlBeeOB" Storyboard.TargetProperty="(Canvas.Left)">
+                <EasingDoubleKeyFrame KeyTime="00:00:07" Value="450"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:14" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="stbUseGuide">
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="ctrlUseGuide" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgUseGuide" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgUseGuideSelected" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="hplbUseGuide" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStartSelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplbStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:01" Value="297"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStartSelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:01" Value="297"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplbStart" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:01" Value="297"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    
+    <Canvas x:Name="canvasMain" Width="600" Height="470" RenderTransformOrigin="0.5 0.5">
+        <Canvas.RenderTransform>
+            <ScaleTransform x:Name="PageScale" ScaleX="1" ScaleY="1"/>
+        </Canvas.RenderTransform>
+        <Canvas.Background>
+            <ImageBrush ImageSource="BeeImgs/Background.png"></ImageBrush>
+        </Canvas.Background>
+        <Image x:Name="imgClould2" Source="BeeImgs/Clould02.png" RenderTransformOrigin="0.5,0.5" Canvas.Left="49" Canvas.Top="11">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgLeftTree" Source="BeeImgs/TreeLeft.png" Canvas.Top="-1" Height="493" Width="200" Canvas.Left="-53"></Image>
+        <Image x:Name="imgRightTree" Source="BeeImgs/TreeRight.png" Canvas.Left="456" Canvas.Top="-1" Height="471" Width="162"></Image>
+        <ChuOngThongMinh:HoneyJar x:Name="ctrlHoneyJar" Canvas.Left="56" Canvas.Top="309"></ChuOngThongMinh:HoneyJar>
+        <ChuOngThongMinh:HoneyJar x:Name="ctrlHoneyJar1" Canvas.Left="214" Canvas.Top="309"></ChuOngThongMinh:HoneyJar>
+        <ChuOngThongMinh:HoneyJar x:Name="ctrlHoneyJar2" Canvas.Left="372" Canvas.Top="309"></ChuOngThongMinh:HoneyJar>
+        <ChuOngThongMinh:BeeOBM x:Name="ctrlBeeOB" Canvas.Top="200" RenderTransformOrigin="0.5,0.5">
+            <ChuOngThongMinh:BeeOBM.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ChuOngThongMinh:BeeOBM.RenderTransform>
+        </ChuOngThongMinh:BeeOBM>
+        <Image x:Name="imgPointFrame" Source="BeeImgs/PointFrame.png" Canvas.Left="17" Canvas.Top="2"></Image>
+        <TextBlock x:Name="tblPoints" Height="19" Width="76" Canvas.Left="17" Canvas.Top="21" FontFamily="Fonts/VNVOGU.TTF#.VnVogue" FontSize="18.667" Foreground="#FF6AB721" Text="0" TextAlignment="Center" TextWrapping="Wrap"/>
+        <Image x:Name="imgLifeFrame01" Source="BeeImgs/LifeFrame.png" Canvas.Left="471" Canvas.Top="19"></Image>
+        <Image x:Name="imgLife01" Source="BeeImgs/Life.png" Canvas.Left="473" Canvas.Top="21" Height="14" Width="19"></Image>
+        <Image x:Name="imgLifeFrame02" Source="BeeImgs/LifeFrame.png" Canvas.Left="496" Canvas.Top="19"></Image>
+        <Image x:Name="imgLife02" Source="BeeImgs/Life.png" Canvas.Left="498" Canvas.Top="21" Height="14" Width="19"></Image>
+        <Image x:Name="imgLifeFrame03" Source="BeeImgs/LifeFrame.png" Canvas.Left="521" Canvas.Top="19"></Image>
+        <Image x:Name="imgLife03" Source="BeeImgs/Life.png" Canvas.Left="523" Canvas.Top="21" Height="14" Width="19"/>
+        <Image x:Name="imgLifeFrame04" Source="BeeImgs/LifeFrame.png" Canvas.Left="546" Canvas.Top="19"></Image>
+        <Image x:Name="imgLife04" Source="BeeImgs/Life.png" Canvas.Left="548" Canvas.Top="21" Height="14" Width="19"></Image>
+        <Image x:Name="imgLifeFrame05" Source="BeeImgs/LifeFrame.png" Canvas.Left="571" Canvas.Top="19"></Image>
+        <Image x:Name="imgLife05" Source="BeeImgs/Life.png" Canvas.Left="573" Canvas.Top="21" Height="14" Width="19"></Image>
+        <Image x:Name="imgMusic" Source="BeeImgs/BtnSoudAllow.png" Canvas.Top="53" Canvas.Left="35"></Image>
+        <Image x:Name="imgMute" Source="BeeImgs/BtnSoundMute.png" Canvas.Top="53" Canvas.Left="35" Visibility="Collapsed"></Image>
+        <Image x:Name="imgHand" Source="BeeImgs/Hand.png" Visibility="Collapsed"></Image>
+        <Image x:Name="imgHandHold" Source="BeeImgs/HandHold.png"></Image>
+        <HyperlinkButton x:Name="hplClick" Content="" IsTabStop="False" Height="470" Width="600" Click="hplClick_Click" Canvas.Left="-4"/>
+        <HyperlinkButton x:Name="hplMute" IsTabStop="False" Height="24" Width="25" Canvas.Left="35" Canvas.Top="54" Click="hplMute_Click" MouseEnter="hplMute_MouseEnter" MouseLeave="hplMute_MouseLeave" ></HyperlinkButton>
+        <ChuOngThongMinh:HomePage x:Name="ctrlHomePage"></ChuOngThongMinh:HomePage>
+        <ChuOngThongMinh:UseGuide x:Name="ctrlUseGuide" Visibility="Collapsed"></ChuOngThongMinh:UseGuide>
+        <Canvas x:Name="canvasHomeButton">
+        <Image x:Name="imgStart" Source="BeeImgs/BtnPlay.png" Canvas.Left="94" Canvas.Top="316" Height="44" Width="121" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStartSelected" Source="BeeImgs/BtnPlaySelected.png" Canvas.Left="94" Canvas.Top="316" Height="44" Width="121" RenderTransformOrigin="0.471,0" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform></Image>
+        <HyperlinkButton x:Name="hplbStart" Height="44" Width="121" Canvas.Left="94" Canvas.Top="316" MouseEnter="hplbStart_MouseEnter" MouseLeave="hplbStart_MouseLeave" IsTabStop="False" Click="hplbStart_Click" RenderTransformOrigin="0.5,0.5">
+        	<HyperlinkButton.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</HyperlinkButton.RenderTransform>
+        </HyperlinkButton>
+        <Image x:Name="imgUseGuide" Source="BeeImgs/BtnGuide.png" Canvas.Left="248" Canvas.Top="316" Height="44" Width="121"></Image>
+        <Image x:Name="imgUseGuideSelected" Source="BeeImgs/BtnGuideSelected.png" Canvas.Left="248" Canvas.Top="316" Height="44" Width="121" Visibility="Collapsed"></Image>
+        <HyperlinkButton x:Name="hplbUseGuide" Height="44" Width="121" Canvas.Left="248" Canvas.Top="316" MouseEnter="hplbUseGuide_MouseEnter" MouseLeave="hplbUseGuide_MouseLeave" IsTabStop="False" Click="hplbUseGuide_Click"></HyperlinkButton>
+        </Canvas>
+        <ChuOngThongMinh:GameOver x:Name="ctrlGameOver" Visibility="Collapsed" ></ChuOngThongMinh:GameOver>
+    </Canvas>
+</UserControl>

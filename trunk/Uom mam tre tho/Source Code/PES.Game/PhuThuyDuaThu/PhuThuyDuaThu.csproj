@@ -1,0 +1,347 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5908503E-3176-4110-965C-BE692FB072B8}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhuThuyDuaThu</RootNamespace>
+    <AssemblyName>PhuThuyDuaThu</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PhuThuyDuaThu.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PhuThuyDuaThu.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Codes\AppEnums.cs" />
+    <Compile Include="Codes\Commons.cs" />
+    <Compile Include="Codes\Constants.cs" />
+    <Compile Include="Codes\GlobalVarialble.cs" />
+    <Compile Include="Controls\AddPoint.xaml.cs">
+      <DependentUpon>AddPoint.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LevelUp.xaml.cs">
+      <DependentUpon>LevelUp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EliminatePoints.xaml.cs">
+      <DependentUpon>EliminatePoints.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MailBox.xaml.cs">
+      <DependentUpon>MailBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MapNumbersToImages.xaml.cs">
+      <DependentUpon>MapNumbersToImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Test.xaml.cs">
+      <DependentUpon>Test.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeOut.xaml.cs">
+      <DependentUpon>TimeOut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guide.xaml.cs">
+      <DependentUpon>Guide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Play.xaml.cs">
+      <DependentUpon>Play.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GameServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\AddPoint.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\LevelUp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\EliminatePoints.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\MailBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\MapNumbersToImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\Test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\TimeOut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Guide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Play.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\NGUYENBINHKHIEM_0.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\GameServices\GameServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sounds\end.mp3" />
+    <Resource Include="Sounds\fail.mp3" />
+    <Resource Include="Sounds\gameOver.mp3" />
+    <Resource Include="Sounds\levelUp.mp3" />
+    <Resource Include="Sounds\main_snd.mp3" />
+    <Resource Include="Sounds\no_snd.mp3" />
+    <Resource Include="Sounds\ok_snd.mp3" />
+    <Resource Include="Sounds\post_snd.mp3" />
+    <Resource Include="Sounds\thankyou.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add.png" />
+    <Resource Include="Images\BoxMail01.png" />
+    <Resource Include="Images\BoxMail02.png" />
+    <Resource Include="Images\BoxMail03.png" />
+    <Resource Include="Images\BoxMail04.png" />
+    <Resource Include="Images\btnNext.png" />
+    <Resource Include="Images\btnPlay.png" />
+    <Resource Include="Images\btnPlaySelected.png" />
+    <Resource Include="Images\BtnReplay.png" />
+    <Resource Include="Images\btnReplaySelected.png" />
+    <Resource Include="Images\btnUseGuide.png" />
+    <Resource Include="Images\btnUseGuideSelected.png" />
+    <Resource Include="Images\CotHomThu.png" />
+    <Resource Include="Images\Flower01.png" />
+    <Resource Include="Images\Flower02.png" />
+    <Resource Include="Images\Flower03.png" />
+    <Resource Include="Images\Flower04.png" />
+    <Resource Include="Images\FramePoint.png" />
+    <Resource Include="Images\FrameQuestion.png" />
+    <Resource Include="Images\FrameUseGuide.png" />
+    <Resource Include="Images\Hand01.png" />
+    <Resource Include="Images\Hand02.png" />
+    <Resource Include="Sounds\HomeTextShow.mp3" />
+    <Resource Include="Images\HomeBG.png" />
+    <Resource Include="Images\Mail.png" />
+    <Resource Include="Images\Mute.png" />
+    <Resource Include="Images\PlayBG.png" />
+    <Resource Include="Images\ResultFrame.png" />
+    <Resource Include="Images\Sound.png" />
+    <Resource Include="Images\tbnNextSelected.png" />
+    <Resource Include="Images\TextBegin.png" />
+    <Resource Include="Images\TextCapDo.png" />
+    <Resource Include="Images\TextCompleted.png" />
+    <Resource Include="Images\TextDuaThu.png" />
+    <Resource Include="Images\TextHomThu.png" />
+    <Resource Include="Images\TextLevel.png" />
+    <Resource Include="Images\TextLost.png" />
+    <Resource Include="Images\TextPhuThuy.png" />
+    <Resource Include="Images\TextResult.png" />
+    <Resource Include="Images\TimeoutFrame.png" />
+    <Resource Include="Images\Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\EightBYellow.png" />
+    <Resource Include="Images\EightGreen.png" />
+    <Resource Include="Images\EightPink.png" />
+    <Resource Include="Images\EightYellow.png" />
+    <Resource Include="Images\FiveBYellow.png" />
+    <Resource Include="Images\FiveGreen.png" />
+    <Resource Include="Images\FivePink.png" />
+    <Resource Include="Images\FiveYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FourBYellow.png" />
+    <Resource Include="Images\FourGreen.png" />
+    <Resource Include="Images\FourPink.png" />
+    <Resource Include="Images\FourYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\NineBYellow.png" />
+    <Resource Include="Images\NineGreen.png" />
+    <Resource Include="Images\NinePink.png" />
+    <Resource Include="Images\NineYellow.png" />
+    <Resource Include="Images\OneBYellow.png" />
+    <Resource Include="Images\OneGreen.png" />
+    <Resource Include="Images\OnePink.png" />
+    <Resource Include="Images\OneYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SevenBYellow.png" />
+    <Resource Include="Images\SevenGreen.png" />
+    <Resource Include="Images\SevenPink.png" />
+    <Resource Include="Images\SevenYellow.png" />
+    <Resource Include="Images\SixBYellow.png" />
+    <Resource Include="Images\SixGreen.png" />
+    <Resource Include="Images\SixPink.png" />
+    <Resource Include="Images\SixYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ThreeBYellow.png" />
+    <Resource Include="Images\ThreeGreen.png" />
+    <Resource Include="Images\ThreePink.png" />
+    <Resource Include="Images\ThreeYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TwoBYellow.png" />
+    <Resource Include="Images\TwoGreen.png" />
+    <Resource Include="Images\TwoPink.png" />
+    <Resource Include="Images\TwoYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ZeroBYellow.png" />
+    <Resource Include="Images\ZeroGreen.png" />
+    <Resource Include="Images\ZeroPink.png" />
+    <Resource Include="Images\ZeroYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TimeOut1.png" />
+    <Resource Include="Images\TimeOut2.png" />
+    <Resource Include="Images\TimeOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Letters.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hand03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DauXiec.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Add100Points.png" />
+    <Resource Include="Images\Eliminate50Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Bum01.png" />
+    <Resource Include="Images\Bum02.png" />
+    <Resource Include="Images\Bum03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BtnSavePoint.png" />
+    <Resource Include="Images\BtnSavePointSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\VNVOGU.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GameServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\GameServices.wsdl" />
+    <None Include="Service References\GameServices\PhuThuyDuaThu.GameServices.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

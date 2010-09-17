@@ -1,0 +1,91 @@
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.pdb
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\log4net.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.xml
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.pdb
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.xml
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.pdb
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.dll
+D:\GiaoTrinh\C# 2008\Social Networking\TeamFolder\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\log4net.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.xml
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.xml
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.dll
+I:\Luan Van\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\log4net.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.xml
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.xml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\Pes.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\log4net.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\StructureMap.xml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\SubSonic.Core.xml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\bin\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\Pes.Core\obj\Debug\Pes.Core.pdb
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.pdb
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\log4net.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.xml
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.pdb
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.xml
+I:\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.pdb
+I:\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+I:\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.dll
+I:\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\log4net.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.xml
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.xml
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\Pes.Core.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\log4net.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\StructureMap.xml
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\SubSonic.Core.xml
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.pdb
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.dll
+I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.pdb

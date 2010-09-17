@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="PhuThuyDuaThu.Guide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="425" Height="309">
+    <Canvas x:Name="canvasGuide">
+        <Canvas.Background>
+            <ImageBrush x:Name="backgroundImageBrush" 
+                        Stretch="UniformToFill" 
+                        ImageSource="Images/FrameUseGuide.png"/>
+        </Canvas.Background>
+        <TextBlock x:Name="tblUseGuide" Canvas.Left="43" Canvas.Top="63" Width="340" Height="203" FontFamily="Fonts/NGUYENBINHKHIEM_0.TTF#Vni-Nguyenbinhkhiem" FontSize="32" Text="Haõy baám chuoät vaøo hoäp thö coù maõ soá phuø hôïp vôùi töøng laù thö nheù. Ví duï laù thöù soá 113 phaûi giao cho hoäp thö soá 113. Naøo, baám chuoät thaät nhanh nheù!" TextWrapping="Wrap" Foreground="#FFA10990"/>
+    </Canvas>
+</UserControl>

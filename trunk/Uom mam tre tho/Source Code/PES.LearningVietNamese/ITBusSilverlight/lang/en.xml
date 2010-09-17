@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Language>
+  <LessionMediaNext>Sounds/English/Link_Next.mp3</LessionMediaNext>
+  <LessionMediaBack>Sounds/English/Link_Previous.mp3</LessionMediaBack>
+  <LessionMediaLoadFirst>Sounds/English/Begin_DSNhomBH.mp3</LessionMediaLoadFirst>
+  <MenuGoHomePage>Sounds/English/Link_Homepage.mp3</MenuGoHomePage>
+  <MenuHowToWrite>Sounds/English/Link_TapViet.mp3</MenuHowToWrite>
+  <MenuLessionGroupList>Sounds/English/Link_DSNhomBH.mp3</MenuLessionGroupList>
+  <PartTellStory>Sounds/English/BaiHoc_kechuyen.mp3</PartTellStory>
+  <PartLearnTalking>Sounds/English/BaiHoc_LuyenNoi.mp3</PartLearnTalking>
+  <PartLearnWriting>Sounds/English/BaiHoc_TapViet.mp3</PartLearnWriting>
+  <PartLearnReading>Sounds/English/BaiHoc_TapDoc.mp3</PartLearnReading>
+  <PartPreviousLession>Sounds/English/Link_Previous.mp3</PartPreviousLession>
+  <PartNextLession>Sounds/English/Link_Next.mp3</PartNextLession>
+</Language>

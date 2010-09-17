@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2008 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This page shows all resources available in a folder in the File Browser.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="browser.css" type="text/css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="../../../../../Admin/js/jquery-1.3.2.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <script type="text/javascript" src="js/ShowTooltip.js"></script>
+
+    <style type="text/css">
+        #dhtmltooltip
+        {
+            position: absolute;
+            width: 150px;
+            border: 2px solid gray;
+            padding: 2px;
+            visibility: hidden;
+            z-index: 100;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+	    var oListManager = new Object();
+	    var resultType = 0;
+
+	    oListManager.Clear = function() {
+	        document.body.innerHTML = '';
+	    }
+
+	    function ProtectPath(path) {
+	        path = path.replace(/\\/g, '\\\\');
+	        path = path.replace(/'/g, '\\\'');
+	        return path;
+	    }
+
+	    oListManager.GetFolderRowHtml = function(folderName, folderPath) {
+	        // Build the link to view the folder.
+	        var sLink = '<a href="#" onclick="OpenFolder(\'' + ProtectPath(folderPath) + '\');return false;">';
+	        return '<tr>' +
+			'<td width="16">' +
+				sLink +
+				'<img alt="" src="images/Folder.gif" width="16" height="16" border="0"><\/a>' +
+			'<\/td><td nowrap colspan="2">&nbsp;' +
+				sLink +
+				folderName +
+				'<\/a>' +
+		'<\/td><td align="right" nowrap>&nbsp;<a href="#" title="Xóa thư mục Này" atl="" onclick="return DeleteFolderOrFile(\'' + ProtectPath(folderPath) + '\',\'folder\');">Xóa</a>' +
+		'<\/td><\/tr>';
+	    }
+
+	    oListManager.GetFileRowHtml = function(fileName, fileUrl, fileSize) {
+	        // Build the link to view the folder.
+	        var sLink;
+	        var sAction;
+            
+	        fileIsImage(fileUrl);
+	        if (resultType == 1) {
+	            sLink = '<a href="#" onclick="OpenFile(\'' + ProtectPath(fileUrl) + '\');return false;" onmouseover="ddrivetip(\'<img src = \\\'' + ProtectPath(fileUrl) + '\\\'width = \\\'150px\\\'\/>\',\'150\',\'#FFFFFF\');" onmouseout="hideddrivetip()">';
+	            sAction = '&nbsp;<a href="#" title="Sửa Hình Này" atl="" onclick="return popUpWindows(\'aspx_pages/CropImage.aspx?imgSource=' + ProtectPath(fileUrl) + '\',520,800);">Sửa</a>&nbsp;<a href="#" title="Xóa Hình Này" atl="" onclick="return DeleteFolderOrFile(\'' + ProtectPath(fileUrl) + '\',\'file\');">Xóa</a>';
+	        }
+	        else
+	        {
+	            sLink = '<a href="#" onclick="OpenFile(\'' + ProtectPath(fileUrl) + '\');return false;" >';
+	            sAction = '&nbsp;<a href="#" title="Xóa File Này" atl="" onclick="return DeleteFolderOrFile(\'' + ProtectPath(fileUrl) + '\',\'file\');">Xóa</a>';
+	        }
+
+	        // Get the file icon.
+	        var sIcon = oIcons.GetIcon(fileName);
+
+	        return '<tr>' +
+			'<td width="16">' +
+				sLink +
+				'<img alt="" src="images/icons/' + sIcon + '.gif" width="16" height="16" border="0"><\/a>' +
+			'<\/td><td>&nbsp;' +
+				sLink +
+				fileName +
+				'<\/a>' +
+			'<\/td><td align="right" nowrap>&nbsp;' +
+				fileSize +
+				' KB' +
+		'<\/td><td align="right" nowrap>' +sAction+
+		'<\/td><\/tr>';
+	    }
+
+	    function fileIsImage(stringURL) {
+	        var finishFile = new Array(".jpg", ".gif", ".bmp", ".jpeg", ".png", ".jpe");
+	        var valueURL = stringURL.toString().toLowerCase();
+	        var x = 0;
+	        var textImage;
+	        resultType = 0;
+	        for(x = 0; x < finishFile.length; x++) {
+	            textImage = finishFile[x];
+	            if (valueURL.indexOf(textImage) != -1) {
+	                resultType = 1;
+	                return;
+	            }
+	        }
+	    }
+	    //Open popup window
+	    function popUpWindows(url, hh, ww) {
+	        newwindow = window.open(url, 'name', 'height=' + hh + ',width=' + ww + ',resizable=no,scrollbars=yes,toolbar=no,menubar=no,location=0');
+	        if (window.focus) { newwindow.focus() }
+	        return false;
+	    }
+        //Delete file or folder
+	    function DeleteFolderOrFile(_path, _type) {
+	        var confirmResult;
+	        if (_type.toString().toLowerCase() == "folder") {
+	            var oCombo = window.parent.frames["frmResourceType"].document.getElementById('cmbType');
+	            _path = "~/Upload/" + oCombo.options[oCombo.selectedIndex].text + _path.substring(0, _path.lastIndexOf('/'));
+	            confirmResult = confirm('Bạn có chắc chắn xóa thư mục này không?');
+	        }
+	        else {
+	            confirmResult = confirm('Bạn có chắc chắn xóa file này không?');
+	            _path = _path.replace("/ITBusCode", "~");
+	        }
+
+	        if (confirmResult) {
+	            var page = 'aspx_pages/DeleteFolderOrFile.aspx';
+	            $.get(page, { path: _path, type: _type }, function(rs) {
+	                alert(rs);
+	                Refresh();
+	            })
+	        }
+
+	        return false;
+	    }
+	    
+	    function OpenFolder(folderPath) {
+	        // Load the resources list for this folder.
+	        window.parent.frames['frmFolders'].LoadFolders(folderPath);
+	    }
+
+	    function OpenFile(fileUrl) {
+	        window.top.opener.SetUrl(encodeURI(fileUrl).replace('#', '%23'));
+	        window.top.close();
+	        window.top.opener.focus();
+	    }
+
+	    function LoadResources(resourceType, folderPath) {
+	        oListManager.Clear();
+	        oConnector.ResourceType = resourceType;
+	        oConnector.CurrentFolder = folderPath;
+	        oConnector.SendCommand('GetFoldersAndFiles', null, GetFoldersAndFilesCallBack);
+	    }
+
+	    function Refresh() {
+	        LoadResources(oConnector.ResourceType, oConnector.CurrentFolder);
+	    }
+
+	    function GetFoldersAndFilesCallBack(fckXml) {
+	        if (oConnector.CheckError(fckXml) != 0)
+	            return;
+
+	        // Get the current folder path.
+	        var oFolderNode = fckXml.SelectSingleNode('Connector/CurrentFolder');
+	        if (oFolderNode == null) {
+	            alert('The server didn\'t reply with a proper XML data. Please check your configuration.');
+	            return;
+	        }
+	        var sCurrentFolderPath = oFolderNode.attributes.getNamedItem('path').value;
+	        var sCurrentFolderUrl = oFolderNode.attributes.getNamedItem('url').value;
+
+	        //	var dTimer = new Date() ;
+
+	        var oHtml = new StringBuilder('<table id="tableFiles" cellspacing="1" cellpadding="0" width="100%" border="0">');
+
+	        // Add the Folders.
+	        var oNodes;
+	        oNodes = fckXml.SelectNodes('Connector/Folders/Folder');
+	        for (var i = 0; i < oNodes.length; i++) {
+	            var sFolderName = oNodes[i].attributes.getNamedItem('name').value;
+	            oHtml.Append(oListManager.GetFolderRowHtml(sFolderName, sCurrentFolderPath + sFolderName + "/"));
+	        }
+
+	        // Add the Files.
+	        oNodes = fckXml.SelectNodes('Connector/Files/File');
+	        for (var j = 0; j < oNodes.length; j++) {
+	            var oNode = oNodes[j];
+	            var sFileName = oNode.attributes.getNamedItem('name').value;
+	            var sFileSize = oNode.attributes.getNamedItem('size').value;
+
+	            // Get the optional "url" attribute. If not available, build the url.
+	            var oFileUrlAtt = oNodes[j].attributes.getNamedItem('url');
+	            var sFileUrl = oFileUrlAtt != null ? oFileUrlAtt.value : sCurrentFolderUrl + sFileName;
+
+	            oHtml.Append(oListManager.GetFileRowHtml(sFileName, sFileUrl, sFileSize));
+	        }
+
+	        oHtml.Append('<\/table><div id="dhtmltooltip"></div>');
+
+	        document.body.innerHTML = oHtml.ToString();
+
+	        //	window.top.document.title = 'Finished processing in ' + ( ( ( new Date() ) - dTimer ) / 1000 ) + ' seconds' ;
+
+	    }
+
+	    window.onload = function() {
+	        window.top.IsLoadedResourcesList = true;
+	    }
+    </script>
+
+</head>
+<body class="FileArea">
+</body>
+</html>

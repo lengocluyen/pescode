@@ -1,0 +1,54 @@
+﻿body
+{
+    color: #000000;
+}
+#mainbody
+{
+    width: 780px;
+    margin: 0 auto;
+    background-color: Teal;
+    padding-bottom: 10px;
+}
+#left
+{
+    /*width: 710px;*/
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.imgCrop
+{
+    max-height: 500px;
+    max-width: 600px;
+}
+
+*html .imgCrop
+{
+    width: expression(document.body.clientWidth > 600 ?    "600px" : "auto" );
+    height: expression(document.body.clientHeight > 500 ?    "500px" : "auto" );
+}
+
+.imgCropped
+{
+    max-height: 550px;
+    max-width: 780px;
+}
+
+*html .imgCropped
+{
+    width: expression(document.body.clientWidth > 780 ?    "780px" : "auto" );
+    height: expression(document.body.clientHeight > 550 ?    "550px" : "auto" );
+}
+
+#toolBar
+{
+    float: right;
+    text-align: center;
+    width: 180px;
+}
+
+#toolBar .box
+{
+    overflow: hidden;
+    border: 2px solid #6F6C6C;
+}

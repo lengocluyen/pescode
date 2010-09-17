@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="HocChuCai_2.Objects.Hand"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="62" Height="77">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Image Source="tay.png" Stretch="UniformToFill"></Image>
+    </Grid>
+</UserControl>

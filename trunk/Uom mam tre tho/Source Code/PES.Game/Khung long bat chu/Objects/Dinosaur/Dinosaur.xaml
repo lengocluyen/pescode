@@ -1,0 +1,84 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="Khung_long_bat_chu.Objects.Dinosaur"
+    mc:Ignorable="d" 
+    >
+	<UserControl.Resources>
+		<Storyboard x:Name="stbRunRight" RepeatBehavior="Forever">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.05000000" Value="-18.345"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-21.494"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.05000000" Value="4"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.05000000" Value="-4"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgHand" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.05000000" Value="9.638"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbHit">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-20"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-28"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="-25.068"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-0.711"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgSot2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    
+    <Canvas x:Name="LayoutRoot" Background="Transparent" Width="124" Height="181">
+    	<Image x:Name="imgCharRun2" Source="charrun2.png" Stretch="Fill" Width="124" Height="181" Canvas.ZIndex="2" Visibility="Collapsed"/>
+    	<Image x:Name="imgCharRun1" Height="182" Width="193" Canvas.Left="-63" Source="charrun1.png" Stretch="Fill" Canvas.Top="-1" Canvas.ZIndex="2" Visibility="Collapsed"/>
+    	<Image Visibility="Collapsed"  x:Name="imgSot" Height="216.153" Width="123" Canvas.Left="-61" Canvas.Top="-80.153" Canvas.ZIndex="-1" Source="sot1.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+    		<Image.RenderTransform>
+    			<TransformGroup>
+    				<ScaleTransform/>
+    				<SkewTransform/>
+    				<RotateTransform Angle="-21.014"/>
+    				<TranslateTransform/>
+    			</TransformGroup>
+    		</Image.RenderTransform>
+    	</Image>
+    	<Image Visibility="Collapsed" x:Name="imgHand" Height="23" Width="18" Canvas.Left="85" Canvas.Top="99" Source="hand.png" Stretch="Fill" Canvas.ZIndex="1" RenderTransformOrigin="0.5,0.5">
+    		<Image.RenderTransform>
+    			<TransformGroup>
+    				<ScaleTransform/>
+    				<SkewTransform/>
+    				<RotateTransform/>
+    				<TranslateTransform/>
+    			</TransformGroup>
+    		</Image.RenderTransform>
+    	</Image>
+    	<Image x:Name="imgCharStand" Height="196" Width="240" Canvas.Left="-111" Canvas.Top="-16" Source="charstand.png" Stretch="Fill"/>
+    	<Image x:Name="imgSot2" Height="250" Width="352" Canvas.Left="-161" Canvas.Top="-221" Source="sot2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Opacity="0" Visibility="Collapsed">
+    		<Image.RenderTransform>
+    			<TransformGroup>
+    				<ScaleTransform ScaleX="-1"/>
+    				<SkewTransform AngleX="0" AngleY="0"/>
+    				<RotateTransform Angle="0"/>
+    				<TranslateTransform/>
+    			</TransformGroup>
+    		</Image.RenderTransform>
+    	</Image>
+
+        <MediaElement x:Name="_effectSound" Volume="1" AutoPlay="True" />
+    </Canvas>
+</UserControl>

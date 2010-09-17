@@ -1,0 +1,1086 @@
+﻿<UserControl x:Class="PhuThuyDuaThu.Play"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="600" Height="470"
+    xmlns:ptControl="clr-namespace:PhuThuyDuaThu.Controls">
+	<UserControl.Resources>
+		<Storyboard x:Name="stbSendMail">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgHand02" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgHand03" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgDefaultHand" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame x:Name="edkfSendMailY01" KeyTime="00:00:00.6000000" Value="0"/>
+				<EasingDoubleKeyFrame x:Name="edkfSendMailY02" KeyTime="00:00:00.7000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame x:Name="edkfSendMailX01" KeyTime="00:00:00.6000000" Value="0"/>
+				<EasingDoubleKeyFrame x:Name="edkfSendMailX02" KeyTime="00:00:00.7000000" Value="0"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.7000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="287.798"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.376"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMail" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.376"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbShowMailBoxes">
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox01" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox02" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox03" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox04" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox05" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox06" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox07" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox08" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox09" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox10" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox11" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox12" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgCotHomThu1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgCotHomThu2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgCotHomThu3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgCotHomThu4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox01" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber01" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox02" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber02" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox03" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber03" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox04" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber04" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox05" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber05" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox06" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber06" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox07" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber07" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox08" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-390"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber08" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.9000000" Value="-384"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox09" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-385.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber09" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-380"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-385.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber10" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-380"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-385.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber11" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-380"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgMailBox12" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-385.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlMailBoxNumber12" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.2000000" Value="-380"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBegin" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.921"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.691"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.8029999732971191"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="3.274"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBegin" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1.921"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.691"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.8029999732971191"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="3.274"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBegin" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="11.873"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="12.402"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="11.897000312805176"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="12.161"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBegin" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-15.5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-16.367"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-15.50100040435791"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="-15.001"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBegin" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.7000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox01" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox02" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox03" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox04" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox05" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox06" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox07" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox08" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox09" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox010" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox011" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplMailBox012" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbTimeUp">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rtlTimeOut2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame x:Name="easingDKFTimeUp01" KeyTime="00:00:00" Value="-91.667"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rtlTimeOut2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame x:Name="easingDKFTimeUp02" KeyTime="00:00:00" Value="-136"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbTimeOut">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextChamChan" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="288"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="276"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="287"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="287"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="287.745"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextChamChan" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.329"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextChamChan" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.329"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextChamChan" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="rtTimeOut" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbHideMailBox">
+			<DoubleAnimationUsingKeyFrames x:Name="daHideMail_MailBox01" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="74.81"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="314.996"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames x:Name="daHideMail_MailBoxNumber01" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="74.917"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="315.533"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames x:Name="daHideMail_MailBoxNumber02" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-23.982"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="14.935"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames x:Name="daHideMail_MailBoxNumber03" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-12.989"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.987"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames x:Name="daHideMail_MailBox02" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames x:Name="daHideMail_MailBoxNumber04" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames x:Name="daHideMail_hplMailBox03" BeginTime="00:00:00" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+        <Storyboard x:Name="stbLevelUp">
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:01.1000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3.46"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="3.46"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="6.292"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="3.46"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="3.46"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="6.292"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-0.315"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="-0.315"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.321"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.235"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.235"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.184"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgLenCap" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Canvas x:Name="canvasPlay">
+            <Canvas.Background>
+                <ImageBrush x:Name="backgroundImageBrush" 
+                        Stretch="UniformToFill" 
+                        ImageSource="Images/PlayBG.png"/>
+            </Canvas.Background>
+            <Image x:Name="imgTopFrame" Source="Images/FramePoint.png" Height="50" Width="600"></Image>
+            <Image x:Name="imgTextCapDo" Source="Images/TextCapDo.png" Height="30" Width="71" Canvas.Left="12" Canvas.Top="10"></Image>
+            <Image x:Name="imgDauXiec" Source="Images/DauXiec.png" Height="23" Width="17" Canvas.Left="302" Canvas.Top="12"></Image>           
+            <!--<ptControl:Test x:Name="ctrlTest" Height="24" Width="30" Canvas.Left="315" Canvas.Top="12"></ptControl:Test>-->
+                        
+            <!-- Mail Box -->
+            <Image x:Name="imgCotHomThu1" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="71" Canvas.Top="562" RenderTransformOrigin="0.5,0.5">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform>
+            </Image>
+            <Image x:Name="imgCotHomThu2" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="211" Canvas.Top="562" RenderTransformOrigin="0.5,0.5">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform>
+            </Image>
+            <Image x:Name="imgCotHomThu3" Source="Images/CotHomThu.png" Height="292" Width="36" Canvas.Left="357" Canvas.Top="562" RenderTransformOrigin="0.5,0.5">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <Image x:Name="imgCotHomThu4" Source="Images/CotHomThu.png" Canvas.Left="497" Canvas.Top="562" Height="292" Width="36" RenderTransformOrigin="0.5,0.5">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+                <!--Row 01-->
+            <Image x:Name="imgMailBox01" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="472" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            </Image.RenderTransform></Image>            
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber01" Height="26" Width="53" Canvas.Left="66" Canvas.Top="527" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform>
+            </ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox01" IsTabStop="False" Height="84" Width="100" Canvas.Left="39" Canvas.Top="92" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox02" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="472" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber02" Height="26" Width="51" Canvas.Left="206" Canvas.Top="527" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox02" IsTabStop="False" Height="84" Width="100" Canvas.Left="179" Canvas.Top="92" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>            
+            <Image x:Name="imgMailBox03" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="472" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber03" Height="26" Width="43" Canvas.Left="350" Canvas.Top="527" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox03" IsTabStop="False" Height="84" Width="100" Canvas.Left="323" Canvas.Top="91" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>            
+            <Image x:Name="imgMailBox04" Source="Images/BoxMail01.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="472" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber04" Height="26" Width="42" Canvas.Left="491" Canvas.Top="527" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox04" IsTabStop="False" Height="84" Width="100" Canvas.Left="464" Canvas.Top="92" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>            
+                <!--Row 02-->
+            <Image x:Name="imgMailBox05" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="582" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber05" Height="26" Width="41" Canvas.Left="66" Canvas.Top="639" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox05" IsTabStop="False" Height="84" Width="100" Canvas.Left="39" Canvas.Top="201" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox06" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="582" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber06" Height="26" Width="49" Canvas.Left="206" Canvas.Top="639" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox06" IsTabStop="False" Height="84" Width="100" Canvas.Left="179" Canvas.Top="201" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox07" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="582" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber07" Height="26" Width="41" Canvas.Left="350" Canvas.Top="639" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox07" IsTabStop="False" Height="84" Width="100" Canvas.Left="323" Canvas.Top="201" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox08" Source="Images/BoxMail02.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="582" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber08" Height="26" Width="42" Canvas.Left="491" Canvas.Top="639" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox08" IsTabStop="False" Height="84" Width="100" Canvas.Left="464" Canvas.Top="201" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <!--Row 03-->
+            <Image x:Name="imgMailBox09" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="39" Canvas.Top="690" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber09" Height="26" Width="41" Canvas.Left="66" Canvas.Top="746" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox09" IsTabStop="False" Height="84" Width="100" Canvas.Left="39" Canvas.Top="313" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox10" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="179" Canvas.Top="690" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber10" Height="26" Width="49" Canvas.Left="208" Canvas.Top="746" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox010" IsTabStop="False" Height="84" Width="100" Canvas.Left="179" Canvas.Top="313" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox11" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="323" Canvas.Top="690" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber11" Height="26" Width="43" Canvas.Left="350" Canvas.Top="746" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox011" IsTabStop="False" Height="84" Width="100" Canvas.Left="322" Canvas.Top="313" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            <Image x:Name="imgMailBox12" Source="Images/BoxMail03.png" Height="94" Width="100" Canvas.Left="464" Canvas.Top="690" RenderTransformOrigin="0.5,0.5"  Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            <!--<ptControl:MapNumbersToImages x:Name="ctrlMailBoxNumber12" Height="22" Width="42" Canvas.Left="491" Canvas.Top="748" RenderTransformOrigin="0.5,0.5">
+            	<ptControl:MapNumbersToImages.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</ptControl:MapNumbersToImages.RenderTransform></ptControl:MapNumbersToImages>-->
+            <HyperlinkButton x:Name="hplMailBox012" IsTabStop="False" Height="84" Width="100" Canvas.Left="464" Canvas.Top="313" RenderTransformOrigin="0.5,0.5" Click="hplMailBox_Click" Visibility="Collapsed">
+            	<HyperlinkButton.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</HyperlinkButton.RenderTransform>
+            </HyperlinkButton>
+            
+            <Canvas x:Name="canvasMailBoxNumber">
+            </Canvas>
+            <!-- End mail box -->
+            
+            <!--Time Out-->
+            <Image x:Name="imgTimeOut1" Source="Images/TimeOut1.png" Canvas.Left="159" Canvas.Top="56" Height="34" Width="283"/>
+            <Rectangle x:Name="rtlTimeOut2" Fill="#FF8D3B06" Stroke="#FF8D3B06" Height="33" Width="3" RenderTransformOrigin="0.5,0.5" Canvas.Left="434" Canvas.Top="58">
+            	<Rectangle.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform ScaleX="-1"/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Rectangle.RenderTransform>
+            </Rectangle>
+            <Image x:Name="imgTimeOutFrame" Source="Images/TimeoutFrame.png" Height="47" Width="296" Canvas.Left="151" Canvas.Top="51"/>
+            <!--End Timeout-->
+            <Image x:Name="imgWall" Source="Images/Wall.png" Height="72" Width="600" Canvas.Top="401"></Image>
+            
+            <Image x:Name="imgMailFrame" Source="Images/FrameQuestion.png" Canvas.Top="420" Height="50" Width="213"></Image>
+            <Image x:Name="imgHomThuText" Source="Images/TextHomThu.png" Height="27" Width="80" Canvas.Left="20" Canvas.Top="431"></Image>            
+            <Image x:Name="imgMail" Source="Images/Mail.png" Height="72" Width="92" Canvas.Left="335" Canvas.Top="371" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform>
+            </Image>
+            <Image x:Name="imgLetters" Source="Images/Letters.png" Height="75" Width="109" Canvas.Top="443" Canvas.Left="235"></Image>
+            <Image x:Name="imgDefaultHand" Source="Images/Hand01.png" Height="118" Width="132" Canvas.Left="279" Canvas.Top="369"/>
+            <Image x:Name="imgHand02" Source="Images/Hand02.png"  Height="139" Width="156" Canvas.Left="291" Canvas.Top="352" Visibility="Collapsed"/>
+            <Image x:Name="imgHand03" Source="Images/Hand03.png"  Height="95" Width="107" Canvas.Left="350" Canvas.Top="396" Visibility="Collapsed"/>
+            <Image x:Name="imgMute" Source="Images/Mute.png" Canvas.Left="557" Canvas.Top="426" Height="32" Width="31" Visibility="Collapsed"></Image>            
+            <Image x:Name="imgSound" Source="Images/Sound.png" Height="31" Width="31" Canvas.Left="557" Canvas.Top="427"/>
+            <HyperlinkButton x:Name="hplMute" IsTabStop="False" Click="hplMute_Click" Height="32" Width="31" Canvas.Left="557" Canvas.Top="426"></HyperlinkButton>
+            
+            <Image x:Name="imgTextBegin" Source="Images/TextBegin.png" Canvas.Left="224" Canvas.Top="219" Height="51" Width="169" RenderTransformOrigin="0.5,0.5">
+            	<Image.RenderTransform>
+            		<TransformGroup>
+            			<ScaleTransform/>
+            			<SkewTransform/>
+            			<RotateTransform/>
+            			<TranslateTransform/>
+            		</TransformGroup>
+            	</Image.RenderTransform></Image>
+            
+            <!--Media Element-->
+            <MediaElement x:Name="meBGMusic" Source="Sounds/main_snd.mp3" AutoPlay="True" MediaEnded="meBGMusic_MediaEnded"/>
+            <MediaElement x:Name="meThankyou" Source="Sounds/thankyou.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meSendMail" Source="Sounds/post_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meOK" Source="Sounds/ok_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meNoSound" Source="Sounds/no_snd.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meLevelUp" Source="Sounds/levelUp.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meFail" Source="Sounds/fail.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="meEnd" Source="Sounds/end.mp3" AutoPlay="False"></MediaElement>
+            <MediaElement x:Name="mePost" Source="Sounds/post_snd.mp3" AutoPlay="False"></MediaElement>
+                        
+            <!--Control Add Point-->
+            <ptControl:AddPoint x:Name="ctrlAddPoints"></ptControl:AddPoint>
+            <ptControl:EliminatePoints x:Name="ctrlEliminatePoints"></ptControl:EliminatePoints>           
+            
+            <!--Level Up-->
+            <Image x:Name="imgLenCap" Source="Images/TextLevel.png" Height="33" Width="91" RenderTransformOrigin="0.499,0.545" Canvas.Left="265" Canvas.Top="232" Visibility="Collapsed">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            
+            <!--Timeout-->
+            <Image x:Name="imgTextChamChan" Source="Images/TextLost.png" Canvas.Left="83" Canvas.Top="-102" Height="114" Width="447" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Rectangle x:Name="rtTimeOut" Fill="White" Stroke="Black" Height="470" Width="600" Opacity="0" Visibility="Collapsed"/>
+        </Canvas>
+    </Grid>
+</UserControl>

@@ -1,0 +1,352 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D3203F7-8D95-4DAA-A4C0-FC543F015613}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuyenTriNho</RootNamespace>
+    <AssemblyName>LuyenTriNho</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>LuyenTriNho.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>LuyenTriNho.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Codes\AppEnums.cs" />
+    <Compile Include="Codes\Commons.cs" />
+    <Compile Include="Codes\Constants.cs" />
+    <Compile Include="Codes\GlobalVariables.cs" />
+    <Compile Include="Controls\GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MapNumbersToImages.xaml.cs">
+      <DependentUpon>MapNumbersToImages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucStoryboadDropStone.xaml.cs">
+      <DependentUpon>ucStoryboadDropStone.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UseGuide.xaml.cs">
+      <DependentUpon>UseGuide.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Play.xaml.cs">
+      <DependentUpon>Play.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GameServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\GameOver.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\MapNumbersToImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\ucStoryboadDropStone.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Controls\UseGuide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Play.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\VNVOGU.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\GameServices\GameServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HomeBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\PlayBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Numbers\EightBYellow.png" />
+    <Resource Include="Images\Numbers\EightGreen.png" />
+    <Resource Include="Images\Numbers\EightPink.png" />
+    <Resource Include="Images\Numbers\EightYellow.png" />
+    <Resource Include="Images\Numbers\FiveBYellow.png" />
+    <Resource Include="Images\Numbers\FiveGreen.png" />
+    <Resource Include="Images\Numbers\FivePink.png" />
+    <Resource Include="Images\Numbers\FiveYellow.png" />
+    <Resource Include="Images\Numbers\FourBYellow.png" />
+    <Resource Include="Images\Numbers\FourGreen.png" />
+    <Resource Include="Images\Numbers\FourPink.png" />
+    <Resource Include="Images\Numbers\FourYellow.png" />
+    <Resource Include="Images\Numbers\NineBYellow.png" />
+    <Resource Include="Images\Numbers\NineGreen.png" />
+    <Resource Include="Images\Numbers\NinePink.png" />
+    <Resource Include="Images\Numbers\NineYellow.png" />
+    <Resource Include="Images\Numbers\OneBYellow.png" />
+    <Resource Include="Images\Numbers\OneGreen.png" />
+    <Resource Include="Images\Numbers\OnePink.png" />
+    <Resource Include="Images\Numbers\OneYellow.png" />
+    <Resource Include="Images\Numbers\SevenBYellow.png" />
+    <Resource Include="Images\Numbers\SevenGreen.png" />
+    <Resource Include="Images\Numbers\SevenPink.png" />
+    <Resource Include="Images\Numbers\SevenYellow.png" />
+    <Resource Include="Images\Numbers\SixBYellow.png" />
+    <Resource Include="Images\Numbers\SixGreen.png" />
+    <Resource Include="Images\Numbers\SixPink.png" />
+    <Resource Include="Images\Numbers\SixYellow.png" />
+    <Resource Include="Images\Numbers\ThreeBYellow.png" />
+    <Resource Include="Images\Numbers\ThreeGreen.png" />
+    <Resource Include="Images\Numbers\ThreePink.png" />
+    <Resource Include="Images\Numbers\ThreeYellow.png" />
+    <Resource Include="Images\Numbers\TwoBYellow.png" />
+    <Resource Include="Images\Numbers\TwoGreen.png" />
+    <Resource Include="Images\Numbers\TwoPink.png" />
+    <Resource Include="Images\Numbers\TwoYellow.png" />
+    <Resource Include="Images\Numbers\ZeroBYellow.png" />
+    <Resource Include="Images\Numbers\ZeroGreen.png" />
+    <Resource Include="Images\Numbers\ZeroPink.png" />
+    <Resource Include="Images\Numbers\ZeroYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GuideMagnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TextBatDau.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BacHocNhiText.png" />
+    <Resource Include="Images\TriNhoText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\BtnDong.png" />
+    <Resource Include="Images\Buttons\BtnDongSetected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\btnUseGuideSelected.png" />
+    <Resource Include="Images\Buttons\btnUseGuide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\btnPlay.png" />
+    <Resource Include="Images\Buttons\btnPlaySelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\btnSound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GameOverPanel.png" />
+    <Resource Include="Images\GameOverText.png" />
+    <Resource Include="Images\GameOverText1.png" />
+    <Resource Include="Images\levelUpText.png" />
+    <Resource Include="Images\UseGuidePanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sounds\sound 160.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\dropStone.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\openDoor.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 343.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 349.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 355.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 359.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\soundBG.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 56.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\sound 58.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Sounds\openGuide.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sounds\homePage.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\TimeLine01.png" />
+    <Resource Include="Images\TimeLine02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\btnSoundMute.png" />
+    <Resource Include="Images\Buttons\btnSounSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ChonSoText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\QuestionNumbers\question00.png" />
+    <Resource Include="Images\QuestionNumbers\question01.png" />
+    <Resource Include="Images\QuestionNumbers\question02.png" />
+    <Resource Include="Images\QuestionNumbers\question03.png" />
+    <Resource Include="Images\QuestionNumbers\question04.png" />
+    <Resource Include="Images\QuestionNumbers\question05.png" />
+    <Resource Include="Images\QuestionNumbers\question06.png" />
+    <Resource Include="Images\QuestionNumbers\question07.png" />
+    <Resource Include="Images\QuestionNumbers\question08.png" />
+    <Resource Include="Images\QuestionNumbers\question09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Doors\DoorBG.png" />
+    <Resource Include="Images\Doors\DoorRight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Doors\DoorLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Doors\TwoDoors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Dusts\Dust01.png" />
+    <Resource Include="Images\Dusts\Dust02.png" />
+    <Resource Include="Images\Dusts\Dust03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BoyNotOK.png" />
+    <Resource Include="Images\BoyOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BoyNormal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BoyCrying.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Buttons\BtnReplay.png" />
+    <Resource Include="Images\Buttons\BtnReplaySelected.png" />
+    <Resource Include="Images\Buttons\BtnSavePoint.png" />
+    <Resource Include="Images\Buttons\BtnSavePointSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\BGGameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GameServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\GameServices.wsdl" />
+    <None Include="Service References\GameServices\LuyenTriNho.GameServices.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

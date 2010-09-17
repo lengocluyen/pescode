@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="EntityBaseOfStudyProgramming6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="StudyProgramming" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfStudyProgramming6JTOatw_P" nillable="true" type="tns:EntityBaseOfStudyProgramming6JTOatw_P" />
+  <xs:complexType name="EntityBase">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EntityBase" nillable="true" type="tns:EntityBase" />
+  <xs:complexType name="EntityBaseOfStudyLevel6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="StudyLevel" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfStudyLevel6JTOatw_P" nillable="true" type="tns:EntityBaseOfStudyLevel6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfSubject6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Subject" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfSubject6JTOatw_P" nillable="true" type="tns:EntityBaseOfSubject6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfPart6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Part" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfPart6JTOatw_P" nillable="true" type="tns:EntityBaseOfPart6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfLesson6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Lesson" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfLesson6JTOatw_P" nillable="true" type="tns:EntityBaseOfLesson6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfBook6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Book" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfBook6JTOatw_P" nillable="true" type="tns:EntityBaseOfBook6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfBookType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="BookType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfBookType6JTOatw_P" nillable="true" type="tns:EntityBaseOfBookType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfAccount6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Account" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfAccount6JTOatw_P" nillable="true" type="tns:EntityBaseOfAccount6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfPermission6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Permission" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfPermission6JTOatw_P" nillable="true" type="tns:EntityBaseOfPermission6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfProfile6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Profile" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfProfile6JTOatw_P" nillable="true" type="tns:EntityBaseOfProfile6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfProfileAttribute6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ProfileAttribute" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfProfileAttribute6JTOatw_P" nillable="true" type="tns:EntityBaseOfProfileAttribute6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfProfileAttributeType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ProfileAttributeType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfProfileAttributeType6JTOatw_P" nillable="true" type="tns:EntityBaseOfProfileAttributeType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfLevelOfExperienceType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LevelOfExperienceType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfLevelOfExperienceType6JTOatw_P" nillable="true" type="tns:EntityBaseOfLevelOfExperienceType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfPupils6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Pupils" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfPupils6JTOatw_P" nillable="true" type="tns:EntityBaseOfPupils6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfLessonTestType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="LessonTestType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfLessonTestType6JTOatw_P" nillable="true" type="tns:EntityBaseOfLessonTestType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfPartTestType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="PartTestType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfPartTestType6JTOatw_P" nillable="true" type="tns:EntityBaseOfPartTestType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfSubjectTestType6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="SubjectTestType" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfSubjectTestType6JTOatw_P" nillable="true" type="tns:EntityBaseOfSubjectTestType6JTOatw_P" />
+  <xs:complexType name="EntityBaseOfTest6JTOatw_P">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="EntityBaseOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Test" Namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:EntityBase">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="EntityBaseOfTest6JTOatw_P" nillable="true" type="tns:EntityBaseOfTest6JTOatw_P" />
+</xs:schema>

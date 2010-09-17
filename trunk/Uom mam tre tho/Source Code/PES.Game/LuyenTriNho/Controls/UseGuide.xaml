@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="LuyenTriNho.Controls.UseGuide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas x:Name="canvasGuide" Height="300" Width="400">
+        <Canvas.Background>
+            <ImageBrush x:Name="backgroundImageBrush" Stretch="Fill" ImageSource="../Images/UseGuidePanel.png"/>
+        </Canvas.Background>
+        <TextBlock x:Name="tblUseGuide" Text="BÐ h·y nh×n nh÷ng viªn g¹ch r¬i ë cöa sæ bªn tr¸i vµ nhí kü vÞ trÝ cña nh÷ng viªn g¹ch nµy nhÐ. Sau khi cöa sæ ®ãng l¹i, bÐ h·y chän nh÷ng viªn g¹ch ë khung Chän Sè sao cho ®óng víi nh÷ng sè ë cöa sæ ®ang ®ãng. BÐ cã thÓ nhÊn vµo chiÕc kÝnh lóp nÕu quªn. Sè lÇn xem l¹i tèi ®a lµ 3 lÇn th«i. Nµo! BÐ cïng thö trÝ nhí víi B¸c Häc NhÝ xem nhÐ!" Canvas.Left="43" Canvas.Top="73" Width="340" Height="181" FontFamily="../Fonts/VNVOGU.TTF#.VnVogue" FontSize="17.333" TextWrapping="Wrap" Foreground="#008304"/>
+        <Image x:Name="imgTriNho" Source="../Images/TriNhoText.png" Height="43" Width="173" Canvas.Left="8" Canvas.Top="10"></Image>
+        <Image x:Name="imgBacHocNhi" Source="../Images/BacHocNhiText.png" Canvas.Left="154" Canvas.Top="19" Height="40" Width="257"></Image>
+    </Canvas>
+</UserControl>

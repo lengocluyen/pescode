@@ -1,0 +1,147 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="userControl"
+	mc:Ignorable="d"
+	x:Class="PesHome.Aboutus" Width="340" Height="394" Loaded="UserControl_Loaded" RenderTransformOrigin="0.5,0.5">
+	<UserControl.Resources>
+		<Storyboard x:Name="LoadingST">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Group" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.RotationY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="64"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="64">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="7"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+				<EasingDoubleKeyFrame KeyTime="00:00:02.9000000" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="10"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Group" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-430"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0">
+					<EasingDoubleKeyFrame.EasingFunction>
+						<ElasticEase EasingMode="EaseOut" Springiness="7"/>
+					</EasingDoubleKeyFrame.EasingFunction>
+				</EasingDoubleKeyFrame>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="userControl" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="80"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+	<UserControl.RenderTransform>
+		<TransformGroup>
+			<ScaleTransform/>
+			<SkewTransform/>
+			<RotateTransform/>
+			<TranslateTransform/>
+		</TransformGroup>
+	</UserControl.RenderTransform>
+
+	<Grid x:Name="LayoutRoot">
+		<Canvas x:Name="Group" RenderTransformOrigin="0.5,0.5">
+			<Canvas.Projection>
+				<PlaneProjection/>
+			</Canvas.Projection>
+			<Canvas.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform Y="-430"/>
+				</TransformGroup>
+			</Canvas.RenderTransform>
+			<Path x:Name="Path" Width="340" Height="395" Canvas.Top="0" Stretch="Fill" Fill="#7FFFFFFF" Data="F1 M 7.60001,1L 375.475,1C 379.12,1 382.075,3.9549 382.075,7.60001L 382.075,457.7C 382.075,461.345 379.12,464.3 375.475,464.3L 7.60001,464.3C 3.95493,464.3 1.00001,461.345 1.00001,457.7L 1.00001,7.60001C 1.00001,3.9549 3.95493,1 7.60001,1 Z " StrokeThickness="2" StrokeLineJoin="Round" UseLayoutRounding="False" Opacity="0.4">
+				<Path.Stroke>
+					<LinearGradientBrush StartPoint="0.000808457,0.5" EndPoint="0.999192,0.5">
+						<GradientStop Color="#FF000000" Offset="0"/>
+						<GradientStop Color="#FFB4B4B4" Offset="1"/>
+					</LinearGradientBrush>
+				</Path.Stroke>
+			</Path>
+			<Path x:Name="Path_0" Width="18.992" Height="15.724" Canvas.Left="161.008" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF5F5F5F" Data="F1 M 191.538,3.57178C 195.752,3.57178 199.169,6.86783 199.169,10.9336C 199.169,14.9995 195.752,18.2955 191.538,18.2955C 187.323,18.2955 183.906,14.9995 183.906,10.9336C 183.906,6.86783 187.323,3.57178 191.538,3.57178 Z " UseLayoutRounding="False">
+				<Path.Fill>
+					<SolidColorBrush Opacity="0.1" Color="#FFD5D5D5"/>
+				</Path.Fill>
+			</Path>
+			<Rectangle x:Name="Rectangle" Width="326" Height="303" Canvas.Left="6" Canvas.Top="75" Stretch="Fill" StrokeLineJoin="Round" RadiusX="5" RadiusY="5" OpacityMask="Black">
+				<Rectangle.Stroke>
+					<LinearGradientBrush StartPoint="0.0013807,0.5" EndPoint="0.998619,0.5">
+						<GradientStop Color="#FF000000" Offset="0"/>
+						<GradientStop Color="#807F7F7F" Offset="0.291667"/>
+						<GradientStop Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Stroke>
+				<Rectangle.Fill>
+					<LinearGradientBrush StartPoint="-1.05639e-007,0.5" EndPoint="1,0.5">
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+						<GradientStop Color="#80FFFFFF" Offset="0.554167"/>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Rectangle x:Name="Rectangle_1" Width="277" Height="31.1089" Canvas.Left="55" Canvas.Top="26" Stretch="Fill" StrokeLineJoin="Round" RadiusX="3" RadiusY="3">
+				<Rectangle.Stroke>
+					<LinearGradientBrush StartPoint="0.00344812,0.5" EndPoint="0.996552,0.5">
+						<GradientStop Color="#FF000000" Offset="0"/>
+						<GradientStop Color="#807F7F7F" Offset="0.554167"/>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Stroke>
+				<Rectangle.Fill>
+					<LinearGradientBrush StartPoint="-1.58946e-007,0.5" EndPoint="1,0.5">
+						<GradientStop Color="#FFFFFFFF" Offset="0"/>
+						<GradientStop Color="#80FFFFFF" Offset="0.554167"/>
+						<GradientStop Color="#00FFFFFF" Offset="1"/>
+					</LinearGradientBrush>
+				</Rectangle.Fill>
+			</Rectangle>
+			<Ellipse x:Name="Ellipse" Width="20" Height="21" Canvas.Left="8" Canvas.Top="31" Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Stroke="#FFFF6300"/>
+			<Ellipse x:Name="Ellipse_2" Width="18" Height="18.1667" Canvas.Left="30" Canvas.Top="33" Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Stroke="#FFFFD800"/>
+			<Path x:Name="Path_3" Width="14.368" Height="14" Canvas.Left="21.329" Canvas.Top="35.655" Stretch="Fill" StrokeThickness="2" StrokeLineJoin="Round" Stroke="#FFFF00F2" Data="F1 M 23.7055,40.6553C 27.0652,40.6553 29.7888,43.3416 29.7888,46.6553C 29.7888,49.9689 27.0652,52.6552 23.7055,52.6552C 20.3457,52.6552 17.6221,49.9689 17.6221,46.6553C 17.6221,43.3416 20.3457,40.6553 23.7055,40.6553 Z " UseLayoutRounding="False"/>
+			<Rectangle x:Name="Rectangle_4" Width="327" Height="3.78" Canvas.Left="5" Canvas.Top="62" Stretch="Fill" Fill="#FF329A00"/>
+			<Canvas x:Name="Canvas_wire" Height="121" RenderTransformOrigin="0.5,0.5" Width="84" Canvas.Left="136" Canvas.Top="-111">
+				<Canvas.RenderTransform>
+					<TransformGroup>
+						<ScaleTransform/>
+						<SkewTransform/>
+						<RotateTransform/>
+						<TranslateTransform/>
+					</TransformGroup>
+				</Canvas.RenderTransform>
+				<Path x:Name="Line_31_Copy" Width="1" Height="98.677" Canvas.Left="33.421" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF5B00" Data="F1 M 639.554,20.1408L 639.554,320.949" UseLayoutRounding="False" Canvas.Top="16">
+					<Path.Effect>
+						<DropShadowEffect/>
+					</Path.Effect>
+				</Path>
+				<Path x:Name="Path_32_Copy" Width="47" Height="20.75" Canvas.Left="17" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF5B00" Data="F1 M622.80902,35.406059 L639.52502,20.7808 L643.80902,19.573368 L646.39233,17.74011 L646.55902,16.156841 L645.05902,15.656861 L643.05902,16.239838 L640.89233,17.489809 L639.36102,20.757299 L635.14233,18.32342 L631.30902,18.49008 L629.39233,20.156679 L634.82397,21.1453 L638.64203,20.895 L668.80902,32.906116" UseLayoutRounding="False" Canvas.Top="10.236"/>
+				<Path x:Name="Path_32_Copy1" Width="45.393" Height="21.804" Canvas.Top="102.11" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF5B00" Data="F1 M 624.211,24.9733L 639.525,20.7808L 642.061,19.9361L 646.565,17.5695L 646.65,16.6763L 645.197,16.4065L 642.971,17.0518L 640.514,18.5087L 639.361,20.7573L 632.309,18.6547L 631.758,19.6921L 632.399,20.7202L 634.824,21.1453L 638.642,20.895L 660.202,24.0012" UseLayoutRounding="False" Canvas.Left="14"/>
+			</Canvas>
+			<TextBlock Style="{StaticResource NoteTextBlockStyle}" Text="Thông tin của chúng tôi" Canvas.Left="63" Canvas.Top="35" TextWrapping="Wrap">
+				<TextBlock.Foreground>
+					<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+						<GradientStop Color="#FF005B06" Offset="1"/>
+						<GradientStop Color="#FF006707"/>
+						<GradientStop Color="#FF5AFF65" Offset="0.542"/>
+					</LinearGradientBrush>
+				</TextBlock.Foreground>
+			</TextBlock>
+			<TextBlock Canvas.Left="14" Canvas.Top="114" TextWrapping="Wrap"><Run FontWeight="Bold" Text="     Chúng tôi nhóm phát triển đến từ đại học Đà Lạt! "/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Với sản phẩm mạng "/><Run FontWeight="Bold" Text="'Ươm mầm trẻ thơ' "/><Run Text="hy vọng rằng"/><LineBreak/><Run Text="sẽ đóng góp nhiều cho nền giáo dục và việc phát triển"/><LineBreak/><Run Text="cộng đồng. "/><LineBreak/><Run Text=""/><LineBreak/><Run Text="Đây chỉ mới là bản 'Demo' có thể còn nhiều thiếu sót"/><LineBreak/><Run Text="rất mong nhận được nhiều sự góp ý từ mọi phía.  "/></TextBlock>
+			<Canvas Height="79" Width="191" Canvas.Left="14" Canvas.Top="284">
+				<TextBlock Foreground="Blue" Text="Liên hệ với chúng tôi:" TextWrapping="Wrap"/>
+				<TextBlock Foreground="Blue" Canvas.Left="16" Canvas.Top="43" Text="Email:" TextWrapping="Wrap" FontWeight="Bold"/>
+				<TextBlock Foreground="Blue" Canvas.Left="11" Canvas.Top="23" Text="Phone:" TextWrapping="Wrap" FontWeight="Bold"/>
+				<TextBlock Foreground="Blue" Canvas.Top="63" Text="Address:" TextWrapping="Wrap" FontWeight="Bold"/>
+				<TextBlock Canvas.Left="62" Canvas.Top="23" Text="0982.060692" TextWrapping="Wrap"/>
+				<TextBlock Canvas.Left="62" Canvas.Top="43" Text="Flychipsdlu@gmail.com" TextWrapping="Wrap"/>
+			</Canvas>
+			<TextBlock Canvas.Left="83" Canvas.Top="308" TextWrapping="Wrap"/>
+			<Button x:Name="btOut" Height="18" Style="{StaticResource ButtonStyle1}" Content="Thoát" FontWeight="Bold" Background="#FF0018FF" Foreground="#FF007208" Cursor="Hand" Width="42" Canvas.Left="290" Canvas.Top="4" Opacity="0.65" Click="btOut_Click"/>
+		</Canvas>
+	</Grid>
+</UserControl>

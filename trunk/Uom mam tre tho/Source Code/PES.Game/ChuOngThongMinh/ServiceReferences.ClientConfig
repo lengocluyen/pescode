@@ -1,0 +1,20 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="GameServicesSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <transport>
+                            <extendedProtectionPolicy policyEnforcement="Never" />
+                        </transport>
+                    </security>
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:9999/services/GameServices.asmx"
+                binding="basicHttpBinding" bindingConfiguration="GameServicesSoap"
+                contract="GameServices.GameServicesSoap" name="GameServicesSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>
