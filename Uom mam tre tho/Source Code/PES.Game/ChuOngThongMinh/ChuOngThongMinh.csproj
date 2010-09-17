@@ -1,0 +1,338 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7DA60485-66B6-491C-AB36-E54547317838}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ChuOngThongMinh</RootNamespace>
+    <AssemblyName>ChuOngThongMinh</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ChuOngThongMinh.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ChuOngThongMinh.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Prototyping.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Expression.Prototyping.Runtime, Version=1.0.1327.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppConstant.cs" />
+    <Compile Include="BeeOB.xaml.cs">
+      <DependentUpon>BeeOB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BeeOBM.xaml.cs">
+      <DependentUpon>BeeOBM.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppEnum.cs" />
+    <Compile Include="Commons.cs" />
+    <Compile Include="GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HoneyJar.xaml.cs">
+      <DependentUpon>HoneyJar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GameServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UseGuide.xaml.cs">
+      <DependentUpon>UseGuide.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="BeeOB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="BeeOBM.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameOver.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="HoneyJar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UseGuide.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\TreeRight.png" />
+    <Resource Include="BeeImgs\TreeLeft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\ChanPhaiNhoOng.png" />
+    <Resource Include="BeeImgs\ChanPhaiOng.png" />
+    <Resource Include="BeeImgs\ChanTraiNhoOng.png" />
+    <Resource Include="BeeImgs\ChanTraiOng.png" />
+    <Resource Include="BeeImgs\Eye.png" />
+    <Resource Include="BeeImgs\MaHong.png" />
+    <Resource Include="BeeImgs\MuiOng.png" />
+    <Resource Include="BeeImgs\TaOng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\DauOng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\CanhPhaiLon.png" />
+    <Resource Include="BeeImgs\CanhPhaiNho.png" />
+    <Resource Include="BeeImgs\CanhTraiLon.png" />
+    <Resource Include="BeeImgs\CanhTraiNho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Bung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Clould.png" />
+    <Resource Include="BeeImgs\Clould02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\NhayMat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\CryingFace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\JOKERMAN.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Service References\GameServices\GameServices.disco" />
+    <None Include="Sounds\snd_GameOver.mp3" />
+    <None Include="Sounds\snd_IdelToOver.mp3" />
+    <None Include="Sounds\snd_DownToOver.mp3" />
+    <None Include="Sounds\snd_JarClick.mp3" />
+    <None Include="Sounds\snd_Drop.mp3" />
+    <None Include="Sounds\snd_HeadUp.mp3" />
+    <None Include="Sounds\snd_Die.mp3" />
+    <None Include="Sounds\snd_Shoot.mp3" />
+    <None Include="Sounds\snd_Minus.mp3" />
+    <None Include="Sounds\snd_BackMusic.mp3" />
+    <None Include="Sounds\snd_Intro.mp3" />
+    <Resource Include="Fonts\VNVOGU.TTF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\BtnGuide.png" />
+    <Resource Include="BeeImgs\BtnGuideSelected.png" />
+    <Resource Include="BeeImgs\BtnPlay.png" />
+    <Resource Include="BeeImgs\BtnPlaySelected.png" />
+    <Resource Include="BeeImgs\BtnRePlay.png" />
+    <Resource Include="BeeImgs\BtnRePlaySelected.png" />
+    <Resource Include="BeeImgs\BtnSoudAllow.png" />
+    <Resource Include="BeeImgs\BtnSoundMute.png" />
+    <Resource Include="BeeImgs\GameOverGame.png" />
+    <Resource Include="BeeImgs\GameOverOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Sweat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Add.png" />
+    <Resource Include="BeeImgs\Eight.png" />
+    <Resource Include="BeeImgs\Eliminate.png" />
+    <Resource Include="BeeImgs\Five.png" />
+    <Resource Include="BeeImgs\Four.png" />
+    <Resource Include="BeeImgs\HoneyFull.png" />
+    <Resource Include="BeeImgs\HoneyNotFull.png" />
+    <Resource Include="BeeImgs\Jar.png" />
+    <Resource Include="BeeImgs\Nine.png" />
+    <Resource Include="BeeImgs\One.png" />
+    <Resource Include="BeeImgs\Seven.png" />
+    <Resource Include="BeeImgs\Six.png" />
+    <Resource Include="BeeImgs\Three.png" />
+    <Resource Include="BeeImgs\Two.png" />
+    <Resource Include="BeeImgs\Zero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\CryingMouth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\CryingEye01.png" />
+    <Resource Include="BeeImgs\CryingEye02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\PointTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\GreenHexagonal.png" />
+    <Resource Include="BeeImgs\OrangeHexagonal.png" />
+    <Resource Include="BeeImgs\VioletHexagonal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Add100Points.png" />
+    <Resource Include="BeeImgs\Add250Points.png" />
+    <Resource Include="BeeImgs\Eliminate100Points.png" />
+    <Resource Include="BeeImgs\Eliminate200Points.png" />
+    <Resource Include="BeeImgs\Eliminate60Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Add500Points.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Hand.png" />
+    <Resource Include="BeeImgs\HandHold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\LifeFrame.png" />
+    <Resource Include="BeeImgs\PointFrame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Life.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\BgHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\HomeText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\Frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\FrameGameOver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\GameOverPoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\imgHuongDanText.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\CursorClick.png" />
+    <Resource Include="BeeImgs\CursorHand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BeeImgs\BtnSavePoints.png" />
+    <Resource Include="BeeImgs\BtnSavePointsSelected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GameServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\GameServices\ChuOngThongMinh.GameServices.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GameServices\GameServices.wsdl" />
+    <None Include="Service References\GameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\3.0\Silverlight\Microsoft.Expression.Blend.Silverlight.targets" />
+</Project>

@@ -1,0 +1,15 @@
+﻿<UserControl x:Class="LuyenTriNho.Controls.MapNumbersToImages"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="auto" Height="auto">
+    <StackPanel x:Name="spMain" Orientation="Horizontal">
+        <!--<Image Source="../Images/Numbers/EightYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/FiveYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/EightYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/FourYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/EightYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/ZeroYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/ZeroYellow.png" Height="30" Width="30"></Image>
+        <Image Source="../Images/Numbers/ZeroYellow.png" Height="30" Width="30"></Image>-->
+    </StackPanel>
+</UserControl>

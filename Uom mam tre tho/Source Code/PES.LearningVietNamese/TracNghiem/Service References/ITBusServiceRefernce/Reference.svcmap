@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="74774abe-d387-4c31-9a72-41756286dbc6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/Services/VN/ITBusServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ITBusServices3.xsd" MetadataType="Schema" ID="d862ed03-c4f3-47ff-a815-5dbf460804aa" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="ITBusServices1.wsdl" MetadataType="Wsdl" ID="63ceb944-4859-4025-bfbd-654b44a591a7" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?wsdl" />
+    <MetadataFile FileName="ITBusServices1.disco" MetadataType="Disco" ID="1871ea53-e859-4bac-8265-e2b820f6af95" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?disco" />
+    <MetadataFile FileName="ITBusServices31.xsd" MetadataType="Schema" ID="54d74a0a-ef4e-4ac8-8842-4beccd4ccb02" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="ITBusServices32.xsd" MetadataType="Schema" ID="8e9a1dd6-1518-4308-9288-593524576f40" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="ITBusServices1.xsd" MetadataType="Schema" ID="b1efd01b-a5b0-4de3-8e64-0c099ce9f12a" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="ITBusServices.xsd" MetadataType="Schema" ID="4aaa42e6-617a-4931-bbf6-5ffcc1f98f99" SourceId="1" SourceUrl="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

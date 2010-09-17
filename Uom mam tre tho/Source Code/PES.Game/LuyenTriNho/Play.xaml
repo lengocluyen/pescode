@@ -1,0 +1,419 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ctrlMain="clr-namespace:LuyenTriNho"
+    xmlns:ctrlMainControls="clr-namespace:LuyenTriNho.Controls" xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="LuyenTriNho.Play" 
+    Width="600" Height="480"
+    >
+	<UserControl.Resources>	
+		<Storyboard x:Name="stbStart">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:01.5000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+				<DiscreteObjectKeyFrame KeyTime="00:00:02.1000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Collapsed</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="2.62"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="2.619999885559082"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="5.079"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="2.62"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="2.619999885559082"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="5.079"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-0.861"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="-0.86100000143051147"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="-0.615"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.432"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="1.4320000410079956"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="0.432"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextBatDau" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<EasingDoubleKeyFrame KeyTime="00:00:01.5000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:02" Value="0.295"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+
+        <Storyboard x:Name="storyboardOpenDoor">
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgDoorLeft" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-83"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgDoorRight" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="86"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		
+        <Storyboard x:Name="storyboardTimeRun">
+        	<DoubleAnimationUsingKeyFrames x:Name="daukfTimeRun" BeginTime="00:00:00" Storyboard.TargetName="rectangleTimeLine" Storyboard.TargetProperty="(FrameworkElement.Width)">
+        		<EasingDoubleKeyFrame x:Name="edkfTimeOut" Value="231"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="stbBoyOK" RepeatBehavior="3x">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="36.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="51"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-1.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.925"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.492"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.701"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.925"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="37"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="54.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="45.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.643"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.929"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1.143"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyNormal" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyOk" Storyboard.TargetProperty="(UIElement.Visibility)">
+            	<DiscreteObjectKeyFrame KeyTime="00:00:00">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Visible</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Name="stbBoyNotOK" RepeatBehavior="3x">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="36.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="51"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-1.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.925"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.492"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.701"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.925"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="37"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="54.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="45.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.643"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.929"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1.143"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyNormal" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyNotOk" Storyboard.TargetProperty="(UIElement.Visibility)">
+            	<DiscreteObjectKeyFrame KeyTime="00:00:00">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Visible</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Storyboard x:Name="stbBoyCrying" RepeatBehavior="3x">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="36.5"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="51"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-1.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.925"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.492"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.701"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="0.925"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="37"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="54.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="45.464"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="-0.036"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="tblNote" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.643"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.929"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:01.4000000" Value="1.143"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyNormal" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Collapsed</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBoyCrying" Storyboard.TargetProperty="(UIElement.Visibility)">
+            	<DiscreteObjectKeyFrame KeyTime="00:00:00">
+            		<DiscreteObjectKeyFrame.Value>
+            			<Visibility>Visible</Visibility>
+            		</DiscreteObjectKeyFrame.Value>
+            	</DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="storyboardGameOver">
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGameOver" Storyboard.TargetProperty="(UIElement.Visibility)" Duration="00:00:00.0010000">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBtnReplay" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="imgBtnSavePoint" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="hplBtnReplay" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Duration="00:00:00.0010000" Storyboard.TargetName="hplBtnSavePoint" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        
+    </UserControl.Resources>
+    <Canvas x:Name="canvasMain">
+        <Canvas.Background>
+            <ImageBrush ImageSource="Images/PlayBG.png"/>
+        </Canvas.Background>
+        <!--Boy-->
+        <Image x:Name="imgBoyNormal" Source="Images/BoyNormal.png" Canvas.Left="112" Canvas.Top="22" Height="84" Width="56">
+        	<Image.OpacityMask>
+        		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        			<GradientStop Color="Black" Offset="0"/>
+        			<GradientStop Color="White" Offset="1"/>
+        		</LinearGradientBrush>
+        	</Image.OpacityMask></Image>
+        <Image x:Name="imgBoyCrying" Source="Images/BoyCrying.png" Canvas.Left="112" Canvas.Top="22" Height="84" Width="56" Visibility="Collapsed"></Image>
+        <Image x:Name="imgBoyOk" Source="Images/BoyOK.png" Canvas.Left="112" Canvas.Top="22" Height="84" Width="56" Visibility="Collapsed"></Image>
+        <Image x:Name="imgBoyNotOk" Source="Images/BoyNotOK.png" Canvas.Left="112" Canvas.Top="22" Height="84" Width="56" Visibility="Collapsed"></Image>
+        
+        <Ellipse x:Name="ellipse" Stroke="#FF1E490B" Height="67" Width="67" Canvas.Left="172" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Ellipse.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Ellipse.RenderTransform>
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFA2A0C" Offset="0"/>
+                    <GradientStop Color="#FFFAF4F4" Offset="1"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>            
+        </Ellipse>
+		<TextBlock x:Name="tblNote" Text="HẾT GIỜ!!!" Canvas.Left="177" Canvas.Top="26" Foreground="White" FontWeight="Bold" FontSize="9.333" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed" >
+			<TextBlock.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform/>
+					<SkewTransform/>
+					<RotateTransform/>
+					<TranslateTransform/>
+				</TransformGroup>
+			</TextBlock.RenderTransform></TextBlock>
+        <!--End Boy-->
+        
+        <!--Collection-->
+        <Image Source="Images/ChonSoText.png" Canvas.Left="458" Canvas.Top="141" Height="29" Width="112"/>
+        <!--End Collection-->
+        
+        <!--Sound-->
+        <Image x:Name="imgBtnSoundSelected" Source="Images/Buttons/btnSounSelected.png" Canvas.Left="8" Canvas.Top="8" Height="25" Width="25"/>
+        <Image x:Name="imgBtnSound" Source="Images/Buttons/btnSound.png" Canvas.Left="8" Canvas.Top="9" Height="24" Width="25"/>
+        <Image x:Name="imgBtnSoundMute" Source="Images/Buttons/btnSoundMute.png" Canvas.Left="8" Canvas.Top="9" Height="24" Width="25" Visibility="Collapsed"/>
+
+        <HyperlinkButton x:Name="hplBtnMute" Height="25" Width="25" Canvas.Left="8" Canvas.Top="8" Content="" IsTabStop="False" MouseEnter="hplBtnMute_MouseEnter" MouseLeave="hplBtnMute_MouseLeave" Click="hplBtnMute_Click"/>        
+        <!--End Sound-->
+        
+        <!--Hearts-->
+        <Image x:Name="imgHeart01" Source="Images/Heart.png" Canvas.Left="501" Canvas.Top="57" Height="22" Width="27"/>
+        <Image x:Name="imgHeart02" Source="Images/Heart.png" Canvas.Left="527" Canvas.Top="57" Height="22" Width="27"/>
+        <Image x:Name="imgHeart03" Source="Images/Heart.png" Canvas.Left="553" Canvas.Top="57" Height="22" Width="27"/>
+        <!--End Hearts-->
+        
+        <!--Guides-->
+        <Image x:Name="imgGuide01" Source="Images/GuideMagnifier.png" Canvas.Left="515" Canvas.Top="92" Height="22" Width="18"/>
+        <HyperlinkButton x:Name="hplGuide01" IsTabStop="False" Canvas.Left="515" Canvas.Top="92" Height="22" Width="18" Click="hplGuide_Click" />
+        <Image x:Name="imgGuide02" Source="Images/GuideMagnifier.png" Canvas.Left="540" Canvas.Top="92" Height="22" Width="18"/>
+        <HyperlinkButton x:Name="hplGuide02" IsTabStop="False" Canvas.Left="540" Canvas.Top="92" Height="22" Width="18" Click="hplGuide_Click"/>
+        <Image x:Name="imgGuide03" Source="Images/GuideMagnifier.png" Canvas.Left="564" Canvas.Top="92" Height="22" Width="18"/>
+        <HyperlinkButton x:Name="hplGuide03" IsTabStop="False" Canvas.Left="564" Canvas.Top="92" Height="22" Width="18" Click="hplGuide_Click"/>
+        <!--End Guides-->
+        
+        <!--Number To Select-->
+        <Image x:Name="imgQuestion00" Source="Images/QuestionNumbers/question00.png" Canvas.Left="474" Canvas.Top="181" Width="84" Height="26"/>
+        <HyperlinkButton x:Name="hplbtnQuestion00" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="181" Width="84" Height="26" Click="hplbtnQuestion00_Click"/>
+        <Image x:Name="imgQuestion01" Source="Images/QuestionNumbers/question01.png" Canvas.Left="474" Canvas.Top="207" Width="84" Height="26"/>
+        <HyperlinkButton x:Name="hplbtnQuestion01" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="207" Width="84" Height="26" Click="hplbtnQuestion01_Click"/>
+        <Image x:Name="imgQuestion02" Source="Images/QuestionNumbers/question02.png" Canvas.Left="474" Canvas.Top="230" Width="84" Height="25"/>
+        <HyperlinkButton x:Name="hplbtnQuestion02" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="230" Width="84" Height="25" Click="hplbtnQuestion02_Click"/>
+        <Image x:Name="imgQuestion03" Source="Images/QuestionNumbers/question03.png" Canvas.Top="255" Width="84" Height="25" Canvas.Left="474"/>
+        <HyperlinkButton x:Name="hplbtnQuestion03" Content="" IsTabStop="False" Canvas.Top="255" Width="84" Height="25" Canvas.Left="474" Click="hplbtnQuestion03_Click"/>
+        <Image x:Name="imgQuestion04" Source="Images/QuestionNumbers/question04.png" Canvas.Left="474" Canvas.Top="280" Width="84" Height="25"/>
+        <HyperlinkButton x:Name="hplbtnQuestion04" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="280" Width="84" Height="25" Click="hplbtnQuestion04_Click"/>
+        <Image x:Name="imgQuestion05" Source="Images/QuestionNumbers/question05.png" Canvas.Left="474" Canvas.Top="305" Width="84" Height="25"/>
+        <HyperlinkButton x:Name="hplbtnQuestion05" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="305" Width="84" Height="25" Click="hplbtnQuestion05_Click"/>
+        <Image x:Name="imgQuestion06" Source="Images/QuestionNumbers/question06.png" Canvas.Left="474" Canvas.Top="329" Width="84" Height="26"/>
+        <HyperlinkButton x:Name="hplbtnQuestion06" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="329" Width="84" Height="26" Click="hplbtnQuestion06_Click"/>
+        <Image x:Name="imgQuestion07" Source="Images/QuestionNumbers/question07.png" Canvas.Left="474" Canvas.Top="354" Width="84" Height="25"/>
+        <HyperlinkButton x:Name="hplbtnQuestion07" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="354" Width="84" Height="25" Click="hplbtnQuestion07_Click"/>
+        <Image x:Name="imgQuestion08" Source="Images/QuestionNumbers/question08.png" Canvas.Left="474" Canvas.Top="378" Width="84" Height="26"/>
+        <HyperlinkButton x:Name="hplbtnQuestion08" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="378" Width="84" Height="26" Click="hplbtnQuestion08_Click"/>
+        <Image x:Name="imgQuestion09" Source="Images/QuestionNumbers/question09.png" Canvas.Left="474" Canvas.Top="403" Height="26" Width="84"/>
+        <HyperlinkButton x:Name="hplbtnQuestion09" Content="" IsTabStop="False" Canvas.Left="474" Canvas.Top="403" Height="26" Width="84" Click="hplbtnQuestion09_Click"/>
+        <!--End Number To Select-->
+        
+        <!--The Door and Stone-->
+        <Image x:Name="imgBgDoor" Source="Images/Doors/DoorBG.png" Height="280" Width="164" Canvas.Left="37" Canvas.Top="139"/>
+        
+        <!--Stone is Dropped-->
+        <Canvas x:Name="canvasCtrlQuestion">
+        </Canvas>
+        <Image x:Name="imgDoorLeft" Source="Images/Doors/DoorLeft.png" Canvas.Top="141" Height="278" Width="92" Canvas.Left="27" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgDoorRight" Source="Images/Doors/DoorRight.png" Canvas.Left="118" Canvas.Top="142" Width="92" Height="278" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgBgDoor02" Source="Images/Doors/DoorBG.png" Height="280" Width="164" Canvas.Left="240" Canvas.Top="139"/>
+        <Canvas x:Name="canvasCtrlAnser"></Canvas>
+        <Image x:Name="imgTwoDoor" Source="Images/Doors/TwoDoors.png" Height="310" Width="421" Canvas.Top="126"/>        
+        <!--End The Door and Stone-->
+        
+        <!--Time Line-->
+        <Image x:Name="imgTimeLineBG" Source="Images/TimeLine02.png" Canvas.Left="112" Canvas.Top="453" Height="16" Width="230"/>
+
+        <Rectangle x:Name="rectangleTimeLine" Stroke="#FF6D0101" Height="16" Width="0" Canvas.Left="112" Canvas.Top="453" StrokeThickness="0" RadiusX="5" RadiusY="5">        	
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFCD4F06" Offset="0"/>
+                    <GradientStop Color="#FFB1471E" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <!--End Time Line-->
+        
+        <!--Media Element-->
+        <MediaElement x:Name="meBGMusic" Source="Sounds/soundBG.mp3" Volume="0.5" MediaEnded="meBGMusic_MediaEnded"/>        
+        <MediaElement x:Name="meOpenDoor" Source="Sounds/openDoor.mp3" Volume="1" AutoPlay="False"/>
+        <!--End Media Element-->
+
+        <!--On Top -->
+        <Image x:Name="imgTextBatDau" Source="Images/TextBatDau.png" Canvas.Left="215" Canvas.Top="206" Height="61" Width="110" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Rectangle x:Name="rtFillAllLink" Fill="White" Stroke="Black" Height="480" Width="171" Canvas.Left="429" Opacity="0" StrokeThickness="0"/>        
+        <!--End On Top-->
+        
+        <!--Game Over-->
+        <ctrlMainControls:GameOver x:Name="ctrlGameOver" RenderTransformOrigin="0.5,0.5" Height="495" Width="615" Canvas.Top="-6" Canvas.Left="-7" Visibility="Collapsed">
+        	<ctrlMainControls:GameOver.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</ctrlMainControls:GameOver.RenderTransform>
+        </ctrlMainControls:GameOver>
+        <Image x:Name="imgBtnReplay" Source="Images/Buttons/BtnReplay.png" Canvas.Left="161" Canvas.Top="331" Height="37" Width="108" Visibility="Collapsed"/>
+        <Image x:Name="imgBtnReplaySelected" Source="Images/Buttons/BtnReplaySelected.png" Height="48" Width="140" Canvas.Left="145" Canvas.Top="329" Visibility="Collapsed"/>
+        <Image x:Name="imgBtnSavePoint" Source="Images/Buttons/BtnSavePoint.png" Canvas.Left="328" Canvas.Top="332" Height="36" Width="108" Visibility="Collapsed"/>
+        <Image x:Name="imgBtnSavePointSelected" Source="Images/Buttons/BtnSavePointSelected.png" Height="47" Width="137" Canvas.Left="315" Canvas.Top="330" Visibility="Collapsed"/>
+        <HyperlinkButton x:Name="hplBtnReplay" Height="37" Width="108" Canvas.Left="161" Canvas.Top="331" Content="" IsTabStop="False" MouseEnter="hplBtnReplay_MouseEnter" MouseLeave="hplBtnReplay_MouseLeave" Click="hplBtnReplay_Click" Visibility="Collapsed"/>
+        <HyperlinkButton x:Name="hplBtnSavePoint" Height="38" Width="108" Canvas.Left="328" Canvas.Top="330" Content=""  IsTabStop="False" MouseEnter="hplBtnSavePoint_MouseEnter" MouseLeave="hplBtnSavePoint_MouseLeave" Click="hplBtnSavePoint_Click" Visibility="Collapsed"/>
+        <TextBlock x:Name="tblTestTimeOut" FontSize="14"></TextBlock>
+        <!--End Game Over-->
+    </Canvas>
+</UserControl>

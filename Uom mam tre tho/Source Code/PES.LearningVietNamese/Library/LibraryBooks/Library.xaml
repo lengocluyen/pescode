@@ -1,0 +1,72 @@
+﻿<UserControl  x:Class="LibraryBooks.Library" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:library="clr-namespace:LibraryBooks"
+           mc:Ignorable="d"
+	Width="auto" Height="auto">
+
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF74C1FF" Offset="0"/>
+                <GradientStop Color="#FFE5F3FF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Path Stretch="Fill" Height="15.5" Margin="0,0,-0.5,0" VerticalAlignment="Bottom" UseLayoutRounding="False" Data="M1027.9976,671.02405 L1029.9976,705.33368 L0.66669846,706.66736 L0.49986091,666.07306 L36.464848,668.05328 L786.73438,669.0434 L1028.499,670.03351">
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00B2D2" Offset="0"/>
+                    <GradientStop Color="#FF90EEFF" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+
+        <Image HorizontalAlignment="Left" Margin="0,0,0,-1" Width="214" Source="Images/Library/leftpage.png" Height="356" VerticalAlignment="Bottom"/>
+        <Image HorizontalAlignment="Right" Margin="0,262,-1,-1" Width="176" Source="Images/Library/RightPage.png" Stretch="UniformToFill"/>
+        <Canvas Height="219" Width="480"  VerticalAlignment="Top" Margin="76,-4,476,0" HorizontalAlignment="Center">
+            <Image Height="33" Width="183" Source="Images/Library/Flag.png" Stretch="Fill" Canvas.Left="93" Canvas.Top="26"/>
+            <Image Height="128" Width="113" Source="Images/Library/bird.png" Stretch="Fill" Canvas.Top="8"/>
+            <TextBlock x:Name="PupilNameTextBlock" Height="20" FontSize="12" Canvas.Left="157" Canvas.Top="34" Text="Hoai khong"/>
+        </Canvas>
+
+        <Canvas x:Name="Layer_1" Width="950" Height="720" Canvas.Left="0" Canvas.Top="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Canvas Width="895.68" Height="695">
+
+                <Rectangle Style="{StaticResource BookCaseRectangleStyle}" Width="763" Height="8.592" Canvas.Left="122.513" Canvas.Top="58.867"/>
+                <Rectangle Style="{StaticResource BookCaseRectangleStyle}" Width="502.358" Height="8.592" Canvas.Left="122.512" Canvas.Top="149.394"/>
+                <Rectangle Style="{StaticResource BookCaseRectangle1Style}" Width="9.463" Height="536.193" Canvas.Left="624.973" Canvas.Top="67.459"/>
+                <Rectangle Style="{StaticResource BookCaseRectangle1Style}" Width="9.462" Height="536.973" Canvas.Left="803.259" Canvas.Top="67.459"/>
+                <Rectangle Style="{StaticResource BookCaseRectangleStyle}" Width="502.358" Height="8.591" Canvas.Left="122.512" Canvas.Top="240.922"/>
+                <Rectangle Style="{StaticResource BookCaseRectangle1Style}" Width="17.204" Height="326.418" Canvas.Left="126.515" Canvas.Top="249.513"/>
+                <Rectangle Style="{StaticResource BookCaseRectangleStyle}" Width="480.995" Height="8.592" Canvas.Left="143.719" Canvas.Top="550.778"/>
+
+                <Canvas x:Name="BookInfoCanvas" Height="293" Width="473" Canvas.Left="148" Canvas.Top="254">
+                    <TextBlock x:Name="BookDescription" Height="133" Width="457" Canvas.Left="8" Canvas.Top="152" Text="Description" TextWrapping="Wrap" FontSize="13.333"/>
+                    <Border Height="148" Width="139" Canvas.Left="8" BorderBrush="#FFF00000" BorderThickness="0,0,1,1">
+                        <Image x:Name="BookImage"/>
+                    </Border>
+                    <TextBlock x:Name="BookTitlelb" Canvas.Left="151" FontWeight="Bold" FontSize="12" Foreground="Blue" Text="Tên sách:" Canvas.Top="8"/>
+                    <TextBlock x:Name="BookTitle" Style="{StaticResource TitleTextBlockStyle}" Canvas.Left="234" FontWeight="Bold" Text="Book title" Canvas.Top="8" TextWrapping="Wrap" Width="239"/>
+                    <TextBlock x:Name="BookAuthorlb" Style="{StaticResource InfoLBTextBlockStyle}" Canvas.Left="222" Canvas.Top="53" Text="Tác giả:"/>
+                    <TextBlock x:Name="BookAuthor" Style="{StaticResource InfoTextBlockStyle}" Canvas.Left="280" Canvas.Top="53" Text="Tác giả:"/>
+                    <TextBlock x:Name="BookpublishYearlb" Style="{StaticResource InfoLBTextBlockStyle}" Canvas.Left="175" Canvas.Top="72" Text="Năm xuất bản:"/>
+                    <TextBlock x:Name="BookPubkishYear" Style="{StaticResource InfoTextBlockStyle}" Canvas.Left="280" Canvas.Top="72" Text="Năm xuất bản:"/>
+                    <TextBlock x:Name="BookReadNumlbb" Style="{StaticResource InfoLBTextBlockStyle}" Canvas.Left="183" Canvas.Top="95" Text="Số lượng đọc:"/>
+                    <TextBlock x:Name="BookReadNum" Style="{StaticResource InfoTextBlockStyle}" Canvas.Left="280" Canvas.Top="95" Text="Số lượng đọc:"/>
+                </Canvas>
+
+                <StackPanel x:Name="BookListStackPanel" Height="80" Width="481" Canvas.Left="127" Canvas.Top="160" Orientation="Horizontal"/>
+                <StackPanel x:Name="BookTopStackPanel" Height="80" Width="494" Canvas.Left="127" Canvas.Top="69" Orientation="Horizontal"/>
+                <StackPanel x:Name="BookTypeStackPanel" Height="537" Width="161" Canvas.Left="638" Canvas.Top="67"/>
+                <Button x:Name="BookLeftButton" Height="77" Width="11" Canvas.Left="112" Canvas.Top="160" Content="" Opacity="0.385" Click="BookTopLeftButton_Click"/>
+                <Button x:Name="BookRightButton" Height="77" Width="11" Opacity="0.385" Canvas.Left="612" Canvas.Top="162" Content="" Click="BookTopLeftButton_Click"/>
+                
+            </Canvas>
+        </Canvas>
+        <Image Height="172" HorizontalAlignment="Center" Margin="239,0,227,0" VerticalAlignment="Bottom" Source="Images/Library/BottomPage.png"/>
+        <library:Menu Margin="497,18,101,0" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Center"/>
+    </Grid>
+</UserControl> 

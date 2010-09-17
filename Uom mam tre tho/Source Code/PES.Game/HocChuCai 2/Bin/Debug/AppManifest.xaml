@@ -1,0 +1,5 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="HocChuCai 2" EntryPointType="HocChuCai_2.App" RuntimeVersion="3.0.40624.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="HocChuCai 2" Source="HocChuCai 2.dll" />
+  </Deployment.Parts>
+</Deployment>

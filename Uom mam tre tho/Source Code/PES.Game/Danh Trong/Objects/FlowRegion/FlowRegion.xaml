@@ -1,0 +1,87 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="Danh_Trong.Objects.FlowRegion"
+    mc:Ignorable="d" 
+    >
+    <Canvas x:Name="LayoutRoot" Width="342" Height="500">
+        <Canvas x:Name="canvasBG" Height="500" Width="342" Opacity="0.5">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB8E33B" Offset="1"/>
+                    <GradientStop Color="#FF72B324"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Image x:Name="line1" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="-269" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="line2" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="-204" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="line3" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="-139" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="line4" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="-74" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="line5" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="-9" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Image x:Name="line6" Height="7" Width="554" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Canvas.Left="56" Canvas.Top="242" Source="line.png" Stretch="Fill" d:LayoutRounding="Auto">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0" AngleY="0"/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <TextBlock Canvas.Left="56" Canvas.Top="352" Text="a" TextWrapping="Wrap" Height="48" Width="72" FontSize="96" FontFamily="../../Fonts/CHERI__.TTF#Cheri" Foreground="Black"/>
+        </Canvas>
+        <Canvas x:Name="canvasChars" Height="306" Width="342">
+            <Canvas x:Name="canvasChar1" Height="351" Width="63" Canvas.Left="9" Canvas.Top="-45"/>
+            <Canvas x:Name="canvasChar2" Height="351" Width="63" Canvas.Left="74" Canvas.Top="-45"/>
+            <Canvas x:Name="canvasChar3" Height="351" Width="63" Canvas.Left="139" Canvas.Top="-45"/>
+            <Canvas x:Name="canvasChar4" Height="351" Width="63" Canvas.Left="204" Canvas.Top="-45"/>
+            <Canvas x:Name="canvasChar5" Height="351" Width="63" Canvas.Left="269" Canvas.Top="-45"/>
+            <Canvas x:Name="canvasCorrectRegion" Height="46" Width="342" Canvas.Top="238" Background="#FFF6F2F2" Opacity="0.3"/>
+        </Canvas>
+
+    </Canvas>
+</UserControl>

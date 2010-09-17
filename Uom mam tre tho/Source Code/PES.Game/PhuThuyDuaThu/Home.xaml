@@ -1,0 +1,225 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="470"
+    xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="PhuThuyDuaThu.Home"    
+    xmlns:phuthuyduathu="clr-namespace:PhuThuyDuaThu"
+    xmlns:ptControl="clr-namespace:PhuThuyDuaThu.Controls">
+	<UserControl.Resources>
+		<Storyboard x:Name="stbTextShow">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextPhuThuy" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextPhuThuy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.039"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextPhuThuy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.135"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.973"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextPhuThuy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-3.5"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextPhuThuy" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextDuaThu" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.6000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextDuaThu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.098"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.046"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextDuaThu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1.098"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.046"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextDuaThu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="11.348"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="5.348"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextDuaThu" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.7000000" Value="4.5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="2.121"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="meShowText" Storyboard.TargetProperty="(MediaElement.IsMuted)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:01">
+					<DiscreteObjectKeyFrame.Value>
+						<System:Boolean>True</System:Boolean>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard x:Name="stbGuide">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGuide" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+					<DiscreteObjectKeyFrame.Value>
+						<Visibility>Visible</Visibility>
+					</DiscreteObjectKeyFrame.Value>
+				</DiscreteObjectKeyFrame>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGuide" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.878"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.113"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.979"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGuide" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.832"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.14"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1.003"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGuide" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="4"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="3"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="3.462"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="ctrlGuide" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.5"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.66"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlaySelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="-200"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlaySelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="27.212"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="-200"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="27.212"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="-200"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="27.212"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlaySelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.678"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.678"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.678"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlaySelected" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.669"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.669"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="hplPlay" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+				<EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1"/>
+				<EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.669"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</UserControl.Resources>
+    <Canvas x:Name="canvasMain" Width="600" Height="470" RenderTransformOrigin="0.5 0.5">
+        <Canvas.RenderTransform>
+            <ScaleTransform x:Name="PageScale" ScaleX="1" ScaleY="1"/>
+        </Canvas.RenderTransform>
+        <Canvas.Background>
+            <ImageBrush x:Name="backgroundImageBrush" 
+                        Stretch="UniformToFill" 
+                        ImageSource="Images/HomeBG.png"/>
+        </Canvas.Background>
+        <Image x:Name="imgTextPhuThuy" Source="Images/TextPhuThuy.png" Height="74" Width="257" Canvas.Left="63" Canvas.Top="33" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgTextDuaThu" Source="Images/TextDuaThu.png" Canvas.Left="335" Canvas.Top="83" Height="92" Width="232" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <MediaElement x:Name="meShowText" Source="Sounds/HomeTextShow.mp3" AutoPlay="True" Volume="1"/>        
+        <phuthuyduathu:Guide x:Name="ctrlGuide" Canvas.Left="99" Canvas.Top="83" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+        	<phuthuyduathu:Guide.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</phuthuyduathu:Guide.RenderTransform>
+        </phuthuyduathu:Guide>        
+        <Image x:Name="imgPlaySelected" Canvas.Left="442" Canvas.Top="308" Source="Images/btnPlaySelected.png" Height="53" Width="137" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform></Image>
+        <Image x:Name="imgPlay" Canvas.Left="442" Canvas.Top="308" Source="Images/btnPlay.png" Height="53" Width="137" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform></Image>
+        <HyperlinkButton x:Name="hplPlay" Height="53" Width="137" Canvas.Left="442" Canvas.Top="308" MouseEnter="hplPlay_MouseEnter" MouseLeave="hplPlay_MouseLeave" RenderTransformOrigin="0.5,0.5" IsTabStop="False" Click="hplPlay_Click">
+        	<HyperlinkButton.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</HyperlinkButton.RenderTransform></HyperlinkButton>
+        <Canvas x:Name="canvasSomeBtn">            
+            <Image x:Name="imgUseGuideSelected" Canvas.Left="442" Canvas.Top="381" Source="Images/btnUseGuideSelected.png" Height="53" Width="137" Visibility="Collapsed"></Image>
+            <Image x:Name="imgUseGuide" Canvas.Left="442" Canvas.Top="381" Source="Images/btnUseGuide.png" Height="53" Width="137"></Image>
+            <HyperlinkButton x:Name="hplUseGuide" Canvas.Left="442" Canvas.Top="381" Height="54" Width="140" MouseEnter="hplUseGuide_MouseEnter" MouseLeave="hplUseGuide_MouseLeave" Click="hplUseGuide_Click" IsTabStop="False"></HyperlinkButton>
+        </Canvas>       
+    </Canvas>
+</UserControl>

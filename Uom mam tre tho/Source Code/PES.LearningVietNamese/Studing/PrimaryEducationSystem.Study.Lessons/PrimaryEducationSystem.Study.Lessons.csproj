@@ -1,0 +1,318 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{20027F04-6903-42E6-9E33-7E88A9050962}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrimaryEducationSystem.Study.Lessons</RootNamespace>
+    <AssemblyName>PrimaryEducationSystem.Study.Lessons</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PrimaryEducationSystem.Study.Lessons.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PrimaryEducationSystem.Study.Lessons.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_1.xaml.cs">
+      <DependentUpon>Lession_1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_10.xaml.cs">
+      <DependentUpon>Lession_10.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_2.xaml.cs">
+      <DependentUpon>Lession_2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_3.xaml.cs">
+      <DependentUpon>Lession_3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_4.xaml.cs">
+      <DependentUpon>Lession_4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_5.xaml.cs">
+      <DependentUpon>Lession_5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_6.xaml.cs">
+      <DependentUpon>Lession_6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_7.xaml.cs">
+      <DependentUpon>Lession_7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_8.xaml.cs">
+      <DependentUpon>Lession_8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\Lession_9.xaml.cs">
+      <DependentUpon>Lession_9.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\MainLesson.xaml.cs">
+      <DependentUpon>MainLesson.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\MainPartOne.xaml.cs">
+      <DependentUpon>MainPartOne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PartOne\PartList.xaml.cs">
+      <DependentUpon>PartList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PESCommons.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\PESServicesSession\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PESServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="PartOne\Lession_1.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_10.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_2.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_3.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_4.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_5.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_6.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_7.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_8.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\Lession_9.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\MainLesson.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PartOne\MainPartOne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="PartOne\PartList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="font\UVNConThuy.TTF" />
+    <None Include="Service References\PESServicesSession\PESServicesSession1.wsdl" />
+    <None Include="Service References\PESServicesSession\PrimaryEducationSystem.Study.Lessons.PESServicesSession.GetProgrammingDropDownContentsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServicesSession\PrimaryEducationSystem.Study.Lessons.PESServicesSession.SendMail_ActivePassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServicesSession\PrimaryEducationSystem.Study.Lessons.PESServicesSession.SessionVariableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServicesSession\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PESServicesSession\configuration.svcinfo" />
+    <None Include="Service References\PESServicesSession\configuration91.svcinfo" />
+    <None Include="Service References\PESServices\LearningServices.wsdl" />
+    <None Include="Service References\PESServices\LearningServices.xsd" />
+    <None Include="Service References\PESServices\LearningServices1.xsd" />
+    <None Include="Service References\PESServices\LearningServices2.xsd" />
+    <None Include="Service References\PESServices\LearningServices3.xsd" />
+    <None Include="Service References\PESServices\LearningServices4.xsd" />
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Account.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Book.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.BookType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Lesson.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.LessonTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Part.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.PartTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Pupils.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.StudyLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.StudyProgramming.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Subject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.SubjectTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\PrimaryEducationSystem.Study.Lessons.PESServices.Test.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\PESServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PESServices\configuration.svcinfo" />
+    <None Include="Service References\PESServices\configuration91.svcinfo" />
+    <Resource Include="PartOne\sun2.png" />
+    <None Include="Service References\PESServices\LearningServices.disco" />
+    <None Include="Service References\PESServicesSession\PESServicesSession1.disco" />
+    <Resource Include="Images\LessonBackGround\child doing math.png" />
+    <Resource Include="Images\LessonBackGround\hoa.png" />
+    <Resource Include="Images\LessonBackGround\Home.png" />
+    <Resource Include="Images\LessonBackGround\khungMay.png" />
+    <Resource Include="Images\LessonBackGround\loa.png" />
+    <Resource Include="Images\LessonBackGround\loa_mute.png" />
+    <Resource Include="Images\LessonBackGround\next.png" />
+    <Resource Include="Images\LessonBackGround\note_dis.png" />
+    <Resource Include="Images\LessonBackGround\note_en.png" />
+    <Resource Include="Images\LessonBackGround\page2.png" />
+    <Resource Include="Images\LessonBackGround\prev %282%29.png" />
+    <Resource Include="Images\LessonBackGround\Tests.png" />
+    <Resource Include="Images\LessonBackGround\Tiger.png" />
+    <Resource Include="Images\LessonBackGround\Book.png" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PESServicesSession\" />
+    <WCFMetadataStorage Include="Service References\PESServices\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hoa.png" />
+    <Resource Include="PartOne\cuu1.png" />
+    <Resource Include="PartOne\cuu2.png" />
+    <Resource Include="PartOne\Tigerta.png" />
+    <Resource Include="PartOne\Tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PartTwo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

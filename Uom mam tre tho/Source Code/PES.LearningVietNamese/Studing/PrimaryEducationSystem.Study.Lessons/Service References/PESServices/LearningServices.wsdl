@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="LearningServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILearningServices_StudyingProgrammingGetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudyingProgrammingGetAll" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_StudyingProgrammingGetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudyingProgrammingGetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_StudyingLevelGet_InputMessage">
+    <wsdl:part name="parameters" element="tns:StudyingLevelGet" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_StudyingLevelGet_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StudyingLevelGetResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_SubjectGetAllWithLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubjectGetAllWithLevel" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_SubjectGetAllWithLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubjectGetAllWithLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_SubjectGetByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubjectGetByName" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_SubjectGetByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubjectGetByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_PartGetAllWithSubject_InputMessage">
+    <wsdl:part name="parameters" element="tns:PartGetAllWithSubject" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_PartGetAllWithSubject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PartGetAllWithSubjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_LessonGetAllWithPart_InputMessage">
+    <wsdl:part name="parameters" element="tns:LessonGetAllWithPart" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_LessonGetAllWithPart_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LessonGetAllWithPartResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookGetByBookID_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookGetByBookID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookGetByBookID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookGetByBookIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTypeGetAll_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookTypeGetAll" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTypeGetAll_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookTypeGetAllResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookGetByBookType_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookGetByBookType" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookGetByBookType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookGetByBookTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTop_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookTop" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookTopResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTopInBookType_InputMessage">
+    <wsdl:part name="parameters" element="tns:BookTopInBookType" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_BookTopInBookType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BookTopInBookTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_AccountGetByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:AccountGetByID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_AccountGetByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccountGetByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_PupilGetByAccountID_InputMessage">
+    <wsdl:part name="parameters" element="tns:PupilGetByAccountID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_PupilGetByAccountID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PupilGetByAccountIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetLessonTestTypeByLessonID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonTestTypeByLessonID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetLessonTestTypeByLessonID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessonTestTypeByLessonIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetPartTestTypeByPartID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTestTypeByPartID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetPartTestTypeByPartID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPartTestTypeByPartIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetSubjectTestTypebySubjectID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectTestTypebySubjectID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetSubjectTestTypebySubjectID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSubjectTestTypebySubjectIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetTestByTestID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestByTestID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetTestByTestID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTestByTestIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_WebURL_InputMessage">
+    <wsdl:part name="parameters" element="tns:WebURL" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_WebURL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:WebURLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILearningServices">
+    <wsdl:operation name="StudyingProgrammingGetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/StudyingProgrammingGetAll" message="tns:ILearningServices_StudyingProgrammingGetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/StudyingProgrammingGetAllResponse" message="tns:ILearningServices_StudyingProgrammingGetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StudyingLevelGet">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/StudyingLevelGet" message="tns:ILearningServices_StudyingLevelGet_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/StudyingLevelGetResponse" message="tns:ILearningServices_StudyingLevelGet_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubjectGetAllWithLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/SubjectGetAllWithLevel" message="tns:ILearningServices_SubjectGetAllWithLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/SubjectGetAllWithLevelResponse" message="tns:ILearningServices_SubjectGetAllWithLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubjectGetByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/SubjectGetByName" message="tns:ILearningServices_SubjectGetByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/SubjectGetByNameResponse" message="tns:ILearningServices_SubjectGetByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PartGetAllWithSubject">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/PartGetAllWithSubject" message="tns:ILearningServices_PartGetAllWithSubject_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/PartGetAllWithSubjectResponse" message="tns:ILearningServices_PartGetAllWithSubject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LessonGetAllWithPart">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/LessonGetAllWithPart" message="tns:ILearningServices_LessonGetAllWithPart_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/LessonGetAllWithPartResponse" message="tns:ILearningServices_LessonGetAllWithPart_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookGetByBookID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/BookGetByBookID" message="tns:ILearningServices_BookGetByBookID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/BookGetByBookIDResponse" message="tns:ILearningServices_BookGetByBookID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookTypeGetAll">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/BookTypeGetAll" message="tns:ILearningServices_BookTypeGetAll_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/BookTypeGetAllResponse" message="tns:ILearningServices_BookTypeGetAll_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookGetByBookType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/BookGetByBookType" message="tns:ILearningServices_BookGetByBookType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/BookGetByBookTypeResponse" message="tns:ILearningServices_BookGetByBookType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookTop">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/BookTop" message="tns:ILearningServices_BookTop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/BookTopResponse" message="tns:ILearningServices_BookTop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BookTopInBookType">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/BookTopInBookType" message="tns:ILearningServices_BookTopInBookType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/BookTopInBookTypeResponse" message="tns:ILearningServices_BookTopInBookType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AccountGetByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/AccountGetByID" message="tns:ILearningServices_AccountGetByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/AccountGetByIDResponse" message="tns:ILearningServices_AccountGetByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PupilGetByAccountID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/PupilGetByAccountID" message="tns:ILearningServices_PupilGetByAccountID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/PupilGetByAccountIDResponse" message="tns:ILearningServices_PupilGetByAccountID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLessonTestTypeByLessonID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetLessonTestTypeByLessonID" message="tns:ILearningServices_GetLessonTestTypeByLessonID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetLessonTestTypeByLessonIDResponse" message="tns:ILearningServices_GetLessonTestTypeByLessonID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTestTypeByPartID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetPartTestTypeByPartID" message="tns:ILearningServices_GetPartTestTypeByPartID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetPartTestTypeByPartIDResponse" message="tns:ILearningServices_GetPartTestTypeByPartID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectTestTypebySubjectID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetSubjectTestTypebySubjectID" message="tns:ILearningServices_GetSubjectTestTypebySubjectID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetSubjectTestTypebySubjectIDResponse" message="tns:ILearningServices_GetSubjectTestTypebySubjectID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTestByTestID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetTestByTestID" message="tns:ILearningServices_GetTestByTestID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetTestByTestIDResponse" message="tns:ILearningServices_GetTestByTestID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="WebURL">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/WebURL" message="tns:ILearningServices_WebURL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/WebURLResponse" message="tns:ILearningServices_WebURL_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ILearningServices" type="tns:ILearningServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="StudyingProgrammingGetAll">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/StudyingProgrammingGetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StudyingLevelGet">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/StudyingLevelGet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubjectGetAllWithLevel">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/SubjectGetAllWithLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubjectGetByName">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/SubjectGetByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartGetAllWithSubject">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/PartGetAllWithSubject" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LessonGetAllWithPart">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/LessonGetAllWithPart" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookGetByBookID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/BookGetByBookID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookTypeGetAll">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/BookTypeGetAll" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookGetByBookType">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/BookGetByBookType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookTop">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/BookTop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BookTopInBookType">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/BookTopInBookType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AccountGetByID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/AccountGetByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PupilGetByAccountID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/PupilGetByAccountID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLessonTestTypeByLessonID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/GetLessonTestTypeByLessonID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartTestTypeByPartID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/GetPartTestTypeByPartID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubjectTestTypebySubjectID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/GetSubjectTestTypebySubjectID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTestByTestID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/GetTestByTestID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WebURL">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/WebURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="LearningServices">
+    <wsdl:port name="BasicHttpBinding_ILearningServices" binding="tns:BasicHttpBinding_ILearningServices">
+      <soap:address location="http://localhost:9999/Services/LearningServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="ITBusServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Pes.Core" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" />
+      <xsd:import schemaLocation="http://localhost:9999/Services/VN/ITBusServices.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IITBusServices_GetAllLessionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLessionGroup" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllLessionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllLessionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetLessions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessions" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetLessions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllPartsByLession_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPartsByLession" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllPartsByLession_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllPartsByLessionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetModuleByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleByID" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetModuleByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModuleByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetHomeLessionGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeLessionGroup" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetHomeLessionGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetHomeLessionGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetLessionGroupByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessionGroupByID" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetLessionGroupByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLessionGroupByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_InsertPupil_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPupil" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_InsertPupil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertPupilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilByID" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilLogin" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_UpdatePupil_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePupil" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_UpdatePupil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePupilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_CopyPupil_InputMessage">
+    <wsdl:part name="parameters" element="tns:CopyPupil" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_CopyPupil_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CopyPupilResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilByEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilByEmail" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetPupilByEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPupilByEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetProfileByAccountID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileByAccountID" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetProfileByAccountID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProfileByAccountIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetWebURL_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebURL" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetWebURL_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebURLResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_MD5Hash_InputMessage">
+    <wsdl:part name="parameters" element="tns:MD5Hash" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_MD5Hash_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MD5HashResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllQuestionByTestLevel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllQuestionByTestLevel" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllQuestionByTestLevel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllQuestionByTestLevelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetQuestionByID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestionByID" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetQuestionByID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetQuestionByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllAnswersByQuestion_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAnswersByQuestion" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_GetAllAnswersByQuestion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllAnswersByQuestionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_InsertTestResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTestResult" />
+  </wsdl:message>
+  <wsdl:message name="IITBusServices_InsertTestResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertTestResultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IITBusServices">
+    <wsdl:operation name="GetAllLessionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetAllLessionGroup" message="tns:IITBusServices_GetAllLessionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetAllLessionGroupResponse" message="tns:IITBusServices_GetAllLessionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLessions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetLessions" message="tns:IITBusServices_GetLessions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetLessionsResponse" message="tns:IITBusServices_GetLessions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPartsByLession">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetAllPartsByLession" message="tns:IITBusServices_GetAllPartsByLession_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetAllPartsByLessionResponse" message="tns:IITBusServices_GetAllPartsByLession_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetModuleByID" message="tns:IITBusServices_GetModuleByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetModuleByIDResponse" message="tns:IITBusServices_GetModuleByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHomeLessionGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetHomeLessionGroup" message="tns:IITBusServices_GetHomeLessionGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetHomeLessionGroupResponse" message="tns:IITBusServices_GetHomeLessionGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLessionGroupByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetLessionGroupByID" message="tns:IITBusServices_GetLessionGroupByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetLessionGroupByIDResponse" message="tns:IITBusServices_GetLessionGroupByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertPupil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/InsertPupil" message="tns:IITBusServices_InsertPupil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/InsertPupilResponse" message="tns:IITBusServices_InsertPupil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetPupilByID" message="tns:IITBusServices_GetPupilByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetPupilByIDResponse" message="tns:IITBusServices_GetPupilByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetPupilLogin" message="tns:IITBusServices_GetPupilLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetPupilLoginResponse" message="tns:IITBusServices_GetPupilLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePupil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/UpdatePupil" message="tns:IITBusServices_UpdatePupil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/UpdatePupilResponse" message="tns:IITBusServices_UpdatePupil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CopyPupil">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/CopyPupil" message="tns:IITBusServices_CopyPupil_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/CopyPupilResponse" message="tns:IITBusServices_CopyPupil_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilByEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetPupilByEmail" message="tns:IITBusServices_GetPupilByEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetPupilByEmailResponse" message="tns:IITBusServices_GetPupilByEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileByAccountID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetProfileByAccountID" message="tns:IITBusServices_GetProfileByAccountID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetProfileByAccountIDResponse" message="tns:IITBusServices_GetProfileByAccountID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebURL">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetWebURL" message="tns:IITBusServices_GetWebURL_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetWebURLResponse" message="tns:IITBusServices_GetWebURL_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MD5Hash">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/MD5Hash" message="tns:IITBusServices_MD5Hash_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/MD5HashResponse" message="tns:IITBusServices_MD5Hash_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllQuestionByTestLevel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetAllQuestionByTestLevel" message="tns:IITBusServices_GetAllQuestionByTestLevel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetAllQuestionByTestLevelResponse" message="tns:IITBusServices_GetAllQuestionByTestLevel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestionByID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetQuestionByID" message="tns:IITBusServices_GetQuestionByID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetQuestionByIDResponse" message="tns:IITBusServices_GetQuestionByID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAnswersByQuestion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/GetAllAnswersByQuestion" message="tns:IITBusServices_GetAllAnswersByQuestion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/GetAllAnswersByQuestionResponse" message="tns:IITBusServices_GetAllAnswersByQuestion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertTestResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IITBusServices/InsertTestResult" message="tns:IITBusServices_InsertTestResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IITBusServices/InsertTestResultResponse" message="tns:IITBusServices_InsertTestResult_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IITBusServices" type="tns:IITBusServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllLessionGroup">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetAllLessionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLessions">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetLessions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPartsByLession">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetAllPartsByLession" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModuleByID">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetModuleByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHomeLessionGroup">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetHomeLessionGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLessionGroupByID">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetLessionGroupByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertPupil">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/InsertPupil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilByID">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetPupilByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilLogin">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetPupilLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePupil">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/UpdatePupil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CopyPupil">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/CopyPupil" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPupilByEmail">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetPupilByEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProfileByAccountID">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetProfileByAccountID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebURL">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetWebURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MD5Hash">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/MD5Hash" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllQuestionByTestLevel">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetAllQuestionByTestLevel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetQuestionByID">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetQuestionByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllAnswersByQuestion">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/GetAllAnswersByQuestion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertTestResult">
+      <soap:operation soapAction="http://tempuri.org/IITBusServices/InsertTestResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ITBusServices">
+    <wsdl:port name="BasicHttpBinding_IITBusServices" binding="tns:BasicHttpBinding_IITBusServices">
+      <soap:address location="http://localhost:9999/Services/VN/ITBusServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

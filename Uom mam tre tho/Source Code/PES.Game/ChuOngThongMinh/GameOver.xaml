@@ -1,0 +1,258 @@
+﻿<UserControl x:Class="ChuOngThongMinh.GameOver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="600" Height="480">
+    <UserControl.Resources>
+        <Storyboard x:Name="stbClould">
+            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgClould2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+                <EasingDoubleKeyFrame KeyTime="00:01:00" Value="-474"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="stbGameOver">
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextGame" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="321"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="317"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="313.482"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="310"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="-278"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-277"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-272"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextGame" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="2.603"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-4.091"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.117"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-6.851"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="3.665"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.161"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextGame" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-10.994"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1.002"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-4.994"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgTextOver" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-4"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar01" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar02" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar03" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar04" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar05" Storyboard.TargetProperty="(UIElement.Visibility)">
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.1000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Visible</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        		<DiscreteObjectKeyFrame KeyTime="00:00:00.3000000">
+        			<DiscreteObjectKeyFrame.Value>
+        				<Visibility>Collapsed</Visibility>
+        			</DiscreteObjectKeyFrame.Value>
+        		</DiscreteObjectKeyFrame>
+        	</ObjectAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar05" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-20"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar05" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar04" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="22"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar04" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="24"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar03" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-47"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar02" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-31"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar02" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-35"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar01" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="43"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="imgStar01" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-38"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <Canvas>
+        <Image x:Name="imgBgHome" Source="BeeImgs/BgHome.png" Height="486" Width="615" Canvas.Left="-4" Canvas.Top="-1"/>
+        <Image x:Name="imgClould2" Source="BeeImgs/Clould02.png" RenderTransformOrigin="0.5,0.5" Canvas.Left="49" Canvas.Top="11">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgFrame" Source="BeeImgs/FrameGameOver.png" Canvas.Left="169" Canvas.Top="157" Visibility="Collapsed"/>
+        <Image x:Name="imgTextGame" Source="BeeImgs/GameOverGame.png" Canvas.Left="-100" Canvas.Top="147" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform></Image>
+        <Image x:Name="imgTextOver" Source="BeeImgs/GameOverOver.png" Canvas.Left="600" Canvas.Top="147" RenderTransformOrigin="0.5,0.5">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform></Image>
+        <Image x:Name="imgStar01" Source="BeeImgs/OrangeHexagonal.png" Canvas.Left="329" Canvas.Top="125" Height="22" Width="25" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStar02" Source="BeeImgs/VioletHexagonal.png" Canvas.Left="281" Canvas.Top="122" Height="25" Width="25" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStar03" Source="BeeImgs/GreenHexagonal.png" Canvas.Left="311" Canvas.Top="141" Height="13" Width="15" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStar04" Source="BeeImgs/VioletHexagonal.png" Height="25" Width="25" Canvas.Left="329" Canvas.Top="177" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStar05" Source="BeeImgs/GreenHexagonal.png" Height="13" Width="15" Canvas.Left="314" Canvas.Top="179" RenderTransformOrigin="0.5,0.5" Visibility="Collapsed">
+        	<Image.RenderTransform>
+        		<TransformGroup>
+        			<ScaleTransform/>
+        			<SkewTransform/>
+        			<RotateTransform/>
+        			<TranslateTransform/>
+        		</TransformGroup>
+        	</Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgPoint" Source="BeeImgs/GameOverPoint.png" Canvas.Left="183" Canvas.Top="206" Height="49" Width="261" Visibility="Collapsed"></Image>
+        <Image x:Name="imgReplay" Source="BeeImgs/BtnRePlay.png" Canvas.Left="202" Canvas.Top="289" Height="36" Width="103" Visibility="Collapsed"/>
+        <Image x:Name="imgReplaySelected" Source="BeeImgs/BtnRePlaySelected.png" Canvas.Left="202" Canvas.Top="289" Height="36" Width="103" Visibility="Collapsed"/>
+        <Image x:Name="imgSavePoint" Source="BeeImgs/BtnSavePoints.png" Canvas.Left="333" Canvas.Top="289" Height="36" Width="103" Visibility="Collapsed"></Image>
+        <Image x:Name="imgSavePointSelected" Source="BeeImgs/BtnSavePointsSelected.png" Canvas.Left="333" Canvas.Top="289" Height="36" Width="103" Visibility="Collapsed"></Image>
+        <HyperlinkButton x:Name="hplReplay" Height="36" Width="103" Canvas.Left="202" Canvas.Top="289" Visibility="Collapsed" MouseEnter="hplReplay_MouseEnter" MouseLeave="hplReplay_MouseLeave" Click="hplReplay_Click" IsTabStop="False"></HyperlinkButton>
+        <HyperlinkButton x:Name="hplSavePoint" Height="36" Width="103" Canvas.Left="333" Canvas.Top="289" Visibility="Collapsed" MouseEnter="hplSavePoint_MouseEnter" MouseLeave="hplSavePoint_MouseLeave" Click="hplSavePoint_Click" IsTabStop="False"></HyperlinkButton>
+        <TextBlock x:Name="tblPoints" Height="31" Width="138" Canvas.Left="297" Canvas.Top="213" Text="" FontFamily="Fonts/VNVOGU.TTF#.VnVogue" TextWrapping="Wrap" FontSize="29.333" FontWeight="Bold" Foreground="#FF20B93F"/>
+    </Canvas>
+</UserControl>

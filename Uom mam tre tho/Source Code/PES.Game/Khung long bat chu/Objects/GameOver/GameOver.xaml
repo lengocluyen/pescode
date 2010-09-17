@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Khung_long_bat_chu.Objects.GameOver"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="303" Height="189">
+    <Canvas x:Name="LayoutRoot" Background="Transparent" Width="303" Height="189">
+        <Image Height="189" Width="303" Source="gameover.png" Stretch="Fill"/>
+        <Image x:Name="imgGameOverResult" Height="127" Width="247" Canvas.Left="29" Canvas.Top="21" Source="gameover_result.png" Stretch="Fill"/>
+        <Image x:Name="imgButtonPlayAgain" Height="40" Width="94" Canvas.Left="155" Canvas.Top="163" Source="gameover_button1.png" Stretch="Fill" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="imgButtonPlayAgain_MouseLeftButtonUp" />
+        <Image x:Name="imgTextPlayAgain" Height="24" Width="76" Canvas.Left="164" Canvas.Top="170" Source="choilai_Xanh.png" Stretch="Fill" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" MouseLeftButtonUp="imgButtonPlayAgain_MouseLeftButtonUp" />
+        
+        <Image x:Name="imgButtonSubmitScore" Height="40" Width="94" Canvas.Left="53" Canvas.Top="163" Source="gameover_button1.png" Stretch="Fill" MouseEnter="imgButtonSubmitScore_MouseEnter"  MouseLeave="imgButtonSubmitScore_MouseLeave" MouseLeftButtonUp="imgButtonSubmitScore_MouseLeftButtonUp" />
+        <Image x:Name="imgTextSubmitScore" Height="24" Width="76" Canvas.Left="63" Canvas.Top="169" Source="Luudiem_Xanh.png" Stretch="Fill" MouseEnter="imgButtonSubmitScore_MouseEnter" MouseLeave="imgButtonSubmitScore_MouseLeave" MouseLeftButtonUp="imgButtonSubmitScore_MouseLeftButtonUp" />
+    </Canvas>
+</UserControl>

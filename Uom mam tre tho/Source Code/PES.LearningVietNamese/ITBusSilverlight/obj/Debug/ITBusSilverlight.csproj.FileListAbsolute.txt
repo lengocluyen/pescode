@@ -1,0 +1,421 @@
+E:\LIVE CLUB\SVN\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\LIVE CLUB\SVN\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB\SVN\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB\SVN\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\LIVE CLUB\SVN\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB\SVN\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\App.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Frame.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Lessions.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Page.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Parts.g.cs
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\TestPage.html
+C:\Documents and Settings\Administrator\Desktop\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\TestPage.html
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\App.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Frame.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Lessions.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Page.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Parts.g.cs
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+D:\Imagine Cup\LIVE CLUB NEW VERSION\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB\Lastest Version\LIVE CLUB NEW VERSION\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\App.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\TEST\Lastest Version\SourceCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+E:\LIVE CLUB NEW VERSION\SourceCode\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\TestPage.html
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\App.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\Page.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+D:\PROJECTS\LIVE CLUB\SourceCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\App.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\VietNameseTeachingWebsite\HocTiengVietCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\App.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\App.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\Graduation paper\New30102009\HocTiengVietCode - FINAL\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\TestPage.html
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\App.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\Frame.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\Lessions.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\Page.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\Parts.g.cs
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+C:\Program Files (x86)\Adobe\Flash Media Server 3.5\applications\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\TestPage.html
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\App.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Frame.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Lessions.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Page.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Parts.g.cs
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+F:\ITBus\03. SOURCE CODE\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\TestPage.html
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\App.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Frame.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Lessions.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Page.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\Parts.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Le Ngoc Luyen\Desktop\03. SOURCE CODE\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\TestPage.html
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\App.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\Frame.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\Lessions.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\Page.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\Parts.g.cs
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\ITbusCode\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+C:\Documents and Settings\Le Ngoc Luyen\My Documents\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+C:\Users\NGUYEN\Desktop\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LAM VIEC\IMAGINE\Flychips's team_ DaLat U\Source\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+I:\Luan Van\PES\PES_SourceCode\PrimaryEducationSystem\PrimaryEducationSystem.VietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+I:\Luan Van\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\AppManifest.xaml
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\ITBusSilverlight.xap
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\TestPage.html
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\Bin\Debug\MultiLanguages.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\ClientBin\AppManifest.xaml
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.dll
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.pdb
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.xap
+D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.xap
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\FishEyeMenu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Frame.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Lessions.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Page.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\Parts.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\ITBusSilverlight.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.dll
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.pdb
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\ITBusSilverlight.xap
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\ITBusSilverlight\obj\Debug\XapCacheFile.xml

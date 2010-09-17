@@ -1,0 +1,32 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="PESServicesSessionSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <transport>
+                            <extendedProtectionPolicy policyEnforcement="Never" />
+                        </transport>
+                    </security>
+                </binding>
+                <binding name="BasicHttpBinding_IITBusServices" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None">
+                        <transport>
+                            <extendedProtectionPolicy policyEnforcement="Never" />
+                        </transport>
+                    </security>
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:9999/services/PESServicesSession.asmx"
+                binding="basicHttpBinding" bindingConfiguration="PESServicesSessionSoap"
+                contract="PESServicesSession.PESServicesSessionSoap" name="PESServicesSessionSoap" />
+            <endpoint address="http://localhost:9999/Services/VN/ITBusServices.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IITBusServices"
+                contract="ITBusServiceReference.IITBusServices" name="BasicHttpBinding_IITBusServices" />
+        </client>
+    </system.serviceModel>
+</configuration>

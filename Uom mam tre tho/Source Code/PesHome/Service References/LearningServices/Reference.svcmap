@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="beddff29-c7cc-4a14-8d7e-235baa8e67fa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9999/Services/LearningServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LearningServices5.xsd" MetadataType="Schema" ID="0cdd7a25-8ae5-478f-8d97-ad04a087dca7" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="LearningServices1.wsdl" MetadataType="Wsdl" ID="7e999776-3db6-4af1-bba2-16f15155f196" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?wsdl" />
+    <MetadataFile FileName="LearningServices51.xsd" MetadataType="Schema" ID="43b5eb14-c6e5-42ee-9ed7-55306452ce4b" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?xsd=xsd4" />
+    <MetadataFile FileName="LearningServices1.disco" MetadataType="Disco" ID="99e39d23-09af-4788-b981-8fd3124becc9" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?disco" />
+    <MetadataFile FileName="LearningServices52.xsd" MetadataType="Schema" ID="7d0fd68c-684e-4df5-9c17-21ae36040328" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="LearningServices53.xsd" MetadataType="Schema" ID="c034b5ac-9211-40c8-adc3-249ab7c8f624" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?xsd=xsd2" />
+    <MetadataFile FileName="LearningServices54.xsd" MetadataType="Schema" ID="94313d09-3ef0-4092-bb5b-dda7d80f1d78" SourceId="1" SourceUrl="http://localhost:9999/Services/LearningServices.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

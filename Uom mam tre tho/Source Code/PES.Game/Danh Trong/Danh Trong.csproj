@@ -1,0 +1,278 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D3D2254-6CF8-4B09-9651-31F7BDEEECD1}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Danh_Trong</RootNamespace>
+    <AssemblyName>Danh Trong</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Danh Trong.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Danh_Trong.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="FontHandle.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Drums\Drums.xaml.cs">
+      <DependentUpon>Drums.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\FlowRegion\FlowRegion.xaml.cs">
+      <DependentUpon>FlowRegion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\FlowRegion\Script.cs" />
+    <Compile Include="Objects\FlowRegion\ScriptCollection.cs" />
+    <Compile Include="Objects\GameOver\GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Numbers\Number.xaml.cs">
+      <DependentUpon>Number.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Singer\Singer.xaml.cs">
+      <DependentUpon>Singer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\TutBoard\TutBoard.xaml.cs">
+      <DependentUpon>TutBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GameServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\Drums\Drums.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\FlowRegion\FlowRegion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\GameOver\GameOver.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Objects\Numbers\Number.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Objects\Singer\Singer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\TutBoard\TutBoard.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.png" />
+    <Resource Include="Images\bg1.png" />
+    <Resource Include="Images\bg2.png" />
+    <Resource Include="Objects\FlowRegion\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\HLHOCTRO.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+      <Characters>
+      </Characters>
+      <Uppercase>True</Uppercase>
+      <Lowercase>True</Lowercase>
+      <Numbers>True</Numbers>
+      <Punctuation>True</Punctuation>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Objects\Drums\ct1.png" />
+    <Resource Include="Objects\Drums\ct2.png" />
+    <Resource Include="Objects\Drums\ct3.png" />
+    <Resource Include="Objects\Drums\dui1.png" />
+    <Resource Include="Objects\Drums\lefthand.png" />
+    <Resource Include="Objects\Drums\trong1.png" />
+    <Resource Include="Objects\Drums\trong2.png" />
+    <Resource Include="Objects\Drums\trong3.png" />
+    <Resource Include="Objects\Drums\xen1.png" />
+    <Resource Include="Objects\Drums\xen2.png" />
+    <Resource Include="Objects\Drums\xengshadow.png" />
+    <Resource Include="Objects\Singer\body.png" />
+    <Resource Include="Objects\Singer\head1.png" />
+    <Resource Include="Objects\Singer\leftleg.png" />
+    <Resource Include="Objects\Singer\micro.png" />
+    <Resource Include="Objects\Singer\rightleg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Objects\Drums\drum1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Drums\drum2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Drums\drum3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Drums\leftXen.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Objects\Drums\rightXen.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Fonts\VNVOGU.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\nodei.png" />
+    <Resource Include="Objects\GameOver\gameover.png" />
+    <Resource Include="Objects\GameOver\gameover_button1.png" />
+    <Resource Include="Objects\GameOver\gameover_button2.png" />
+    <Resource Include="Objects\GameOver\gameover_result.png" />
+    <Resource Include="Objects\GameOver\playagain1.png" />
+    <Resource Include="Objects\GameOver\playagain2.png" />
+    <Resource Include="Objects\TutBoard\batdau.png" />
+    <Resource Include="Objects\TutBoard\tut1.png" />
+    <Resource Include="Objects\TutBoard\tutboard.png" />
+    <Resource Include="Objects\TutBoard\tuttext.png" />
+    <None Include="Service References\GameServices\Danh_Trong.GameServices.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GameServices\configuration91.svcinfo" />
+    <None Include="Service References\GameServices\configuration.svcinfo" />
+    <None Include="Service References\GameServices\GameServices1.wsdl" />
+    <None Include="Service References\GameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Objects\GameOver\choilai_do.png" />
+    <Resource Include="Objects\GameOver\choilai_Xanh.png" />
+    <Resource Include="Objects\GameOver\Luudiem_do.png" />
+    <Resource Include="Objects\GameOver\Luudiem_Xanh.png" />
+    <None Include="Service References\GameServices\GameServices1.disco" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <Content Include="Sound\Cac-Tung-Cac-Tung.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\wrong.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Fonts\CHERI__.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\diem.png" />
+    <Resource Include="Objects\Numbers\0.png" />
+    <Resource Include="Objects\Numbers\1.png" />
+    <Resource Include="Objects\Numbers\2.png" />
+    <Resource Include="Objects\Numbers\3.png" />
+    <Resource Include="Objects\Numbers\4.png" />
+    <Resource Include="Objects\Numbers\5.png" />
+    <Resource Include="Objects\Numbers\6.png" />
+    <Resource Include="Objects\Numbers\7.png" />
+    <Resource Include="Objects\Numbers\8.png" />
+    <Resource Include="Objects\Numbers\9.png" />
+    <Resource Include="Objects\Numbers\minus.png" />
+    <Resource Include="Objects\Numbers\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GameServices\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\3.0\Silverlight\Microsoft.Expression.Blend.Silverlight.targets" />
+</Project>

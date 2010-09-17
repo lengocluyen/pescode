@@ -1,0 +1,10 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="Pes_Tests.MainPage"
+	Width="820" Height="750">
+
+	<Grid x:Name="LayoutRoot" Background="White">
+	
+	</Grid>
+</UserControl>

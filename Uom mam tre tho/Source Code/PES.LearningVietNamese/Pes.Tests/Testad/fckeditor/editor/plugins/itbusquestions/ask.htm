@@ -1,0 +1,92 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Language" content="vi">
+<title>Test</title>
+<script language="javascript" type="text/javascript">
+
+var FCK = window.opener.FCK;
+function ok() {
+	if(variable != null) 
+	{
+		FCK.Focus();
+		FCK.InsertHtml("abc");
+	}
+	window.close();
+}
+
+function InsertQuestion(formAsk) 
+{
+	var result = " ";
+	for (i = 0; i < formAsk.ask.length; i++)
+	{
+		if (formAsk.choice[i].checked)
+			result += "<a href=\"#\" onclick=\"alert('Bạn trả lời đúng rồi! Xin chúc mừng!');\">" + formAsk.ask[i].value + "</a>";
+		else
+			result += "<a href=\"#\" onclick=\"alert('Thật đáng tiếc! Bạn trả lời sai rồi!');\">" + formAsk.ask[i].value + "</a>";	
+			
+		if (i < formAsk.ask.length - 1)
+			result += " / ";
+	}
+	FCK.Focus();
+	FCK.InsertHtml(result + " ");
+	window.close();
+}
+
+var arrAsk = new Array();
+var arrChoice = new Array();
+
+function AddChoice(divAsk) {
+    var txtAsk = createNamedElement("text", "ask");
+    txtAsk.setAttribute("class", "textbox");
+    divAsk.appendChild(txtAsk);
+
+    divAsk.innerHTML += "&nbsp;";
+
+    var radio = createNamedElement("radio", "choice");
+    divAsk.appendChild(radio);
+
+    divAsk.innerHTML += "<br /><br />";
+}
+
+function createNamedElement(type, name) {
+
+    var element = null;
+    // Try the IE way; this fails on standards-compliant browsers
+    try {
+        element = document.createElement('<input type="' + type + '" name="' + name + '" />');
+    } catch (e) {
+        // Non-IE browser; use canonical method to create named element
+        element = document.createElement("input");
+        element.name = name;
+        element.type = type;
+    }
+
+    return element;
+}
+
+</script>
+<style>
+
+.textbox     { border: 1px solid #339933; background-color:#FFCC99 }
+.btn {background:#ECE9D8;border:1px solid green;min-width:100px;margin-left:15px;}
+</style>
+</head>
+
+<body>
+
+<form name="ask1">
+	<div id="divAsk" style="padding-left:20px;">
+		<input name="ask" type="text" class="textbox" />
+		<input type="radio" name="choice" checked="checked" /><br />
+		<br />
+		<input name="ask" type="text" class="textbox" /> <input type="radio" name="choice" /><br />
+		<br />
+	</div>
+	<br />
+	<input type="button" value="Chèn" onclick="InsertQuestion(document.ask1);" class="btn"/>
+	<input type="button" value="Thêm lựa chọn" onclick="AddChoice(document.getElementById('divAsk'));" class="btn" />
+</form>
+
+</body>
+</html>

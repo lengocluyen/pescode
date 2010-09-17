@@ -1,0 +1,300 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4BBC1CD-3B13-4EBE-8D93-1F37ACBEABD7}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Khung_long_bat_chu</RootNamespace>
+    <AssemblyName>Khung long bat chu</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Khung long bat chu.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Khung_long_bat_chu.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="FontHandle.cs" />
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Balloon\Balloon.xaml.cs">
+      <DependentUpon>Balloon.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Dinosaur\Dinosaur.xaml.cs">
+      <DependentUpon>Dinosaur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\GameOver\GameOver.xaml.cs">
+      <DependentUpon>GameOver.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Numbers\Number.xaml.cs">
+      <DependentUpon>Number.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\TimeBar\TimeBar.xaml.cs">
+      <DependentUpon>TimeBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\TutBoard\TutBoard.xaml.cs">
+      <DependentUpon>TutBoard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\GameServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\Balloon\Balloon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\Dinosaur\Dinosaur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\GameOver\GameOver.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Objects\Numbers\Number.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Objects\TimeBar\TimeBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+    <Page Include="Objects\TutBoard\TutBoard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\background.png" />
+    <Resource Include="Images\bgbelow.png" />
+    <Resource Include="Images\block.png" />
+    <Resource Include="Images\grass.png" />
+    <Resource Include="Images\teacher.png" />
+    <Resource Include="Images\tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Objects\TimeBar\clock1.png" />
+    <Resource Include="Objects\TimeBar\clock2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Objects\Dinosaur\charrun1.png" />
+    <Resource Include="Objects\Dinosaur\charrun2.png" />
+    <Resource Include="Objects\Dinosaur\charstand.png" />
+    <Resource Include="Objects\Dinosaur\charstandbody.png" />
+    <Resource Include="Objects\Dinosaur\charstandeyebelow.png" />
+    <Resource Include="Objects\Dinosaur\charstandeyebrow1.png" />
+    <Resource Include="Objects\Dinosaur\charstandeyebrow2.png" />
+    <Resource Include="Objects\Dinosaur\charstandeyes.png" />
+    <Resource Include="Objects\Dinosaur\charstandface.png" />
+    <Resource Include="Objects\Dinosaur\charstandhair.png" />
+    <Resource Include="Objects\Dinosaur\charstandnose.png" />
+    <Resource Include="Objects\Dinosaur\charstandtongue.png" />
+    <Resource Include="Objects\Dinosaur\hand.png" />
+    <Resource Include="Objects\Dinosaur\sot1.png" />
+    <Resource Include="Objects\Dinosaur\sot2.png" />
+    <Resource Include="Objects\Dinosaur\sot3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\HLHOCTRO.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+      <Characters>
+      </Characters>
+      <Uppercase>True</Uppercase>
+      <Lowercase>True</Lowercase>
+      <Numbers>True</Numbers>
+      <Punctuation>True</Punctuation>
+    </Resource>
+    <Resource Include="Objects\Balloon\balloonBlue.png" />
+    <Resource Include="Objects\Balloon\balloonBlue2.png" />
+    <Resource Include="Objects\Balloon\balloonBlue2Boom.png" />
+    <Resource Include="Objects\Balloon\balloonBlueBoom.png" />
+    <Resource Include="Objects\Balloon\balloonBrown.png" />
+    <Resource Include="Objects\Balloon\balloonBrownBoom.png" />
+    <Resource Include="Objects\Balloon\balloonGreen.png" />
+    <Resource Include="Objects\Balloon\balloonGreenBoom.png" />
+    <Resource Include="Objects\Balloon\balloonPink.png" />
+    <Resource Include="Objects\Balloon\balloonPinkBoom.png" />
+    <Resource Include="Objects\Balloon\balloonWhite.png" />
+    <Resource Include="Objects\Balloon\balloonWhiteBoom.png" />
+    <Resource Include="Objects\Balloon\balloonYellow.png" />
+    <Resource Include="Objects\Balloon\balloonYellowBoom.png" />
+    <Resource Include="Objects\Balloon\boom1.png" />
+    <Resource Include="Objects\Balloon\boom2.png" />
+    <Resource Include="Objects\TimeBar\bar.png" />
+    <Resource Include="Objects\TimeBar\barfill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\diem.png" />
+    <Resource Include="Objects\Numbers\0.png" />
+    <Resource Include="Objects\Numbers\1.png" />
+    <Resource Include="Objects\Numbers\2.png" />
+    <Resource Include="Objects\Numbers\3.png" />
+    <Resource Include="Objects\Numbers\4.png" />
+    <Resource Include="Objects\Numbers\5.png" />
+    <Resource Include="Objects\Numbers\6.png" />
+    <Resource Include="Objects\Numbers\7.png" />
+    <Resource Include="Objects\Numbers\8.png" />
+    <Resource Include="Objects\Numbers\9.png" />
+    <Resource Include="Objects\Numbers\minus.png" />
+    <Resource Include="Objects\Numbers\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\VNVOGU.TTF">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+    </Resource>
+    <Resource Include="Objects\TutBoard\batdau.png" />
+    <Resource Include="Objects\TutBoard\tutboard.png" />
+    <Resource Include="Objects\TutBoard\tuttext.png" />
+    <Resource Include="Objects\GameOver\gameover.png" />
+    <Resource Include="Objects\GameOver\gameover_button1.png" />
+    <Resource Include="Objects\GameOver\gameover_button2.png" />
+    <Resource Include="Objects\GameOver\gameover_result.png" />
+    <Resource Include="Objects\GameOver\playagain1.png" />
+    <Resource Include="Objects\GameOver\playagain2.png" />
+    <None Include="Service References\GameServices\configuration91.svcinfo" />
+    <None Include="Service References\GameServices\configuration.svcinfo" />
+    <None Include="Service References\GameServices\GameServices1.wsdl" />
+    <None Include="Service References\GameServices\Khung_long_bat_chu.GameServices.UpdateScoreResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\GameServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Objects\GameOver\choilai_do.png" />
+    <Resource Include="Objects\GameOver\choilai_Xanh.png" />
+    <Resource Include="Objects\GameOver\Luudiem_do.png" />
+    <Resource Include="Objects\GameOver\Luudiem_Xanh.png" />
+    <None Include="Service References\GameServices\GameServices1.disco" />
+    <Content Include="ServiceReferences.ClientConfig" />
+    <Content Include="Sound\background.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\begin.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\boom.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\hit.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\lose.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\lose2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\pip.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\win1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sound\wrong.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\GameServices\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\3.0\Silverlight\Microsoft.Expression.Blend.Silverlight.targets" />
+</Project>

@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+    <title>Chèn âm thanh</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <script language="javascript" type="text/javascript">
+        var FCK = window.opener.FCK;
+        var domain = document.location.href;
+
+        function InsertSound(txtSound) {                      
+            //var result = "<embed src=\""+ txtSound.value +"\" autostart=false width=0 height=0 id=\"lessionSound\"enablejavascript=\"true\" />";
+            var result = "<img id = 'imgSoundID' width=\"48\" height=\"48\" src='Images/Speaker.png'";
+            result += " onclick=\"DHTMLSound('" + txtSound.value + "')\" style = 'cursor: pointer;' title = 'Nghe đọc' alt = 'Nghe đọc'/>";
+            FCK.Focus();
+            FCK.InsertHtml(result);
+            window.close();
+        }
+        
+        function OpenFileBrowser() {
+            var start = 0;
+            var end = domain.indexOf("/fckeditor");
+            domain = domain.substring(start, end);
+            window.open(domain + "/fckeditor/editor/filemanager/browser/default/browser.html?Connector=" + domain + "/fckeditor%2Feditor%2Ffilemanager%2Fconnectors%2Faspx%2Fconnector.aspx", "txtSoundFile", "width=600,height=400");
+        }
+
+        function SetUrl(url) {
+            url = url.substring(1, url.length);
+            url = url.substring(url.indexOf('/'), url.length);
+
+            document.getElementById("txtSoundFile").value = url;
+        }
+        //Open popup window
+        function popUpWindows(url, hh, ww) {
+            var start = 0;
+            var end = domain.indexOf("/fckeditor");
+            domain = domain.substring(start, end);
+            newwindow = window.open(domain + url, 'name', 'height=' + hh + ',width=' + ww + ',resizable=no,scrollbars=yes,toolbar=no,menubar=no,location=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+    </script>
+
+</head>
+<body>
+    <form name="sound">
+    <b>Link file âm thanh:</b>
+    <input type="text" name="txtSoundFile" id="txtSoundFile" size="30" />&nbsp
+    <input type="button" value="Tìm/Up file lên server" onclick="OpenFileBrowser();" /><br /><br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input id="btn_PopUpRecorder" type="button" value="Thu Âm" onclick="return popUpWindows('/Admin/AudioRecorder/AudioRecorder.aspx',196,325);" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Chèn" onclick="InsertSound(document.sound.txtSoundFile);" />
+    </form>
+</body>
+</html>

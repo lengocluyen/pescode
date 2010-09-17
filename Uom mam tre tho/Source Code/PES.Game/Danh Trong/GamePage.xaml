@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Danh_Trong.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+     Width="684" Height="547">
+    <ContentControl IsTabStop="True">
+        <Canvas x:Name="LayoutRoot" Background="#FFE0F46E" HorizontalAlignment="Right" Width="684" Height="547" RenderTransformOrigin="0.5 0.5">
+
+            <Canvas.RenderTransform>
+                <ScaleTransform x:Name="PageScale" ScaleX="1" ScaleY="1"/>
+            </Canvas.RenderTransform>
+
+            <Canvas x:Name="canvasMainContent" Height="547" Width="684">
+                <Canvas x:Name="canvasBG" Height="501" Width="100">
+                    <Image Height="550" Width="888" Source="Images/background.png" Stretch="Fill" Canvas.Left="-67"/>
+                    <Image Height="264" Width="835" Canvas.Left="-45" Canvas.Top="361" Source="Images/bg1.png" Stretch="Fill" Canvas.ZIndex="1"/>
+                </Canvas>
+                <Canvas x:Name="canvasFlow" Height="527" Width="342"/>
+                <Canvas x:Name="canvasDrums" Height="223" Width="342" Canvas.Top="324" Canvas.ZIndex="1" Canvas.Left="6"/>
+                <Image Height="173" Width="857" Canvas.Left="-77" Canvas.Top="448" Source="Images/bg2.png" Stretch="Fill" Canvas.ZIndex="2"/>
+                <Canvas x:Name="canvasSinger" Height="486" Width="167" Canvas.Left="478" Canvas.Top="35"/>
+
+
+                <Image Height="53" Width="104" Canvas.Left="390" Canvas.Top="9" Source="Images/diem.png" Stretch="Fill"/>
+                <Canvas x:Name="canvasPoint" Height="60" Width="172" Canvas.Left="504" Canvas.Top="18" Canvas.ZIndex="3"/>
+                <Canvas x:Name="canvasLives" Height="59" Width="156" Canvas.Left="528" Canvas.Top="488" Canvas.ZIndex="2">
+                    <Image Height="54" Width="49" Canvas.Left="7" Source="Images/nodei.png" Stretch="Fill" Canvas.Top="2"/>
+                    <Image Height="54" Width="49" Canvas.Left="56" Source="Images/nodei.png" Stretch="Fill"/>
+                    <Image Height="54" Width="49" Canvas.Left="105" Canvas.Top="2" Source="Images/nodei.png" Stretch="Fill"/>
+                </Canvas>
+            </Canvas>
+            <Canvas x:Name="canvasGameOver" Height="547" Width="684" Canvas.ZIndex="1"/>
+            <Canvas x:Name="canvasTutBoard" Height="475" Width="500" Canvas.Left="96" Canvas.Top="22" Canvas.ZIndex="9"/>
+
+            <MediaElement x:Name="_backgroundSound" Volume="0.5" MediaEnded="_backgroundSound_MediaEnded" />
+            <MediaElement x:Name="_effectSound" Volume="0.5" />
+        </Canvas>
+    </ContentControl>
+</UserControl>

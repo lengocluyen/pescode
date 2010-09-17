@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UpdateScore">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hash" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gameID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="score" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateScoreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateScoreResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChallengeID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="gameID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetChallengeIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetChallengeIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UpdateScoreSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateScore" />
+  </wsdl:message>
+  <wsdl:message name="UpdateScoreSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetChallengeIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetChallengeID" />
+  </wsdl:message>
+  <wsdl:message name="GetChallengeIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetChallengeIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GameServicesSoap">
+    <wsdl:operation name="UpdateScore">
+      <wsdl:input message="tns:UpdateScoreSoapIn" />
+      <wsdl:output message="tns:UpdateScoreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetChallengeID">
+      <wsdl:input message="tns:GetChallengeIDSoapIn" />
+      <wsdl:output message="tns:GetChallengeIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GameServicesSoap" type="tns:GameServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateScore">
+      <soap:operation soapAction="http://tempuri.org/UpdateScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChallengeID">
+      <soap:operation soapAction="http://tempuri.org/GetChallengeID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GameServicesSoap12" type="tns:GameServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UpdateScore">
+      <soap12:operation soapAction="http://tempuri.org/UpdateScore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetChallengeID">
+      <soap12:operation soapAction="http://tempuri.org/GetChallengeID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GameServices">
+    <wsdl:port name="GameServicesSoap" binding="tns:GameServicesSoap">
+      <soap:address location="http://localhost:9999/services/GameServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GameServicesSoap12" binding="tns:GameServicesSoap12">
+      <soap12:address location="http://localhost:9999/services/GameServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

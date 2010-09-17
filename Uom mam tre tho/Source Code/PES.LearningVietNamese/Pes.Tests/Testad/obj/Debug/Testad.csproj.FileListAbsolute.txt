@@ -1,0 +1,17 @@
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\Testad.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\Testad.pdb
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\Pes.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\StructureMap.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\DynamicQuery.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\log4net.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\SubSonic.Core.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\StructureMap.xml
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\DynamicQuery.pdb
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\Pes.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\SubSonic.Core.pdb
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\SubSonic.Core.xml
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\obj\Debug\Testad.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\obj\Debug\Testad.pdb
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\AjaxControlToolkit.dll
+D:\Documents and Settings\ITBUS\Desktop\Pes.Tests\Testad\bin\FredCK.FCKeditorV2.dll

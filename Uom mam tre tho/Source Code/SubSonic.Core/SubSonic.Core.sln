@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubSonic.Core", "SubSonic.Core.csproj", "{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicQuery", "..\DynamicQuery\DynamicQuery.csproj", "{7B92EBAD-8370-4BA0-9371-1C029984203C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fisharoo.FisharooCore.Core", "..\Fisharoo.FisharooCore.Core\Fisharoo.FisharooCore.Core.csproj", "{C5A44DF9-8648-48F3-BCC8-6109245BB7C9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SocialNetworking", "..\SocialNetworking\", "{691C3790-B0F8-4847-8505-83BBA6262211}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/SocialNetworking"
+		Debug.AspNetCompiler.PhysicalPath = "..\SocialNetworking\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\SocialNetworking\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/SocialNetworking"
+		Release.AspNetCompiler.PhysicalPath = "..\SocialNetworking\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\SocialNetworking\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "1934"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FF90B2-2D33-4EC0-91B6-A30FDF1B3374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B92EBAD-8370-4BA0-9371-1C029984203C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B92EBAD-8370-4BA0-9371-1C029984203C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B92EBAD-8370-4BA0-9371-1C029984203C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B92EBAD-8370-4BA0-9371-1C029984203C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5A44DF9-8648-48F3-BCC8-6109245BB7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5A44DF9-8648-48F3-BCC8-6109245BB7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5A44DF9-8648-48F3-BCC8-6109245BB7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5A44DF9-8648-48F3-BCC8-6109245BB7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691C3790-B0F8-4847-8505-83BBA6262211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691C3790-B0F8-4847-8505-83BBA6262211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691C3790-B0F8-4847-8505-83BBA6262211}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{691C3790-B0F8-4847-8505-83BBA6262211}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
