@@ -11,11 +11,12 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using Pes.Core;
+using SubSonic.Schema;
 
 namespace PESWeb.Blogs
 {
     public interface IDefault
     {
-        void LoadBlogs(List<Blog> Blogs);
+        void LoadBlogs(PagedList<Blog> Blogs);
     }
 }

@@ -82,7 +82,7 @@ namespace PESWeb.UserControls
                     }
                     phComments.Controls.Add(new LiteralControl("</div>"));
                     
-                    phComments.Controls.Add(new LiteralControl("<div class='exComments'>"));
+                    phComments.Controls.Add(new LiteralControl("<div class='exComments' style='margin-top:-8px'>"));
                     phComments.Controls.Add(new LiteralControl("<div class='comments'>"));
                     for (i = _config.PageNumItem - 3; i < comments.Count; i++)
                     {

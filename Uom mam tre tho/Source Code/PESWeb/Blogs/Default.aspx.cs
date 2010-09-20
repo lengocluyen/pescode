@@ -12,6 +12,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using Pes.Core;
+using SubSonic.Schema;
 
 namespace PESWeb.Blogs
 {
@@ -21,19 +22,37 @@ namespace PESWeb.Blogs
         public Default()
         {
             _presenter = new DefaultPresenter();
+            
+        }
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            pager.Command += new CommandEventHandler(pager_Command);
         }
 
+        void pager_Command(object sender, CommandEventArgs e)
+        {
+            _presenter.DataBinding(pager.CurrentIndex, pager.PageSize);
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
-            _presenter.Init(this);
+            _presenter.Init(this, IsPostBack);
+            if (!IsPostBack)
+            {
+                _presenter.DataBinding(pager.CurrentIndex, pager.PageSize);
+            }
         }
-
-        public void LoadBlogs(List<Blog> Blogs)
+        public void LoadBlogs(PagedList<Blog> Blogs)
         {
-            lvBlogs.DataSource = Blogs;
+            PagedList<Blog> list = Blogs;
+            if (pager != null)
+            {
+                pager.ItemCount = list.TotalCount;
+            }
+
+            lvBlogs.DataSource = list;
             lvBlogs.DataBind();
         }
-
         public void lvBlogs_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
             Literal litBlogID = e.Item.FindControl("litBlogID") as Literal;
@@ -43,6 +62,9 @@ namespace PESWeb.Blogs
 
             //linkTitle.NavigateUrl = "~/Blogs/ViewPost.aspx?BlogID=" + litBlogID.Text;
             linkTitle.NavigateUrl = "~/Blogs/" + litUsername.Text + "/" + litPageName.Text + ".aspx";
+            
         }
+        
+      
     }
 }

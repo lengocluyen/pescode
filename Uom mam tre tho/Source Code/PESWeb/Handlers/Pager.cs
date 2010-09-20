@@ -125,7 +125,7 @@ namespace PESWeb
         //    get { return _pageSize; }
         //    set { _pageSize = value; }
         //}
-        private int _pageSize = 15;
+        private int _pageSize = 6;
         [Category("Behavioural")]
         public int PageSize
         {
@@ -530,7 +530,7 @@ namespace PESWeb
         private string RenderFirst()
         {
             string templateCell = "<a class=\"PagerHyperlinkStyle First\" href=\"{0}\" title=\"" + BackToFirstClause + "\"> " + FirstClause + " </a>";
-            return String.Format(templateCell, Page.ClientScript.GetPostBackClientHyperlink(this, "1"));
+            return String.Format(templateCell, Page.ClientScript.GetPostBackClientHyperlink(this, " 1"));
         }
 
         private string RenderLast()

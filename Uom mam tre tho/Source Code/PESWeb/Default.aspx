@@ -54,25 +54,26 @@
                         </div>
                     </SeparatorTemplate>
                 </asp:Repeater>
-              
-                 <%-- <asp:UpdatePanel ID="upFeeds" runat="server" RenderMode="Inline" UpdateMode="Conditional">
+                <%-- <asp:UpdatePanel ID="upFeeds" runat="server" RenderMode="Inline" UpdateMode="Conditional">
                     <ContentTemplate>--%>
-                <asp:PlaceHolder ID="ph_exFeeds" runat="server" Visible="false">
-                    <asp:Repeater ID="rp_exFead" runat="server">
-                        <ItemTemplate>
-                            <div class="Alert">
-                                <asp:Label ID="lblMessage2" runat="server" Text='<%# ((Alert)Container.DataItem).Message  %>'></asp:Label>
-                                <PES:Comments ID="HK2" runat="server" SystemObjectRecordID='<%# ((Alert)Container.DataItem).AlertID  %>'
-                                    SystemObjectID="7" />
-                            </div>
-                        </ItemTemplate>
-                        <SeparatorTemplate>
-                            <div class="AlertSeparator">
-                            </div>
-                        </SeparatorTemplate>
-                    </asp:Repeater>
-                </asp:PlaceHolder>
-                  <asp:Label ID="lblMessage" runat="server"></asp:Label>
+                <asp:Panel runat="server">
+                    <asp:PlaceHolder ID="ph_exFeeds" runat="server" Visible="false">
+                        <asp:Repeater ID="rp_exFead" runat="server">
+                            <ItemTemplate>
+                                <div class="Alert">
+                                    <asp:Label ID="lblMessage2" runat="server" Text='<%# ((Alert)Container.DataItem).Message  %>'></asp:Label>
+                                    <PES:Comments ID="HK2" runat="server" SystemObjectRecordID='<%# ((Alert)Container.DataItem).AlertID  %>'
+                                        SystemObjectID="7" />
+                                </div>
+                            </ItemTemplate>
+                            <SeparatorTemplate>
+                                <div class="AlertSeparator">
+                                </div>
+                            </SeparatorTemplate>
+                        </asp:Repeater>
+                    </asp:PlaceHolder>
+                </asp:Panel>
+                <asp:Label ID="lblMessage" runat="server"></asp:Label>
                 <div style="float: right; margin-top: 5px;">
                     <asp:ImageButton ID="bt_exFeeds" runat="server" ImageUrl="/images/more.jpg" />
                 </div>

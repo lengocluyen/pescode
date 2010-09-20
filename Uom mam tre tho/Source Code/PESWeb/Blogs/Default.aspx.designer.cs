@@ -14,6 +14,15 @@ namespace PESWeb.Blogs {
     public partial class Default {
         
         /// <summary>
+        /// upListView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel upListView;
+        
+        /// <summary>
         /// lvBlogs control.
         /// </summary>
         /// <remarks>
@@ -21,6 +30,15 @@ namespace PESWeb.Blogs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView lvBlogs;
+        
+        /// <summary>
+        /// pager control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.Pager pager;
         
         /// <summary>
         /// friens control.
