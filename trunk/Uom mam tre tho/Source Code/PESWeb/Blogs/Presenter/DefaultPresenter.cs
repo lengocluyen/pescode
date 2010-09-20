@@ -21,10 +21,13 @@ namespace PESWeb.Blogs
         {
         }
 
-        public void Init(IDefault View)
+        public void Init(IDefault View,bool postBack)
         {
             _view = View;
-            _view.LoadBlogs(Blog.GetLatestBlogs());
+        }
+        public void DataBinding(int currentPage, int pageSize)
+        {
+            _view.LoadBlogs(Blog.GetLatestBlogsPaging(currentPage, pageSize));
         }
     }
 }

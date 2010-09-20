@@ -2,6 +2,7 @@
 
 <asp:UpdatePanel ID="UpdatePanel1" runat="server">
     <ContentTemplate>
+    <div style="float:left;width:100%;">
         <asp:Panel runat="server" ID="pnlComment">
          <!--Views All Comments-->
          <asp:PlaceHolder ID="phComments" runat="server">
@@ -16,5 +17,7 @@
         </div>
         <div style="clear:both;height:1px;width:100%;">&nbsp</div>
         </asp:Panel>
+        </div>
+        <div style="clear:both;height:1px;width:100%;"></div>
     </ContentTemplate>
 </asp:UpdatePanel>
