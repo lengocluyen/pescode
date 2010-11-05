@@ -28,3 +28,48 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietN
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\ResolveAssemblyReference.cache
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\DynamicNavigation.Utilities.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\System.Windows.Controls.Navigation.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Dynamic\DynamicNavigation.Utilities\obj\Debug\DynamicNavigation.Utilities.pdb

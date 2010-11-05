@@ -34,3 +34,39 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietN
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\XapCacheFile.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\Pes.Tests.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\Pes.Tests.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Pes.Tests\Pes.Tests\obj\Debug\XapCacheFile.xml

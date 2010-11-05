@@ -120,6 +120,10 @@
     <Compile Include="Core\Classes\PES\TestQuestionType.cs" />
     <Compile Include="Core\Classes\PES\TestResult.cs" />
     <Compile Include="Core\Classes\PES\ToolsType.cs" />
+    <Compile Include="Core\Classes\PES\T_Answers.cs" />
+    <Compile Include="Core\Classes\PES\T_Question.cs" />
+    <Compile Include="Core\Classes\PES\T_Reply.cs" />
+    <Compile Include="Core\Classes\PES\T_Test_Result.cs" />
     <Compile Include="Core\Classes\PES\VAnswers.cs" />
     <Compile Include="Core\Classes\PES\VLession.cs" />
     <Compile Include="Core\Classes\PES\VLessionGroup.cs" />
@@ -147,6 +151,7 @@
     <Compile Include="Core\Frameworks\CoreSupport.cs" />
     <Compile Include="Core\Frameworks\DirectoryHelper.cs" />
     <Compile Include="Core\Frameworks\FileHelper.cs" />
+    <Compile Include="Core\Frameworks\ImageResize.cs" />
     <Compile Include="Core\Frameworks\PESSession.cs" />
     <Compile Include="Core\Frameworks\SessionConstants.cs" />
     <Compile Include="Core\Generated\Account.cs" />
@@ -213,6 +218,10 @@
     <Compile Include="Core\Generated\PES\TestQuestionType.cs" />
     <Compile Include="Core\Generated\PES\TestResult.cs" />
     <Compile Include="Core\Generated\PES\ToolsType.cs" />
+    <Compile Include="Core\Generated\PES\T_Answers.cs" />
+    <Compile Include="Core\Generated\PES\T_Question.cs" />
+    <Compile Include="Core\Generated\PES\T_Reply.cs" />
+    <Compile Include="Core\Generated\PES\T_Test_Result.cs" />
     <Compile Include="Core\Generated\PES\VAnswers.cs" />
     <Compile Include="Core\Generated\PES\VLession.cs" />
     <Compile Include="Core\Generated\PES\VLessionGroup.cs" />

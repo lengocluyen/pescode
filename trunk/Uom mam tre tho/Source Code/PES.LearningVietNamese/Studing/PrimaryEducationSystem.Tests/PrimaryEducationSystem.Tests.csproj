@@ -1,0 +1,257 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57F7BAD7-1101-4BD0-86EC-AD30D34FA483}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrimaryEducationSystem.Tests</RootNamespace>
+    <AssemblyName>PrimaryEducationSystem.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PrimaryEducationSystem.Tests.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PrimaryEducationSystem.Tests.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\PESWeb\ClientBin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Liquid.RichText, Version=5.2.3.24383, Culture=neutral, PublicKeyToken=7fbdd25c3fcc3919, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\ITBUSCODE\ITBus\TracNghiem\Bin\Debug\Liquid.RichText.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClockObjects\AnalogClock.xaml.cs">
+      <DependentUpon>AnalogClock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PESCommons.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\LearningServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\PESServicesSession\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </ApplicationDefinition>
+    <Page Include="ClockObjects\AnalogClock.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\LearningServices\LearningServices.wsdl" />
+    <None Include="Service References\LearningServices\LearningServices.xsd" />
+    <None Include="Service References\LearningServices\LearningServices1.xsd" />
+    <None Include="Service References\PESServicesSession\PESServicesSession.disco" />
+    <None Include="Service References\PESServicesSession\configuration91.svcinfo" />
+    <None Include="Service References\PESServicesSession\configuration.svcinfo" />
+    <None Include="Service References\PESServicesSession\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\BOD_B.TTF" />
+    <Resource Include="Fonts\BOD_BI.TTF" />
+    <Resource Include="Fonts\BOD_BLAI.TTF" />
+    <Resource Include="Fonts\BOD_BLAR.TTF" />
+    <Resource Include="Fonts\BOD_CB.TTF" />
+    <Resource Include="Fonts\BOD_CBI.TTF" />
+    <Resource Include="Fonts\BOD_CI.TTF" />
+    <Resource Include="Fonts\BOD_CR.TTF" />
+    <Resource Include="Fonts\BOD_I.TTF" />
+    <Resource Include="Fonts\BOD_R.TTF" />
+    <Resource Include="Images\answer_1.png" />
+    <Resource Include="Images\answer_2.png" />
+    <Resource Include="Images\answer_3.png" />
+    <Resource Include="Images\answer_4.png" />
+    <Resource Include="Images\back.png" />
+    <Resource Include="Images\balloon.png" />
+    <Resource Include="Images\bang.png" />
+    <Resource Include="Images\begai.png" />
+    <Resource Include="Images\betrai.png" />
+    <Resource Include="Images\bg.png" />
+    <Resource Include="Images\bg_clock.png" />
+    <Resource Include="Images\bg_left.png" />
+    <Resource Include="Images\btn_close.png" />
+    <Resource Include="Images\child doing math.png" />
+    <Resource Include="Images\cloud.png" />
+    <Resource Include="Images\cloud1.png" />
+    <Resource Include="Images\cloud2.png" />
+    <Resource Include="Images\co.png" />
+    <Resource Include="Images\footer.png" />
+    <Resource Include="Images\header.png" />
+    <Resource Include="Images\hoa.png" />
+    <Resource Include="Images\homepage.png" />
+    <Resource Include="Images\khungMay.png" />
+    <Resource Include="Images\loa.png" />
+    <Resource Include="Images\mat_troi.png" />
+    <Resource Include="Images\next.png" />
+    <Resource Include="Images\note_dis.png" />
+    <Resource Include="Images\note_en.png" />
+    <Resource Include="Images\saveFrame.png" />
+    <Resource Include="Images\star.png" />
+    <Resource Include="Images\star1.png" />
+    <Resource Include="Images\start.png" />
+    <Resource Include="Images\sun.png" />
+    <Resource Include="Images\Tiger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LearningServices\" />
+    <WCFMetadataStorage Include="Service References\PESServicesSession\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LearningServices\LearningServices.disco" />
+    <None Include="Service References\LearningServices\LearningServices2.xsd" />
+    <None Include="Service References\LearningServices\LearningServices3.xsd" />
+    <None Include="Service References\LearningServices\LearningServices4.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LearningServices\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LearningServices\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Account.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Book.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.BookType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Lesson.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.LessonTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Part.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.PartTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Profile.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Pupils.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.StudyLevel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.StudyProgramming.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Subject.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.SubjectTestType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.Test.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.T_Answers.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\PrimaryEducationSystem.Tests.LearningServices.T_Question.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LearningServices\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\PESServicesSession\PESServicesSession.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

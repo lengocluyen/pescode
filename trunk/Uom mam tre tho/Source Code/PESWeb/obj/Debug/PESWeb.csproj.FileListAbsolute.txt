@@ -175,3 +175,44 @@ I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietName
 I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
 I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
 I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\log4net.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\AjaxControlToolkit.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\de\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\es\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\he\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\it\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\de\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\es\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\it\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb

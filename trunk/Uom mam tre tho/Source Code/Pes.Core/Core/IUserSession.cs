@@ -5,5 +5,7 @@ namespace Pes.Core
         bool LoggedIn { get; set; }
         string Username { get; set; }
         Pes.Core.Account CurrentUser { get; set; }
+        byte[] UploadImage { get; set; }
+
     }
 }

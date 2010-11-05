@@ -6,6 +6,7 @@
     xmlns:part="clr-namespace:PrimaryEducationSystem.Study.Lessons.PartOne"        
     xmlns:toolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
     mc:Ignorable="d" xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data" 
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:im="clr-namespace:Microsoft.Expression.Interactivity.Media;assembly=Microsoft.Expression.Interactions" 
     x:Class="PrimaryEducationSystem.Study.Lessons.MainPage"
     Width="auto" Height="auto" Loaded="UserControl_Loaded">
     <UserControl.Resources>
@@ -107,7 +108,20 @@
         <Storyboard x:Name="Storyboard_P3"/>
         <Storyboard x:Name="Storyboard_P4"/>
 
-        <Storyboard x:Name="StoryboardTests"/>
+        <Storyboard x:Name="StoryboardTests">
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image_Test" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.286"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image_Test" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.286"/>
+        	</DoubleAnimationUsingKeyFrames>
+        	<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image_Test" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)">
+        		<EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+        		<EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0"/>
+        	</DoubleAnimationUsingKeyFrames>
+        </Storyboard>
         <Style x:Key="ButtonStyle_ButtonHome" TargetType="Button">
             <Setter Property="Template">
                 <Setter.Value>
@@ -178,14 +192,6 @@
                 <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.501"/>
                 <EasingDoubleKeyFrame KeyTime="00:00:01" Value="0.501"/>
             </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image1" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
-            </DoubleAnimationUsingKeyFrames>
-            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="image2" Storyboard.TargetProperty="(UIElement.Opacity)">
-                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
-                <EasingDoubleKeyFrame KeyTime="00:00:02" Value="0"/>
-            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Name="Storyboard_Sun" RepeatBehavior="Forever">
             <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Sun" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
@@ -200,17 +206,16 @@
     <Grid x:Name="LayoutRoot" Height="auto" Width="auto">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#FF71CBF4" Offset="0"/>
+                <GradientStop Color="White" Offset="0.659"/>
                 <GradientStop Color="#FF8ECA00" Offset="1"/>
-                <GradientStop Color="#FFEAFAFE" Offset="0.368"/>
-                <GradientStop Color="White" Offset="0.198"/>
-                <GradientStop Color="#FF8ECA00" Offset="0.402"/>
+                <GradientStop Color="#FF8ECA00" Offset="0.659"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <toolkit:Viewbox Stretch="Uniform" Margin="0,4,0,-4">
+        <toolkit:Viewbox Stretch="Uniform" Margin="0,4,0,-4" Content="nbv">
             <Canvas x:Name="PageLoad" Loaded="PageLoad_Loaded" Height="550" Width="966" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Image x:Name="background_img" Source="Images/LessonBackGround/page2.png" Stretch="UniformToFill" Height="550" Width="966" Canvas.Left="8" Canvas.Top="-48"/>
-                <Image x:Name="may2" Height="72" Width="133" Canvas.Left="127" Source="Images/LessonBackGround/khungMay.png" Stretch="Fill" Canvas.Top="-76" RenderTransformOrigin="0.5,0.5">
+                <Image x:Name="background_img" Source="Images/LessonBackGround/page2.png" Stretch="UniformToFill" Height="264" Width="966" Canvas.Top="290"/>
+                <Image x:Name="may2" Height="72" Width="133" Canvas.Left="127" Source="Images/LessonBackGround/khungMay.png" Stretch="Fill" Canvas.Top="-76" RenderTransformOrigin="0.5,0.5" Opacity="0.97">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -220,7 +225,7 @@
                         </TransformGroup>
                     </Image.RenderTransform>
                 </Image>
-                <Image x:Name="may1" Height="72" Width="133" Canvas.Left="-200" Source="Images/LessonBackGround/khungMay.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Top="-76">
+                <Image x:Name="may1" Height="72" Width="133" Canvas.Left="-200" Source="Images/LessonBackGround/khungMay.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Canvas.Top="-76" Opacity="0.945">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -230,7 +235,7 @@
                         </TransformGroup>
                     </Image.RenderTransform>
                 </Image>
-                <Image x:Name="Sun" Source="PartOne/sun2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="108" Width="122" Canvas.Left="765" Canvas.Top="9">
+                <Image x:Name="Sun" Source="PartOne/sun2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Height="108" Width="122" Canvas.Left="844">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -240,11 +245,10 @@
                         </TransformGroup>
                     </Image.RenderTransform>
                 </Image>
-                <Image Height="360" Width="509" Canvas.Left="238" Canvas.Top="88" Source="Images/LessonBackGround/Book.png" Stretch="Fill"/>
-                <Image Height="70" Width="63" Canvas.Left="716" Canvas.Top="410" Source="Images/LessonBackGround/hoa.png" Stretch="Fill"/>
-                <Image Height="70" Width="63" Canvas.Left="222" Canvas.Top="410" Source="Images/LessonBackGround/hoa.png" Stretch="Fill"/>
-                <HyperlinkButton x:Name="link_loa" IsTabStop="False" Canvas.Left="141" Canvas.Top="238">
-                    <Image x:Name="loa" Height="71" Width="62" Canvas.Left="-405" Canvas.Top="78" Stretch="Fill" MouseLeftButtonDown="loa_MouseLeftButtonDown" Source="Images/LessonBackGround/note_en.png" RenderTransformOrigin="0.5,0.5" MouseMove="loa_MouseMove" MouseLeave="loa_MouseLeave">
+                <Image Height="70" Width="63" Canvas.Left="849" Canvas.Top="364" Source="Images/LessonBackGround/hoa.png" Stretch="Fill"/>
+                <Image Height="70" Width="63" Canvas.Left="94" Canvas.Top="424" Source="Images/LessonBackGround/hoa.png" Stretch="Fill"/>
+                <HyperlinkButton x:Name="link_loa" IsTabStop="False" Canvas.Left="109" Canvas.Top="78">
+                    <Image x:Name="loa" Height="30" Width="26" Canvas.Left="-405" Canvas.Top="78" Stretch="Fill" MouseLeftButtonDown="loa_MouseLeftButtonDown" Source="Images/LessonBackGround/note_en.png" RenderTransformOrigin="0.5,0.5" MouseMove="loa_MouseMove" MouseLeave="loa_MouseLeave">
                         <Image.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -257,18 +261,32 @@
 
                 </HyperlinkButton>
                 <MediaElement x:Name="media"  Source="../Sounds/Lesson/Audio_WelCome/LoiChaoTrangHocToan.mp3" AutoPlay="True" HorizontalAlignment="Center" Canvas.Left="87"/>
-                <ListBox x:Name="ListBox_Lesson" SelectionChanged="ListBox_Lesson_SelectionChanged" Height="290" Width="209" Canvas.Left="513" Canvas.Top="116">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Stt}"   Margin="3" Foreground="Orange"  FontSize="9" />
-                                <TextBlock Text="{Binding List}" FontFamily="font/UVNConThuy.TTF#UVN Con Thuy" Margin="3,-3,0,0" Foreground="#FF0036EE" FontSize="18" />
-                            </StackPanel>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
-                </ListBox>
-                <Image x:Name="Image_Childmath" Height="189" Width="189" Source="Images/LessonBackGround/child doing math.png" Stretch="Fill" Canvas.Left="521" Canvas.Top="187"/>
-                <Image x:Name="image" Height="26" Width="28" Canvas.Left="791" Canvas.Top="316" Source="PartOne/Tigerta.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+                <Border x:Name="Border_LessonList" Height="401" Width="331" Canvas.Left="513" Canvas.Top="78" BorderBrush="White" BorderThickness="1">
+                    <Grid>
+                        <TextBlock Margin="8,2,8,0" VerticalAlignment="Top" Text="DANH SÁCH BÀI HỌC" TextWrapping="Wrap" FontSize="13.333" FontWeight="Bold">
+                			<TextBlock.Foreground>
+                				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                					<GradientStop Color="#FFFF00EE" Offset="0"/>
+                					<GradientStop Color="#FFFC08EC" Offset="1"/>
+                					<GradientStop Color="#FFFFF0FE" Offset="0.504"/>
+                					<GradientStop Color="#FEFE0BEE" Offset="0.491"/>
+                				</LinearGradientBrush>
+                			</TextBlock.Foreground>
+                        </TextBlock>
+                        <ListBox x:Name="ListBox_Lesson" SelectionChanged="ListBox_Lesson_SelectionChanged" Background="{x:Null}" BorderBrush="{x:Null}" Margin="18,39,8,8">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Stt}"  FontFamily="Tahoma" Margin="3" Foreground="Orange"  FontSize="10" />
+                                        <TextBlock Text="{Binding List}"  Margin="10,3,0,3" Foreground="#FF0036EE" FontSize="10" />
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <Rectangle Fill="#FFF800FF" Height="1" Margin="10,20,163,0" VerticalAlignment="Top"/>
+                    </Grid>
+                </Border>
+                <Image x:Name="image" Height="26" Width="28" Canvas.Left="777" Canvas.Top="344" Source="PartOne/Tigerta.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
                     <Image.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -278,29 +296,92 @@
                         </TransformGroup>
                     </Image.RenderTransform>
                 </Image>
-                <Image Height="232" Width="197" Canvas.Left="698" Canvas.Top="290" Source="PartOne/Tiger.png" Stretch="Fill"/>
-                <Grid x:Name="LayoutRoot_Copy" Height="297" Width="223" d:LayoutOverrides="Width, Height" Canvas.Left="262" Canvas.Top="109">
-                    <Canvas x:Name="PartCanvas" Margin="0,0,0,8"/>
-                </Grid>
-                
-                <Button x:Name="link_Home" Height="95" Style="{StaticResource ButtonStyle_ButtonHome}" Width="95" Content="Button" Canvas.Left="127" Canvas.Top="109" Click="link_Home_Click" MouseEnter="link_Home_MouseEnter" MouseLeave="link_Home_MouseLeave"/>
-                
+                <Image Height="232" Width="197" Canvas.Left="680" Canvas.Top="316" Source="PartOne/Tiger.png" Stretch="Fill"/>
+                <Border x:Name="Border_PartList" Height="401" Width="352" Canvas.Left="157" Canvas.Top="78" BorderBrush="White" BorderThickness="1">
+                    <Grid x:Name="PartList">
+                        <TextBlock Margin="8,2,8,0" VerticalAlignment="Top" Text="DANH SÁCH PHẦN HỌC" TextWrapping="Wrap" FontWeight="Bold" FontSize="13.333">
+                			<TextBlock.Foreground>
+                				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                					<GradientStop Color="#FFFF00EE" Offset="0"/>
+                					<GradientStop Color="#FFFC08EC" Offset="1"/>
+                					<GradientStop Color="#FFFFF0FE" Offset="0.504"/>
+                					<GradientStop Color="#FEFE0BEE" Offset="0.491"/>
+                				</LinearGradientBrush>
+                			</TextBlock.Foreground>
+                        </TextBlock>
+                        <Canvas x:Name="PartCanvas" Margin="8,39,8,20"/>
+                        <Rectangle Fill="#FFF800FF" Height="1" Margin="8,20,169,0" VerticalAlignment="Top"/>
+                        <TextBlock x:Name="TextBlock_PartName" VerticalAlignment="Bottom" Foreground="#FF001FAD" FontSize="11" HorizontalAlignment="Right" Margin="0,0,-119,20" Width="294">
+                            <TextBlock.RenderTransform>
+                                <ScaleTransform CenterX="5" CenterY="5"/>
+                            </TextBlock.RenderTransform>
+                        </TextBlock>
+                    </Grid>
+                </Border>
+
                 <MediaElement x:Name="media_listbaihoc" Source="../Sounds/Lesson/Audio_WelCome/DanhSachCacBaiHoc.mp3" AutoPlay="False" />
                 <MediaElement x:Name="media_home" Source="../Sounds/Lesson/Audio_WelCome/TroVeTrangChu.mp3" AutoPlay="False"/>
                 <MediaElement x:Name="media_test" Source="../Sounds/Lesson/Audio_WelCome/BaiTapTracNghiem.mp3" AutoPlay="False"/>
-                
-                <Image x:Name="image1" Height="128" Width="128" Canvas.Left="95" Canvas.Top="351" Source="PartOne/cuu1.png" Stretch="Fill" Opacity="0"/>
-                <Image x:Name="image2" Height="128" Width="128" Canvas.Left="95" Canvas.Top="351" Source="PartOne/cuu2.png" Stretch="Fill"/>
-                <Image Height="57" Width="51" Canvas.Left="262" Canvas.Top="423" Source="hoa.png" Stretch="Fill"/>
-                <Image Height="37" Width="33" Canvas.Left="24" Canvas.Top="272" Source="hoa.png" Stretch="Fill"/>
-                <Image Height="58" Width="52" Canvas.Left="824" Canvas.Top="220" Source="hoa.png" Stretch="Fill"/>
-                <Image Height="36" Width="32" Canvas.Left="880" Canvas.Top="220" Source="hoa.png" Stretch="Fill"/>
-                <Image Height="44" Width="40" Canvas.Left="791" Canvas.Top="246" Source="hoa.png" Stretch="Fill"/>
-                <Image Height="73" Width="65" Canvas.Left="698" Canvas.Top="410" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="57" Width="51" Canvas.Left="238" Canvas.Top="479" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="37" Width="33" Canvas.Left="879" Canvas.Top="505" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="58" Width="52" Canvas.Left="8" Canvas.Top="484" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="36" Width="32" Canvas.Left="916" Canvas.Top="506" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="44" Width="40" Canvas.Left="60" Canvas.Top="498" Source="hoa.png" Stretch="Fill"/>
+                <Image Height="73" Width="65" Canvas.Left="682" Canvas.Top="452" Source="hoa.png" Stretch="Fill"/>
                 <Image Height="99" Width="88" Canvas.Left="824" Canvas.Top="438" Source="hoa.png" Stretch="Fill"/>
+                <Border Height="43" Width="966" Canvas.Top="10" BorderBrush="White" BorderThickness="1">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.245">
+                            <GradientStop Color="White" Offset="0"/>
+                            <GradientStop Color="#FF004BEC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid Margin="7,0,0,0">
+                        <TextBlock x:Name="Bannner" Text="TRANG HỌC TOÁN LỚP MỘT" TextWrapping="Wrap" Foreground="#FF006F00" FontSize="26.667" Margin="403,1,119,0" FontWeight="Bold"/>
+
+                        <TextBlock x:Name="Bannner_Copy" Text="TRANG HỌC TOÁN LỚP MỘT" TextWrapping="Wrap" FontSize="26.667" FontWeight="Bold" Margin="401,0,119,1" OpacityMask="Black">
+                			<TextBlock.Foreground>
+                				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                					<GradientStop Color="#FF158000" Offset="0"/>
+                					<GradientStop Color="#FFB4FFA5" Offset="1"/>
+                					<GradientStop Color="#FF2AFF00" Offset="0.534"/>
+                					<GradientStop Color="#FFBCFFAF" Offset="0.599"/>
+                				</LinearGradientBrush>
+                			</TextBlock.Foreground>
+                        </TextBlock>
+                        <Button x:Name="link_Home" Style="{StaticResource ButtonStyle_ButtonHome}" Width="68" Content="Button" Click="link_Home_Click" MouseEnter="link_Home_MouseEnter" MouseLeave="link_Home_MouseLeave" HorizontalAlignment="Left" Margin="33,-18,0,0"/>
+						
+                    	<Image x:Name="image_Test" HorizontalAlignment="Left" Margin="133,-2,0,1" Width="58" Source="Images/LessonBackGround/Tests.png" Stretch="Fill" MouseLeftButtonDown="image_Test_MouseLeftButtonDown" RenderTransformOrigin="0.5,0.5">
+                    		<Image.RenderTransform>
+                    			<TransformGroup>
+                    				<ScaleTransform/>
+                    				<SkewTransform/>
+                    				<RotateTransform/>
+                    				<TranslateTransform/>
+                    			</TransformGroup>
+                    		</Image.RenderTransform>
+                    		<i:Interaction.Triggers>
+                    			<i:EventTrigger EventName="MouseEnter" SourceName="image_Test">
+                    				<im:PlaySoundAction Source="/Sound/BaiTapTracNghiem.mp3"/>
+                    			</i:EventTrigger>
+                    		</i:Interaction.Triggers>
+                    	</Image>
+
+                    </Grid>
+                </Border>
+                <Border Height="44" Width="966" Canvas.Top="510" BorderBrush="#FF1C8600" BorderThickness="1,1,1,0">
+                    <Border.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" Opacity="0.495">
+                            <GradientStop Color="#FF17BD00" Offset="0"/>
+                            <GradientStop Color="#FF6EFF5A" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid Margin="-1,-1,-1,0">
+                        <TextBlock HorizontalAlignment="Left" Margin="107,8,0,20" Width="208" Text="tieuHoc.net ©2010" TextWrapping="Wrap" Foreground="#FF063500" d:LayoutOverrides="Height"/>
+                    </Grid>
+                </Border>
             </Canvas>
         </toolkit:Viewbox>
-        <TextBlock x:Name="Bannner" FontFamily="font/UVNConThuy.TTF#UVN Con Thuy" Height="74" Margin="182,17,245,0" VerticalAlignment="Top" Text="Trang học toán lớp 1" TextWrapping="Wrap" Foreground="#FFFF6700" FontSize="48"/>
 
     </Grid>
     <!--</ScrollViewer>-->

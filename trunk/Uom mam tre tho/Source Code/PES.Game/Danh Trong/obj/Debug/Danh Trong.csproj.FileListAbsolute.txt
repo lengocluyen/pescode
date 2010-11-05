@@ -50,3 +50,81 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\Danh Tro
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\Danh Trong\obj\Debug\Danh Trong.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\Danh Trong\obj\Debug\Danh Trong.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\Danh Trong\obj\Debug\XapCacheFile.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum1.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum2.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum3.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\leftXen.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\rightXen.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\Cac-Tung-Cac-Tung.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\wrong.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\GamePage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Drums\Drums.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\FlowRegion\FlowRegion.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\GameOver\GameOver.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Numbers\Number.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Singer\Singer.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\TutBoard\TutBoard.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum1.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum2.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum3.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\leftXen.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\rightXen.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\Cac-Tung-Cac-Tung.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\wrong.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\GamePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Drums\Drums.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\FlowRegion\FlowRegion.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\GameOver\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Numbers\Number.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Singer\Singer.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\TutBoard\TutBoard.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\Danh Trong\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum1.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum2.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\drum3.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\leftXen.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Objects\Drums\rightXen.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\Cac-Tung-Cac-Tung.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Sound\wrong.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\Danh Trong.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\GamePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Drums\Drums.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\FlowRegion\FlowRegion.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\GameOver\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Numbers\Number.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\Singer\Singer.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Objects\TutBoard\TutBoard.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\Danh Trong.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\Danh Trong\obj\Debug\XapCacheFile.xml

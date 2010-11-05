@@ -236,15 +236,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="WebURL">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="WebURLResponse">
+  <xs:element name="UserLogin">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="WebURLResult" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UserLoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/Pes.Core" minOccurs="0" name="UserLoginResult" nillable="true" type="q18:Account" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByAccountID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="acc" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserByAccountIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/Pes.Core" minOccurs="0" name="GetUserByAccountIDResult" nillable="true" type="q19:Account" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -25,9 +25,9 @@ namespace Pes.Core
 		public string ProfileName { get; set; }
 		public DateTime? CreateDate { get; set; }
 		public DateTime? LastUpdateDate { get; set; }
-		public int YearOfFirstTank { get; set; }
-		public int NumberOfTanksOwned { get; set; }
-		public int NumberOfFishOwned { get; set; }
+		public string SchoolsName { get; set; }
+		public string Address { get; set; }
+		public string Enjoy { get; set; }
 		public int LevelOfExperienceTypeID { get; set; }
 		public string IMMSN { get; set; }
 		public string IMAOL { get; set; }

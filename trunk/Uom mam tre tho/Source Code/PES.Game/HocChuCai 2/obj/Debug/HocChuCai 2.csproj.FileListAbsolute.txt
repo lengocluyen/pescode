@@ -100,3 +100,156 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\HocChuCa
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\HocChuCai 2\obj\Debug\XapCacheFile.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\background.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\a.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aa.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aw.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\b.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\c.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\d.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\dd.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\e.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ee.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\g.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\h.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\i.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\k.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\l.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\m.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\n.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\o.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\oo.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ow.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\p.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\q.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\r.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\s.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\t.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\u.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\uw.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\v.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\x.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\y.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\levelup.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\wrong.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\ya.mp3
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\GamePage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Butt\Butt.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\GameOver\GameOver.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Hand\Hand.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Numbers\Number.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Tutorial\Tutorial.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\background.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\a.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aa.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aw.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\b.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\c.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\d.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\dd.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\e.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ee.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\g.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\h.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\i.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\k.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\l.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\m.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\n.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\o.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\oo.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ow.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\p.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\q.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\r.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\s.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\t.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\u.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\uw.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\v.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\x.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\y.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\levelup.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\wrong.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\ya.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\GamePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Butt\Butt.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\GameOver\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Hand\Hand.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Numbers\Number.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Tutorial\Tutorial.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\HocChuCai 2\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\background.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\a.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aa.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\aw.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\b.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\c.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\d.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\dd.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\e.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ee.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\g.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\h.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\i.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\k.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\l.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\m.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\n.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\o.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\oo.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\ow.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\p.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\q.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\r.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\s.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\t.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\u.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\uw.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\v.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\x.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\BangChuCai\y.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\levelup.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\wrong.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\Sound\ya.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\HocChuCai 2.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\GamePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Butt\Butt.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\GameOver\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Hand\Hand.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Numbers\Number.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\Objects\Tutorial\Tutorial.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\HocChuCai 2.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\HocChuCai 2\obj\Debug\XapCacheFile.xml

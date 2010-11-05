@@ -151,3 +151,60 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\PesHome.xap
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\TestPage.html
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PesHome\obj\Debug\Usercontrols\Aboutus.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.dll
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.xap
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\Aboutus.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\AvartaUC.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\Menu.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\ParkUC.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\SchoolUC.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\SocialNetUC.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\View\Home.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.dll
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PesHome\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PesHome.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PesHome.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PesHome.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\Aboutus.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\AvartaUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\Menu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\ParkUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\SchoolUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\Usercontrols\SocialNetUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\View\Home.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\PesHome.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\PesHome.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\PesHome.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PesHome\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PesHome.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\Aboutus.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\AvartaUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\Menu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\ParkUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\SchoolUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\Usercontrols\SocialNetUC.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\View\Home.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\PesHome.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\obj\Debug\XapCacheFile.xml

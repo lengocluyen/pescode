@@ -13,3 +13,18 @@ I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
 I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
 I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
 I:\Luan Van\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb
+D:\Thesis\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.dll
+D:\Thesis\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
+D:\Thesis\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
+D:\Thesis\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\DynamicQuery\bin\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb

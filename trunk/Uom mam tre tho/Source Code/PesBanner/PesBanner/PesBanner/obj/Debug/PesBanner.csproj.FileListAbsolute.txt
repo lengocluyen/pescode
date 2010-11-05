@@ -1,0 +1,32 @@
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\Microsoft.Expression.Interactions.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\System.Windows.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\System.Windows.Interactivity.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Design\PesBanner\PesBanner\PesBanner\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\AppManifest.xaml
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.dll
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.pdb
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\PesBanner.xap
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\TestPage.html
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\App.g.cs
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\MainPage.g.cs
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.g.resources
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.dll
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\PesBanner.pdb
+C:\Users\LeNgocLuyen\Desktop\PesBanner\PesBanner\PesBanner\obj\Debug\XapCacheFile.xml

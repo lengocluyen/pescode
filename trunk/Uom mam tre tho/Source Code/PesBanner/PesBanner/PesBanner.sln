@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PesBannerSite", "PesBannerSite\", "{1732260F-B3D7-4A5E-B31C-B7E6774236EE}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFramework = "3.5"
+		Debug.AspNetCompiler.VirtualPath = "/PesBannerSite"
+		Debug.AspNetCompiler.PhysicalPath = "PesBannerSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\PesBannerSite\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/PesBannerSite"
+		Release.AspNetCompiler.PhysicalPath = "PesBannerSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\PesBannerSite\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "8765"
+		ProjOutputReferences = "{34dae063-3ed7-46ef-9b9e-5682d5668267}|ClientBin|false;"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PesBanner", "PesBanner\PesBanner.csproj", "{34DAE063-3ED7-46EF-9B9E-5682D5668267}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1732260F-B3D7-4A5E-B31C-B7E6774236EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1732260F-B3D7-4A5E-B31C-B7E6774236EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1732260F-B3D7-4A5E-B31C-B7E6774236EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1732260F-B3D7-4A5E-B31C-B7E6774236EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DAE063-3ED7-46EF-9B9E-5682D5668267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DAE063-3ED7-46EF-9B9E-5682D5668267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DAE063-3ED7-46EF-9B9E-5682D5668267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DAE063-3ED7-46EF-9B9E-5682D5668267}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -198,7 +198,7 @@
             <Button x:Name="Button_Home" Height="96" HorizontalAlignment="Left" Margin="129,72,0,0" Style="{StaticResource ButtonHome}" Cursor="Hand" VerticalAlignment="Top" Width="96" Content="Button" Click="Button_Home_Click" MouseEnter="Button_Home_MouseEnter" MouseLeave="Button_Home_MouseLeave"/>
             <!--<MediaElement x:Name="audio" Height="12" HorizontalAlignment="Left" Margin="178,8,0,0" VerticalAlignment="Top" Width="16" Source="/A duck.mp3"/>-->
             <Border x:Name="container" Margin="244,83,127,134" BorderBrush="Black" BorderThickness="0" Width="1380" Height="700"/>
-            <TextBlock x:Name="TextBlock_Lessonname" Height="81" Margin="275,33,397,0" VerticalAlignment="Top" TextWrapping="Wrap" FontWeight="Bold" FontSize="48" Foreground="#FFFF7300" FontFamily="../font/UVNConThuy.TTF#UVN Con Thuy"/>
+            <TextBlock x:Name="TextBlock_Lessonname" Margin="275,33,397,0" FontFamily="Tahoma" VerticalAlignment="Top" TextWrapping="Wrap" FontWeight="Bold" FontSize="18" Foreground="#FF00881A"/>
             <Image Height="101" HorizontalAlignment="Right" Margin="0,0,191,136" VerticalAlignment="Bottom" Width="92" Source="../Images/Lessons/con ong.png" Stretch="Fill"/>
             <MediaElement x:Name="media_next" Height="24" HorizontalAlignment="Right" Margin="0,0,58,57" VerticalAlignment="Bottom" Width="0" AutoPlay="False" Source="../Sounds/Lesson/Audio_Welcome/BaiHocTiepTheo.mp3"/>
             <MediaElement x:Name="media_prev" Height="0" HorizontalAlignment="Left" Margin="8,0,0,57" VerticalAlignment="Bottom" Width="52" AutoPlay="False" Source="../Sounds/Lesson/Audio_Welcome/TroVeBaiHocTruoc.mp3"/>

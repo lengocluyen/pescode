@@ -8,7 +8,7 @@
 	Height="100" Width="100" mc:Ignorable="d">
 
     <Grid x:Name="LayoutRoot" VerticalAlignment="Top">
-        <TextBlock x:Name="TextBolock_PartID" FontSize="10" Foreground="#FF0F009A" VerticalAlignment="Top" Margin="0,98,0,0"/>
-        <Image x:Name="_image" Margin="0,0,0,1"/>
+        <Image x:Name="_image" Margin="15" Source="sun2.png" Cursor="Hand"/>
+        <TextBlock x:Name="TextBolock_PartNum" FontSize="10" Foreground="#FF0F009A" VerticalAlignment="Bottom" Margin="15,0,0,0" Cursor="Hand" HorizontalAlignment="Left" Width="100"/>
     </Grid>
 </UserControl>

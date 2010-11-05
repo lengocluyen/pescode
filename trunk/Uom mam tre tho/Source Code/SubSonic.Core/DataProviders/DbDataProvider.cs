@@ -60,9 +60,9 @@ namespace SubSonic.DataProviders
         {
             get
             {
-                if(CurrentSharedConnection != null)
+                if (CurrentSharedConnection != null)
                 {
-                    if(CurrentSharedConnection.ConnectionString != ConnectionString)
+                    if (CurrentSharedConnection.ConnectionString != ConnectionString)
                         return false;
                 }
                 return true;
@@ -76,7 +76,7 @@ namespace SubSonic.DataProviders
         {
             get
             {
-                switch(Client)
+                switch (Client)
                 {
                     case DataClient.SqlClient:
                         return new Sql2005Schema();
@@ -105,7 +105,7 @@ namespace SubSonic.DataProviders
         {
             AutomaticConnectionScope scope = new AutomaticConnectionScope(this);
 
-            if(Log != null)
+            if (Log != null)
                 Log.WriteLine(qry.CommandSql);
 
 #if DEBUG
@@ -129,7 +129,7 @@ namespace SubSonic.DataProviders
                 // if it is a shared connection, we shouldn't be telling the reader to close it when it is done
                 rdr = scope.IsUsingSharedConnection ? cmd.ExecuteReader() : cmd.ExecuteReader(CommandBehavior.CloseConnection);
             }
-            catch(Exception)
+            catch (Exception)
             {
                 // AutoConnectionScope will figure out what to do with the connection
                 scope.Dispose();
@@ -142,7 +142,7 @@ namespace SubSonic.DataProviders
 
         public DataSet ExecuteDataSet(QueryCommand qry)
         {
-            if(Log != null)
+            if (Log != null)
                 Log.WriteLine(qry.CommandSql);
 #if DEBUG
             //Console.Error.WriteLine("ExecuteDataSet(QueryCommand): {0}.", qry.CommandSql);
@@ -152,7 +152,7 @@ namespace SubSonic.DataProviders
             cmd.CommandType = qry.CommandType;
             DataSet ds = new DataSet();
 
-            using(AutomaticConnectionScope scope = new AutomaticConnectionScope(this))
+            using (AutomaticConnectionScope scope = new AutomaticConnectionScope(this))
             {
                 cmd.Connection = scope.Connection;
                 AddParams(cmd, qry);
@@ -166,7 +166,7 @@ namespace SubSonic.DataProviders
 
         public object ExecuteScalar(QueryCommand qry)
         {
-            if(Log != null)
+            if (Log != null)
                 Log.WriteLine(qry.CommandSql);
 
 #if DEBUG
@@ -180,7 +180,7 @@ namespace SubSonic.DataProviders
 #endif
 
             object result;
-            using(AutomaticConnectionScope automaticConnectionScope = new AutomaticConnectionScope(this))
+            using (AutomaticConnectionScope automaticConnectionScope = new AutomaticConnectionScope(this))
             {
                 DbCommand cmd = Factory.CreateCommand();
                 cmd.Connection = automaticConnectionScope.Connection;
@@ -195,18 +195,18 @@ namespace SubSonic.DataProviders
 
         public T ExecuteSingle<T>(QueryCommand qry) where T : new()
         {
-            if(Log != null)
+            if (Log != null)
                 Log.WriteLine(qry.CommandSql);
 
 #if DEBUG
             //Console.Error.WriteLine("ExecuteSingle<T>(QueryCommand): {0}.", qry.CommandSql);
 #endif
             T result = default(T);
-            using(IDataReader rdr = ExecuteReader(qry))
+            using (IDataReader rdr = ExecuteReader(qry))
             {
                 List<T> items = rdr.ToList<T>();
 
-                if(items.Count > 0)
+                if (items.Count > 0)
                     result = items[0];
             }
             return result;
@@ -219,14 +219,14 @@ namespace SubSonic.DataProviders
 
         public int ExecuteQuery(QueryCommand qry)
         {
-            if(Log != null)
+            if (Log != null)
                 Log.WriteLine(qry.CommandSql);
 
 #if DEBUG
             //Console.Error.WriteLine("ExecuteQuery(QueryCommand): {0}.", qry.CommandSql);
 #endif
             int result;
-            using(AutomaticConnectionScope automaticConnectionScope = new AutomaticConnectionScope(this))
+            using (AutomaticConnectionScope automaticConnectionScope = new AutomaticConnectionScope(this))
             {
                 DbCommand cmd = automaticConnectionScope.Connection.CreateCommand();
                 cmd.CommandText = qry.CommandSql;
@@ -243,7 +243,7 @@ namespace SubSonic.DataProviders
         public IList<T> ToList<T>(QueryCommand qry) where T : new()
         {
             List<T> result;
-            using(var rdr = ExecuteReader(qry))
+            using (var rdr = ExecuteReader(qry))
                 result = rdr.ToList<T>();
 
             return result;
@@ -269,7 +269,7 @@ namespace SubSonic.DataProviders
 
             protected set
             {
-                if(value == null)
+                if (value == null)
                 {
                     __sharedConnection.Dispose();
                     __sharedConnection = null;
@@ -288,7 +288,7 @@ namespace SubSonic.DataProviders
         /// <returns></returns>
         public DbConnection InitializeSharedConnection()
         {
-            if(CurrentSharedConnection == null)
+            if (CurrentSharedConnection == null)
                 CurrentSharedConnection = CreateConnection();
 
             return CurrentSharedConnection;
@@ -301,7 +301,7 @@ namespace SubSonic.DataProviders
         /// <returns></returns>
         public DbConnection InitializeSharedConnection(string sharedConnectionString)
         {
-            if(CurrentSharedConnection == null)
+            if (CurrentSharedConnection == null)
                 CurrentSharedConnection = CreateConnection(sharedConnectionString);
 
             return CurrentSharedConnection;
@@ -338,9 +338,9 @@ namespace SubSonic.DataProviders
         public ITable FindOrCreateTable(Type type)
         {
             ITable result = null;
-            if(Schema.Tables.Count > 0)
+            if (Schema.Tables.Count > 0)
                 result = FindTable(type.Name);
-            if(result == null)
+            if (result == null)
             {
                 result = type.ToSchemaTable(this);
                 Schema.Tables.Add(result);
@@ -359,7 +359,7 @@ namespace SubSonic.DataProviders
         {
             string qualifiedTable;
 
-            switch(Client)
+            switch (Client)
             {
                 case DataClient.MySqlClient:
                 case DataClient.SQLite:
@@ -378,7 +378,7 @@ namespace SubSonic.DataProviders
         {
             string qualifiedFormat;
 
-            switch(Client)
+            switch (Client)
             {
                 case DataClient.SQLite:
                     qualifiedFormat = "`{2}`";
@@ -408,10 +408,10 @@ namespace SubSonic.DataProviders
         public void MigrateToDatabase<T>(Assembly assembly)
         {
             var m = new Migrator(assembly);
-            
+
             var migrationSql = m.MigrateFromModel<T>(this);
             BatchQuery query = new BatchQuery(this);
-            foreach(var s in migrationSql)
+            foreach (var s in migrationSql)
                 query.QueueForTransaction(new QueryCommand(s.Trim(), this));
 
             //pop the transaction
@@ -424,7 +424,7 @@ namespace SubSonic.DataProviders
 
             var migrationSql = m.MigrateFromModel(modelNamespace, this);
             BatchQuery query = new BatchQuery(this);
-            foreach(var s in migrationSql)
+            foreach (var s in migrationSql)
                 query.QueueForTransaction(new QueryCommand(s.Trim(), this));
 
             //pop the transaction
@@ -436,7 +436,7 @@ namespace SubSonic.DataProviders
 
         private void DecideClient(string dbProviderTypeName)
         {
-            if(dbProviderTypeName.Matches(DbClientTypeName.MsSql))
+            if (dbProviderTypeName.Matches(DbClientTypeName.MsSql))
                 Client = DataClient.SqlClient;
             else if (dbProviderTypeName.Matches(DbClientTypeName.MySql))
                 Client = DataClient.MySqlClient;
@@ -455,9 +455,9 @@ namespace SubSonic.DataProviders
         /// <param name="qry">The qry.</param>
         private static void AddParams(DbCommand cmd, QueryCommand qry)
         {
-            if(qry.Parameters != null)
+            if (qry.Parameters != null)
             {
-                foreach(QueryParameter param in qry.Parameters)
+                foreach (QueryParameter param in qry.Parameters)
                 {
                     DbParameter p = cmd.CreateParameter();
                     p.ParameterName = param.ParameterName;
@@ -466,20 +466,20 @@ namespace SubSonic.DataProviders
 
                     //output parameters need to define a size
                     //our default is 50
-                    if(p.Direction == ParameterDirection.Output || p.Direction == ParameterDirection.InputOutput)
+                    if (p.Direction == ParameterDirection.Output || p.Direction == ParameterDirection.InputOutput)
                         p.Size = param.Size;
 
                     //fix for NULLs as parameter values
-                    if(param.ParameterValue == null)
+                    if (param.ParameterValue == null)
                     {
                         p.Value = DBNull.Value;
                     }
-                    else if(param.DataType == DbType.Guid)
+                    else if (param.DataType == DbType.Guid)
                     {
                         string paramValue = param.ParameterValue.ToString();
                         if (!String.IsNullOrEmpty(paramValue))
                         {
-                            if(!paramValue.Equals("DEFAULT", StringComparison.InvariantCultureIgnoreCase))
+                            if (!paramValue.Equals("DEFAULT", StringComparison.InvariantCultureIgnoreCase))
                                 p.Value = new Guid(paramValue);
                         }
                         else
@@ -502,7 +502,7 @@ namespace SubSonic.DataProviders
         {
             DbConnection conn = Factory.CreateConnection();
             conn.ConnectionString = connectionString;
-            if(conn.State == ConnectionState.Closed)
+            if (conn.State == ConnectionState.Closed)
                 conn.Open();
             return conn;
         }

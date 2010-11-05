@@ -8,7 +8,7 @@ namespace Pes.Core.Impl
     {
         public void ClearSelectedRatings()
         {
-            SetInSession("SelectedRatings", null);    
+            SetInSession("SelectedRatings", null);
         }
 
         public int TagID
@@ -29,7 +29,7 @@ namespace Pes.Core.Impl
             get
             {
                 Dictionary<int, int> result = new Dictionary<int, int>();
-                if(GetFromSession("SelectedRatings") != null)
+                if (GetFromSession("SelectedRatings") != null)
                 {
                     result = GetFromSession("SelectedRatings") as Dictionary<int, int>;
                 }
@@ -53,7 +53,7 @@ namespace Pes.Core.Impl
                 else
                     SetInSession("SelectedRatings", value);
 
-                
+
             }
         }
 
@@ -73,9 +73,9 @@ namespace Pes.Core.Impl
             get
             {
                 bool result = false;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("NewGroup")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("NewGroup")))
                 {
-                    if(GetQueryStringValue("NewGroup") == "1")
+                    if (GetQueryStringValue("NewGroup") == "1")
                         result = true;
                 }
                 return result;
@@ -86,7 +86,7 @@ namespace Pes.Core.Impl
             get
             {
                 Int32 result = 0;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("GroupID")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("GroupID")))
                 {
                     result = Convert.ToInt32(GetQueryStringValue("GroupID"));
                 }
@@ -99,9 +99,9 @@ namespace Pes.Core.Impl
             get
             {
                 bool result = false;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("IsThread")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("IsThread")))
                 {
-                    if(GetQueryStringValue("IsThread") == "1")
+                    if (GetQueryStringValue("IsThread") == "1")
                         result = true;
                 }
                 return result;
@@ -113,7 +113,7 @@ namespace Pes.Core.Impl
             get
             {
                 Int64 result = 0;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("PostID")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("PostID")))
                 {
                     result = Convert.ToInt64(GetQueryStringValue("PostID"));
                 }
@@ -152,7 +152,7 @@ namespace Pes.Core.Impl
             get
             {
                 Int32 result = 0;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("ForumID")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("ForumID")))
                 {
                     result = Convert.ToInt32(GetQueryStringValue("ForumID"));
                 }
@@ -164,7 +164,7 @@ namespace Pes.Core.Impl
             get
             {
                 Int64 result = 0;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("BlogID")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("BlogID")))
                 {
                     result = Convert.ToInt64(GetQueryStringValue("BlogID"));
                 }
@@ -182,7 +182,7 @@ namespace Pes.Core.Impl
         {
             get
             {
-                 return this.FilePath + "Photos\\";
+                return this.FilePath + "Photos\\";
             }
         }
         public string FilePathToVideos
@@ -266,7 +266,7 @@ namespace Pes.Core.Impl
             get
             {
                 Int32 result;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("AccountIdToInvite")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("AccountIdToInvite")))
                 {
                     result = Convert.ToInt32(GetQueryStringValue("AccountIdToInvite"));
                 }
@@ -298,7 +298,7 @@ namespace Pes.Core.Impl
             get
             {
                 string result;
-                if(!string.IsNullOrEmpty(GetQueryStringValue("InvitationKey")))
+                if (!string.IsNullOrEmpty(GetQueryStringValue("InvitationKey")))
                 {
                     result = GetQueryStringValue("InvitationKey");
                 }
@@ -307,7 +307,7 @@ namespace Pes.Core.Impl
                     result = "";
                 }
                 return result;
-            }    
+            }
         }
 
         public string RootUrl
@@ -339,7 +339,7 @@ namespace Pes.Core.Impl
         {
             get
             {
-                if(!string.IsNullOrEmpty(GetQueryStringValue("ShowGravatar")) && GetQueryStringValue("ShowGravatar") == "1")
+                if (!string.IsNullOrEmpty(GetQueryStringValue("ShowGravatar")) && GetQueryStringValue("ShowGravatar") == "1")
                 {
                     return true;
                 }
@@ -363,7 +363,7 @@ namespace Pes.Core.Impl
         {
             get
             {
-                if(ContainsInSession("CaptchaImageText"))
+                if (ContainsInSession("CaptchaImageText"))
                 {
                     return GetFromSession("CaptchaImageText").ToString();
                 }
@@ -373,7 +373,7 @@ namespace Pes.Core.Impl
 
             set
             {
-                SetInSession("CaptchaImageText",value);
+                SetInSession("CaptchaImageText", value);
             }
         }
 
@@ -399,7 +399,7 @@ namespace Pes.Core.Impl
         {
             get
             {
-                if(ContainsInSession("Username"))
+                if (ContainsInSession("Username"))
                 {
                     return GetFromSession("Username").ToString();
                 }
@@ -409,17 +409,17 @@ namespace Pes.Core.Impl
 
             set
             {
-                SetInSession("Username",value);
+                SetInSession("Username", value);
             }
         }
-        
+
         public bool LoggedIn
         {
             get
             {
-                if(ContainsInSession("LoggedIn"))
+                if (ContainsInSession("LoggedIn"))
                 {
-                    if((bool)GetFromSession("LoggedIn"))
+                    if ((bool)GetFromSession("LoggedIn"))
                         return true;
                     else
                         return false;
@@ -428,7 +428,7 @@ namespace Pes.Core.Impl
                 {
                     return false;
                 }
-            }   
+            }
             set
             {
                 SetInSession("LoggedIn", value);
@@ -450,7 +450,7 @@ namespace Pes.Core.Impl
 
         public bool ContainsInSession(string key)
         {
-            if(HttpContext.Current.Session != null && HttpContext.Current.Session[key] != null)
+            if (HttpContext.Current.Session != null && HttpContext.Current.Session[key] != null)
                 return true;
             return false;
         }
@@ -486,6 +486,18 @@ namespace Pes.Core.Impl
         private void UpdateInSession(string key, object value)
         {
             HttpContext.Current.Session[key] = value;
+        }
+
+        public byte[] UploadImage
+        {
+            get
+            {
+                return (byte[])HttpContext.Current.Session["UploadImage"];
+            }
+            set
+            {
+                HttpContext.Current.Session["UploadImage"] = value;
+            }
         }
     }
 }

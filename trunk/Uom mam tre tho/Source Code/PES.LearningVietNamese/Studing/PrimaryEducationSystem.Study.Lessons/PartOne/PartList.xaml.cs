@@ -30,6 +30,13 @@ namespace PrimaryEducationSystem.Study.Lessons
             set { text = value; }
         }
 
+        private string partName;
+
+        public string PartName
+        {
+            get { return partName; }
+            set { partName = value; }
+        }
         public PartList()
         {
             InitializeComponent();

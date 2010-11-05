@@ -52,5 +52,18 @@ namespace Pes.Core.Impl
                 _webContext.Username = value;
             }
         }
+
+
+        public byte[] UploadImage
+        {
+            get
+            {
+                return _webContext.UploadImage;
+            }
+            set
+            {
+                _webContext.UploadImage = value;
+            }
+        }
     }
 }

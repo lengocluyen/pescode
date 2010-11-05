@@ -136,3 +136,54 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietN
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Studing\Studying\obj\Debug\XapCacheFile.xml
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Contactxaml.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.dll
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.xap
+D:\Thesis\Uom mam tre tho\Source Code\PESWeb\ClientBin\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Learning.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Contactxaml.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Icons.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\LongPaper.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Menu.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\Studying.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\Studying.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\Studying.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Learning.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Contactxaml.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Icons.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\LongPaper.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Menu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\Studying.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Learning.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Contactxaml.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Icons.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\LongPaper.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\UserControls\Menu.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\Studying.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\Studying\obj\Debug\XapCacheFile.xml

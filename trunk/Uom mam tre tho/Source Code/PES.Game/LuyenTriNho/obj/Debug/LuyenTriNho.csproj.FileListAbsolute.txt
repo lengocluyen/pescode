@@ -32,3 +32,54 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\LuyenTri
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\LuyenTriNho\obj\Debug\XapCacheFile.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\GameOver.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\MapNumbersToImages.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\ucStoryboadDropStone.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\UseGuide.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Home.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Play.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\MapNumbersToImages.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\ucStoryboadDropStone.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\UseGuide.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Home.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\Play.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\LuyenTriNho\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\LuyenTriNho.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\MapNumbersToImages.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\ucStoryboadDropStone.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Controls\UseGuide.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Home.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\Play.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\LuyenTriNho.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\LuyenTriNho\obj\Debug\XapCacheFile.xml

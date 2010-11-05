@@ -59,7 +59,7 @@ namespace PrimaryEducationSystem.Study.Lessons
         {
             InitializeComponent();
 
-                     getSession.GetUserLoginIDCompleted += new EventHandler<GetUserLoginIDCompletedEventArgs>(getSession_GetUserLoginIDCompleted);
+            getSession.GetUserLoginIDCompleted += new EventHandler<GetUserLoginIDCompletedEventArgs>(getSession_GetUserLoginIDCompleted);
             getSession.GetUserLoginIDAsync();
 
             learningServices.SubjectGetByNameCompleted += new EventHandler<SubjectGetByNameCompletedEventArgs>(learningServices_SubjectGetByNameCompleted);
@@ -67,24 +67,49 @@ namespace PrimaryEducationSystem.Study.Lessons
             learningServices.LessonGetAllWithPartCompleted += new EventHandler<LessonGetAllWithPartCompletedEventArgs>(learningServices_LessonGetAllWithPartCompleted);
         }
 
-        private void AddPart(double top, double left, string id, string text, string img)
+        private void AddPart(double top, double left, string id, string text, string partNum, string img)
         {
             PartList pl = new PartList();
             pl.Id = id;
-            pl.Text = text;
+            pl.PartName = text;
             pl._image.Source = new BitmapImage(new Uri("../Images/Studying/Data/OneClass/" + img, UriKind.RelativeOrAbsolute));
-            pl.TextBolock_PartID.Text = text;
+            pl.TextBolock_PartNum.Text = partNum;
 
             pl.SetValue(Canvas.TopProperty, top);
             pl.SetValue(Canvas.LeftProperty, left);
 
             this.PartCanvas.Children.Add(pl);
             pl.MouseLeftButtonDown += new MouseButtonEventHandler(pl_MouseLeftButtonDown);
+            pl.MouseEnter += new MouseEventHandler(pl_MouseEnter);
+            pl.MouseLeave += new MouseEventHandler(pl_MouseLeave);
+            pl.MouseMove += new MouseEventHandler(pl_MouseMove);
+        }
+
+        void pl_MouseMove(object sender, MouseEventArgs e)
+        {
+
+            PartList pl = sender as PartList;
+            Canvas cv = (Canvas)pl.Parent;
+
+            Point p = e.GetPosition(cv);
+            
+            this.TextBlock_PartName.SetValue(Canvas.LeftProperty, p.X);
+            this.TextBlock_PartName.SetValue(Canvas.TopProperty, p.Y);
+        }
+
+        void pl_MouseLeave(object sender, MouseEventArgs e)
+        {
+            this.TextBlock_PartName.Text = "";
+        }
+
+        void pl_MouseEnter(object sender, MouseEventArgs e)
+        {
+            PartList pl = sender as PartList;
+            this.TextBlock_PartName.Text = pl.PartName;
         }
 
         void pl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            this.Image_Childmath.Visibility = Visibility.Collapsed;
             PartList pl = sender as PartList;
             learningServices.LessonGetAllWithPartAsync(int.Parse(pl.Id));
         }
@@ -113,23 +138,22 @@ namespace PrimaryEducationSystem.Study.Lessons
             if (e.Error == null)
             {
                 partList = e.Result;
-                double top = 15;
-                double left = 15;
+                double top = 5;
+                double left = 5;
                 int i = 1;
                 foreach (Part p in partList)
                 {
-                    if (i == 3)
+                    if (i == 4)
                     {
                         i = 1;
-                        top += 120;
-                        left = 10;
+                        top += 110;
+                        left = 5;
                     }
-                    AddPart(top, left, p.PartID.ToString(), p.PartName, p.PartImg);
+                    AddPart(top, left, p.PartID.ToString(), p.PartName, p.PartNum, p.PartImg);
                     i++;
-                    left += 120;
+                    left += 110;
                 }
             }
-
             else
                 return;
         }
@@ -241,7 +265,7 @@ namespace PrimaryEducationSystem.Study.Lessons
 
         private void link_Home_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            HtmlPage.Window.Navigate(new Uri(webURL+"Learning/default.aspx", UriKind.RelativeOrAbsolute));
+            HtmlPage.Window.Navigate(new Uri(webURL + "Learning/Learning.aspx", UriKind.RelativeOrAbsolute));
         }
 
         private void UserControl_Loaded(object sender, System.Windows.RoutedEventArgs e)
@@ -272,9 +296,10 @@ namespace PrimaryEducationSystem.Study.Lessons
             rootPage.LayoutRoot.Children.Add(new PrimaryEducationSystem.Study.Lessons.PartOne.MainPartOne());
         }
         //Testting
-        private void Img_Tests_MouseLeftButtonUp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+
+        private void image_Test_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            //HtmlPage.Window.Navigate(new Uri(webURL + "/Home/Test/" + partID.ToString()));
+        	HtmlPage.Window.Navigate(new Uri(webURL + "Learning/Testing.aspx", UriKind.RelativeOrAbsolute));
         }
 
 
