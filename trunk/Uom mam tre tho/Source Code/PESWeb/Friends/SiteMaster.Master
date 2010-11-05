@@ -111,7 +111,7 @@
                             <li><a href="/friends/">
                                 <img src="/images/menu01_banbe.gif" alt="" /><%=Resources.PESResources.friend %></a></li>
                             <li><a href="<%=_webContext.RootUrl %>Groups/Default.aspx">
-                                <img src="/images/menu01_nhom.gif" alt="" /><%=Resources.PESResources.group %></a></li>
+                                <img src="/images/mnu01_nhom.gif" alt="" /><%=Resources.PESResources.group %></a></li>
                             <asp:ContentPlaceHolder ID="Groups" runat="server">
                             </asp:ContentPlaceHolder>
                             <!--Folders Mail-->

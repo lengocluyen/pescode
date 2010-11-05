@@ -590,7 +590,7 @@ ul.menu1
 ul.menu1 li
 {
 	margin: 0;
-	height: 20px;
+	height: 30px;
 	line-height: 20px;
 	padding-bottom: 2px;
 }
@@ -607,11 +607,13 @@ ul.menu1 li a:hover
 {
 	background: #EFF2F7;
 	text-decoration: none;
+	
 }
 ul.menu1 li a img
 {
 	margin-right: 5px;
 	vertical-align: middle;
+	width:30px;
 }
 .box a.more
 {
@@ -677,11 +679,12 @@ ul.menu2 li
 {
 	margin: 0;
 	line-height: 2em;
-	height: 2em;
+	height: 6em;
 }
 ul.menu2 li img
 {
 	vertical-align: text-bottom;
+	height:50px;
 }
 ul.menu2 li a
 {
