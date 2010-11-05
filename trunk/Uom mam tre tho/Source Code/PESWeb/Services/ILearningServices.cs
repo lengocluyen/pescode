@@ -71,8 +71,32 @@ public interface ILearningServices
     //[OperationContract]
     //bool InsertTestResult(TestResult testResult);
     #endregion
+    #region Temple Tests
+    [OperationContract]
+    List<T_Question> GetAllQuestionByTestLevel(int levelID);
+    [OperationContract]
+    T_Question GetQuestionByID(int questionID);
+    [OperationContract]
+    List<T_Answers> GetAllAnswersByQuestion(int questionID);
+    [OperationContract]
+    bool InsertTestResult(T_Test_Result testResult);
 
- 
+    #endregion
+
+    #region Pupils, Register
+
+    [OperationContract]
+    void InsertPupil(Account pupil);
+    [OperationContract]
+    Account GetPupilByID(int id);
+    [OperationContract]
+    Account GetPupilLogin(string email, string password, bool isNeedEcode);
+    [OperationContract]
+    void UpdateProFile(Profile profile);
+    [OperationContract]
+    Account GetPupilByEmail(string email);
+    [OperationContract]
+    Profile GetProfileByAccountID(int profileID);
 
     //--------------------------------------
     [OperationContract]
@@ -81,5 +105,6 @@ public interface ILearningServices
     [OperationContract]
     Account GetUserByAccountID(int acc);
 
+    #endregion
 
 }

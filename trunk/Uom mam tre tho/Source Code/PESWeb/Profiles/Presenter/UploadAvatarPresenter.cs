@@ -52,12 +52,20 @@ namespace PESWeb.Profiles.Presenter
         {
             _alertService.AddNewAvatarAlert();
             _redirector.GoToProfilesProfile();
+            _userSession.UploadImage = null;
+        }
+
+        public void GetOriginalImage()
+        {
+            profile.Avatar = _userSession.UploadImage;
+            Profile.SaveProfile(profile);
         }
 
         public void CropFile(Int32 X, Int32 Y, Int32 Width, Int32 Height)
         {
             //get byte array from profile
-            byte[] imageBytes = profile.Avatar.ToArray();
+            //byte[] imageBytes = profile.Avatar.ToArray();
+            byte[] imageBytes = _userSession.UploadImage;
             //stuff this byte array into a memory stream
             using (MemoryStream ms = new MemoryStream(imageBytes, 0, imageBytes.Length))
             {
@@ -103,15 +111,22 @@ namespace PESWeb.Profiles.Presenter
                 case ".jpg":
                 case ".gif":
                     minetype = File.ContentType;
+                    _view.ShowMessage("");
                     break;
                 default:
                     _view.ShowMessage("Chỉ được phép đăng ảnh .png, .jpg, and .gif!");
+                    _view.HideCropPanel();
                     return;
             }
             if (File.ContentLength / 1000 < 1000)
             {
                 File.InputStream.Read(uploadedImage, 0, uploadedImage.Length);
-                profile.Avatar = uploadedImage;
+                // _userSession.UploadImage = uploadedImage;
+
+                _userSession.UploadImage = ImageResize.ResizeFromByteArray(570, uploadedImage, File.FileName);
+
+
+                //profile.Avatar = uploadedImage;
                 profile.AvatarMimeType = minetype;
                 profile.UseGravatar = 0;
 
@@ -121,9 +136,11 @@ namespace PESWeb.Profiles.Presenter
             else
             {
                 _view.ShowMessage("Ảnh đã đăng vượt quá giới hạn 1MB. Vui lòng giảm dung lượng ảnh và thử lại.");
+                _view.HideCropPanel();
             }
 
 
         }
     }
+
 }

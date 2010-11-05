@@ -52,13 +52,13 @@ namespace PESWeb.Profiles
             profile.Attributes = ExtractAttributes();
 
             if (!string.IsNullOrEmpty(txtNumberOfFishOwned.Text))
-                profile.NumberOfFishOwned = Convert.ToInt32(txtNumberOfFishOwned.Text);
+                profile.Enjoy = txtNumberOfFishOwned.Text;
 
             if (!string.IsNullOrEmpty(txtNumberOfTanksOwned.Text))
-                profile.NumberOfTanksOwned = Convert.ToInt32(txtNumberOfTanksOwned.Text);
+                profile.Address = txtNumberOfTanksOwned.Text;
 
             if (!string.IsNullOrEmpty(txtYearOfFirstTank.Text))
-                profile.YearOfFirstTank = Convert.ToInt32(txtYearOfFirstTank.Text);
+                profile.SchoolsName = txtYearOfFirstTank.Text;
 
             _presenter.SaveProfile(profile);
         }
@@ -166,10 +166,10 @@ namespace PESWeb.Profiles
                 txtIMMSN.Text = profile.IMMSN;
                 txtIMSkype.Text = profile.IMSkype;
                 txtIMYIM.Text = profile.IMYIM;
-                txtNumberOfFishOwned.Text = profile.NumberOfFishOwned.ToString();
-                txtNumberOfTanksOwned.Text = profile.NumberOfTanksOwned.ToString();
+                txtNumberOfFishOwned.Text = profile.Enjoy.ToString();
+                txtNumberOfTanksOwned.Text = profile.Address.ToString();
                 txtSignature.Text = profile.Signature;
-                txtYearOfFirstTank.Text = profile.YearOfFirstTank.ToString();
+                txtYearOfFirstTank.Text = profile.SchoolsName.ToString();
 
                 foreach (ListItem item in ddlLevelOfExperience.Items)
                 {

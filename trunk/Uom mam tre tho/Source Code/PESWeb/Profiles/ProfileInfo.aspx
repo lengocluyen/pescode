@@ -37,7 +37,7 @@
 <div class="grid_8">
 
   <asp:Panel ID="pnlPrivacyAccountInfo" runat="server" CssClass="box profile">
-        <h2><a href="#" class="hidden" id="toggle-account-info">Account Info</a></h2>
+        <h2><a href="#" class="hidden" id="toggle-account-info">Thông tin tài khoản</a></h2>
          <div class="block-c" id="account-info">
             <dl class="profile-info">
                 <dt>Email:</dt>
@@ -51,7 +51,7 @@
     </asp:Panel>
     
     <asp:Panel ID="pnlPrivacyIM" runat="server" CssClass="box profile">
-        <h2><a href="#" class="hidden" id="toggle-contact-info">Contact Information</a></h2>
+        <h2><a href="#" class="hidden" id="toggle-contact-info">Thông tin liên lạc</a></h2>
         <div class="block-c" id="contact-info">
             <dl class="profile-info">
                 <dt>Google:</dt>
@@ -63,14 +63,14 @@
     </asp:Panel>
                     
     <asp:Panel ID="pnlPrivacyTankInfo" runat="server" CssClass="box profile">
-        <h2><a href="#" class="hidden" id="toggle-tank-info">Fish Facts</a></h2>
+        <h2><a href="#" class="hidden" id="toggle-tank-info">Thông tin về bé</a></h2>
         <div class="block-c" id="tank-info">
             <dl>
-                <dt>Year of tank:</dt>
+                <dt>Tên trường học:</dt>
                 <dd><asp:Literal ID="litYearOfFirstTank" runat="server"></asp:Literal></dd>
-                <dt>#Tanks owned:</dt>
+                <dt>Địa chỉ:</dt>
                 <dd><asp:Literal ID="litNumberOfTanksOwned" runat="server"></asp:Literal></dd>
-                <dt>#Fish owned:</dt>
+                <dt>Sở thích:</dt>
                 <dd class="last"><asp:Literal ID="litNumberOfFishOwned" runat="server"></asp:Literal></dd>
             </dl>
         </div>

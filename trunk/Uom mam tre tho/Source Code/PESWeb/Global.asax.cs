@@ -16,6 +16,22 @@ namespace PESWeb
 {
     public class Global : System.Web.HttpApplication
     {
+
+        //public static void RegisterRoutes(RouteCollection routes) 
+        //{
+        //    routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+        //    routes.MapRoute("Default", "{controller}.aspx/{action}/{id}", new { action = "Index", id = "" });
+        //    routes.MapRoute("Root", "", new { controller = "Home", action = "Index", id = "" });
+        //}
+
+        //public static void RegisterRoutes(RouteCollection routes) 
+        //{ 
+        //    routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+        //    routes.MapRoute( "Default", // Route name "{controller}/{action}/{id}", // URL with parameters new { controller = "Home", action = "Index", id = "" }
+        //        // Parameter defaults
+        //        );
+        //        }
+
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
@@ -33,7 +49,7 @@ namespace PESWeb
         {
             //Log.EnsureInitialized();
             //CacheManager.EnsureInitialized();
-
+            RegisterRoutes(RouteTable.Routes);
             ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["Default"];
 
             ObjectFactory.Initialize(x =>
@@ -89,7 +105,7 @@ namespace PESWeb
             });
              //ViewEngines.Engines.Clear();
              //ViewEngines.Engines.Add(new ChangeViewAddress());
-            RegisterRoutes(RouteTable.Routes);
+            
         }
 
         protected void Session_Start(object sender, EventArgs e)

@@ -14,7 +14,7 @@
         </p>
         <p>
             <asp:CheckBox ID="Remember" runat="server" CssClass="remember" Text="Ghi nhớ" />
-            <a href="RecoverPassword.aspx">Quên mật khẩu</a> 
+            <asp:HyperLink NavigateUrl="~/Accounts/RecoverPassword.aspx" ID="lnkForgotPwd" runat="server">Quên mật khẩu</asp:HyperLink> 
         </p>
         <div style="position:relative">
             <asp:Button ID="btnLogin" runat="server" Text="Đăng nhập" CssClass="button" />

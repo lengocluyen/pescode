@@ -36,10 +36,15 @@ namespace PESWeb.Profiles.Presenter
             _account = _userSession.CurrentUser;
 
             if (_webContext.AccountID > 0 && _webContext.AccountID != _userSession.CurrentUser.AccountID)
+            {
                 _accountBeingViewed = _accountService.GetAccountByID(_webContext.AccountID);
+                _accountBeingViewed.Profile = Profile.GetProfileByAccountID(_webContext.AccountID);
+            }
             else
+            {
                 _accountBeingViewed = _userSession.CurrentUser;
-
+                _accountBeingViewed.Profile = Profile.GetProfileByAccountID(_userSession.CurrentUser.AccountID);
+            }
             if (_accountBeingViewed == null)
                 _redirector.GoToAccountLoginPage();
             if (_accountBeingViewed.Profile!=null&&_accountBeingViewed.Profile.ProfileID >0)

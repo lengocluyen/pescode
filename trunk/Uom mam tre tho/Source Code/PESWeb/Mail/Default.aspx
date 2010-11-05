@@ -10,13 +10,13 @@
     <div class="grid_9">
         <div class="page-heading hr">
             <h2>
-                Inbox</h2>
+                Hòm thư</h2>
         </div>
         <div class="divContainerRow">
         <table width="100%">
             <tr>
                 <td align="left">
-                    <asp:Button ID="btnDelete" CssClass="button" Text="Delete" runat="server" OnClick="btnDelete_Click" />
+                    <asp:Button ID="btnDelete" CssClass="button" Text="Xóa" runat="server" OnClick="btnDelete_Click" />
                 </td>
                 <td colspan="2">
                     <asp:HyperLink ID="linkPrevious" runat="server" Text="Previous" />

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using StructureMap;
 using Pes.Core;
+using System.Web.Routing;
 
 namespace PESWeb.Handlers
 {
@@ -21,12 +22,11 @@ namespace PESWeb.Handlers
             application.PostResolveRequestCache +=
                 (new EventHandler(this.Application_OnAfterProcess));
         }
-
         public void Dispose()
         {
 
         }
-
+       
         private void Application_OnAfterProcess(object source, EventArgs e)
         {
             HttpApplication application = (HttpApplication)source;

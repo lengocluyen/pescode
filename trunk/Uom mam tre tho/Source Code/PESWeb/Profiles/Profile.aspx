@@ -59,14 +59,14 @@
     </asp:Panel>
                     
     <asp:Panel ID="pnlPrivacyTankInfo" runat="server" CssClass="box profile">
-        <h2>Fish Facts</h2>
+        <h2>Thông tin về bé</h2>
         <div class="block-c" id="tank-info">
             <dl>
-                <dt>Year of tank:</dt>
+                <dt>Tên trường:</dt>
                 <dd><asp:Literal ID="litYearOfFirstTank" runat="server"></asp:Literal></dd>
-                <dt>#Tanks owned:</dt>
+                <dt>Địa chỉ:</dt>
                 <dd><asp:Literal ID="litNumberOfTanksOwned" runat="server"></asp:Literal></dd>
-                <dt>#Fish owned:</dt>
+                <dt>Sở thích:</dt>
                 <dd class="last"><asp:Literal ID="litNumberOfFishOwned" runat="server"></asp:Literal></dd>
             </dl>
         </div>

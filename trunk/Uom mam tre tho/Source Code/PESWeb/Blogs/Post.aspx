@@ -7,19 +7,19 @@
         </div>
             <div class="divContainerRow">&nbsp;<asp:Label ForeColor="Red" ID="lblErrorMessage" runat="server"></asp:Label></div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Title:</div>
+                <div class="divContainerCellHeader">Tên blogs:</div>
                 <div class="divContainerCell"><asp:TextBox Width="70%" ID="txtTitle" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Subject:</div>
+                <div class="divContainerCellHeader">Chủ đề:</div>
                 <div class="divContainerCell"><asp:TextBox Width="70%" ID="txtSubject" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Page Name:</div>
+                <div class="divContainerCellHeader">Tên trang:</div>
                 <div class="divContainerCell"><asp:TextBox Width="70%" ID="txtPageName" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader" >Is Published:</div>
+                <div class="divContainerCellHeader" >Công khai:</div>
                 <div class="divContainerCell"><asp:CheckBox ID="chkIsPublished" runat="server"></asp:CheckBox></div>
             </div>
             <div class="divContainerRow">

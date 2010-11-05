@@ -1,0 +1,129 @@
+﻿body
+{
+    background: url(../images/BackHome.jpg);
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+}
+
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.message
+{
+    color: red;
+}
+
+/*Top Page*/
+
+div.TopPage
+{
+    height: 150px;
+    width: 100%;
+    min-width: 950px;
+}
+a.logo 
+{
+    background: url(../images/Pes_logo.png) no-repeat;
+    width: 274px;
+    height: 48px;
+    display:block;
+    margin-top:94px;
+}
+div.TopPageBack
+{
+    height: 150px;
+    float: right;
+    width: 100%;
+    background-image: url('../images/HomeTopBack.png');
+    background-repeat: repeat-x;
+}
+
+div.TopPageImage
+{
+    height: 150px;
+    background: url('../images/Studyinghome.png') no-repeat center top;
+}
+
+div.TopPageImage table.login
+{
+    margin-top: 29px;
+    color: #005400;
+}
+table.login
+{
+    font-size: 11px;
+}
+
+.formRegister td.label
+{
+    text-align: right;
+}
+
+div.BoxTitle
+{
+    text-align: center;
+    color: #005400;
+    font-weight: bold;
+    padding: 2px;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+div.BoxTitle p
+{
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #005400;
+}
+
+input.text
+{
+    width: 200px;
+    background-color: #fff;
+    border: solid 1px #c5c5c5;
+    padding: 2px;
+}
+.login input.text
+{
+    width: 140px;
+}
+select
+{
+    font-family: Tahoma, Verdana, Arial, Sans-Serif;
+    background-color: #fff;
+    border: solid 1px #c5c5c5;
+    padding: 2px;
+}
+
+input.button
+{
+    background: #6acf10;
+    border-bottom: solid 1px #9DE32A;
+    border-left: solid 1px #9DE32A;
+    border-top: solid 1px #fff;
+    border-right: solid 1px #9Df32b;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.login input.button
+{
+    font-size: 12px;
+}
+/*End Center Page*/
+
+div.Bottom
+{
+    height: 30px;
+    width: 100%;
+    background: #9DE329;
+    padding-top: 25px;
+    color: #444;
+    font-size: 11px;
+    text-align: right;
+}

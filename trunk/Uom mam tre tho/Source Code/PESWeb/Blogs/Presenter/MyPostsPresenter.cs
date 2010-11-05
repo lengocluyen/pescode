@@ -29,7 +29,7 @@ namespace PESWeb.Blogs
         public void Init(IMyPosts View)
         {
             _view = View;
-            _view.LoadBlogs(Blog.GetBlogsByAccountID(_webContext.CurrentUser.AccountID));
+            //_view.LoadBlogs(Blog.GetBlogsByAccountID(_webContext.CurrentUser.AccountID));
         }
 
         public void EditBlog(Int64 BlogID)
@@ -41,6 +41,10 @@ namespace PESWeb.Blogs
         {
             Blog.DeleteBlog(BlogID);
             Init(_view);
+        }
+        public void DataBinding(int currentPage, int pageSize)
+        {
+            _view.LoadBlogs(Blog.GetBlogsByAccountIDPaging(_webContext.CurrentUser.AccountID,currentPage, pageSize));
         }
     }
 }

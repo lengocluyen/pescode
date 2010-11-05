@@ -16,20 +16,35 @@ namespace PESWeb.UserControls
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            _userSession = ObjectFactory.GetInstance<IUserSession>();
+            if (_userSession.CurrentUser == null) return;
             _presenter.Init(this);
         }
+        IUserSession _userSession;
         public FriendsPresenter _presenter;
         protected override void OnInit(EventArgs e)
         {
+            _userSession = ObjectFactory.GetInstance<IUserSession>();
+            if (_userSession.CurrentUser == null) return;
             _presenter.Init(this);
         }
         public Friends()
         {
-            _presenter = new FriendsPresenter();
-            _config = ObjectFactory.GetInstance<IConfiguration>();
-            float dc = (float)FriendsPresenter.totalItems /(float) FriendsPresenter.pageSize;
-            numpage =Convert.ToInt32(Math.Ceiling(Convert.ToDecimal(dc)));
+            _userSession = ObjectFactory.GetInstance<IUserSession>();
+            if (_userSession.CurrentUser == null) return;
+            try
+            {
+                _presenter = new FriendsPresenter();
+                _config = ObjectFactory.GetInstance<IConfiguration>();
+                float dc = (float)FriendsPresenter.totalItems / (float)FriendsPresenter.pageSize;
+                numpage = Convert.ToInt32(Math.Ceiling(Convert.ToDecimal(dc)));
 
+            }
+            catch
+            {
+                return;   
+            }
+            
         }
 
         protected void repFriends_ItemDataBound(object sender, RepeaterItemEventArgs e)

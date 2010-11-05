@@ -9,24 +9,24 @@
     <div class="grid_13">
         <div class="page-heading hr">
             <h2>
-                Read Message</h2>
+                Đọc thư</h2>
         </div>
         <div class="divContainerCellHeader">
-            From:</div>
+            Từ:</div>
         <div class="divContainerCell">
             <asp:HyperLink ID="linkFrom" runat="server"></asp:HyperLink></div>
         <div class="divContainerCellHeader">
-            Subject:</div>
+            Tiêu đề:</div>
         <div class="divContainerCell">
             <asp:Label ID="lblSubject" runat="server"></asp:Label></div>
         <div class="divContainerCellHeader">
-            Message:</div>
+            Nội dung:</div>
         <div class="divContainerCell">
             <asp:Label ID="lblMessage" runat="server"></asp:Label><br />
             <br />
         </div>
         <div class="divContainerCell">
             <asp:Button CssClass="button" Style="text-align: center;" ID="btnReply" runat="server" OnClick="btnReply_Click"
-                Text="Reply" /></div>
+                Text="Phản hồi" /></div>
     </div>
 </asp:Content>

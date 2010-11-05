@@ -13,18 +13,18 @@
     <div class="grid_13">
         <div class="page-heading hr">
             <h2>
-                New Message</h2>
+                Viết thư mới</h2>
         </div>
         <asp:Panel ID="pnlSendMessage" runat="server">
             <div class="divContainerRow">
                 <div class="divContainerCellHeader">
-                    To:</div>
+                    Đến:</div>
                 <div class="divContainerCell">
                     <asp:TextBox Width="70%" ID="txtTo" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
                 <div class="divContainerCellHeader">
-                    Subject:</div>
+                    Tiêu đề:</div>
                 <div class="divContainerCell">
                     <asp:TextBox Width="70%" ID="txtSubject" runat="server"></asp:TextBox></div>
             </div>
@@ -32,7 +32,7 @@
                 <textarea id="txtMessage" name="txtMessage" cols="92" rows="20" runat="server" />
             </div>
             <div class="divContainerFooter" style="text-align: center">
-                <asp:Button CssClass="button" ID="btnSend" Text="Send" runat="server" OnClick="btnSend_Click" />
+                <asp:Button CssClass="button" ID="btnSend" Text="Gửi" runat="server" OnClick="btnSend_Click" />
             </div>
 
         </asp:Panel>
@@ -41,7 +41,7 @@
                 <div class="divContainerBox">
                     <div class="divContainerRow">
                         <div class="divContainerCell">
-                            Your message was sent!
+                            Thư của bạn đã được gửi!
                         </div>
                     </div>
                 </div>

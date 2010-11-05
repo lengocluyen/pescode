@@ -8,12 +8,12 @@
          <asp:PlaceHolder ID="phComments" runat="server">
          
          </asp:PlaceHolder>
-        <div class="txtCmt" style="float:left;width:30px;cursor:pointer;font-weight:bold">Comments</div>
+        <div class="txtCmt" style="float:left;width:60px;cursor:pointer;font-weight:bold"><%=Resources.PESResources.Comment%></div>
         <!--Create New Comments-->
         
         <div class="hiddenCmt" style="clear:both;width:100%"> 
-            <asp:TextBox ID="txtComment" runat="server" Width="82%"></asp:TextBox>&nbsp;&nbsp;&nbsp;<asp:Button CssClass="button"
-                Text="Comment" ID="btnAddComment" runat="server" OnClick="btnAddComment_Click" />
+            <asp:TextBox ID="txtComment" runat="server" Width="88%"></asp:TextBox>&nbsp;&nbsp;&nbsp;<asp:Button CssClass="button"
+                Text="Đăng" ID="btnAddComment" runat="server" OnClick="btnAddComment_Click" />
         </div>
         <div style="clear:both;height:1px;width:100%;">&nbsp</div>
         </asp:Panel>

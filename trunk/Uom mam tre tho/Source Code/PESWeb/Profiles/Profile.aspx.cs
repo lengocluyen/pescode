@@ -99,9 +99,9 @@ namespace PESWeb.Profiles
                 //litIMMSN.Text = account.Profile.IMMSN;
                 //litIMSkype.Text = account.Profile.IMSkype;
                 litIMYIM.Text = account.Profile.IMYIM;
-                litNumberOfTanksOwned.Text = account.Profile.NumberOfFishOwned.ToString();
-                litNumberOfTanksOwned.Text = account.Profile.NumberOfTanksOwned.ToString();
-                litYearOfFirstTank.Text = account.Profile.YearOfFirstTank.ToString();
+                litNumberOfTanksOwned.Text = account.Profile.Address.ToString();
+                litNumberOfFishOwned.Text = account.Profile.Enjoy.ToString();
+                litYearOfFirstTank.Text = account.Profile.SchoolsName.ToString();
                 //litLevelOfExperience.Text = "(" + account.Profile.LevelOfExperienceType.LevelOfExperience + ")";
                 //if (account.Profile.Attributes.Count > 0)
                 //{

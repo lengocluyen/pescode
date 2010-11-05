@@ -41,6 +41,15 @@ namespace PESWeb {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
+        /// PESBanner control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.PESBanner PESBanner;
+        
+        /// <summary>
         /// txtSearch control.
         /// </summary>
         /// <remarks>
@@ -75,6 +84,15 @@ namespace PESWeb {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
+        /// txtusernam control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor txtusernam;
         
         /// <summary>
         /// lbLogOut control.

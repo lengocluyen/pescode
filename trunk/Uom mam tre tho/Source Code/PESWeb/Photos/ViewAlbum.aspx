@@ -18,8 +18,8 @@
                 Album Ảnh: <asp:Label ID="lblAlbumName" runat="server" /></h2>
         </div>
             <div class="divContainerRow">
-                Created: <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
-                Location: <asp:Label ID="lblLocation" runat="server"></asp:Label><br />
+                Ngày tạo: <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
+                Địa điểm: <asp:Label ID="lblLocation" runat="server"></asp:Label><br />
                 <asp:Label ID="lblDescription" runat="server"></asp:Label>
             </div>
             <div class="divContainerRow">
@@ -45,16 +45,16 @@
                             </li>
                         </ItemTemplate>
                         <EmptyItemTemplate>
-                            There are no photos in this gallery!  
+                            Không có hình ảnh nào trong album.
                             <asp:HyperLink ID="linkAddPhotos" runat="server" Text="Click here to add photos"></asp:HyperLink>.
                         </EmptyItemTemplate>
                     </asp:ListView>
                 </td></tr></table>
             </div>
             <div class="divContainerFooter">
-                <asp:Button ID="btnAddPhotos" CssClass="button" runat="server" Text="Add Photos" OnClick="btnAddPhotos_Click" /> 
-                <asp:Button ID="btnEditPhotos" CssClass="button" runat="server" Text="Edit Photos" OnClick="lbEditPhotos_Click"></asp:Button> 
-                <asp:Button ID="btnEditAlbum" runat="server" CssClass="button" Text="Edit Album" OnClick="lbEditAlbum_Click"></asp:Button>
+                <asp:Button ID="btnAddPhotos" CssClass="button" runat="server" Text="Thêm hình ảnh" OnClick="btnAddPhotos_Click" /> 
+                <asp:Button ID="btnEditPhotos" CssClass="button" runat="server" Text="Chỉnh sửa hình ảnh" OnClick="lbEditPhotos_Click"></asp:Button> 
+                <asp:Button ID="btnEditAlbum" runat="server" CssClass="button" Text="Chỉnh sửa album" OnClick="lbEditAlbum_Click"></asp:Button>
             </div>
         </div>
 

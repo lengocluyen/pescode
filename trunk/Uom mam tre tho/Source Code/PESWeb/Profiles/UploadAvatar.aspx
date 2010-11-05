@@ -49,7 +49,7 @@
         <asp:Panel ID="pnlUpload" runat="server" Visible="true" CssClass="box">
             <h2>Upload avatar khác</h2>
             <div class="block">
-                <p>Bạn có thể tải tập tin <b>JPG, GIF</b> hoặc <b>PNG</b>, tối đa là <b>1MB</b>, kích cỡ tối thiểu <b>200x200px</b></p>
+                <p>Bạn có thể tải tập tin <b>JPG, GIF</b> hoặc <b>PNG</b>, tối đa là <b>1MB</b>, kích cỡ tối thiểu <b>100x100px</b></p>
                 <p>
                     <asp:FileUpload ID="fuAvatarUpload" runat="server" />
                     <asp:Label ForeColor="Red" ID="lblMessage" runat="server"></asp:Label>
@@ -73,8 +73,8 @@
                                 'ctl00_Content_imgCropImage',
                                 {
                                     previewWrap: 'previewWrap',
-                                    minWidth: 80,
-                                    minHeight: 80,
+                                    minWidth: 100,
+                                    minHeight: 100,
                                     ratioDim: { x: 100, y: 100 },
                                     displayOnInit: true,
                                     onEndCrop: onEndCrop
@@ -85,7 +85,8 @@
                 <div class="yui-ge">
                     <div class="yui-u first align-center">
                         <h5>Avatar mới đăng</h5>
-                        <asp:Image ImageUrl="~/images/ProfileAvatar/ProfileImage.aspx" id="imgCropImage" runat="server" />
+                        <%--<asp:PlaceHolder ID="plImage" runat="server"/>--%>
+                            <asp:Image ImageUrl="~/images/ProfileAvatar/ProfileImage.aspx?AccountID=-999" id="imgCropImage" runat="server"/>
                     </div>
                     <div class="yui-u align-center">
                         <h5>Hình xem trước</h5>

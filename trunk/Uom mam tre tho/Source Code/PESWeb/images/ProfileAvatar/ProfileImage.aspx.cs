@@ -26,6 +26,14 @@ namespace PESWeb.images.ProfileAvatar
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _webContext = ObjectFactory.GetInstance<IWebContext>();
 
+            if (_webContext.AccountID == -999 && _userSession.LoggedIn && _userSession.UploadImage != null)
+            {
+                Response.Clear();
+                //Response.ContentType = profile.AvatarMimeType;
+                Response.BinaryWrite(_userSession.UploadImage);
+                return;
+            }
+
             //load an image by passed in accountid
             if (_webContext.AccountID > 0)
             {

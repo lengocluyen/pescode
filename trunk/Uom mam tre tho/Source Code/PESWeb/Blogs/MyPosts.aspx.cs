@@ -13,6 +13,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using Pes.Core;
 using System.Text;
+using SubSonic.Schema;
 
 namespace PESWeb.Blogs
 {
@@ -23,14 +24,32 @@ namespace PESWeb.Blogs
         {
             _presenter = new MyPostsPresenter();
         }
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            pager.Command += new CommandEventHandler(pager_Command);
+        }
 
+        void pager_Command(object sender, CommandEventArgs e)
+        {
+            _presenter.DataBinding(pager.CurrentIndex, pager.PageSize);
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
             _presenter.Init(this);
+            if (!IsPostBack)
+            {
+                _presenter.DataBinding(pager.CurrentIndex, pager.PageSize);
+            }
         }
 
-        public void LoadBlogs(List<Blog> Blogs)
+        public void LoadBlogs(PagedList<Blog> Blogs)
         {
+            PagedList<Blog> list = Blogs;
+            if (pager != null)
+            {
+                pager.ItemCount = list.TotalCount;
+            }
             lvBlogs.DataSource = Blogs;
             lvBlogs.DataBind();
         }

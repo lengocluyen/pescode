@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Friends.ascx.cs" Inherits="PESWeb.Mail.UserControls.Friends" %>
     <h2>
-        <a href="#" id="toggle-hk2-menu" class="more">Friends</a></h2>
+        <a href="#" id="toggle-hk2-menu" class="more">Bạn bè</a></h2>
     <div id="hk2-menu">
         <ul class="menu2">
         <li></li>
