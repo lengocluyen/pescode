@@ -14,7 +14,6 @@ namespace PESWeb.Accounts
         private LoginPresenter _presenter;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Response.Write(SubSonic.Security.Cryptography.Encrypt("123456","asiemer"));
             _presenter = new LoginPresenter();
             _presenter.Init(this);
         }

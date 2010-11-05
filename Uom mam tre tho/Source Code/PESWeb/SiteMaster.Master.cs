@@ -34,11 +34,13 @@ namespace PESWeb
                 }
             }
         }
+        public string userName = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _redirector = ObjectFactory.GetInstance<IRedirector>();
-         
+
+            txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
             if (!_userSession.LoggedIn || _userSession.CurrentUser == null)
                 _redirector.GoToAccountLoginPage();
 

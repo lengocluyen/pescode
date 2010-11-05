@@ -11,8 +11,8 @@
                     <asp:HyperLink ID="linkProfile" runat="server">
                     <asp:Image style="padding-bottom:5px;float:left; margin:10px;"  Width="100" Height="100" ID="imgAvatar" runat="server" ImageUrl="/images/profileavatar/profileimage.aspx" />
                     </asp:HyperLink>
-                    Created: <asp:Label ID="lblCreated" runat="server"></asp:Label>
-                    Updated: <asp:Label ID="lblUpdated" runat="server"></asp:Label><br /><br />
+                    Ngày tạo: <asp:Label ID="lblCreated" runat="server"></asp:Label>
+                    Lần cập nhật cuối: <asp:Label ID="lblUpdated" runat="server"></asp:Label><br /><br />
                     <asp:Label ID="lblPost" runat="server"></asp:Label>
                 </div>
     </div>

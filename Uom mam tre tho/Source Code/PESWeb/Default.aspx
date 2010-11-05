@@ -18,12 +18,12 @@
                     <div class="ui-block-link">
                         <i class="ui-image icon-friend-req"></i>
                         <h2>
-                            News Feed</h2>
+                           <%=Resources.PESResources.newsfeed %></h2>
                     </div>
                 </div>
-                <div class="yui-u align-right">
+                <%--<div class="yui-u align-right">
                     <a href="#" class="current">Top News</a> <a href="#">Most Recent</a>
-                </div>
+                </div>--%>
             </div>
         </div>
     </div>
@@ -91,37 +91,36 @@
         </div>
         <div class="box">
             <h2>
-                Requests<a class="subtitle" href="#">See All</a>
+                <%=Resources.PESResources.request %><a class="subtitle" href="#"><%=Resources.PESResources.seeAll %></a>
             </h2>
             <div class="block-c">
                 <div class="ui-block-link">
-                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> friends
-                        request</span></a>
+                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> <%=Resources.PESResources.friend %>
+                        <%=Resources.PESResources.request %></span></a>
                 </div>
                 <div class="ui-block-link">
-                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> friends
-                        request</span></a>
+                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> <%=Resources.PESResources.friend %>
+                        <%=Resources.PESResources.request %></span></a>
                 </div>
             </div>
         </div>
         <div class="box">
             <h2>
-                Get Connected<a class="subtitle" href="#">See all</a>
+                <%=Resources.PESResources.getConnected %><a class="subtitle" href="#"><%=Resources.PESResources.seeAll %></a>
             </h2>
             <div class="block-c">
                 <div class="ui-block-content">
                     <i class="ui-image icon-friend-req"></i>
                     <div class="ui-content">
-                        <a href="#">Apply to be a beta tester </a>and get the first look at upcoming Flychips
-                        products.
+                        <a href="#">Nhóm flychips </a> thành viên của DLU.
                     </div>
                 </div>
                 <div class="ui-block-content">
                     <i class="ui-image icon-friend-req"></i>
                     <div class="ui-content">
                         <div>
-                            Viet Nam</div>
-                        <a href="#">Apply to be a beta tester </a>
+                            TIEUHOC.NET</div>
+                        <a href="#">Mạng xã hội ươm mầm ước mơ trẻ thơ</a>
                     </div>
                 </div>
             </div>

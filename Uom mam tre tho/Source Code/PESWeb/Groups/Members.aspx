@@ -5,9 +5,9 @@
 <div style="padding-left:10px;">
     <ul class="menu1">
         <li><a href="/Groups/ManageGroup.aspx">
-            <img src="/images/mnu01.gif" alt="" />Groups mới</a></li>
+            <img src="/images/mnu01.gif" alt="" />Tạo nhóm mới</a></li>
         <li><a href="/Groups/mygroups.aspx">
-            <img src="/images/mnu01.gif" alt="" />Groups của tôi</a></li>
+            <img src="/images/mnu01.gif" alt="" />Nhóm của tôi</a></li>
     </ul>
 </div>
 </asp:Content>
@@ -15,7 +15,7 @@
    <div class="grid_10">
         <div class="page-heading hr">
             <h2>
-                Thành viên Group</h2>
+                Thành viên của nhóm</h2>
         </div>
             <div class="divContainerRow">
                 <div style="float:left;"><asp:LinkButton OnClick="lbBack_Click" ID="lbBack" runat="server" Text="Back"></asp:LinkButton>&nbsp;</div>

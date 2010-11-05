@@ -86,6 +86,13 @@
     <Compile Include="Accounts\Interface\IRecoverPassword.cs" />
     <Compile Include="Accounts\Interface\IRegister.cs" />
     <Compile Include="Accounts\Interface\IVerifyEmail.cs" />
+    <Compile Include="Accounts\Login.ascx.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Login.ascx.designer.cs">
+      <DependentUpon>Login.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Accounts\Presenter\LoginPresenter.cs" />
     <Compile Include="Accounts\Presenter\RecoverPasswordPresenter.cs" />
     <Compile Include="Accounts\Presenter\RegisterPresenter.cs" />
@@ -96,6 +103,11 @@
     </Compile>
     <Compile Include="Accounts\VerifyEmail.aspx.designer.cs">
       <DependentUpon>VerifyEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PESResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PESResources.resx</DependentUpon>
     </Compile>
     <Compile Include="AuthMaster.Master.cs">
       <DependentUpon>AuthMaster.Master</DependentUpon>
@@ -369,6 +381,13 @@
     <Compile Include="Learning\Maths.aspx.designer.cs">
       <DependentUpon>Maths.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Learning\Testing.aspx.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Learning\Testing.aspx.designer.cs">
+      <DependentUpon>Testing.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mail\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -544,12 +563,12 @@
     <Compile Include="Accounts\RecoverPassword.aspx.designer.cs">
       <DependentUpon>RecoverPassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Accounts\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Accounts\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
@@ -625,6 +644,13 @@
     <Compile Include="UserControls\Interfaces\IProfileDisplay.cs" />
     <Compile Include="UserControls\Interfaces\IRatings.cs" />
     <Compile Include="UserControls\Interfaces\ITags.cs" />
+    <Compile Include="UserControls\PESBanner.ascx.cs">
+      <DependentUpon>PESBanner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\PESBanner.ascx.designer.cs">
+      <DependentUpon>PESBanner.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Presenters\CommentsPresenter.cs" />
     <Compile Include="UserControls\Presenters\FriendsPresenter.cs" />
     <Compile Include="UserControls\Presenters\ProfileDisplayPresenter.cs" />
@@ -2365,7 +2391,7 @@
     <Content Include="Accounts\Login.aspx" />
     <Content Include="AuthMaster.Master" />
     <Content Include="Accounts\RecoverPassword.aspx" />
-    <Content Include="Accounts\Register.aspx" />
+    <Content Include="Home.aspx" />
     <Content Include="LearningVietNamese\css\FrontEnd.css" />
     <Content Include="LearningVietNamese\css\screenControl.css" />
     <Content Include="LearningVietNamese\css\V_cs.css" />
@@ -3220,23 +3246,44 @@
     <None Include="Upload\Images\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_GlobalResources\PESResources.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PESResources.Designer.cs</LastGenOutput>
+    </Content>
     <EmbeddedResource Include="LearningVietNamese\App_GlobalResources\ITBusResource.resx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Accounts\Login.ascx" />
     <Content Include="ClientBin\AppManifest.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="ClientBin\Banner\BannerPesBack.png" />
+    <Content Include="ClientBin\Banner\PesBanner.xap" />
     <Content Include="ClientBin\Images\Close.png" />
     <Content Include="ClientBin\ITBusSilverlight.xap" />
     <Content Include="ClientBin\Liquid.RichText.dll" />
+    <Content Include="ClientBin\PrimaryEducationSystem.Tests.xap" />
     <Content Include="ClientBin\Sounds\TiengChim.mp3" />
     <Content Include="ClientBin\Sounds\TiengChim.wma" />
+    <Content Include="ClientBin\System.Windows.Controls.Toolkit.dll" />
+    <Content Include="css\FirstPage.css" />
+    <Content Include="images\BackHome.jpg" />
+    <Content Include="images\BannerPes.png" />
+    <Content Include="images\Children.jpg" />
+    <Content Include="images\Children_dq.gif" />
+    <Content Include="images\HomeTopBack.png" />
     <Content Include="images\menu_ico_next.gif" />
     <Content Include="images\menu_ico_prev.gif" />
     <Content Include="images\more.jpg" />
     <Content Include="images\next.jpeg" />
+    <Content Include="images\Pes_logo.png" />
     <Content Include="images\previous.jpeg" />
+    <Content Include="images\Studyinghome.png" />
+    <Content Include="images\Text1.png" />
+    <Content Include="images\Text2.png" />
+    <Content Include="Learning\Testing.aspx" />
+    <Content Include="UserControls\PESBanner.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

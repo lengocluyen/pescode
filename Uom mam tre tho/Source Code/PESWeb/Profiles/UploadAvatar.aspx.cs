@@ -61,6 +61,7 @@ namespace PESWeb.Profiles
 
         void btnComplete_Click(object sender, EventArgs e)
         {
+            _presenter.GetOriginalImage();
             _presenter.Complete();
         }
 
@@ -74,8 +75,12 @@ namespace PESWeb.Profiles
         public void ShowCropPanel()
         {
             pnlCrop.Visible = true;
-            pnlUpload.Visible = true;
             //pnlApprove.Visible = false;
+        }
+
+        public void HideCropPanel()
+        {
+            pnlCrop.Visible = false;
         }
 
         //public void ShowApprovePanel()
@@ -93,5 +98,7 @@ namespace PESWeb.Profiles
         //}
 
         #endregion
+
+      
     }
 }

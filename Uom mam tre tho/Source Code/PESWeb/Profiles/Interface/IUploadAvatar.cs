@@ -9,6 +9,7 @@ namespace PESWeb.Profiles.Interface
     {
         void ShowMessage(string Message);
         void ShowCropPanel();
+        void HideCropPanel();
         //void ShowApprovePanel();
         //void ShowUploadPanel();
     }

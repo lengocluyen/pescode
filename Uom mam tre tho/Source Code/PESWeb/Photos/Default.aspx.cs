@@ -53,7 +53,7 @@ namespace PESWeb.Photos
                 }
                 
                 linkAuthor.NavigateUrl = "~/" + linkAuthor.Text;
-                linkAuthor.Text = "by - " + linkAuthor.Text;
+                linkAuthor.Text = "Người đăng - " + linkAuthor.Text;
                 linkGallery.NavigateUrl = "~/Photos/ViewAlbum.aspx?AlbumID=" + litFolderID.Text;
                 linkGallery.ImageUrl = _webContext.RootUrl + "files/photos/" + litFullPath.Text;
             }

@@ -4,9 +4,9 @@
 <div style="padding-left:10px;">
     <ul class="menu1">
         <li><a href="/Groups/ManageGroup.aspx">
-            <img src="/images/mnu01.gif" alt="" />Groups mới</a></li>
+            <img src="/images/mnu01.gif" alt="" />Tạo nhóm mới</a></li>
         <li><a href="/Groups/mygroups.aspx">
-            <img src="/images/mnu01.gif" alt="" />Groups của tôi</a></li>
+            <img src="/images/mnu01.gif" alt="" />Nhóm của tôi</a></li>
     </ul>
 </div>
 </asp:Content>
@@ -14,7 +14,7 @@
  <div class="grid_10">
         <div class="page-heading hr">
             <h2>
-                Groups</h2>
+                Nhóm</h2>
         </div>
         <div class="divContainerRow">
             <asp:Label ForeColor="Red" ID="lblMessage" runat="server"></asp:Label>
@@ -26,8 +26,8 @@
                         <asp:LinkButton ID="lbRequestMembership" OnClick="lbRequestMembership_Click" Text="Request Membership" runat="server"></asp:LinkButton>
                     </div>
                 </div>
-                Created: <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
-                Last Updated: <asp:Label ID="lblUpdateDate" runat="server"></asp:Label><br />
+                Ngày tạo: <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
+                Lần cập nhật cuối: <asp:Label ID="lblUpdateDate" runat="server"></asp:Label><br />
                 <asp:Label ID="lblDescription" runat="server"></asp:Label><br /><br />
             </asp:Panel>
             <asp:Panel ID="pnlPrivate" runat="server">

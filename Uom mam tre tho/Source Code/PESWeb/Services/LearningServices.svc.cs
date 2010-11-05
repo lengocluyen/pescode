@@ -128,7 +128,124 @@ public class LearningServices : ILearningServices
     }
 
     #endregion
+
+    #region Temple Tests
+    public List<T_Question> GetAllQuestionByTestLevel(int levelID)
+    {
+        try
+        {
+            List<T_Question> list = T_Question.GetAllQuestionByLevelID(levelID);
+            return list;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public T_Question GetQuestionByID(int questionID)
+    {
+        try
+        {
+            T_Question a = T_Question.GetQuestions(questionID);
+            return a;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public List<T_Answers> GetAllAnswersByQuestion(int questionID)
+    {
+        try
+        {
+            List<T_Answers> a = T_Answers.GetAllAnswersByQuestion(questionID);
+            return a;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public bool InsertTestResult(T_Test_Result testResult)
+    {
+        try
+        {
+            T_Test_Result.Add(testResult);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    #endregion
+
     //------------------
+
+    public Account GetPupilByID(int ID)
+    {
+        try
+        {
+            Account a = Account.GetAccountByID(ID);
+            return a;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public Account GetPupilByEmail(string mail)
+    {
+        try
+        {
+            Account a = Account.GetAccountByEmail(mail);
+            return a;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+    public Account GetPupilLogin(string userName, string password, bool isNeedEncode)
+    {
+        try
+        {
+            IAccountService _accountService = ObjectFactory.GetInstance<IAccountService>();
+            Account a = _accountService.LoginService(userName, password);
+            return a;
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    public void UpdateProFile(Profile profile)
+    {
+        try
+        {
+            Profile.Update(profile);
+        }
+        catch
+        {
+
+        }
+    }
+    public void InsertPupil(Account u)
+    {
+        try
+        {
+            Account.Add(u);
+        }
+        catch { }
+    }
+
+
     public Account UserLogin(string username, string password)
     {
         return _userService.LoginService(username, password);
@@ -138,5 +255,10 @@ public class LearningServices : ILearningServices
         return Account.GetAccountByID(acc);
     }
 
+    public Profile GetProfileByAccountID(int accounID)
+    {
+        Profile pf = Profile.GetProfileByAccountID(accounID);
+        return pf;
+    }
 }
 

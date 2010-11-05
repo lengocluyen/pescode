@@ -1,22 +1,57 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AuthMaster.master.cs" Inherits="PESWeb.AuthMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AuthMaster.master.cs"
+    Inherits="PESWeb.AuthMaster" %>
 
+<%@ Register Src="~/Accounts/Login.ascx" TagName="Login" TagPrefix="PES" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" >
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/general.css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/text.css" rel="stylesheet" type="text/css" />
+    <link href="css/grid_fixed.css" rel="stylesheet" type="text/css" />
+    <link href="css/FirstPage.css" rel="stylesheet" type="text/css" />
     <!--[if IE 6]>
 	    <link rel="stylesheet" type="text/css" media="screen" href="css/ie6.css" />
     <![endif]-->
 </head>
 <body>
     <form id="form1" runat="server">
+    <div class="TopPage">
+        <div class="TopPageBack">
+            <div class="TopPageImage">
+                <div class="container_12">
+                    <div class="grid_8 alpha">
+                        <asp:HyperLink ID="lnkHome" runat="server" NavigateUrl="~/Home.aspx" CssClass="logo"/>
+                    </div>
+                    <div class="grid_4 omega">
+                        <PES:Login runat="server"></PES:Login>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Center-->
     <div class="container_12">
-        <asp:ContentPlaceHolder ID="Content" runat="server">
-        
-        </asp:ContentPlaceHolder>
+        <div class="grid_7">
+            <img src="../images/Children_dq.gif" alt="" />
+            <img style="height: 70px; margin-left: -80px; position: absolute;" src="../images/Text1.png" />
+        </div>
+        <div class="grid_5">
+            <div class="clear">
+            </div>
+            <!--Register content-->
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="clear">
+    </div>
+    <div class="Bottom">
+        <div class="container_12">
+            tieuhoc.net © 2010
+        </div>
     </div>
     </form>
 </body>

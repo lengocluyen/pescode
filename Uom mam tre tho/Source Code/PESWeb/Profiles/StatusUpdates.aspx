@@ -6,7 +6,7 @@
     <div class="grid_10">
         <div class="page-heading hr">
             <h2>
-                Status</h2>
+                <%=Resources.PESResources.status%></h2>
         </div>
         <div class="clear"></div>
             <asp:Repeater ID="repStatusUpdates" runat="server">

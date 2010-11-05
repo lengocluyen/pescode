@@ -25,9 +25,9 @@
                                         <h2 class="blogsTitle">
                                             <asp:HyperLink ID="linkTitle" runat="server" Text='<%#((Blog)Container.DataItem).Title %>'></asp:HyperLink></h2>
                                         <p class="blogsDescription">
-                                            Created:
+                                            Ngày tạo:
                                             <%#((Blog)Container.DataItem).CreateDate %>
-                                            By:
+                                            Người đăng:
                                             <%#Account.GetAccountByID(((Blog)Container.DataItem).AccountID).Username %><br />
                                             <%#((Blog)Container.DataItem).Subject %><asp:Literal ID="litBlogID" runat="server"
                                                 Text='<%#((Blog)Container.DataItem).BlogID %>'></asp:Literal>
@@ -37,14 +37,14 @@
                                     </li>
                                 </ItemTemplate>
                                 <EmptyDataTemplate>
-                                    Sorry, there are no blogs posted yet!
+                                    Bạn chưa đăng bài blogs nào!
                                 </EmptyDataTemplate>
                             </asp:ListView>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                                    <PES:Pager ID="pager" runat="server" />
+                        <td><center>
+                                    <PES:Pager ID="pager" runat="server" /></center>
                         </td>
                     </tr>
                 </table>

@@ -10,7 +10,7 @@
                 Album mới</h2>
         </div>
         <div class="divContainerBox">
-            <div class="divContainerTitle">Upload some images to your album.</div>
+            <div class="divContainerTitle"><%=Resources.PESResources.uploadImage%></div>
             <div class="divContainerRow" style="text-align:center;">
                 <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="550" height="400" id="FileUpload" align="middle">
                     <param name="allowScriptAccess" value="sameDomain" />
@@ -30,11 +30,10 @@
                 </object>
             </div>
             <div class="divContainerRow">
-                Upload as many pictures as you like.  One directory at a time.  
-                When you are done uploading all of your files you can either
-                <asp:LinkButton ID="lbViewAlbum" Text="view your album" OnClick="lbViewAlbum_Click" runat="server"></asp:LinkButton>
-                 or 
-                <asp:LinkButton ID="lbEditPhotos" Text="add details to your images" OnClick="lbEditPhotos_Click" runat="server"></asp:LinkButton>
+               <%=Resources.PESResources.uploadImagedetail%>
+                <asp:LinkButton ID="lbViewAlbum" OnClick="lbViewAlbum_Click" runat="server">Xem album</asp:LinkButton>
+                  <%=Resources.PESResources.or%>
+                <asp:LinkButton ID="lbEditPhotos"  OnClick="lbEditPhotos_Click" runat="server">Chỉnh sửa album</asp:LinkButton>
                 .
             </div>
         </div>

@@ -26,7 +26,6 @@ namespace PESWeb.Accounts.Presenter
             _accountService = ObjectFactory.GetInstance<IAccountService>();
             _friendService = ObjectFactory.GetInstance<IFriendService>();
 
-
             if (!IsPostBack)
                 _view.LoadTerms(Term.GetCurrentTerm());
 

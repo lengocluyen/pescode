@@ -327,7 +327,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "of" in the pager control.
         /// Default value: of
         /// </summary>
-        private string _OF = "of";
+        private string _OF = " of ";
         [Category("Globalization")]
         public string OfClause
         {
@@ -560,13 +560,13 @@ namespace PESWeb
 
         private string RenderOther(int pageNumber)
         {
-            string templateCell = "<a class=\"PagerHyperlinkStyle\" href=\"{0}\" " + GetAlternativeText(pageNumber) + " > " + pageNumber.ToString() + " </a></td>";
+            string templateCell = "<a class=\"PagerHyperlinkStyle\" href=\"{0}\" " + GetAlternativeText(pageNumber) + "&nbsp;>&nbsp;" + pageNumber.ToString() + " </a>";
             return String.Format(templateCell, Page.ClientScript.GetPostBackClientHyperlink(this, pageNumber.ToString()));
         }
 
         private string RenderSSC(int pageNumber)
         {
-            string templateCell = "<a class=\"PagerHyperlinkStyle\" href=\"{0}\" " + GetAlternativeText(pageNumber) + " > " + pageNumber.ToString() + " </a></td>";
+            string templateCell = "<a class=\"PagerHyperlinkStyle\" href=\"{0}\" " + GetAlternativeText(pageNumber) + "&nbsp;>&nbsp;" + pageNumber.ToString() + " </a>";
             return String.Format(templateCell, Page.ClientScript.GetPostBackClientHyperlink(this, pageNumber.ToString()));
         }
 

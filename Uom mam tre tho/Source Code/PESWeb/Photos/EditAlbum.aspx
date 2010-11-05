@@ -5,18 +5,18 @@
     <div class="grid_10">
         <div class="page-heading hr">
             <h2>
-                Sửa Album</h2>
+                Sửa Album Ảnh</h2>
         </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Name:</div>
+                <div class="divContainerCellHeader">Tên Album:</div>
                 <div class="divContainerCell"><asp:TextBox ID="txtFolderName" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Location:</div>
+                <div class="divContainerCellHeader">Địa điểm:</div>
                 <div class="divContainerCell"><asp:TextBox ID="txtLocation" runat="server"></asp:TextBox></div>
             </div>
             <div class="divContainerRow">
-                <div class="divContainerCellHeader">Description:</div>
+                <div class="divContainerCellHeader">Mô tả:</div>
                 <div class="divContainerCell">
                     <asp:TextBox Columns="30" Rows="4" ID="txtDescription" MaxLength="500" TextMode="MultiLine" runat="server"></asp:TextBox>
                     <asp:RegularExpressionValidator 
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="divContainerFooter">
-                <asp:Button ID="btnSave" CssClass="button" runat="server" Text="Save" OnClick="btnSave_Click" />
+                <asp:Button ID="btnSave" CssClass="button" runat="server" Text="Lưu" OnClick="btnSave_Click" />
                 <asp:Literal ID="litFolderID" runat="server" Visible="false"></asp:Literal>
             </div>
         </div>

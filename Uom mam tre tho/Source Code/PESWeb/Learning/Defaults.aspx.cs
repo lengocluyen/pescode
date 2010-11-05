@@ -19,9 +19,12 @@ namespace PESWeb.Learning
             set { _webURL = value; }
         }
         private IWebContext _webContext;
-        protected void Page_Load(object sender, EventArgs e)
+        public Defaults()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
+        }
+        protected void Page_Load(object sender, EventArgs e)
+        {
             _webURL = "webURL=" + _webContext.RootUrl;
             this.Xaml1.InitParameters = _webURL;
         }

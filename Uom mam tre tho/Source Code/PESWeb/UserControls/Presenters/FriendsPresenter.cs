@@ -19,9 +19,11 @@ namespace PESWeb.UserControls
         public static int totalItems;
         public FriendsPresenter()
         {
+            
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _webContext = ObjectFactory.GetInstance<IWebContext>();
             _config = ObjectFactory.GetInstance<IConfiguration>();
+            if (_userSession.CurrentUser == null) return;
             if (_webContext.AccountID > 0 && _webContext.AccountID != _userSession.CurrentUser.AccountID)
                 _accountBeingViewed = Account.GetAccountByID(_webContext.AccountID);
             else

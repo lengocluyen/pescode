@@ -6,9 +6,9 @@
      <div class="grid_10">
         <div class="page-heading hr">
             <h2>
-                Sửa Ảnh</h2>
+                Sửa hình ảnh</h2>
         </div>
-            <div class="divContainerTitle">Here are your photos!</div>
+            <div class="divContainerTitle">Ablum ảnh của bạn</div>
             <div class="divContainerRow">
                 <table width="100%"><tr><td>
                 <asp:ListView id="lvAlbums" runat="server" OnItemDataBound="lbPhotos_ItemDataBound">
@@ -24,7 +24,7 @@
                             <table width="300" cellpadding="0" cellspacing="0">
                                 <tr>
                                     <td valign="top">
-                                        Description:<br />
+                                        Mô tả:<br />
                                         <asp:TextBox ID="txtDescription" TextMode="MultiLine" Columns="10" Rows="7" runat="server" Text='<%#((File)Container.DataItem).Description %>'></asp:TextBox>
                                     </td>
                                     <td valign="top">
@@ -39,14 +39,14 @@
                     </ItemTemplate>
                     
                     <EmptyDataTemplate>
-                        Sorry, you don't seem to have any photos at this time!
+                        Bạn hiện không có hình ảnh nào!
                     </EmptyDataTemplate>
                 </asp:ListView>
                 </td></tr></table>
             </div>
             <div class="divContainerFooter">
-                <asp:Button ID="btnSave" runat="server" CssClass="button" Text="Save" OnClick="btnSave_Click" /> 
-                <asp:Button ID="btnBack" runat="server" CssClass="button" Text="Back To Album View" OnClick="btnBack_Click" />
+                <asp:Button ID="btnSave" runat="server" CssClass="button" Text="Lưu" OnClick="btnSave_Click" /> 
+                <asp:Button ID="btnBack" runat="server" CssClass="button" Text="Trở lại" OnClick="btnBack_Click" />
             </div>
         </div>
 </asp:Content>

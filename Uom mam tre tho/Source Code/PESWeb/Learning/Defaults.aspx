@@ -11,8 +11,7 @@
     <form id="form1" runat="server" >
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
-        <asp:Silverlight ID="Xaml1" runat="server" Height="750px" Width="100%" Source="~/ClientBin/PesHome.xap"
-            Windowless="true" />
+        <asp:Silverlight ID="Xaml1" runat="server" Height="750px" Width="100%" MinimumVersion="3.0.40307.0" Source="~/ClientBin/PesHome.xap" />
    </form>
 </body>
 </html>

@@ -11,7 +11,7 @@ using PESWeb.Presenter;
 
 namespace PESWeb
 {
-    public partial class Default : System.Web.UI.Page,IDefault
+    public partial class Default : System.Web.UI.Page, IDefault
     {
         DefaultPresenter _presenter;
         public int ItemAdd { get; set; }
@@ -24,7 +24,7 @@ namespace PESWeb
             ItemAdd = 5;
             btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
             _presenter = new DefaultPresenter();
-            _presenter.Init(this,IsPostBack);
+            _presenter.Init(this, IsPostBack);
         }
 
         void btnAddStatus_Click(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace PESWeb
 
             _presenter.ShowDisplayPaging();
 
-            
+
         }
         public void ShowAlertsExtra(List<Alert> alerts)
         {
