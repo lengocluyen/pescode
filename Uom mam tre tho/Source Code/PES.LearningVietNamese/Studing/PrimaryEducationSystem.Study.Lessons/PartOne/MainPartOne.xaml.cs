@@ -26,18 +26,18 @@ namespace PrimaryEducationSystem.Study.Lessons.PartOne
         {
             InitializeComponent();
 
-            learningService.WebURLCompleted += new EventHandler<WebURLCompletedEventArgs>(learningService_WebURLCompleted);
-            learningService.WebURLAsync();
+            //learningService.WebURLCompleted += new EventHandler<WebURLCompletedEventArgs>(learningService_WebURLCompleted);
+            //learningService.WebURLAsync();
             idealPageSize = new Size(this.Width, this.Height);
         }
 
-        void learningService_WebURLCompleted(object sender, WebURLCompletedEventArgs e)
-        {
-            if (e.Error == null)
-                webURL = e.Result;
-            else
-                return;
-        }
+        //void learningService_WebURLCompleted(object sender, WebURLCompletedEventArgs e)
+        //{
+        //    if (e.Error == null)
+        //        webURL = e.Result;
+        //    else
+        //        return;
+        //}
 
         private Size idealPageSize;
 

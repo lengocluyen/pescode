@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using SubSonic.Extensions;
+using SubSonic.Schema;
 
 namespace Pes.Core
 {
@@ -43,7 +44,10 @@ namespace Pes.Core
                 //result.Reverse();
             return result;
         }
-
+        public static PagedList<Blog> GetLatestBlogsPaging(int currentPage, int pageSize)
+        {
+            return Blog.GetPaged(currentPage-1, pageSize);
+        }
         public static List<Blog> GetBlogsByAccountID(Int32 AccountID)
         {
             List<Blog> result = new List<Blog>();
@@ -57,7 +61,15 @@ namespace Pes.Core
                 result.Reverse();
             return result;
         }
-
+        public static PagedList<Blog> GetBlogsByAccountIDPaging(Int32 AccountID, int currentpage, int pagesize)
+        {
+            IQueryable<Blog> result;
+            var blogs = All().Where(b => b.AccountID == AccountID).OrderBy(b => b.CreateDate);
+            result = blogs;
+            result.Reverse();
+            PagedList<Blog> hk = new PagedList<Blog>(result, currentpage-1, pagesize);
+            return hk;
+        }
         public static Blog GetBlogByBlogID(Int64 BlogID)
         {
             Blog result = new Blog();

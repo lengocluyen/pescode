@@ -78,6 +78,7 @@
           <xs:element minOccurs="0" name="PartID" type="xs:int" />
           <xs:element minOccurs="0" name="PartImg" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="PartName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartNum" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="TestID" nillable="true" type="xs:int" />
         </xs:sequence>
@@ -203,10 +204,12 @@
       <xs:extension xmlns:q15="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q15:EntityBaseOfProfile6JTOatw_P">
         <xs:sequence>
           <xs:element minOccurs="0" name="AccountID" type="xs:int" />
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Attributes" nillable="true" type="tns:ArrayOfProfileAttribute" />
           <xs:element minOccurs="0" name="Avatar" nillable="true" type="xs:base64Binary" />
           <xs:element minOccurs="0" name="AvatarMimeType" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="CreateDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Enjoy" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="GameScore" type="xs:int" />
           <xs:element minOccurs="0" name="IMAOL" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="IMGIM" nillable="true" type="xs:string" />
@@ -217,14 +220,12 @@
           <xs:element minOccurs="0" name="LastUpdateDate" nillable="true" type="xs:dateTime" />
           <xs:element minOccurs="0" name="LevelOfExperienceType" nillable="true" type="tns:LevelOfExperienceType" />
           <xs:element minOccurs="0" name="LevelOfExperienceTypeID" type="xs:int" />
-          <xs:element minOccurs="0" name="NumberOfFishOwned" type="xs:int" />
-          <xs:element minOccurs="0" name="NumberOfTanksOwned" type="xs:int" />
           <xs:element minOccurs="0" name="ProfileID" type="xs:int" />
           <xs:element minOccurs="0" name="ProfileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SchoolsName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Signature" nillable="true" type="xs:string" />
           <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q16:Binary" />
           <xs:element minOccurs="0" name="UseGravatar" type="xs:int" />
-          <xs:element minOccurs="0" name="YearOfFirstTank" type="xs:int" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>
@@ -364,9 +365,10 @@
     <xs:complexContent mixed="false">
       <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q26:EntityBaseOfTest6JTOatw_P">
         <xs:sequence>
-          <xs:element minOccurs="0" name="QuestionID" nillable="true" type="xs:int" />
           <xs:element minOccurs="0" name="Sound" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="TestID" type="xs:int" />
+          <xs:element minOccurs="0" name="TestImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TestTitle" nillable="true" type="xs:string" />
         </xs:sequence>
       </xs:extension>
     </xs:complexContent>

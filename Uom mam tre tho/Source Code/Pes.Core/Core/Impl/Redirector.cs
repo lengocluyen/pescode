@@ -39,7 +39,7 @@ namespace Pes.Core.Impl
         }
         public void GotoMyBlog(string username, string pagename)
         {
-            Redirect( "~/Blogs/" + username + "/" + pagename + ".aspx");
+            Redirect("~/Blogs/" + username + "/" + pagename + ".aspx");
         }
         public void GoToPhotosMyPhotos()
         {
@@ -47,12 +47,12 @@ namespace Pes.Core.Impl
         }
         public void GoToPhotosEditAlbum(Int64 AlbumID)
         {
-            Redirect("~/Photos/EditAlbum.aspx?AlbumID=" + AlbumID.ToString());    
+            Redirect("~/Photos/EditAlbum.aspx?AlbumID=" + AlbumID.ToString());
         }
 
         public void GoToPhotosEditPhotos(Int64 AlbumID)
         {
-            Redirect("~/Photos/EditPhotos.aspx?AlbumID=" + AlbumID.ToString());    
+            Redirect("~/Photos/EditPhotos.aspx?AlbumID=" + AlbumID.ToString());
         }
 
         public void GoToPhotosViewAlbum(Int64 AlbumID)
@@ -86,7 +86,7 @@ namespace Pes.Core.Impl
         }
         public void GoToAccountAccessDenied()
         {
-            Redirect("~/Accounts/AccessDenied.aspx");    
+            Redirect("~/Accounts/AccessDenied.aspx");
         }
         public void GoToAccountRecoverPasswordPage()
         {
@@ -94,7 +94,7 @@ namespace Pes.Core.Impl
         }
         public void GoToAccountEditAccountPage()
         {
-            Redirect("~/Accounts/EditAccount.aspx");    
+            Redirect("~/Accounts/EditAccount.aspx");
         }
 
         public void GoToProfilesStatusUpdates()
@@ -109,19 +109,20 @@ namespace Pes.Core.Impl
 
         public void GoToSearch(string SearchText)
         {
-           Redirect("~/Search.aspx?s=" + SearchText); 
+            Redirect("~/Search.aspx?s=" + SearchText);
         }
 
         public void GoToAccountLoginPage(string FriendInvitationKey)
         {
-            Redirect("~/Accounts/Login.aspx?InvitationKey=" + FriendInvitationKey);
+            //Redirect("~/Accounts/Login.aspx?InvitationKey=" + FriendInvitationKey);
+            Redirect("~/Home.aspx?InvitationKey=" + FriendInvitationKey);
         }
-        
+
         public void GoToAccountLoginPage()
         {
-            Redirect("~/Accounts/Login.aspx");
+            Redirect("~/Home.aspx");
         }
-        
+
         public void GoToFriendsInviteFriends(Int32 AccoundIdToInvite)
         {
             Redirect("~/Friends/InviteFriends.aspx?AccountIdToInvite=" + AccoundIdToInvite.ToString());
@@ -129,12 +130,13 @@ namespace Pes.Core.Impl
 
         public void GoToAccountRegisterPage(string FriendInvitationKey)
         {
-            Redirect("~/Accounts/Register.aspx?InvitationKey=" + FriendInvitationKey);
+            //Redirect("~/Accounts/Register.aspx?InvitationKey=" + FriendInvitationKey);
+            Redirect("~/Home.aspx?InvitationKey=" + FriendInvitationKey);
         }
 
         public void GoToAccountRegisterPage()
         {
-            Redirect("~/Accounts/Register.aspx");
+            Redirect("~/Home.aspx");
         }
         public void GoToHomePage()
         {

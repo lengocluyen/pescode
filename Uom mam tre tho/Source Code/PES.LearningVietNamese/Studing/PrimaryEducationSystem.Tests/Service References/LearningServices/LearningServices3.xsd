@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Pes.Core" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Pes.Core" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq" />
+  <xs:import schemaLocation="http://localhost:9999/Services/LearningServices.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" />
+  <xs:complexType name="Account">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q1:EntityBaseOfAccount6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountID" type="xs:int" />
+          <xs:element minOccurs="0" name="AgreedToTermsDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="BirthDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="CreateDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="EmailVerified" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Permissions" nillable="true" type="tns:ArrayOfPermission" />
+          <xs:element minOccurs="0" name="Profile" nillable="true" type="tns:Profile" />
+          <xs:element minOccurs="0" name="TermID" type="xs:int" />
+          <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q2:Binary" />
+          <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Account" nillable="true" type="tns:Account" />
+  <xs:complexType name="ArrayOfPermission">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Permission" nillable="true" type="tns:Permission" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPermission" nillable="true" type="tns:ArrayOfPermission" />
+  <xs:complexType name="Permission">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q3:EntityBaseOfPermission6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PermissionID" type="xs:int" />
+          <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q4:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Permission" nillable="true" type="tns:Permission" />
+  <xs:complexType name="Profile">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q5="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q5:EntityBaseOfProfile6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountID" type="xs:int" />
+          <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Attributes" nillable="true" type="tns:ArrayOfProfileAttribute" />
+          <xs:element minOccurs="0" name="Avatar" nillable="true" type="xs:base64Binary" />
+          <xs:element minOccurs="0" name="AvatarMimeType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CreateDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Enjoy" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GameScore" type="xs:int" />
+          <xs:element minOccurs="0" name="IMAOL" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IMGIM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IMICQ" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IMMSN" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IMSkype" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="IMYIM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LastUpdateDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="LevelOfExperienceType" nillable="true" type="tns:LevelOfExperienceType" />
+          <xs:element minOccurs="0" name="LevelOfExperienceTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProfileID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProfileName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SchoolsName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Signature" nillable="true" type="xs:string" />
+          <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q6:Binary" />
+          <xs:element minOccurs="0" name="UseGravatar" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Profile" nillable="true" type="tns:Profile" />
+  <xs:complexType name="ArrayOfProfileAttribute">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProfileAttribute" nillable="true" type="tns:ProfileAttribute" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProfileAttribute" nillable="true" type="tns:ArrayOfProfileAttribute" />
+  <xs:complexType name="ProfileAttribute">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q7="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q7:EntityBaseOfProfileAttribute6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="CreateDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="ProfileAttributeID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProfileAttributeType" nillable="true" type="tns:ProfileAttributeType" />
+          <xs:element minOccurs="0" name="ProfileAttributeTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProfileID" type="xs:int" />
+          <xs:element minOccurs="0" name="Response" nillable="true" type="xs:string" />
+          <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="TimeStamp" nillable="true" type="q8:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProfileAttribute" nillable="true" type="tns:ProfileAttribute" />
+  <xs:complexType name="ProfileAttributeType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q9="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q9:EntityBaseOfProfileAttributeType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AttributeType" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PrivacyFlagTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProfileAttributeTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ProfileAttributeType" nillable="true" type="tns:ProfileAttributeType" />
+  <xs:complexType name="LevelOfExperienceType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q10="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q10:EntityBaseOfLevelOfExperienceType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LevelOfExperience" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LevelOfExperienceTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+          <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q11:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LevelOfExperienceType" nillable="true" type="tns:LevelOfExperienceType" />
+  <xs:complexType name="ArrayOfStudyProgramming">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudyProgramming" nillable="true" type="tns:StudyProgramming" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudyProgramming" nillable="true" type="tns:ArrayOfStudyProgramming" />
+  <xs:complexType name="StudyProgramming">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q12="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q12:EntityBaseOfStudyProgramming6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgrammingID" type="xs:int" />
+          <xs:element minOccurs="0" name="ProgrammingImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgrammingName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ProgrammingSound" nillable="true" type="xs:string" />
+          <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q13:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudyProgramming" nillable="true" type="tns:StudyProgramming" />
+  <xs:complexType name="ArrayOfStudyLevel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="StudyLevel" nillable="true" type="tns:StudyLevel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudyLevel" nillable="true" type="tns:ArrayOfStudyLevel" />
+  <xs:complexType name="StudyLevel">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q14="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q14:EntityBaseOfStudyLevel6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Sound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudyLevelID" type="xs:int" />
+          <xs:element minOccurs="0" name="StudyLevelImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="StudyLevelName" nillable="true" type="xs:string" />
+          <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q15:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="StudyLevel" nillable="true" type="tns:StudyLevel" />
+  <xs:complexType name="ArrayOfSubject">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Subject" nillable="true" type="tns:Subject" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubject" nillable="true" type="tns:ArrayOfSubject" />
+  <xs:complexType name="Subject">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q16="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q16:EntityBaseOfSubject6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="StudyLevelID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="SubjectID" type="xs:int" />
+          <xs:element minOccurs="0" name="SubjectImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubjectName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubjectSound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TestID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Subject" nillable="true" type="tns:Subject" />
+  <xs:complexType name="ArrayOfPart">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Part" nillable="true" type="tns:Part" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPart" nillable="true" type="tns:ArrayOfPart" />
+  <xs:complexType name="Part">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q17="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q17:EntityBaseOfPart6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="PartID" type="xs:int" />
+          <xs:element minOccurs="0" name="PartImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SubjectID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="TestID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Part" nillable="true" type="tns:Part" />
+  <xs:complexType name="ArrayOfLesson">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Lesson" nillable="true" type="tns:Lesson" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLesson" nillable="true" type="tns:ArrayOfLesson" />
+  <xs:complexType name="Lesson">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q18="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q18:EntityBaseOfLesson6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LessonContent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LessonID" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LessonName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PartID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Sound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TestID" nillable="true" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Lesson" nillable="true" type="tns:Lesson" />
+  <xs:complexType name="Book">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q19="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q19:EntityBaseOfBook6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccoundID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookID" type="xs:int" />
+          <xs:element minOccurs="0" name="BookImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookSound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookTypeID" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Language" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Link" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PublishYear" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ReadNum" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Book" nillable="true" type="tns:Book" />
+  <xs:complexType name="ArrayOfBookType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookType" nillable="true" type="tns:BookType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookType" nillable="true" type="tns:ArrayOfBookType" />
+  <xs:complexType name="BookType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q20="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q20:EntityBaseOfBookType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BookTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="BookTypeImg" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookTypeName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BookTypeSound" nillable="true" type="xs:string" />
+          <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/System.Data.Linq" minOccurs="0" name="Timestamp" nillable="true" type="q21:Binary" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BookType" nillable="true" type="tns:BookType" />
+  <xs:complexType name="ArrayOfBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBook" nillable="true" type="tns:ArrayOfBook" />
+  <xs:complexType name="Pupils">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q22="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q22:EntityBaseOfPupils6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountID" type="xs:int" />
+          <xs:element minOccurs="0" name="Birthday" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="FamilyName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NickName" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Point" type="xs:int" />
+          <xs:element minOccurs="0" name="PupilAvatar" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PupilID" type="xs:int" />
+          <xs:element minOccurs="0" name="PupilLevel" type="xs:int" />
+          <xs:element minOccurs="0" name="SchoolName" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Pupils" nillable="true" type="tns:Pupils" />
+  <xs:complexType name="ArrayOfLessonTestType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LessonTestType" nillable="true" type="tns:LessonTestType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLessonTestType" nillable="true" type="tns:ArrayOfLessonTestType" />
+  <xs:complexType name="LessonTestType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q23="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q23:EntityBaseOfLessonTestType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="LessonID" type="xs:int" />
+          <xs:element minOccurs="0" name="LessonTestTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="Level" type="xs:int" />
+          <xs:element minOccurs="0" name="TestID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="LessonTestType" nillable="true" type="tns:LessonTestType" />
+  <xs:complexType name="ArrayOfPartTestType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PartTestType" nillable="true" type="tns:PartTestType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPartTestType" nillable="true" type="tns:ArrayOfPartTestType" />
+  <xs:complexType name="PartTestType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q24="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q24:EntityBaseOfPartTestType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Level" type="xs:int" />
+          <xs:element minOccurs="0" name="PartID" type="xs:int" />
+          <xs:element minOccurs="0" name="PartTestTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="TestID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PartTestType" nillable="true" type="tns:PartTestType" />
+  <xs:complexType name="ArrayOfSubjectTestType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SubjectTestType" nillable="true" type="tns:SubjectTestType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSubjectTestType" nillable="true" type="tns:ArrayOfSubjectTestType" />
+  <xs:complexType name="SubjectTestType">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q25="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q25:EntityBaseOfSubjectTestType6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Level" type="xs:int" />
+          <xs:element minOccurs="0" name="SubjectID" type="xs:int" />
+          <xs:element minOccurs="0" name="SubjectTestTypeID" type="xs:int" />
+          <xs:element minOccurs="0" name="TestID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="SubjectTestType" nillable="true" type="tns:SubjectTestType" />
+  <xs:complexType name="ArrayOfTest">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Test" nillable="true" type="tns:Test" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTest" nillable="true" type="tns:ArrayOfTest" />
+  <xs:complexType name="Test">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q26="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q26:EntityBaseOfTest6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Sound" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TestID" type="xs:int" />
+          <xs:element minOccurs="0" name="TestImage" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TestTitle" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Test" nillable="true" type="tns:Test" />
+  <xs:complexType name="ArrayOfT_Question">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="T_Question" nillable="true" type="tns:T_Question" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfT_Question" nillable="true" type="tns:ArrayOfT_Question" />
+  <xs:complexType name="T_Question">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q27="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q27:EntityBaseOfT_Question6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AuthorID" type="xs:int" />
+          <xs:element minOccurs="0" name="LevelID" type="xs:int" />
+          <xs:element minOccurs="0" name="Mark" type="xs:float" />
+          <xs:element minOccurs="0" name="QuestionContent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="QuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="SoundFile" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="T_Question" nillable="true" type="tns:T_Question" />
+  <xs:complexType name="ArrayOfT_Answers">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="T_Answers" nillable="true" type="tns:T_Answers" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfT_Answers" nillable="true" type="tns:ArrayOfT_Answers" />
+  <xs:complexType name="T_Answers">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q28="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q28:EntityBaseOfT_Answers6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AnswersContent" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AnswersID" type="xs:int" />
+          <xs:element minOccurs="0" name="IsText" type="xs:boolean" />
+          <xs:element minOccurs="0" name="IsTrue" type="xs:boolean" />
+          <xs:element minOccurs="0" name="QuestionID" type="xs:int" />
+          <xs:element minOccurs="0" name="SoundFile" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="T_Answers" nillable="true" type="tns:T_Answers" />
+  <xs:complexType name="T_Test_Result">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q29="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses" base="q29:EntityBaseOfT_Test_Result6JTOatw_P">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Level" type="xs:int" />
+          <xs:element minOccurs="0" name="Mark" type="xs:double" />
+          <xs:element minOccurs="0" name="TestDate" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="TestResultID" type="xs:int" />
+          <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="T_Test_Result" nillable="true" type="tns:T_Test_Result" />
+</xs:schema>

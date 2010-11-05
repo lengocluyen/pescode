@@ -154,7 +154,7 @@ namespace Studying
         {
             if (e.Result == -1)
             {
-                HtmlPage.Window.Navigate(new Uri(webURL+"Learning/Defaults.aspx",UriKind.RelativeOrAbsolute));
+                HtmlPage.Window.Navigate(new Uri(webURL+"Home.aspx",UriKind.RelativeOrAbsolute));
             }
             else
             {
@@ -317,7 +317,7 @@ namespace Studying
 
         private void Image_Comeback_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
-            HtmlPage.Window.Navigate(new Uri(webURL + "Learning/Defaults.aspx", UriKind.RelativeOrAbsolute));
+            HtmlPage.Window.Navigate(new Uri(webURL + "Home.aspx", UriKind.RelativeOrAbsolute));
         }
 
         private void image_Contact_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)

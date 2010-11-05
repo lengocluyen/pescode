@@ -818,3 +818,190 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.LearningVietN
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\AppManifest.xaml
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.Input.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Data.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.Input.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Data.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_1.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_10.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_2.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_3.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_4.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_5.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_6.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_7.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_8.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_9.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainLesson.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainPartOne.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\PartList.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\PrimaryEducationSystem.Study.Lessons.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.Input.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Data.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.Input.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Data.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Controls.Data.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_1.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_10.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_2.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_3.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_4.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_5.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_6.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_7.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_8.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_9.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainLesson.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainPartOne.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\PartList.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\Sound\BaiTapTracNghiem.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\Microsoft.Expression.Interactions.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\System.Windows.Interactivity.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\Bin\Debug\Microsoft.Expression.Interactions.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\Sound\BaiTapTracNghiem.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\Sound\BaiTapTracNghiem.mp3
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\PrimaryEducationSystem.Study.Lessons.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\ClientBin\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_1.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_10.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_2.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_3.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_4.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_5.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_6.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_7.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_8.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\Lession_9.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainLesson.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\MainPartOne.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PartOne\PartList.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\PrimaryEducationSystem.Study.Lessons.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.LearningVietNamese\Studing\PrimaryEducationSystem.Study.Lessons\obj\Debug\XapCacheFile.xml

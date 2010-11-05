@@ -21,6 +21,7 @@ namespace Pes.Core
 		[SubSonicPrimaryKey]
 		public int PartID { get; set; }
 		public int? SubjectID { get; set; }
+        public string PartNum { get; set; }
 		public string PartName { get; set; }
         public string PartImg { get; set; }
 		public int? TestID { get; set; }

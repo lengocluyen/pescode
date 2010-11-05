@@ -120,3 +120,186 @@ E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\ChuOngTh
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.dll
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.pdb
 E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PES.Game\ChuOngThongMinh\obj\Debug\XapCacheFile.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\AppManifest.xaml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.xap
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\TestPage.html
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Runtime.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.xml
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\en\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Runtime.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ResolveAssemblyReference.cache
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\App.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOB.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOBM.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\GameOver.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HomePage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HoneyJar.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\MainPage.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\UseGuide.g.cs
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.g.resources
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.dll
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.pdb
+D:\Thesis\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Runtime.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\en\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOB.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOBM.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HomePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HoneyJar.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\UseGuide.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\XapCacheFile.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\AppManifest.xaml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ChuOngThongMinh.xap
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\TestPage.html
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\Microsoft.Expression.Prototyping.Runtime.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.Navigation.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Interactivity.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Xml.Serialization.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\System.Windows.Controls.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\en\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\Microsoft.Expression.Prototyping.Runtime.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Xml.Serialization.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\de\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\es\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\fr\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\it\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ja\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\ko\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\App.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOB.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\BeeOBM.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\GameOver.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HomePage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\HoneyJar.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\MainPage.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\UseGuide.g.cs
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.g.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\ChuOngThongMinh.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PES.Game\ChuOngThongMinh\obj\Debug\XapCacheFile.xml

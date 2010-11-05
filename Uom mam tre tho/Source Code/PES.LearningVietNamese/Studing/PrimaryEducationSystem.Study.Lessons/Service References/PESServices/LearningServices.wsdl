@@ -111,11 +111,17 @@
   <wsdl:message name="ILearningServices_GetTestByTestID_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetTestByTestIDResponse" />
   </wsdl:message>
-  <wsdl:message name="ILearningServices_WebURL_InputMessage">
-    <wsdl:part name="parameters" element="tns:WebURL" />
+  <wsdl:message name="ILearningServices_UserLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:UserLogin" />
   </wsdl:message>
-  <wsdl:message name="ILearningServices_WebURL_OutputMessage">
-    <wsdl:part name="parameters" element="tns:WebURLResponse" />
+  <wsdl:message name="ILearningServices_UserLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UserLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetUserByAccountID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByAccountID" />
+  </wsdl:message>
+  <wsdl:message name="ILearningServices_GetUserByAccountID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByAccountIDResponse" />
   </wsdl:message>
   <wsdl:portType name="ILearningServices">
     <wsdl:operation name="StudyingProgrammingGetAll">
@@ -186,9 +192,13 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetTestByTestID" message="tns:ILearningServices_GetTestByTestID_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetTestByTestIDResponse" message="tns:ILearningServices_GetTestByTestID_OutputMessage" />
     </wsdl:operation>
-    <wsdl:operation name="WebURL">
-      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/WebURL" message="tns:ILearningServices_WebURL_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/WebURLResponse" message="tns:ILearningServices_WebURL_OutputMessage" />
+    <wsdl:operation name="UserLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/UserLogin" message="tns:ILearningServices_UserLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/UserLoginResponse" message="tns:ILearningServices_UserLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByAccountID">
+      <wsdl:input wsaw:Action="http://tempuri.org/ILearningServices/GetUserByAccountID" message="tns:ILearningServices_GetUserByAccountID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ILearningServices/GetUserByAccountIDResponse" message="tns:ILearningServices_GetUserByAccountID_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ILearningServices" type="tns:ILearningServices">
@@ -346,8 +356,17 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="WebURL">
-      <soap:operation soapAction="http://tempuri.org/ILearningServices/WebURL" style="document" />
+    <wsdl:operation name="UserLogin">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/UserLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByAccountID">
+      <soap:operation soapAction="http://tempuri.org/ILearningServices/GetUserByAccountID" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

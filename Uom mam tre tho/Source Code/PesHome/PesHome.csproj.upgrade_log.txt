@@ -1,0 +1,13 @@
+----------------------------------------------------------------------------------------------
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PesHome\PesHome.csproj
+----------------------------------------------------------------------------------------------
+Updating <Include> of <Reference Include="Microsoft.Expression.Interactions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"> from 'Microsoft.Expression.Interactions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' to 'Microsoft.Expression.Interactions'
+Updating <Include> of <Reference Include="System.Windows.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"> from 'System.Windows.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL' to 'System.Windows.Interactivity'
+Updating <ExpressionBlendVersion> value from '3.0.1927.0' to '4.0.20525.0'
+Updating <Import> from '$(MSBuildExtensionsPath32)\Microsoft\Silverlight\v3.0\Microsoft.Silverlight.CSharp.targets' to '$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets'
+Updating <TargetFrameworkVersion> value from 'v3.5' to 'v3.0'
+Setting <SilverlightVersion> value to '$(TargetFrameworkVersion)'
+Updating ToolsVersion from '3.5' to '4.0'
+Saving file
+
+

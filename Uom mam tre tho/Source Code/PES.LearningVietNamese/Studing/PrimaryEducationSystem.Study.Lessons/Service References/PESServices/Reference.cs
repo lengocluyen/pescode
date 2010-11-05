@@ -415,6 +415,8 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         private string PartNameField;
         
+        private string PartNumField;
+        
         private System.Nullable<int> SubjectIDField;
         
         private System.Nullable<int> TestIDField;
@@ -454,6 +456,19 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((object.ReferenceEquals(this.PartNameField, value) != true)) {
                     this.PartNameField = value;
                     this.RaisePropertyChanged("PartName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PartNum {
+            get {
+                return this.PartNumField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PartNumField, value) != true)) {
+                    this.PartNumField = value;
+                    this.RaisePropertyChanged("PartNum");
                 }
             }
         }
@@ -1224,6 +1239,8 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         private int AccountIDField;
         
+        private string AddressField;
+        
         private System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.ProfileAttribute> AttributesField;
         
         private byte[] AvatarField;
@@ -1231,6 +1248,8 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         private string AvatarMimeTypeField;
         
         private System.Nullable<System.DateTime> CreateDateField;
+        
+        private string EnjoyField;
         
         private int GameScoreField;
         
@@ -1252,21 +1271,17 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         private int LevelOfExperienceTypeIDField;
         
-        private int NumberOfFishOwnedField;
-        
-        private int NumberOfTanksOwnedField;
-        
         private int ProfileIDField;
         
         private string ProfileNameField;
+        
+        private string SchoolsNameField;
         
         private string SignatureField;
         
         private PrimaryEducationSystem.Study.Lessons.PESServices.Binary TimestampField;
         
         private int UseGravatarField;
-        
-        private int YearOfFirstTankField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public int AccountID {
@@ -1277,6 +1292,19 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((this.AccountIDField.Equals(value) != true)) {
                     this.AccountIDField = value;
                     this.RaisePropertyChanged("AccountID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Address {
+            get {
+                return this.AddressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AddressField, value) != true)) {
+                    this.AddressField = value;
+                    this.RaisePropertyChanged("Address");
                 }
             }
         }
@@ -1329,6 +1357,19 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((this.CreateDateField.Equals(value) != true)) {
                     this.CreateDateField = value;
                     this.RaisePropertyChanged("CreateDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Enjoy {
+            get {
+                return this.EnjoyField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EnjoyField, value) != true)) {
+                    this.EnjoyField = value;
+                    this.RaisePropertyChanged("Enjoy");
                 }
             }
         }
@@ -1464,32 +1505,6 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int NumberOfFishOwned {
-            get {
-                return this.NumberOfFishOwnedField;
-            }
-            set {
-                if ((this.NumberOfFishOwnedField.Equals(value) != true)) {
-                    this.NumberOfFishOwnedField = value;
-                    this.RaisePropertyChanged("NumberOfFishOwned");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int NumberOfTanksOwned {
-            get {
-                return this.NumberOfTanksOwnedField;
-            }
-            set {
-                if ((this.NumberOfTanksOwnedField.Equals(value) != true)) {
-                    this.NumberOfTanksOwnedField = value;
-                    this.RaisePropertyChanged("NumberOfTanksOwned");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
         public int ProfileID {
             get {
                 return this.ProfileIDField;
@@ -1511,6 +1526,19 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((object.ReferenceEquals(this.ProfileNameField, value) != true)) {
                     this.ProfileNameField = value;
                     this.RaisePropertyChanged("ProfileName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SchoolsName {
+            get {
+                return this.SchoolsNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SchoolsNameField, value) != true)) {
+                    this.SchoolsNameField = value;
+                    this.RaisePropertyChanged("SchoolsName");
                 }
             }
         }
@@ -1550,19 +1578,6 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((this.UseGravatarField.Equals(value) != true)) {
                     this.UseGravatarField = value;
                     this.RaisePropertyChanged("UseGravatar");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int YearOfFirstTank {
-            get {
-                return this.YearOfFirstTankField;
-            }
-            set {
-                if ((this.YearOfFirstTankField.Equals(value) != true)) {
-                    this.YearOfFirstTankField = value;
-                    this.RaisePropertyChanged("YearOfFirstTank");
                 }
             }
         }
@@ -2226,24 +2241,13 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     [System.Runtime.Serialization.DataContractAttribute(Name="Test", Namespace="http://schemas.datacontract.org/2004/07/Pes.Core")]
     public partial class Test : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfTest6JTOatw_P {
         
-        private System.Nullable<int> QuestionIDField;
-        
         private string SoundField;
         
         private int TestIDField;
         
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> QuestionID {
-            get {
-                return this.QuestionIDField;
-            }
-            set {
-                if ((this.QuestionIDField.Equals(value) != true)) {
-                    this.QuestionIDField = value;
-                    this.RaisePropertyChanged("QuestionID");
-                }
-            }
-        }
+        private string TestImageField;
+        
+        private string TestTitleField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string Sound {
@@ -2267,6 +2271,32 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 if ((this.TestIDField.Equals(value) != true)) {
                     this.TestIDField = value;
                     this.RaisePropertyChanged("TestID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TestImage {
+            get {
+                return this.TestImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TestImageField, value) != true)) {
+                    this.TestImageField = value;
+                    this.RaisePropertyChanged("TestImage");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string TestTitle {
+            get {
+                return this.TestTitleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.TestTitleField, value) != true)) {
+                    this.TestTitleField = value;
+                    this.RaisePropertyChanged("TestTitle");
                 }
             }
         }
@@ -2398,10 +2428,15 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test> EndGetTestByTestID(System.IAsyncResult result);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/WebURL", ReplyAction="http://tempuri.org/ILearningServices/WebURLResponse")]
-        System.IAsyncResult BeginWebURL(System.AsyncCallback callback, object asyncState);
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/UserLogin", ReplyAction="http://tempuri.org/ILearningServices/UserLoginResponse")]
+        System.IAsyncResult BeginUserLogin(string username, string password, System.AsyncCallback callback, object asyncState);
         
-        string EndWebURL(System.IAsyncResult result);
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account EndUserLogin(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetUserByAccountID", ReplyAction="http://tempuri.org/ILearningServices/GetUserByAccountIDResponse")]
+        System.IAsyncResult BeginGetUserByAccountID(int acc, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetUserByAccountID(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
@@ -2733,19 +2768,38 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public partial class WebURLCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+    public partial class UserLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
         
-        public WebURLCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+        public UserLoginCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
         
-        public string Result {
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Account Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetUserByAccountIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetUserByAccountIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Account Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(this.results[0]));
             }
         }
     }
@@ -2856,11 +2910,17 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         private System.Threading.SendOrPostCallback onGetTestByTestIDCompletedDelegate;
         
-        private BeginOperationDelegate onBeginWebURLDelegate;
+        private BeginOperationDelegate onBeginUserLoginDelegate;
         
-        private EndOperationDelegate onEndWebURLDelegate;
+        private EndOperationDelegate onEndUserLoginDelegate;
         
-        private System.Threading.SendOrPostCallback onWebURLCompletedDelegate;
+        private System.Threading.SendOrPostCallback onUserLoginCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetUserByAccountIDDelegate;
+        
+        private EndOperationDelegate onEndGetUserByAccountIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetUserByAccountIDCompletedDelegate;
         
         private BeginOperationDelegate onBeginOpenDelegate;
         
@@ -2949,7 +3009,9 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         public event System.EventHandler<GetTestByTestIDCompletedEventArgs> GetTestByTestIDCompleted;
         
-        public event System.EventHandler<WebURLCompletedEventArgs> WebURLCompleted;
+        public event System.EventHandler<UserLoginCompletedEventArgs> UserLoginCompleted;
+        
+        public event System.EventHandler<GetUserByAccountIDCompletedEventArgs> GetUserByAccountIDCompleted;
         
         public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> OpenCompleted;
         
@@ -3736,47 +3798,97 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginWebURL(System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginWebURL(callback, asyncState);
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginUserLogin(string username, string password, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginUserLogin(username, password, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        string PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndWebURL(System.IAsyncResult result) {
-            return base.Channel.EndWebURL(result);
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndUserLogin(System.IAsyncResult result) {
+            return base.Channel.EndUserLogin(result);
         }
         
-        private System.IAsyncResult OnBeginWebURL(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginWebURL(callback, asyncState);
+        private System.IAsyncResult OnBeginUserLogin(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string username = ((string)(inValues[0]));
+            string password = ((string)(inValues[1]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginUserLogin(username, password, callback, asyncState);
         }
         
-        private object[] OnEndWebURL(System.IAsyncResult result) {
-            string retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndWebURL(result);
+        private object[] OnEndUserLogin(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndUserLogin(result);
             return new object[] {
                     retVal};
         }
         
-        private void OnWebURLCompleted(object state) {
-            if ((this.WebURLCompleted != null)) {
+        private void OnUserLoginCompleted(object state) {
+            if ((this.UserLoginCompleted != null)) {
                 InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.WebURLCompleted(this, new WebURLCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+                this.UserLoginCompleted(this, new UserLoginCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
             }
         }
         
-        public void WebURLAsync() {
-            this.WebURLAsync(null);
+        public void UserLoginAsync(string username, string password) {
+            this.UserLoginAsync(username, password, null);
         }
         
-        public void WebURLAsync(object userState) {
-            if ((this.onBeginWebURLDelegate == null)) {
-                this.onBeginWebURLDelegate = new BeginOperationDelegate(this.OnBeginWebURL);
+        public void UserLoginAsync(string username, string password, object userState) {
+            if ((this.onBeginUserLoginDelegate == null)) {
+                this.onBeginUserLoginDelegate = new BeginOperationDelegate(this.OnBeginUserLogin);
             }
-            if ((this.onEndWebURLDelegate == null)) {
-                this.onEndWebURLDelegate = new EndOperationDelegate(this.OnEndWebURL);
+            if ((this.onEndUserLoginDelegate == null)) {
+                this.onEndUserLoginDelegate = new EndOperationDelegate(this.OnEndUserLogin);
             }
-            if ((this.onWebURLCompletedDelegate == null)) {
-                this.onWebURLCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnWebURLCompleted);
+            if ((this.onUserLoginCompletedDelegate == null)) {
+                this.onUserLoginCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnUserLoginCompleted);
             }
-            base.InvokeAsync(this.onBeginWebURLDelegate, null, this.onEndWebURLDelegate, this.onWebURLCompletedDelegate, userState);
+            base.InvokeAsync(this.onBeginUserLoginDelegate, new object[] {
+                        username,
+                        password}, this.onEndUserLoginDelegate, this.onUserLoginCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetUserByAccountID(int acc, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetUserByAccountID(acc, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetUserByAccountID(System.IAsyncResult result) {
+            return base.Channel.EndGetUserByAccountID(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetUserByAccountID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int acc = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetUserByAccountID(acc, callback, asyncState);
+        }
+        
+        private object[] OnEndGetUserByAccountID(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetUserByAccountID(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetUserByAccountIDCompleted(object state) {
+            if ((this.GetUserByAccountIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetUserByAccountIDCompleted(this, new GetUserByAccountIDCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetUserByAccountIDAsync(int acc) {
+            this.GetUserByAccountIDAsync(acc, null);
+        }
+        
+        public void GetUserByAccountIDAsync(int acc, object userState) {
+            if ((this.onBeginGetUserByAccountIDDelegate == null)) {
+                this.onBeginGetUserByAccountIDDelegate = new BeginOperationDelegate(this.OnBeginGetUserByAccountID);
+            }
+            if ((this.onEndGetUserByAccountIDDelegate == null)) {
+                this.onEndGetUserByAccountIDDelegate = new EndOperationDelegate(this.OnEndGetUserByAccountID);
+            }
+            if ((this.onGetUserByAccountIDCompletedDelegate == null)) {
+                this.onGetUserByAccountIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetUserByAccountIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetUserByAccountIDDelegate, new object[] {
+                        acc}, this.onEndGetUserByAccountIDDelegate, this.onGetUserByAccountIDCompletedDelegate, userState);
         }
         
         private System.IAsyncResult OnBeginOpen(object[] inValues, System.AsyncCallback callback, object asyncState) {
@@ -4075,15 +4187,30 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
                 return _result;
             }
             
-            public System.IAsyncResult BeginWebURL(System.AsyncCallback callback, object asyncState) {
-                object[] _args = new object[0];
-                System.IAsyncResult _result = base.BeginInvoke("WebURL", _args, callback, asyncState);
+            public System.IAsyncResult BeginUserLogin(string username, string password, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[2];
+                _args[0] = username;
+                _args[1] = password;
+                System.IAsyncResult _result = base.BeginInvoke("UserLogin", _args, callback, asyncState);
                 return _result;
             }
             
-            public string EndWebURL(System.IAsyncResult result) {
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Account EndUserLogin(System.IAsyncResult result) {
                 object[] _args = new object[0];
-                string _result = ((string)(base.EndInvoke("WebURL", _args, result)));
+                PrimaryEducationSystem.Study.Lessons.PESServices.Account _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(base.EndInvoke("UserLogin", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetUserByAccountID(int acc, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = acc;
+                System.IAsyncResult _result = base.BeginInvoke("GetUserByAccountID", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetUserByAccountID(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.Account _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(base.EndInvoke("GetUserByAccountID", _args, result)));
                 return _result;
             }
         }

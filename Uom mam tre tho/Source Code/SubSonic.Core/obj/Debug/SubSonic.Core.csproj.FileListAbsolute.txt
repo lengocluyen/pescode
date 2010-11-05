@@ -32,3 +32,14 @@ I:\Luan Van\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\DynamicQuery.pdb
 I:\Luan Van\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\ResolveAssemblyReference.cache
 I:\Luan Van\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.dll
 I:\Luan Van\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.dll.config
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\log4net.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\StructureMap.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\StructureMap.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\bin\Debug\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.pdb
