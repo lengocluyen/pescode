@@ -412,12 +412,12 @@ namespace Studying
 
         private void Image_Comeback_MouseEnter(object sender, MouseEventArgs e)
         {
-            ContactST.Begin();
+            BackST.Begin();
         }
 
         private void Image_Comeback_MouseLeave(object sender, MouseEventArgs e)
         {
-            ContactST.Stop();
+            BackST.Stop();
         }
 
         private void Image_Books_MouseEnter(object sender, MouseEventArgs e)

@@ -214,33 +214,43 @@
 		</Storyboard>
 	</UserControl.Resources>
     
-    <Grid x:Name="LayoutRoot" Height="750" Width="950" Background="#FFBAEDD3">
-        <TextBlock FontFamily="../Fonts/UTM Aquarelle.ttf#UTM Aquarelle" Margin="305,32,247,0" VerticalAlignment="Top" Text="Mạng xã hội ươm mầm trẻ thơ" TextWrapping="Wrap" FontSize="34.667" FontWeight="Bold" d:LayoutOverrides="Width" HorizontalAlignment="Center">
-    		<TextBlock.Foreground>
-    			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-    				<GradientStop Color="#FF00008E" Offset="0"/>
-    				<GradientStop Color="#FF00008E" Offset="1"/>
-    				<GradientStop Color="#FF7171FF" Offset="0.526"/>
-    			</LinearGradientBrush>
-    		</TextBlock.Foreground>
-    	</TextBlock>
-        <Canvas x:Name="Layer_1" Width="950">
+    <Grid x:Name="LayoutRoot" Height="750" Width="950">
+    	<Grid.Background>
+    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+    			<GradientStop Color="White" Offset="0"/>
+    			<GradientStop Color="#FFB8FFAE" Offset="1"/>
+    			<GradientStop Color="#FFDDFFD8" Offset="0.169"/>
+    			<GradientStop Color="#FFE0FFDB" Offset="0.892"/>
+    			<GradientStop Color="#FFBFFFB6" Offset="0.896"/>
+    			<GradientStop Color="#FFE8FFE5" Offset="0.173"/>
+    		</LinearGradientBrush>
+    	</Grid.Background>
+		<Canvas x:Name="Layer_1" Width="950">
             <!--Bottom-->
             <Canvas x:Name="Bottom" Height="101" Width="704" Canvas.Left="95" Canvas.Top="613">
                 <Path x:Name="Path" Width="632.849" Height="44" Canvas.Left="71.036" Canvas.Top="54.297" Stretch="Fill" StrokeThickness="1" StrokeLineJoin="Round" Stroke="#4C000000" Fill="#4CE8F1F3" Data="F1 M 196.792,548.277L 763.977,548.277C 764.33,548.277 764.617,548.563 764.617,548.917L 764.617,591.676C 764.617,592.03 764.33,592.316 763.977,592.316L 196.792,592.316C 196.438,592.316 196.152,592.03 196.152,591.676L 196.152,548.917C 196.152,548.563 196.438,548.277 196.792,548.277 Z " UseLayoutRounding="False" Opacity="0.395"/>
                 <Image Height="85" Width="85" Canvas.Top="16" Source="Images/Child.png" Stretch="Fill"/>
                 <Image Height="56" Width="56" Canvas.Left="71" Source="Images/Studying/AnimationOneE.png" Stretch="Fill"/>
                 <Image Height="15" Width="807" Source="Images/Studying/BottomTree.png" Stretch="Fill" Canvas.Left="-25" Canvas.Top="95"/>
-                <TextBlock Canvas.Left="71" Canvas.Top="75" Text="Dedign by: Flychips" TextWrapping="Wrap"/>
-                <TextBlock Canvas.Left="519" Canvas.Top="75" Text="IT Faculty - DaLat University" FontWeight="Bold"/>
+                <TextBlock Canvas.Left="71" Canvas.Top="75" Text="tieuhoc © 2010" TextWrapping="Wrap" Opacity="0.4" FontSize="10.667"/>
             </Canvas>
 
             <Canvas x:Name="Top" Width="801" Height="125" Canvas.Left="50" Canvas.Top="-6">
+                <TextBlock Text="TRANG GIÁO DỤC" TextWrapping="Wrap" FontSize="26.667" FontWeight="Bold" Width="388" Canvas.Left="413" Canvas.Top="68">
+            		<TextBlock.Foreground>
+            			<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            				<GradientStop Color="#FF386F01" Offset="0"/>
+            				<GradientStop Color="#FF386E01" Offset="1"/>
+            				<GradientStop Color="#FF84D717" Offset="0.526"/>
+            			</LinearGradientBrush>
+            		</TextBlock.Foreground>
+            	</TextBlock>
                 <Image Height="121" Width="853" Source="Images/Studying/MenuTree.png" Stretch="Fill" Canvas.Left="-18" Canvas.Top="4"/>
+            	<Image Height="48" Width="274" Opacity="0.705" Canvas.Left="107" Canvas.Top="59" Source="Images/Pes_logo.png" Stretch="Fill"/>
             </Canvas>
 
-            <Canvas x:Name="Avarta" Width="181" Height="157" Canvas.Left="13" Canvas.Top="93">
-                <Path x:Name="Path_6" Width="36" Height="17" Canvas.Left="77.807" Canvas.Top="-64.823" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF6E00" Data="F1 M 210.953,32.1765L 224.787,23.3431L 227.035,21.6727L 230.787,17.5098L 230.62,16.2598L 229.12,16.1765L 227.12,17.5098L 225.12,20.0098L 224.62,23.3431L 217.12,21.8431L 216.87,23.3848L 217.787,24.6765L 220.282,24.7813L 223.953,23.6765L 245.953,23.6765" UseLayoutRounding="False"/>
+            <Canvas x:Name="Avarta" Width="181" Height="157" Canvas.Left="13" Canvas.Top="149">
+                <Path x:Name="Path_6" Width="36" Height="17" Canvas.Left="77.807" Canvas.Top="-119.323" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF6E00" Data="F1 M 210.953,32.1765L 224.787,23.3431L 227.035,21.6727L 230.787,17.5098L 230.62,16.2598L 229.12,16.1765L 227.12,17.5098L 225.12,20.0098L 224.62,23.3431L 217.12,21.8431L 216.87,23.3848L 217.787,24.6765L 220.282,24.7813L 223.953,23.6765L 245.953,23.6765" UseLayoutRounding="False"/>
                 <Path x:Name="Path_14" Width="161.581" Height="154.416" Canvas.Left="13.6289" Canvas.Top="0.0545785" Stretch="Fill" StrokeLineJoin="Round" Stroke="#340013B4" Fill="#34F466FA" Data="F1 M 14.6497,26.2386L 149.955,0.565918C 150.303,0.5 150.638,0.72821 150.703,1.07544L 174.698,127.539C 174.764,127.886 174.536,128.221 174.189,128.287L 38.8833,153.96C 38.536,154.025 38.2011,153.797 38.1353,153.45L 14.1402,26.9868C 14.0743,26.6395 14.3024,26.3046 14.6497,26.2386 Z "/>
                 <Path x:Name="Path_15" Width="161.474" Height="154.298" Canvas.Left="13.6833" Canvas.Top="0.113663" Stretch="Fill" StrokeLineJoin="Round" Stroke="#34F517FF" Fill="#34FF5FBC" Data="F1 M 14.7047,26.1537L 150.038,0.624878C 150.385,0.559326 150.72,0.787842 150.785,1.13519L 174.646,127.624C 174.711,127.971 174.483,128.306 174.136,128.371L 38.8025,153.9C 38.4551,153.966 38.1204,153.737 38.0549,153.39L 14.1945,26.9013C 14.1289,26.554 14.3574,26.2192 14.7047,26.1537 Z "/>
                 <Path x:Name="Path_16" Width="147.701" Height="139.275" Canvas.Left="20.5711" Canvas.Top="7.62522" Stretch="Fill" StrokeLineJoin="Round" Stroke="#71B40069" Fill="#71FF6CC2" Data="F1 M 21.6715,16.6484L 159.127,8.12646C 159.48,8.10461 159.784,8.37292 159.806,8.72571L 167.771,137.199C 167.793,137.552 167.524,137.855 167.171,137.877L 29.7155,146.399C 29.3627,146.421 29.059,146.153 29.0371,145.8L 21.0723,17.3269C 21.0504,16.9741 21.3187,16.6703 21.6715,16.6484 Z "/>
@@ -248,11 +258,31 @@
                 <Path x:Name="Path_18" Width="52" Height="27" Canvas.Left="68.911" Canvas.Top="4.874" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF4F00" Data="F1 M 71.4111,31.9359L 93.3357,19.0805L 96.9787,16.5282L 103.519,9.55505L 103.712,7.03394L 101.685,6.37396L 98.4967,8.34344L 94.915,12.6146L 93.1074,19.0254L 83.3388,13.5879L 82.4771,16.5468L 83.2978,19.3978L 86.6805,20.4291L 92.0819,19.4626L 122.218,26.7323" UseLayoutRounding="False"/>
                 <Path x:Name="Path_22" Width="30.6" Height="31.1473" Canvas.Left="146.099" Canvas.Top="109.104" Stretch="Fill" Fill="#9BFF00CF" Data="F1 M 176.699,132.444L 167.508,123.653L 174.745,113.194L 163.544,119.218L 155.833,109.104L 158.101,121.619L 146.099,125.826L 158.702,127.536L 158.995,140.251L 164.516,128.794L 176.699,132.444 Z "/>
                 <Path x:Name="Path_23" Width="20.6488" Height="21.0181" Canvas.Left="154.966" Canvas.Top="114.693" Stretch="Fill" Fill="#9B5EFF00" Data="F1 M 175.614,130.442L 169.413,124.51L 174.296,117.452L 166.737,121.518L 161.534,114.693L 163.065,123.137L 154.966,125.977L 163.47,127.131L 163.668,135.711L 167.393,127.979L 175.614,130.442 Z "/>
-                <Path x:Name="Path_5" Width="5" Height="78" Canvas.Left="89.838" Canvas.Top="-57.736" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF4F00" Data="F1 M 228.068,18.4473L 225.401,18.6078L 224.026,19.1511L 223.901,20.0894L 224.526,20.929L 224.564,95.3712" UseLayoutRounding="False"/>
+                <Path x:Name="Path_5" Width="5" Height="133.667" Canvas.Left="89.838" Canvas.Top="-113.403" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FFFF4F00" Data="F1 M 228.068,18.4473L 225.401,18.6078L 224.026,19.1511L 223.901,20.0894L 224.526,20.929L 224.564,95.3712" UseLayoutRounding="False"/>
                 <Image x:Name="AvartaImage" Height="95" Width="104" Canvas.Left="42" Canvas.Top="25" Stretch="Fill"/>
                 <Canvas x:Name="Group_19" Width="50.563" Height="51.4675" Canvas.Left="0" Canvas.Top="1.8042">
-                    <Path x:Name="Path_20" Width="50.563" Height="51.4674" Canvas.Left="3.05176e-005" Canvas.Top="0" Stretch="Fill" Fill="#FFFFC100" Data="F1 M 50.563,38.5668L 35.3764,24.0404L 47.3339,6.75824L 28.8254,16.7126L 16.0842,0L 19.832,20.6786L 3.05176e-005,27.6318L 20.8247,30.4575L 21.3091,51.4674L 30.4317,32.5352L 50.563,38.5668 Z "/>
-                    <Path x:Name="Path_21" Width="34.1198" Height="34.73" Canvas.Left="14.6491" Canvas.Top="9.23694" Stretch="Fill" Fill="#CDFFF000" Data="F1 M 48.7689,35.2617L 38.521,25.4594L 46.5898,13.7974L 34.1004,20.5146L 25.5027,9.23694L 28.0317,23.1909L 14.6491,27.8828L 28.7016,29.7896L 29.0284,43.967L 35.1843,31.1916L 48.7689,35.2617 Z "/>
+                    <Path x:Name="Path_20" Width="50.563" Height="51.4674" Canvas.Left="3.05176e-005" Canvas.Top="0" Stretch="Fill" Data="F1 M 50.563,38.5668L 35.3764,24.0404L 47.3339,6.75824L 28.8254,16.7126L 16.0842,0L 19.832,20.6786L 3.05176e-005,27.6318L 20.8247,30.4575L 21.3091,51.4674L 30.4317,32.5352L 50.563,38.5668 Z ">
+                    	<Path.Fill>
+                    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    			<GradientStop Color="#FFFEF11C" Offset="1"/>
+                    			<GradientStop Color="White"/>
+                    		</LinearGradientBrush>
+                    	</Path.Fill>
+                    	<Path.Stroke>
+                    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    			<GradientStop Color="White" Offset="0"/>
+                    			<GradientStop Color="#FFFFCE4E" Offset="1"/>
+                    		</LinearGradientBrush>
+                    	</Path.Stroke>
+                    </Path>
+                    <Path x:Name="Path_21" Width="34.1198" Height="34.73" Canvas.Left="14.6491" Canvas.Top="9.23694" Stretch="Fill" Data="F1 M 48.7689,35.2617L 38.521,25.4594L 46.5898,13.7974L 34.1004,20.5146L 25.5027,9.23694L 28.0317,23.1909L 14.6491,27.8828L 28.7016,29.7896L 29.0284,43.967L 35.1843,31.1916L 48.7689,35.2617 Z ">
+                    	<Path.Fill>
+                    		<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    			<GradientStop Color="#FFFF6A6A" Offset="0"/>
+                    			<GradientStop Color="#FFFFC0C0" Offset="1"/>
+                    		</LinearGradientBrush>
+                    	</Path.Fill>
+                    </Path>
                 </Canvas>
             </Canvas>
 
@@ -723,12 +753,30 @@
             	<local:LongPaper d:LayoutOverrides="Height"/>
             	<Canvas x:Name="ContentCanvas" Height="351" Width="420" Canvas.Left="20" Canvas.Top="196">
             		<Border Height="91" Width="420" Canvas.Top="112" Style="{StaticResource BorderStyle}">
+            			<Border.BorderBrush>
+            				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            					<GradientStop Color="Black" Offset="0"/>
+            					<GradientStop Color="White" Offset="1"/>
+            				</LinearGradientBrush>
+            			</Border.BorderBrush>
             			<StackPanel x:Name="LevelStackPanel" Orientation="Horizontal"/>
             		</Border>
             		<Border Height="113" Width="420" Canvas.Top="238" Style="{StaticResource BorderStyle}">
+            			<Border.BorderBrush>
+            				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            					<GradientStop Color="Black" Offset="0"/>
+            					<GradientStop Color="White" Offset="1"/>
+            				</LinearGradientBrush>
+            			</Border.BorderBrush>
             			<StackPanel x:Name="SubjectStaccPanel" Orientation="Horizontal"/>
             		</Border>
             		<Border Height="66" Width="420" Canvas.Top="18" Style="{StaticResource BorderStyle}">
+            			<Border.BorderBrush>
+            				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            					<GradientStop Color="Black" Offset="0"/>
+            					<GradientStop Color="White" Offset="1"/>
+            				</LinearGradientBrush>
+            			</Border.BorderBrush>
             			<StackPanel x:Name="ProgrammingStackPanel" Orientation="Horizontal"/>
             		</Border>
             		<TextBlock x:Name="ProgrammingTextBlock" Style="{StaticResource TexBlockStyle1}" Canvas.Left="36" FontSize="12" Canvas.Top="-2"/>
@@ -742,5 +790,5 @@
             	<Canvas x:Name="ContainerCanvas" Height="351" Width="420" Canvas.Left="20" Canvas.Top="196"/>
             </Canvas>
         </Canvas>
-    </Grid>
+       </Grid>
 </UserControl>
