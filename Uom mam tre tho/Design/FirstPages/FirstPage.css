@@ -1,0 +1,117 @@
+﻿body{
+	padding: 0 0 0px;
+	margin:0px;
+}
+
+p.Error{
+	color:red;
+	font-weight:inherit;
+	float:left
+}
+
+/*Top Page*/
+
+div.TopPage{
+	height:150px;
+	width:100%;
+	min-width:950px;
+}
+
+div.TopPageBack
+{
+	height:150px;
+	float:right;
+	width:100%;
+	background-image: url('images/StudyingBack.png');
+	background-repeat:repeat-x;
+}
+
+div.TopPageImage{
+	height:150px;
+	background: url('images/Studyinghome.png') no-repeat center top;
+}
+
+div.TopPageImage table{
+	float:right; 
+	margin:75px 20px auto;
+}
+
+div.TopPageImage table td{
+	color:#005400;
+	text-align:center;
+}
+
+div.BoxTitle{
+	background:#9DE329; 
+	width:450px; 
+	height:40px;
+}
+
+div.BoxTitle p{
+	padding-top:10px;
+	font-size:1.5em; 
+	font-weight:bold; 
+	color:#005400
+}
+
+/*Center Page*/
+div.Center{
+	width:100%;
+	min-height:500px;
+	text-align:center
+}
+
+div.Center .CenterAll{
+	
+	width:950px;
+}
+
+
+
+div.CenterL{
+	float:left;
+
+}
+
+div.CenterR{
+	float:right;
+}
+
+div.CenterR table{
+
+}
+
+div.CenterR table td{
+	text-align:right;
+	color:#005400;
+}
+
+input.text{
+	width:200px	
+}
+
+input.button{
+	background:#6acf10; 
+	height:25px; 
+	width:100px
+}
+
+
+
+select{
+	float:left;
+
+}
+
+
+
+
+/*End Center Page*/
+
+div.Bottom{
+	height:30px;
+	min-width:950px;
+	width:100%;
+	background:#9DE329;
+	padding-top:25px;
+}
