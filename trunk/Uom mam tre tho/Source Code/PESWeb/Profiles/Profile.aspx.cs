@@ -144,7 +144,7 @@ namespace PESWeb.Profiles
             repFilter.DataBind();
 
             if (repFilter.Items.Count == 0)
-                lblMessage.Text = "You don't have any alerts yet!";
+                lblMessage.Text = "Bạn chưa đăng tin nào!";
         }
 
         #endregion
