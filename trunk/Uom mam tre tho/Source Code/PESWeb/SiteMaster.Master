@@ -35,7 +35,9 @@
     <div class="PushDown">
         <div class="container_16">
             <div style="float: left; padding:0px; height: 30px; border-top:solid 1px #FFFFFF">
+            <a href="/Home.aspx">
                 <img src="../../images/BannerPes.png" style="height: 35px; float:left;" alt="" />
+            </a>
             </div>
             <div class="grid_13" style="float:right">
                 <div class="yui-gc top">
@@ -156,7 +158,7 @@
         <div class="box">
             <div class="yui-gc block">
                 <div class="yui-u first">
-                    Flychips © 2010
+                    tieuhoc © 2010
                 </div>
                 <div class="yui-u">
                     <ul class="menu-footer">

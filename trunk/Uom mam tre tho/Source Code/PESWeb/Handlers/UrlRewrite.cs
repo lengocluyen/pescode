@@ -61,7 +61,7 @@ namespace PESWeb.Handlers
 
                         Blog blog = Blog.GetBlogByPageName(blogPageName, acc.AccountID);
 
-                        context.RewritePath("~/blogs/ViewPost.aspx?BlogID=" + blog.BlogID.ToString());
+                        context.RewritePath("../blogs/ViewPost.aspx?BlogID=" + blog.BlogID.ToString());
                     }
                     else
                     {
