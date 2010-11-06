@@ -41,7 +41,7 @@ namespace Pes.Core.Impl
         public void AddAccountCreatedAlert()
         {
             Init();
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) + " just signed up!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) + " vừa đăng nhập!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(account.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.AccountCreated;
@@ -158,7 +158,7 @@ namespace Pes.Core.Impl
         public List<Alert> GetAlertsByAccountID(int AccountID, int currentIndex, int itemAdd)
         {
             List<Alert> result = new List<Alert>();
-            List<Alert> alerts = Alert.GetAlertsByAccountID(AccountID,currentIndex,itemAdd);
+            List<Alert> alerts = Alert.GetAlertsByAccountID(AccountID, currentIndex, itemAdd);
             foreach (Alert alert in alerts)
             {
                 foreach (string s in tags)
@@ -200,8 +200,8 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(FriendRequestFrom.Username) + " and " +
-                           GetProfileUrl(FriendRequestTo.Username) + " are now friends!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(FriendRequestFrom.Username) + " và " +
+                           GetProfileUrl(FriendRequestTo.Username) + " làm bạn ngay bay giờ!</div>";
             alert.Message = alertMessage;
 
             alert.AccountID = FriendRequestFrom.AccountID;
@@ -216,10 +216,10 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestTo.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " would like to be friends!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " muốn được kết bạn!</div>";
             alertMessage += "<div class=\"AlertRow\">";
             alertMessage += FriendRequestFrom.FirstName + " " + FriendRequestFrom.LastName +
-                            " would like to be friends with you!  Click this link to add this user as a friend: ";
+                            " muốn là bạn của bạn!  Nhấn chuột vào liên kết để kết bạn: ";
             alertMessage += "<a href=\"" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + requestGuid.ToString() + "\">" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + requestGuid.ToString() + "</a><HR>" + Message + "</div>";
