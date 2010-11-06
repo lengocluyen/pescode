@@ -148,6 +148,12 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.SubjectTestType))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfTest6JTOatw_P))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.Test))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Question6JTOatw_P))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Question))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Answers6JTOatw_P))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Test_Result6JTOatw_P))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfStudyProgramming6JTOatw_P))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.StudyProgramming))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.Binary))]
@@ -164,6 +170,8 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.PartTestType>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.SubjectTestType>))]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question>))]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers>))]
     public partial class EntityBase : object, System.ComponentModel.INotifyPropertyChanged {
         
         private object IdField;
@@ -2304,6 +2312,300 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EntityBaseOfT_Question6JTOatw_P", Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses")]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Question))]
+    public partial class EntityBaseOfT_Question6JTOatw_P : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBase {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="T_Question", Namespace="http://schemas.datacontract.org/2004/07/Pes.Core")]
+    public partial class T_Question : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Question6JTOatw_P {
+        
+        private int AuthorIDField;
+        
+        private int LevelIDField;
+        
+        private float MarkField;
+        
+        private string QuestionContentField;
+        
+        private int QuestionIDField;
+        
+        private string SoundFileField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AuthorID {
+            get {
+                return this.AuthorIDField;
+            }
+            set {
+                if ((this.AuthorIDField.Equals(value) != true)) {
+                    this.AuthorIDField = value;
+                    this.RaisePropertyChanged("AuthorID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int LevelID {
+            get {
+                return this.LevelIDField;
+            }
+            set {
+                if ((this.LevelIDField.Equals(value) != true)) {
+                    this.LevelIDField = value;
+                    this.RaisePropertyChanged("LevelID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public float Mark {
+            get {
+                return this.MarkField;
+            }
+            set {
+                if ((this.MarkField.Equals(value) != true)) {
+                    this.MarkField = value;
+                    this.RaisePropertyChanged("Mark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string QuestionContent {
+            get {
+                return this.QuestionContentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.QuestionContentField, value) != true)) {
+                    this.QuestionContentField = value;
+                    this.RaisePropertyChanged("QuestionContent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionID {
+            get {
+                return this.QuestionIDField;
+            }
+            set {
+                if ((this.QuestionIDField.Equals(value) != true)) {
+                    this.QuestionIDField = value;
+                    this.RaisePropertyChanged("QuestionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SoundFile {
+            get {
+                return this.SoundFileField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SoundFileField, value) != true)) {
+                    this.SoundFileField = value;
+                    this.RaisePropertyChanged("SoundFile");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EntityBaseOfT_Answers6JTOatw_P", Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses")]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers))]
+    public partial class EntityBaseOfT_Answers6JTOatw_P : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBase {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="T_Answers", Namespace="http://schemas.datacontract.org/2004/07/Pes.Core")]
+    public partial class T_Answers : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Answers6JTOatw_P {
+        
+        private string AnswersContentField;
+        
+        private int AnswersIDField;
+        
+        private bool IsTextField;
+        
+        private bool IsTrueField;
+        
+        private int QuestionIDField;
+        
+        private string SoundFileField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string AnswersContent {
+            get {
+                return this.AnswersContentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AnswersContentField, value) != true)) {
+                    this.AnswersContentField = value;
+                    this.RaisePropertyChanged("AnswersContent");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int AnswersID {
+            get {
+                return this.AnswersIDField;
+            }
+            set {
+                if ((this.AnswersIDField.Equals(value) != true)) {
+                    this.AnswersIDField = value;
+                    this.RaisePropertyChanged("AnswersID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsText {
+            get {
+                return this.IsTextField;
+            }
+            set {
+                if ((this.IsTextField.Equals(value) != true)) {
+                    this.IsTextField = value;
+                    this.RaisePropertyChanged("IsText");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public bool IsTrue {
+            get {
+                return this.IsTrueField;
+            }
+            set {
+                if ((this.IsTrueField.Equals(value) != true)) {
+                    this.IsTrueField = value;
+                    this.RaisePropertyChanged("IsTrue");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int QuestionID {
+            get {
+                return this.QuestionIDField;
+            }
+            set {
+                if ((this.QuestionIDField.Equals(value) != true)) {
+                    this.QuestionIDField = value;
+                    this.RaisePropertyChanged("QuestionID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string SoundFile {
+            get {
+                return this.SoundFileField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SoundFileField, value) != true)) {
+                    this.SoundFileField = value;
+                    this.RaisePropertyChanged("SoundFile");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="EntityBaseOfT_Test_Result6JTOatw_P", Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses")]
+    [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result))]
+    public partial class EntityBaseOfT_Test_Result6JTOatw_P : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBase {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="T_Test_Result", Namespace="http://schemas.datacontract.org/2004/07/Pes.Core")]
+    public partial class T_Test_Result : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBaseOfT_Test_Result6JTOatw_P {
+        
+        private int LevelField;
+        
+        private double MarkField;
+        
+        private System.DateTime TestDateField;
+        
+        private int TestResultIDField;
+        
+        private int UserIDField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Level {
+            get {
+                return this.LevelField;
+            }
+            set {
+                if ((this.LevelField.Equals(value) != true)) {
+                    this.LevelField = value;
+                    this.RaisePropertyChanged("Level");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double Mark {
+            get {
+                return this.MarkField;
+            }
+            set {
+                if ((this.MarkField.Equals(value) != true)) {
+                    this.MarkField = value;
+                    this.RaisePropertyChanged("Mark");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime TestDate {
+            get {
+                return this.TestDateField;
+            }
+            set {
+                if ((this.TestDateField.Equals(value) != true)) {
+                    this.TestDateField = value;
+                    this.RaisePropertyChanged("TestDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TestResultID {
+            get {
+                return this.TestResultIDField;
+            }
+            set {
+                if ((this.TestResultIDField.Equals(value) != true)) {
+                    this.TestResultIDField = value;
+                    this.RaisePropertyChanged("TestResultID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int UserID {
+            get {
+                return this.UserIDField;
+            }
+            set {
+                if ((this.UserIDField.Equals(value) != true)) {
+                    this.UserIDField = value;
+                    this.RaisePropertyChanged("UserID");
+                }
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="EntityBaseOfStudyProgramming6JTOatw_P", Namespace="http://schemas.datacontract.org/2004/07/SubSonic.BaseClasses")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(PrimaryEducationSystem.Study.Lessons.PESServices.StudyProgramming))]
     public partial class EntityBaseOfStudyProgramming6JTOatw_P : PrimaryEducationSystem.Study.Lessons.PESServices.EntityBase {
@@ -2427,6 +2729,56 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         System.IAsyncResult BeginGetTestByTestID(int testID, System.AsyncCallback callback, object asyncState);
         
         System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test> EndGetTestByTestID(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetAllQuestionByTestLevel", ReplyAction="http://tempuri.org/ILearningServices/GetAllQuestionByTestLevelResponse")]
+        System.IAsyncResult BeginGetAllQuestionByTestLevel(int levelID, System.AsyncCallback callback, object asyncState);
+        
+        System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> EndGetAllQuestionByTestLevel(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetQuestionByID", ReplyAction="http://tempuri.org/ILearningServices/GetQuestionByIDResponse")]
+        System.IAsyncResult BeginGetQuestionByID(int questionID, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.T_Question EndGetQuestionByID(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetAllAnswersByQuestion", ReplyAction="http://tempuri.org/ILearningServices/GetAllAnswersByQuestionResponse")]
+        System.IAsyncResult BeginGetAllAnswersByQuestion(int questionID, System.AsyncCallback callback, object asyncState);
+        
+        System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> EndGetAllAnswersByQuestion(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/InsertTestResult", ReplyAction="http://tempuri.org/ILearningServices/InsertTestResultResponse")]
+        System.IAsyncResult BeginInsertTestResult(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult, System.AsyncCallback callback, object asyncState);
+        
+        bool EndInsertTestResult(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/InsertPupil", ReplyAction="http://tempuri.org/ILearningServices/InsertPupilResponse")]
+        System.IAsyncResult BeginInsertPupil(PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil, System.AsyncCallback callback, object asyncState);
+        
+        void EndInsertPupil(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetPupilByID", ReplyAction="http://tempuri.org/ILearningServices/GetPupilByIDResponse")]
+        System.IAsyncResult BeginGetPupilByID(int id, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilByID(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetPupilLogin", ReplyAction="http://tempuri.org/ILearningServices/GetPupilLoginResponse")]
+        System.IAsyncResult BeginGetPupilLogin(string email, string password, bool isNeedEcode, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilLogin(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/UpdateProFile", ReplyAction="http://tempuri.org/ILearningServices/UpdateProFileResponse")]
+        System.IAsyncResult BeginUpdateProFile(PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile, System.AsyncCallback callback, object asyncState);
+        
+        void EndUpdateProFile(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetPupilByEmail", ReplyAction="http://tempuri.org/ILearningServices/GetPupilByEmailResponse")]
+        System.IAsyncResult BeginGetPupilByEmail(string email, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilByEmail(System.IAsyncResult result);
+        
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/GetProfileByAccountID", ReplyAction="http://tempuri.org/ILearningServices/GetProfileByAccountIDResponse")]
+        System.IAsyncResult BeginGetProfileByAccountID(int profileID, System.AsyncCallback callback, object asyncState);
+        
+        PrimaryEducationSystem.Study.Lessons.PESServices.Profile EndGetProfileByAccountID(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/ILearningServices/UserLogin", ReplyAction="http://tempuri.org/ILearningServices/UserLoginResponse")]
         System.IAsyncResult BeginUserLogin(string username, string password, System.AsyncCallback callback, object asyncState);
@@ -2768,6 +3120,158 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetAllQuestionByTestLevelCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetAllQuestionByTestLevelCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question>)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetQuestionByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetQuestionByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.T_Question Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.T_Question)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetAllAnswersByQuestionCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetAllAnswersByQuestionCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers>)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class InsertTestResultCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public InsertTestResultCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public bool Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetPupilByIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetPupilByIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Account Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetPupilLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetPupilLoginCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Account Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetPupilByEmailCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetPupilByEmailCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Account Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class GetProfileByAccountIDCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public GetProfileByAccountIDCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public PrimaryEducationSystem.Study.Lessons.PESServices.Profile Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((PrimaryEducationSystem.Study.Lessons.PESServices.Profile)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
     public partial class UserLoginCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
@@ -2910,6 +3414,66 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         
         private System.Threading.SendOrPostCallback onGetTestByTestIDCompletedDelegate;
         
+        private BeginOperationDelegate onBeginGetAllQuestionByTestLevelDelegate;
+        
+        private EndOperationDelegate onEndGetAllQuestionByTestLevelDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetAllQuestionByTestLevelCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetQuestionByIDDelegate;
+        
+        private EndOperationDelegate onEndGetQuestionByIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetQuestionByIDCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetAllAnswersByQuestionDelegate;
+        
+        private EndOperationDelegate onEndGetAllAnswersByQuestionDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetAllAnswersByQuestionCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginInsertTestResultDelegate;
+        
+        private EndOperationDelegate onEndInsertTestResultDelegate;
+        
+        private System.Threading.SendOrPostCallback onInsertTestResultCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginInsertPupilDelegate;
+        
+        private EndOperationDelegate onEndInsertPupilDelegate;
+        
+        private System.Threading.SendOrPostCallback onInsertPupilCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetPupilByIDDelegate;
+        
+        private EndOperationDelegate onEndGetPupilByIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetPupilByIDCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetPupilLoginDelegate;
+        
+        private EndOperationDelegate onEndGetPupilLoginDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetPupilLoginCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginUpdateProFileDelegate;
+        
+        private EndOperationDelegate onEndUpdateProFileDelegate;
+        
+        private System.Threading.SendOrPostCallback onUpdateProFileCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetPupilByEmailDelegate;
+        
+        private EndOperationDelegate onEndGetPupilByEmailDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetPupilByEmailCompletedDelegate;
+        
+        private BeginOperationDelegate onBeginGetProfileByAccountIDDelegate;
+        
+        private EndOperationDelegate onEndGetProfileByAccountIDDelegate;
+        
+        private System.Threading.SendOrPostCallback onGetProfileByAccountIDCompletedDelegate;
+        
         private BeginOperationDelegate onBeginUserLoginDelegate;
         
         private EndOperationDelegate onEndUserLoginDelegate;
@@ -3008,6 +3572,26 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         public event System.EventHandler<GetSubjectTestTypebySubjectIDCompletedEventArgs> GetSubjectTestTypebySubjectIDCompleted;
         
         public event System.EventHandler<GetTestByTestIDCompletedEventArgs> GetTestByTestIDCompleted;
+        
+        public event System.EventHandler<GetAllQuestionByTestLevelCompletedEventArgs> GetAllQuestionByTestLevelCompleted;
+        
+        public event System.EventHandler<GetQuestionByIDCompletedEventArgs> GetQuestionByIDCompleted;
+        
+        public event System.EventHandler<GetAllAnswersByQuestionCompletedEventArgs> GetAllAnswersByQuestionCompleted;
+        
+        public event System.EventHandler<InsertTestResultCompletedEventArgs> InsertTestResultCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> InsertPupilCompleted;
+        
+        public event System.EventHandler<GetPupilByIDCompletedEventArgs> GetPupilByIDCompleted;
+        
+        public event System.EventHandler<GetPupilLoginCompletedEventArgs> GetPupilLoginCompleted;
+        
+        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> UpdateProFileCompleted;
+        
+        public event System.EventHandler<GetPupilByEmailCompletedEventArgs> GetPupilByEmailCompleted;
+        
+        public event System.EventHandler<GetProfileByAccountIDCompletedEventArgs> GetProfileByAccountIDCompleted;
         
         public event System.EventHandler<UserLoginCompletedEventArgs> UserLoginCompleted;
         
@@ -3798,6 +4382,468 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetAllQuestionByTestLevel(int levelID, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetAllQuestionByTestLevel(levelID, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetAllQuestionByTestLevel(System.IAsyncResult result) {
+            return base.Channel.EndGetAllQuestionByTestLevel(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetAllQuestionByTestLevel(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int levelID = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetAllQuestionByTestLevel(levelID, callback, asyncState);
+        }
+        
+        private object[] OnEndGetAllQuestionByTestLevel(System.IAsyncResult result) {
+            System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetAllQuestionByTestLevel(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetAllQuestionByTestLevelCompleted(object state) {
+            if ((this.GetAllQuestionByTestLevelCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetAllQuestionByTestLevelCompleted(this, new GetAllQuestionByTestLevelCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetAllQuestionByTestLevelAsync(int levelID) {
+            this.GetAllQuestionByTestLevelAsync(levelID, null);
+        }
+        
+        public void GetAllQuestionByTestLevelAsync(int levelID, object userState) {
+            if ((this.onBeginGetAllQuestionByTestLevelDelegate == null)) {
+                this.onBeginGetAllQuestionByTestLevelDelegate = new BeginOperationDelegate(this.OnBeginGetAllQuestionByTestLevel);
+            }
+            if ((this.onEndGetAllQuestionByTestLevelDelegate == null)) {
+                this.onEndGetAllQuestionByTestLevelDelegate = new EndOperationDelegate(this.OnEndGetAllQuestionByTestLevel);
+            }
+            if ((this.onGetAllQuestionByTestLevelCompletedDelegate == null)) {
+                this.onGetAllQuestionByTestLevelCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetAllQuestionByTestLevelCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetAllQuestionByTestLevelDelegate, new object[] {
+                        levelID}, this.onEndGetAllQuestionByTestLevelDelegate, this.onGetAllQuestionByTestLevelCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetQuestionByID(int questionID, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetQuestionByID(questionID, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.T_Question PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetQuestionByID(System.IAsyncResult result) {
+            return base.Channel.EndGetQuestionByID(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetQuestionByID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int questionID = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetQuestionByID(questionID, callback, asyncState);
+        }
+        
+        private object[] OnEndGetQuestionByID(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.T_Question retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetQuestionByID(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetQuestionByIDCompleted(object state) {
+            if ((this.GetQuestionByIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetQuestionByIDCompleted(this, new GetQuestionByIDCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetQuestionByIDAsync(int questionID) {
+            this.GetQuestionByIDAsync(questionID, null);
+        }
+        
+        public void GetQuestionByIDAsync(int questionID, object userState) {
+            if ((this.onBeginGetQuestionByIDDelegate == null)) {
+                this.onBeginGetQuestionByIDDelegate = new BeginOperationDelegate(this.OnBeginGetQuestionByID);
+            }
+            if ((this.onEndGetQuestionByIDDelegate == null)) {
+                this.onEndGetQuestionByIDDelegate = new EndOperationDelegate(this.OnEndGetQuestionByID);
+            }
+            if ((this.onGetQuestionByIDCompletedDelegate == null)) {
+                this.onGetQuestionByIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetQuestionByIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetQuestionByIDDelegate, new object[] {
+                        questionID}, this.onEndGetQuestionByIDDelegate, this.onGetQuestionByIDCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetAllAnswersByQuestion(int questionID, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetAllAnswersByQuestion(questionID, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetAllAnswersByQuestion(System.IAsyncResult result) {
+            return base.Channel.EndGetAllAnswersByQuestion(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetAllAnswersByQuestion(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int questionID = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetAllAnswersByQuestion(questionID, callback, asyncState);
+        }
+        
+        private object[] OnEndGetAllAnswersByQuestion(System.IAsyncResult result) {
+            System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetAllAnswersByQuestion(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetAllAnswersByQuestionCompleted(object state) {
+            if ((this.GetAllAnswersByQuestionCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetAllAnswersByQuestionCompleted(this, new GetAllAnswersByQuestionCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetAllAnswersByQuestionAsync(int questionID) {
+            this.GetAllAnswersByQuestionAsync(questionID, null);
+        }
+        
+        public void GetAllAnswersByQuestionAsync(int questionID, object userState) {
+            if ((this.onBeginGetAllAnswersByQuestionDelegate == null)) {
+                this.onBeginGetAllAnswersByQuestionDelegate = new BeginOperationDelegate(this.OnBeginGetAllAnswersByQuestion);
+            }
+            if ((this.onEndGetAllAnswersByQuestionDelegate == null)) {
+                this.onEndGetAllAnswersByQuestionDelegate = new EndOperationDelegate(this.OnEndGetAllAnswersByQuestion);
+            }
+            if ((this.onGetAllAnswersByQuestionCompletedDelegate == null)) {
+                this.onGetAllAnswersByQuestionCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetAllAnswersByQuestionCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetAllAnswersByQuestionDelegate, new object[] {
+                        questionID}, this.onEndGetAllAnswersByQuestionDelegate, this.onGetAllAnswersByQuestionCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginInsertTestResult(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginInsertTestResult(testResult, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        bool PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndInsertTestResult(System.IAsyncResult result) {
+            return base.Channel.EndInsertTestResult(result);
+        }
+        
+        private System.IAsyncResult OnBeginInsertTestResult(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult = ((PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginInsertTestResult(testResult, callback, asyncState);
+        }
+        
+        private object[] OnEndInsertTestResult(System.IAsyncResult result) {
+            bool retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndInsertTestResult(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnInsertTestResultCompleted(object state) {
+            if ((this.InsertTestResultCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.InsertTestResultCompleted(this, new InsertTestResultCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void InsertTestResultAsync(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult) {
+            this.InsertTestResultAsync(testResult, null);
+        }
+        
+        public void InsertTestResultAsync(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult, object userState) {
+            if ((this.onBeginInsertTestResultDelegate == null)) {
+                this.onBeginInsertTestResultDelegate = new BeginOperationDelegate(this.OnBeginInsertTestResult);
+            }
+            if ((this.onEndInsertTestResultDelegate == null)) {
+                this.onEndInsertTestResultDelegate = new EndOperationDelegate(this.OnEndInsertTestResult);
+            }
+            if ((this.onInsertTestResultCompletedDelegate == null)) {
+                this.onInsertTestResultCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnInsertTestResultCompleted);
+            }
+            base.InvokeAsync(this.onBeginInsertTestResultDelegate, new object[] {
+                        testResult}, this.onEndInsertTestResultDelegate, this.onInsertTestResultCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginInsertPupil(PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginInsertPupil(pupil, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndInsertPupil(System.IAsyncResult result) {
+            base.Channel.EndInsertPupil(result);
+        }
+        
+        private System.IAsyncResult OnBeginInsertPupil(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginInsertPupil(pupil, callback, asyncState);
+        }
+        
+        private object[] OnEndInsertPupil(System.IAsyncResult result) {
+            ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndInsertPupil(result);
+            return null;
+        }
+        
+        private void OnInsertPupilCompleted(object state) {
+            if ((this.InsertPupilCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.InsertPupilCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void InsertPupilAsync(PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil) {
+            this.InsertPupilAsync(pupil, null);
+        }
+        
+        public void InsertPupilAsync(PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil, object userState) {
+            if ((this.onBeginInsertPupilDelegate == null)) {
+                this.onBeginInsertPupilDelegate = new BeginOperationDelegate(this.OnBeginInsertPupil);
+            }
+            if ((this.onEndInsertPupilDelegate == null)) {
+                this.onEndInsertPupilDelegate = new EndOperationDelegate(this.OnEndInsertPupil);
+            }
+            if ((this.onInsertPupilCompletedDelegate == null)) {
+                this.onInsertPupilCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnInsertPupilCompleted);
+            }
+            base.InvokeAsync(this.onBeginInsertPupilDelegate, new object[] {
+                        pupil}, this.onEndInsertPupilDelegate, this.onInsertPupilCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetPupilByID(int id, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetPupilByID(id, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetPupilByID(System.IAsyncResult result) {
+            return base.Channel.EndGetPupilByID(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetPupilByID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int id = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetPupilByID(id, callback, asyncState);
+        }
+        
+        private object[] OnEndGetPupilByID(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetPupilByID(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetPupilByIDCompleted(object state) {
+            if ((this.GetPupilByIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetPupilByIDCompleted(this, new GetPupilByIDCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetPupilByIDAsync(int id) {
+            this.GetPupilByIDAsync(id, null);
+        }
+        
+        public void GetPupilByIDAsync(int id, object userState) {
+            if ((this.onBeginGetPupilByIDDelegate == null)) {
+                this.onBeginGetPupilByIDDelegate = new BeginOperationDelegate(this.OnBeginGetPupilByID);
+            }
+            if ((this.onEndGetPupilByIDDelegate == null)) {
+                this.onEndGetPupilByIDDelegate = new EndOperationDelegate(this.OnEndGetPupilByID);
+            }
+            if ((this.onGetPupilByIDCompletedDelegate == null)) {
+                this.onGetPupilByIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPupilByIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetPupilByIDDelegate, new object[] {
+                        id}, this.onEndGetPupilByIDDelegate, this.onGetPupilByIDCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetPupilLogin(string email, string password, bool isNeedEcode, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetPupilLogin(email, password, isNeedEcode, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetPupilLogin(System.IAsyncResult result) {
+            return base.Channel.EndGetPupilLogin(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetPupilLogin(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string email = ((string)(inValues[0]));
+            string password = ((string)(inValues[1]));
+            bool isNeedEcode = ((bool)(inValues[2]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetPupilLogin(email, password, isNeedEcode, callback, asyncState);
+        }
+        
+        private object[] OnEndGetPupilLogin(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetPupilLogin(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetPupilLoginCompleted(object state) {
+            if ((this.GetPupilLoginCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetPupilLoginCompleted(this, new GetPupilLoginCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetPupilLoginAsync(string email, string password, bool isNeedEcode) {
+            this.GetPupilLoginAsync(email, password, isNeedEcode, null);
+        }
+        
+        public void GetPupilLoginAsync(string email, string password, bool isNeedEcode, object userState) {
+            if ((this.onBeginGetPupilLoginDelegate == null)) {
+                this.onBeginGetPupilLoginDelegate = new BeginOperationDelegate(this.OnBeginGetPupilLogin);
+            }
+            if ((this.onEndGetPupilLoginDelegate == null)) {
+                this.onEndGetPupilLoginDelegate = new EndOperationDelegate(this.OnEndGetPupilLogin);
+            }
+            if ((this.onGetPupilLoginCompletedDelegate == null)) {
+                this.onGetPupilLoginCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPupilLoginCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetPupilLoginDelegate, new object[] {
+                        email,
+                        password,
+                        isNeedEcode}, this.onEndGetPupilLoginDelegate, this.onGetPupilLoginCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginUpdateProFile(PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginUpdateProFile(profile, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        void PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndUpdateProFile(System.IAsyncResult result) {
+            base.Channel.EndUpdateProFile(result);
+        }
+        
+        private System.IAsyncResult OnBeginUpdateProFile(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile = ((PrimaryEducationSystem.Study.Lessons.PESServices.Profile)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginUpdateProFile(profile, callback, asyncState);
+        }
+        
+        private object[] OnEndUpdateProFile(System.IAsyncResult result) {
+            ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndUpdateProFile(result);
+            return null;
+        }
+        
+        private void OnUpdateProFileCompleted(object state) {
+            if ((this.UpdateProFileCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.UpdateProFileCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void UpdateProFileAsync(PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile) {
+            this.UpdateProFileAsync(profile, null);
+        }
+        
+        public void UpdateProFileAsync(PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile, object userState) {
+            if ((this.onBeginUpdateProFileDelegate == null)) {
+                this.onBeginUpdateProFileDelegate = new BeginOperationDelegate(this.OnBeginUpdateProFile);
+            }
+            if ((this.onEndUpdateProFileDelegate == null)) {
+                this.onEndUpdateProFileDelegate = new EndOperationDelegate(this.OnEndUpdateProFile);
+            }
+            if ((this.onUpdateProFileCompletedDelegate == null)) {
+                this.onUpdateProFileCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnUpdateProFileCompleted);
+            }
+            base.InvokeAsync(this.onBeginUpdateProFileDelegate, new object[] {
+                        profile}, this.onEndUpdateProFileDelegate, this.onUpdateProFileCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetPupilByEmail(string email, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetPupilByEmail(email, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.Account PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetPupilByEmail(System.IAsyncResult result) {
+            return base.Channel.EndGetPupilByEmail(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetPupilByEmail(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            string email = ((string)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetPupilByEmail(email, callback, asyncState);
+        }
+        
+        private object[] OnEndGetPupilByEmail(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Account retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetPupilByEmail(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetPupilByEmailCompleted(object state) {
+            if ((this.GetPupilByEmailCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetPupilByEmailCompleted(this, new GetPupilByEmailCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetPupilByEmailAsync(string email) {
+            this.GetPupilByEmailAsync(email, null);
+        }
+        
+        public void GetPupilByEmailAsync(string email, object userState) {
+            if ((this.onBeginGetPupilByEmailDelegate == null)) {
+                this.onBeginGetPupilByEmailDelegate = new BeginOperationDelegate(this.OnBeginGetPupilByEmail);
+            }
+            if ((this.onEndGetPupilByEmailDelegate == null)) {
+                this.onEndGetPupilByEmailDelegate = new EndOperationDelegate(this.OnEndGetPupilByEmail);
+            }
+            if ((this.onGetPupilByEmailCompletedDelegate == null)) {
+                this.onGetPupilByEmailCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetPupilByEmailCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetPupilByEmailDelegate, new object[] {
+                        email}, this.onEndGetPupilByEmailDelegate, this.onGetPupilByEmailCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginGetProfileByAccountID(int profileID, System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BeginGetProfileByAccountID(profileID, callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        PrimaryEducationSystem.Study.Lessons.PESServices.Profile PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.EndGetProfileByAccountID(System.IAsyncResult result) {
+            return base.Channel.EndGetProfileByAccountID(result);
+        }
+        
+        private System.IAsyncResult OnBeginGetProfileByAccountID(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            int profileID = ((int)(inValues[0]));
+            return ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).BeginGetProfileByAccountID(profileID, callback, asyncState);
+        }
+        
+        private object[] OnEndGetProfileByAccountID(System.IAsyncResult result) {
+            PrimaryEducationSystem.Study.Lessons.PESServices.Profile retVal = ((PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices)(this)).EndGetProfileByAccountID(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OnGetProfileByAccountIDCompleted(object state) {
+            if ((this.GetProfileByAccountIDCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.GetProfileByAccountIDCompleted(this, new GetProfileByAccountIDCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void GetProfileByAccountIDAsync(int profileID) {
+            this.GetProfileByAccountIDAsync(profileID, null);
+        }
+        
+        public void GetProfileByAccountIDAsync(int profileID, object userState) {
+            if ((this.onBeginGetProfileByAccountIDDelegate == null)) {
+                this.onBeginGetProfileByAccountIDDelegate = new BeginOperationDelegate(this.OnBeginGetProfileByAccountID);
+            }
+            if ((this.onEndGetProfileByAccountIDDelegate == null)) {
+                this.onEndGetProfileByAccountIDDelegate = new EndOperationDelegate(this.OnEndGetProfileByAccountID);
+            }
+            if ((this.onGetProfileByAccountIDCompletedDelegate == null)) {
+                this.onGetProfileByAccountIDCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnGetProfileByAccountIDCompleted);
+            }
+            base.InvokeAsync(this.onBeginGetProfileByAccountIDDelegate, new object[] {
+                        profileID}, this.onEndGetProfileByAccountIDDelegate, this.onGetProfileByAccountIDCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.IAsyncResult PrimaryEducationSystem.Study.Lessons.PESServices.ILearningServices.BeginUserLogin(string username, string password, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginUserLogin(username, password, callback, asyncState);
         }
@@ -4184,6 +5230,136 @@ namespace PrimaryEducationSystem.Study.Lessons.PESServices {
             public System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test> EndGetTestByTestID(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test> _result = ((System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.Test>)(base.EndInvoke("GetTestByTestID", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetAllQuestionByTestLevel(int levelID, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = levelID;
+                System.IAsyncResult _result = base.BeginInvoke("GetAllQuestionByTestLevel", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> EndGetAllQuestionByTestLevel(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question> _result = ((System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Question>)(base.EndInvoke("GetAllQuestionByTestLevel", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetQuestionByID(int questionID, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = questionID;
+                System.IAsyncResult _result = base.BeginInvoke("GetQuestionByID", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.T_Question EndGetQuestionByID(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.T_Question _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.T_Question)(base.EndInvoke("GetQuestionByID", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetAllAnswersByQuestion(int questionID, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = questionID;
+                System.IAsyncResult _result = base.BeginInvoke("GetAllAnswersByQuestion", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> EndGetAllAnswersByQuestion(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers> _result = ((System.Collections.ObjectModel.ObservableCollection<PrimaryEducationSystem.Study.Lessons.PESServices.T_Answers>)(base.EndInvoke("GetAllAnswersByQuestion", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginInsertTestResult(PrimaryEducationSystem.Study.Lessons.PESServices.T_Test_Result testResult, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = testResult;
+                System.IAsyncResult _result = base.BeginInvoke("InsertTestResult", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public bool EndInsertTestResult(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                bool _result = ((bool)(base.EndInvoke("InsertTestResult", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginInsertPupil(PrimaryEducationSystem.Study.Lessons.PESServices.Account pupil, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = pupil;
+                System.IAsyncResult _result = base.BeginInvoke("InsertPupil", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public void EndInsertPupil(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                base.EndInvoke("InsertPupil", _args, result);
+            }
+            
+            public System.IAsyncResult BeginGetPupilByID(int id, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = id;
+                System.IAsyncResult _result = base.BeginInvoke("GetPupilByID", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilByID(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.Account _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(base.EndInvoke("GetPupilByID", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetPupilLogin(string email, string password, bool isNeedEcode, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[3];
+                _args[0] = email;
+                _args[1] = password;
+                _args[2] = isNeedEcode;
+                System.IAsyncResult _result = base.BeginInvoke("GetPupilLogin", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilLogin(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.Account _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(base.EndInvoke("GetPupilLogin", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginUpdateProFile(PrimaryEducationSystem.Study.Lessons.PESServices.Profile profile, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = profile;
+                System.IAsyncResult _result = base.BeginInvoke("UpdateProFile", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public void EndUpdateProFile(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                base.EndInvoke("UpdateProFile", _args, result);
+            }
+            
+            public System.IAsyncResult BeginGetPupilByEmail(string email, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = email;
+                System.IAsyncResult _result = base.BeginInvoke("GetPupilByEmail", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Account EndGetPupilByEmail(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.Account _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Account)(base.EndInvoke("GetPupilByEmail", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BeginGetProfileByAccountID(int profileID, System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[1];
+                _args[0] = profileID;
+                System.IAsyncResult _result = base.BeginInvoke("GetProfileByAccountID", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public PrimaryEducationSystem.Study.Lessons.PESServices.Profile EndGetProfileByAccountID(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                PrimaryEducationSystem.Study.Lessons.PESServices.Profile _result = ((PrimaryEducationSystem.Study.Lessons.PESServices.Profile)(base.EndInvoke("GetProfileByAccountID", _args, result)));
                 return _result;
             }
             
