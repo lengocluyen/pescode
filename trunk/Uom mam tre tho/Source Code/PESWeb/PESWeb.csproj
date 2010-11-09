@@ -609,6 +609,15 @@
     <Compile Include="SiteMaster.Master.designer.cs">
       <DependentUpon>SiteMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Tags\Interface\ITags.cs" />
+    <Compile Include="Tags\Presenter\TagsPresenter.cs" />
+    <Compile Include="Tags\Tags.aspx.cs">
+      <DependentUpon>Tags.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tags\Tags.aspx.designer.cs">
+      <DependentUpon>Tags.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tests\Interface\ITests.cs" />
     <Compile Include="Tests\Presenter\TestsPresenter.cs" />
     <Compile Include="Tests\Questions.ascx.cs">
@@ -3272,7 +3281,10 @@
     <Content Include="images\BannerPes.png" />
     <Content Include="images\Children.jpg" />
     <Content Include="images\Children_dq.gif" />
+    <Content Include="images\group.gif" />
     <Content Include="images\HomeTopBack.png" />
+    <Content Include="images\letter.gif" />
+    <Content Include="images\mailbox.gif" />
     <Content Include="images\menu_ico_next.gif" />
     <Content Include="images\menu_ico_prev.gif" />
     <Content Include="images\more.jpg" />
@@ -3282,7 +3294,9 @@
     <Content Include="images\Studyinghome.png" />
     <Content Include="images\Text1.png" />
     <Content Include="images\Text2.png" />
+    <Content Include="images\write.gif" />
     <Content Include="Learning\Testing.aspx" />
+    <Content Include="Tags\Tags.aspx" />
     <Content Include="UserControls\PESBanner.ascx" />
   </ItemGroup>
   <ItemGroup>

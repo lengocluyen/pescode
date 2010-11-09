@@ -32,6 +32,7 @@ namespace PESWeb.Photos
         }
         public void DeleteFolder(Int64 FolderID)
         {
+            File._webContext = ObjectFactory.GetInstance<IWebContext>();
             Folder folder = Folder.GetFolderByID(FolderID);
             File.DeleteFilesInFolder(folder);
             Folder.DeleteFolder(folder);

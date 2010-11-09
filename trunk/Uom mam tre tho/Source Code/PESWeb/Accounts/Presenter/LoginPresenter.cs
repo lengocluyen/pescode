@@ -29,7 +29,7 @@ namespace PESWeb.Accounts.Presenter
             _accountService = ObjectFactory.GetInstance<IAccountService>();
 
             if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
-                _view.DisplayMessage("Login to add this friend!");
+                _view.DisplayMessage("Đăng nhập để kết bạn!");
         }
 
         public void Login(string username, string password)

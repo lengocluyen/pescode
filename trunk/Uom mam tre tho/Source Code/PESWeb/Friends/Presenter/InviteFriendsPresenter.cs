@@ -36,8 +36,8 @@ namespace PESWeb.Friends.Presenter
                     if (_accountToInvite != null)
                     {
                         SendInvitation(_accountToInvite.Email,
-                                       _account.FirstName + " " + _account.LastName + " would like to be your friend!");
-                        _view.ShowMessage(_accountToInvite.Username + " has been sent a friend request!");
+                                       _account.FirstName + " " + _account.LastName + " muốn kết bạn với bạn!");
+                        _view.ShowMessage(_accountToInvite.Username + " yêu cầu kết bạn đã được gửi!");
                         _view.TogglePnlInvite(false);
                     }
                 }
@@ -46,7 +46,7 @@ namespace PESWeb.Friends.Presenter
 
         public void SendInvitation(string ToEmailArray, string Message)
         {
-            string resultMessage = "Invitations sent to the following recipients:<BR>";
+            string resultMessage = "Mời kết bạn:<BR>";
             resultMessage += _email.SendInvitations(_userSession.CurrentUser, ToEmailArray, Message);
             _view.ShowMessage(resultMessage);
             _view.ResetUI();

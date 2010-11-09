@@ -3,11 +3,11 @@
 <%@Register Src="~/UserControls/ProfileDisplay.ascx" TagPrefix="PES" TagName="Profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Groups" runat="server">
 <div style="padding-left:10px;">
-    <ul class="menu1">
+     <ul class="menu1" style="margin-top:8px;">
         <li><a href="/Groups/ManageGroup.aspx">
-            <img src="/images/mnu01.gif" alt="" />Tạo nhóm mới</a></li>
+            <img src="/images/group.gif" alt="" />Tạo nhóm mới</a></li>
         <li><a href="/Groups/mygroups.aspx">
-            <img src="/images/mnu01.gif" alt="" />Nhóm của tôi</a></li>
+            <img src="/images/group.gif" alt="" />Nhóm của tôi</a></li>
     </ul>
 </div>
 </asp:Content>
@@ -51,10 +51,10 @@
             </div>
             <div class="divContainerFooter">&nbsp;
                 <asp:Panel ID="pnlButtons" runat="server">
-                    <asp:Button ID="btnApprove" CssClass="button" OnClick="btnApprove_Click" runat="server" Text="Approve" />
-                    <asp:Button ID="btnDelete" CssClass="button" OnClick="btnDelete_Click" runat="server" Text="Delete" />
-                    <asp:Button ID="btnPromoteToAdmin" CssClass="button" OnClick="btnPromoteToAdmin_Click" runat="server" Text="Promote to Admin" />
-                    <asp:Button ID="btnDemoteAdmins" CssClass="button" OnClick="btnDemoteAdmins_Click" runat="server" Text="Demote Admins" />
+                    <asp:Button ID="btnApprove" CssClass="button" OnClick="btnApprove_Click" runat="server" Text="Chấp thuận" />
+                    <asp:Button ID="btnDelete" CssClass="button" OnClick="btnDelete_Click" runat="server" Text="Xóa" />
+                    <asp:Button ID="btnPromoteToAdmin" CssClass="button" OnClick="btnPromoteToAdmin_Click" runat="server" Text="Nâng cấp Quản trị" />
+                    <asp:Button ID="btnDemoteAdmins" CssClass="button" OnClick="btnDemoteAdmins_Click" runat="server" Text="Hạ cấp Quản trị" />
                 </asp:Panel>
             </div>
         </div>
