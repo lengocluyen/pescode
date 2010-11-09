@@ -21,8 +21,13 @@ namespace Pes.Core
                     SelectedGroupTypeIDs.Where(s => !currentTypes.Contains(s)).ToList();
 
                 //delete grouptogrouptypes
-                Delete(
-                    All().Where(g => itemsToDelete.Contains(g.GroupTypeID) && g.GroupID == GroupID).FirstOrDefault());
+                //Delete(
+                //    All().Where(g => itemsToDelete.Contains(g.GroupTypeID) && g.GroupID == GroupID).FirstOrDefault());
+
+                foreach (GroupToGroupType i in Find(g => itemsToDelete.Contains(g.GroupTypeID) && g.GroupID == GroupID))
+                {
+                    Delete(i.GroupToGroupTypeID);
+                }
 
                 //create the actual objects to insert
                 List<GroupToGroupType> typesToInsert = new List<GroupToGroupType>();
@@ -44,7 +49,7 @@ namespace Pes.Core
 
         public static void DeleteGroupToGroupType(GroupToGroupType groupToGroupType)
         {
-            Delete(groupToGroupType.ID);
+            Delete(groupToGroupType.GroupToGroupTypeID);
         }
  
     }

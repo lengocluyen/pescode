@@ -91,6 +91,7 @@ namespace Pes.Core
         public static Int32 SaveGroup(Group group)
         {
                     group.CreateDate = DateTime.Now;
+                    group.UpdateDate = DateTime.Now;
                     Add(group);
             return group.GroupID;
         }

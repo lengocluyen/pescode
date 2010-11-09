@@ -15,12 +15,12 @@ namespace Pes.Core
         public override object Id
         {
 
-            get { return ID; }
-            set { ID = (long)value; }
+            get { return GroupForumsID; }
+            set { GroupForumsID = (long)value; }
         }
 
 		[SubSonicPrimaryKey]
-		public long ID { get; set; }
+        public long GroupForumsID { get; set; }
 		public int GroupID { get; set; }
 		public int ForumID { get; set; }
 		public DateTime CreateDate { get; set; }
@@ -41,14 +41,14 @@ namespace Pes.Core
 				if (entity != null)
 					entity.CopyTo<GroupForum>(this);
 				else
-					this.ID = 0;
+                    this.GroupForumsID = 0;
 			}
         }
 
         public bool Save()
         {
             bool rs = false;
-            if (ID > 0)
+            if (GroupForumsID > 0)
                 rs = Update(this) > 0;
             else
                 rs = Add(this) != null;

@@ -36,11 +36,11 @@ namespace Pes.Core.Impl
             foreach (string s in ToEmail.Split(new char[] {',',';'}))
             {
                 string message = sender.FirstName + " " + sender.LastName +
-                " has sent you a message on " + _configuration.SiteName + "!  Please log in at " + _configuration.SiteName + 
-                " to view the message.<HR>";
+                " bạn có một tin nhấn trên " + _configuration.SiteName + "!  Xin vui lòng đăng nhập vào " + _configuration.SiteName + 
+                " để xem.<HR>";
 
                 SendEmail(s, "", "", sender.FirstName + " " + sender.LastName +
-                    " has sent you a message on " +
+                    " bạn có một tin nhắn " +
                     _configuration.SiteName + "!", message);
             }
         }
@@ -100,31 +100,31 @@ namespace Pes.Core.Impl
         public void SendFriendInvitation(string toEmail, string fromFirstName, string fromLastName, string GUID, string Message)
         {
             Message = fromFirstName + " " + fromLastName +
-            " has invited you to join us at " + _configuration.SiteName + "!<HR><a href=\"" + _configuration.RootURL +
+            " bạn được mời gia nhập vào " + _configuration.SiteName + "!<HR><a href=\"" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + GUID + "\">" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + GUID + "</a><HR>" + Message;
 
             SendEmail(toEmail, "", "", fromFirstName + " " + fromLastName + 
-                " has invited you to join us at " + 
+                " có một thư mời gia nhập vào " + 
                 _configuration.SiteName + "!", Message);
         }
 
         public void SendPasswordReminderEmail(string To, string EncryptedPassword, string Username)
         {
-            string Message = "Here is the password you requested: " +
+            string Message = "mật khẩu: " +
                              Cryptography.Decrypt(EncryptedPassword, Username);
-            SendEmail(To, "", "", "Password Reminder", Message);
+            SendEmail(To, "", "", "Mật khẩu", Message);
         }
 
         public void SendEmailAddressVerificationEmail(string Username, string To)
         {
-            string msg = "Please click on the link below or paste it into a browser to verify your email account.<BR><BR>" +
+            string msg = "Nhấn vào liên kết bên dưới để chứng thực tài khoản.<BR><BR>" +
                             "<a href=\"" + _configuration.RootURL + "Accounts/VerifyEmail.aspx?a=" +
                             Username.Encrypt("verify") + "\">" +
                             _configuration.RootURL + "Accounts/VerifyEmail.aspx?a=" +
                             Username.Encrypt("verify") + "</a>";
 
-            SendEmail(To, "", "", "Account created! Email verification required.", msg);
+            SendEmail(To, "", "", "Tài khoản đã được tạo! Yêu cầu bạn chứng thực bằng Email.", msg);
         }
 
         public void SendEmail(string From, string Subject, string Message)

@@ -15,12 +15,12 @@ namespace Pes.Core
         public override object Id
         {
 
-            get { return ID; }
-            set { ID = (long)value; }
+            get { return GroupToGroupTypeID; }
+            set { GroupToGroupTypeID = (long)value; }
         }
 
 		[SubSonicPrimaryKey]
-		public long ID { get; set; }
+        public long GroupToGroupTypeID { get; set; }
 		public int GroupID { get; set; }
 		public long GroupTypeID { get; set; }
 		public System.Data.Linq.Binary Timestamp { get; set; }
@@ -40,14 +40,14 @@ namespace Pes.Core
 				if (entity != null)
 					entity.CopyTo<GroupToGroupType>(this);
 				else
-					this.ID = 0;
+                    this.GroupToGroupTypeID = 0;
 			}
         }
 
         public bool Save()
         {
             bool rs = false;
-            if (ID > 0)
+            if (GroupToGroupTypeID > 0)
                 rs = Update(this) > 0;
             else
                 rs = Add(this) != null;
