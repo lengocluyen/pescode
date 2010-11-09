@@ -1,218 +1,57 @@
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\PESWeb.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\PESWeb.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\Pes.Core.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\System.Web.Silverlight.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\DynamicQuery.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\log4net.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\DynamicQuery.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\Pes.Core.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\de\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\es\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\it\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.xml
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\StructureMap.xml
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\AjaxControlToolkit.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\de\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\es\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\he\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\it\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\SourceCode\SubSonic\PESWeb\bin\AjaxControlToolkit.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\PESWeb.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\PESWeb.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\Pes.Core.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\DynamicQuery.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\log4net.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\StructureMap.xml
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\SubSonic.Core.xml
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\DynamicQuery.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\bin\Pes.Core.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.dll
-E:\LAM VIEC\NTDVSocialNetwork\Team SVN\PES\SourceCode\SubSonic\PESWeb\obj\Debug\PESWeb.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\PESWeb.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\PESWeb.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\Pes.Core.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\SubSonic.Core.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\DynamicQuery.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\log4net.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\StructureMap.xml
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\SubSonic.Core.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\SubSonic.Core.xml
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\DynamicQuery.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\bin\Pes.Core.pdb
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\obj\Debug\PESWeb.dll
-E:\LAM VIEC\NTDVSocialNetwork\Uom mam tre tho\SubSonic\PESWeb\obj\Debug\PESWeb.pdb
-I:\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.pdb
-I:\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\System.Web.Silverlight.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\log4net.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml
-I:\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.pdb
-I:\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.xml
-I:\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.pdb
-I:\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.pdb
-I:\Uom mam tre tho\Source Code\PESWeb\bin\de\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\es\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\it\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
-I:\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-I:\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-I:\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-I:\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
-I:\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\AjaxControlToolkit.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\System.Web.Silverlight.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\log4net.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\AjaxControlToolkit.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.xml
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.pdb
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\de\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\es\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\he\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\it\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\de\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\es\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\it\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
-D:\Documents and Settings\ITBUS\Desktop\PES\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\System.Web.Silverlight.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\log4net.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\AjaxControlToolkit.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.xml
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.pdb
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\de\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\es\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\he\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\it\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
-I:\Luan Van\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\PESWeb.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\Pes.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\SubSonic.Core.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\DynamicQuery.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\log4net.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\SubSonic.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\SubSonic.Core.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\DynamicQuery.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\Pes.Core.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\obj\Debug\PESWeb.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\obj\Debug\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\StructureMap.xml
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\AjaxControlToolkit.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\de\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\es\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\he\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\it\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\de\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\es\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\it\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\PES_Rebuild\trunk\Source Code\Source Code\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\PESWeb.pdb
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\log4net.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\AjaxControlToolkit.pdb
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.pdb
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\SubSonic.Core.xml
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\DynamicQuery.pdb
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\Pes.Core.pdb
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ar\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\cs\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\de\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\es\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\fr\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\he\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\hi\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\it\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ja\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ko\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\nl\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\pt\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ru\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\tr-TR\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHS\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-CHT\AjaxControlToolkit.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\de\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\es\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\fr\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\it\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ja\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\ko\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hans\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\zh-Hant\System.Web.Silverlight.resources.dll
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\ResolveAssemblyReference.cache
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.LearningVietNamese.App_GlobalResources.ITBusResource.resources
-E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.csproj.GenerateResource.Cache
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\obj\Debug\PESWeb.pdb
+E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\PESWeb\bin\StructureMap.xml

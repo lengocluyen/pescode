@@ -11,6 +11,8 @@
     <RootNamespace>PESWeb</RootNamespace>
     <AssemblyName>PESWeb</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +68,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Documents and Settings\Le Ngoc Luyen\My Documents\Downloads\System.Web.Silverlight.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -2555,7 +2558,6 @@
     <None Include="ClientBin\Images\Lessons\Lession6\Thumbs.db" />
     <None Include="ClientBin\Images\Parts\Thumbs.db" />
     <None Include="ClientBin\Images\PupilAccount\Thumbs.db" />
-    <None Include="ClientBin\Images\Test\Thumbs.db" />
     <None Include="ClientBin\Images\Thumbs.db" />
     <None Include="ClientBin\Images\Tram\Thumbs.db" />
     <None Include="Content\.htaccess" />
@@ -3270,14 +3272,17 @@
     <Content Include="ClientBin\Banner\BannerPesBack.png" />
     <Content Include="ClientBin\Banner\PesBanner.xap" />
     <Content Include="ClientBin\Images\Close.png" />
+    <Content Include="ClientBin\Images\Test\bg.jpg" />
     <Content Include="ClientBin\ITBusSilverlight.xap" />
     <Content Include="ClientBin\Liquid.RichText.dll" />
+    <Content Include="ClientBin\Sounds\menu.mp3" />
     <Content Include="ClientBin\PrimaryEducationSystem.Tests.xap" />
     <Content Include="ClientBin\Sounds\TiengChim.mp3" />
     <Content Include="ClientBin\Sounds\TiengChim.wma" />
     <Content Include="ClientBin\System.Windows.Controls.Toolkit.dll" />
     <Content Include="css\FirstPage.css" />
     <Content Include="images\BackHome.jpg" />
+    <Content Include="images\BackLearning.jpg" />
     <Content Include="images\BannerPes.png" />
     <Content Include="images\Children.jpg" />
     <Content Include="images\Children_dq.gif" />

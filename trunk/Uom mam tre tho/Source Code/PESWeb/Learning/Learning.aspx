@@ -12,8 +12,8 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
     <center>
-            <asp:Silverlight ID="dienroi" runat="server" Height="750px" Width="950px" Source="~/ClientBin/Studying.xap"
-                MinimumVersion="3.0.40624.0" Windowless="true" />
+        <asp:Silverlight ID="dienroi" runat="server" Height="750px" Width="950px" Source="~/ClientBin/Studying.xap"
+            MinimumVersion="3.0.40624.0" />
     </center>
     </form>
 </body>
