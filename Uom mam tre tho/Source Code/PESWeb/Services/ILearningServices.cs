@@ -54,22 +54,6 @@ public interface ILearningServices
     List<SubjectTestType> GetSubjectTestTypebySubjectID(int subjectID);
     [OperationContract]
     List<Test> GetTestByTestID(int testID);
-
-
-
-
-    //List<TestQuestion> GetTestQuestionByTestID(int testID);
-
-
-
-    //[OperationContract]
-    //List<Question> GetAllQuestionByTestLevel(int levelID);
-    //[OperationContract]
-    //Question GetQuestionByID(int questionID);
-    //[OperationContract]
-    //List<Answer> GetAllAnswersByQuestion(int questionID);
-    //[OperationContract]
-    //bool InsertTestResult(TestResult testResult);
     #endregion
     #region Temple Tests
     [OperationContract]
@@ -78,8 +62,9 @@ public interface ILearningServices
     T_Question GetQuestionByID(int questionID);
     [OperationContract]
     List<T_Answers> GetAllAnswersByQuestion(int questionID);
+
     [OperationContract]
-    bool InsertTestResult(T_Test_Result testResult);
+    int InsertTestResult(T_Test_Result testResult);
 
     #endregion
 

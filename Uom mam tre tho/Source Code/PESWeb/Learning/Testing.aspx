@@ -17,7 +17,6 @@
         {
             margin: 0 auto;
             width: 954px;
-            background:transparent;
         }
     </style>
 </head>
@@ -26,7 +25,7 @@
     <asp:ScriptManager ID="ScriptManager1" runat="server">
     </asp:ScriptManager>
     <div id="silverlightControlHost">
-        <asp:Silverlight ID="Silverlight1" runat="server" Source="~/ClientBin/PrimaryEducationSystem.Tests.xap" Width="100%" Height="900px" />
+        <asp:Silverlight ID="dienroi" runat="server" Source="~/ClientBin/PrimaryEducationSystem.Tests.xap" Width="100%" Height="900px" />
     </div>
     </form>
 </body>

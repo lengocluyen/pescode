@@ -41,12 +41,12 @@ namespace PESWeb.Learning {
         protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Silverlight1 control.
+        /// dienroi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.SilverlightControls.Silverlight Silverlight1;
+        protected global::System.Web.UI.SilverlightControls.Silverlight dienroi;
     }
 }

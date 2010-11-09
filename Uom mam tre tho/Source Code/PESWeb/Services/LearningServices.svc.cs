@@ -99,7 +99,7 @@ public class LearningServices : ILearningServices
     }
     #endregion
 
-   
+
 
     #region Tests
     public List<LessonTestType> GetLessonTestTypeByLessonID(int lessonID)
@@ -169,16 +169,16 @@ public class LearningServices : ILearningServices
         }
     }
 
-    public bool InsertTestResult(T_Test_Result testResult)
+    public int InsertTestResult(T_Test_Result testResult)
     {
         try
         {
             T_Test_Result.Add(testResult);
-            return true;
+            return 1;
         }
         catch
         {
-            return false;
+            return 0;
         }
     }
 
@@ -191,6 +191,7 @@ public class LearningServices : ILearningServices
         try
         {
             Account a = Account.GetAccountByID(ID);
+            a.Profile = Profile.GetProfileByAccountID(ID);
             return a;
         }
         catch
