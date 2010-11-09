@@ -39,9 +39,9 @@
                                 <asp:Literal Visible="false" ID="litFileExtension" runat="server" Text='<%# ((File)Container.DataItem).Extension.ToString() %>'></asp:Literal><br />
                                 <asp:Label ID="lblDescription" runat="server" Text='<%#((File)Container.DataItem).Description %>'></asp:Label>
                                 <asp:Literal Visible="false" ID="litFileID" Text='<%#((File)Container.DataItem).FileID %>' runat="server"></asp:Literal>
-                                <PES:Ratings ID="Ratings1" runat="server" SystemObjectID="5" SystemObjectRecordID='<%#((File)Container.DataItem).FileID %>'/>
+                                <%--<PES:Ratings ID="Ratings1" runat="server" SystemObjectID="5" SystemObjectRecordID='<%#((File)Container.DataItem).FileID %>'/>--%>
                                 <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" SystemObjectRecordID='<%#((File)Container.DataItem).FileID %>' Display="ShowCloudAndTagBox" />
-                                <PES:Comments ID="Comments1" runat="server" SystemObjectID="5" _IDRecord='<%#((File)Container.DataItem).FileID %>' />
+                                <PES:Comments ID="Comments1" runat="server" SystemObjectID="5" SystemObjectRecordID='<%#((File)Container.DataItem).FileID %>' />
                             </li>
                         </ItemTemplate>
                         <EmptyItemTemplate>

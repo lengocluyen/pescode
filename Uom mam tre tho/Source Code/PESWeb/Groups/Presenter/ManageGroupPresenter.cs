@@ -52,8 +52,8 @@ namespace PESWeb.Groups
         {
             if (group.Description.Length > 2000)
             {
-                _view.ShowMessage("Your description is " + group.Description.Length.ToString() +
-                                  " characters long and can only be 2000 characters!");
+                _view.ShowMessage("Mô tả của bạn là " + group.Description.Length.ToString()
+                                  );
             }
             else
             {
@@ -62,7 +62,7 @@ namespace PESWeb.Groups
                 //if this is a new group then check to see if the page name is in use
                 if (group.GroupID == 0 && Group.CheckIfGroupPageNameExists(group.PageName))
                 {
-                    _view.ShowMessage("The page name you specified is already in use!");
+                    _view.ShowMessage("Tên trang này đã tồn tại!");
                 }
                 else
                 {

@@ -80,7 +80,7 @@ namespace PESWeb.Groups
                 gm.IsAdmin = false;
                 gm.IsApproved = false;
                 GroupMember.SaveGroupMember(gm);
-                _view.ShowMessage("Membership requested successfully!");
+                _view.ShowMessage("Gia nhập nhóm thành công!");
             }
         }
 

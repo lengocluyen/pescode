@@ -3,11 +3,11 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Groups" runat="server">
 <div style="padding-left:10px;">
-    <ul class="menu1">
+      <ul class="menu1" style="margin-top:8px;">
         <li><a href="/Groups/ManageGroup.aspx">
-            <img src="/images/mnu01.gif" alt="" />Tạo nhóm mới</a></li>
+            <img src="/images/group.gif" alt="" />Tạo nhóm mới</a></li>
         <li><a href="/Groups/mygroups.aspx">
-            <img src="/images/mnu01.gif" alt="" />Nhóm của tôi</a></li>
+            <img src="/images/group.gif" alt="" />Nhóm của tôi</a></li>
     </ul>
 </div>
 </asp:Content>

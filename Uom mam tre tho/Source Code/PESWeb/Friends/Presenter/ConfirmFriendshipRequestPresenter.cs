@@ -14,12 +14,13 @@ namespace PESWeb.Friends.Presenter
         private IWebContext _webContext;
         private IConfiguration _configuration;
         private IRedirector _redirector;
-
+        private IFriendService _friendService;
         public ConfirmFriendshipRequestPresenter()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
             _configuration = ObjectFactory.GetInstance<IConfiguration>();
             _redirector = ObjectFactory.GetInstance<IRedirector>();
+            _friendService = ObjectFactory.GetInstance<IFriendService>();
         }
 
         public void Init(IConfirmFriendshipRequest view)
@@ -31,8 +32,12 @@ namespace PESWeb.Friends.Presenter
                     FriendInvitation.GetFriendInvitationByGUID(new Guid(_webContext.FriendshipRequest));
                 if (friendInvitation != null)
                 {
-                    if (_webContext.CurrentUser != null)
-                        LoginClick();
+                    if (_webContext.CurrentUser != null){
+                        //LoginClick();
+                        if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
+                            _friendService.CreateFriendFromFriendInvitation(new Guid(_webContext.FriendshipRequest), _webContext.CurrentUser);
+
+                    }
 
                     Account account = Account.GetAccountByID(friendInvitation.AccountID);
                     _view.ShowConfirmPanel(true);
@@ -41,7 +46,7 @@ namespace PESWeb.Friends.Presenter
                 else
                 {
                     _view.ShowConfirmPanel(false);
-                    _view.ShowMessage("There was an error validating your invitation.");
+                    _view.ShowMessage("Lỗi thực thi.");
                 }
             }
             else

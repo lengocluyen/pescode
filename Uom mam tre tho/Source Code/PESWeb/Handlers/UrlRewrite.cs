@@ -79,6 +79,34 @@ namespace PESWeb.Handlers
                     context.RewritePath("/groups/viewgroup.aspx?GroupID=" + group.GroupID.ToString());
                 }
                 #endregion
+                #region TAGS
+                else if (application.Request.PhysicalPath.ToLower().Contains("tags"))
+                {
+                    Tag tag = null;
+                    int tagsPosition = 0;
+                    string tagName;
+                    string[] arr = application.Request.PhysicalPath.ToLowerInvariant().Split('\\');
+                    for (int i = 0; i < arr.Length; i++)
+                    {
+                        if (arr[i].ToLower() == "tags")
+                        {
+                            tagsPosition = i;
+                        }
+
+                        if (tagsPosition > 0)
+                        {
+                            tagName = arr[i + 1];
+                            tag = Tag.GetTagByName(tagName.Replace("-", " "));
+                            break;
+                        }
+                    }
+
+                    if (tag != null)
+                    {
+                        context.RewritePath("/tags/tags.aspx?TagID=" + tag.TagID);
+                    }
+                }
+                #endregion
                 #region PROFILES
                 else if (CoreSupport.StringCount(application.Request.Path, '/') <= 1)
                 {

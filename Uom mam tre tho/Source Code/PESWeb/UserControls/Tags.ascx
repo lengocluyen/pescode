@@ -5,7 +5,7 @@
     <div class="txtTag" style="padding-top:10px;font-weight:bold">Tag</div>
     <div class="hiddenTag">
         <asp:TextBox ID="txtTag" runat="server"></asp:TextBox>
-        <asp:Button CssClass="button" ID="btnTag" runat="server" Text="Tag It!" OnClick="btnTag_Click" />
+        <asp:Button CssClass="button" ID="btnTag" runat="server" Text="Tag!" OnClick="btnTag_Click" />
     </div>
     </asp:Panel>
 

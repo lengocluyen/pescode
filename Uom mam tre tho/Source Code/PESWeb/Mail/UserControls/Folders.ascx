@@ -1,11 +1,11 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Folders.ascx.cs" Inherits="PESWeb.Mail.UserControls.Folders" %>
-<li><a href="#" id="toggle-hk-menu" class="more">
-    <img src="../../images/mnu02.gif" alt="" />
+<li><a href="#" id="toggle-hk-menu" class="more" style="margin-top:3px;">
+    <img src="../../images/mailbox.gif" alt="" />
     Hộp thư</a></li>
 <div id="hk-menu">
-    <ul class="menu2">
+    <ul class="menu1">
     <li style="padding-left: 10px;" >
-    <a href="../../Mail/NewMessage.aspx" runat="server">&nbsp;&nbsp;Viết thư mới</a></li>
+    <a href="../../Mail/NewMessage.aspx" runat="server"><img src="../../images/write.gif" />Viết thư mới</a></li>
         <asp:Repeater ID="repFolders" runat="server" OnItemDataBound="repFolders_ItemDataBound">
             <ItemTemplate>
                 <li style="padding-left: 10px;">

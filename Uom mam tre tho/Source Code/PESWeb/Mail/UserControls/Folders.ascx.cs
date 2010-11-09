@@ -35,7 +35,7 @@ namespace PESWeb.Mail.UserControls
                 HyperLink linkFolder = e.Item.FindControl("linkFolder") as HyperLink;
                 Image im = e.Item.FindControl("ImageLink") as Image;
                 Label lb = e.Item.FindControl("LabelLink") as Label;
-                im.ImageUrl = "~/images/mnu01.gif";
+                im.ImageUrl = "~/images/letter.gif";
                 lb.Text = ((MessageFolder)e.Item.DataItem).FolderName;
                 //linkFolder.Text = ((MessageFolder)e.Item.DataItem).FolderName;
 
