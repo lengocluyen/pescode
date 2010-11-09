@@ -25,7 +25,7 @@ namespace Pes.Core.Impl
 
         public void ProcessEmails()
         {
-            throw (new Exception("ProcessEmails is not implemented by this class!"));
+            throw (new Exception("Lỗi thực thi!"));
         }
     }
 }

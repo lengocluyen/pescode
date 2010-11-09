@@ -14,7 +14,15 @@ namespace Pes.Core
     }
     public partial class Tag
     {
-        
+
+        public static Tag GetTagByName(string name)
+        {
+            return Tag.Find(t => t.Name == name).FirstOrDefault();
+        }
+        public static Tag GetTagByID(int TagID)
+        {
+            return Tag.Single(t => t.TagID == TagID);
+        }
 
         public static List<Tag> GetTagsBySystemObjectAndRecordID(int SystemObjectID, long SystemObjectRecordID)
         {
@@ -43,6 +51,7 @@ namespace Pes.Core
                            select t).Distinct().OrderByDescending(t => t.Count).Take(TagsToTake).ToList();
             return results;
         }
+
     }
 
 }

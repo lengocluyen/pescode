@@ -63,7 +63,7 @@ namespace Pes.Core.Impl
         {
             Init();
             alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) +
-                           " just created their profile!</div>";
+                           " vừa tạo thông tin cá nhân!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(account.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.ProfileCreated;
@@ -182,7 +182,7 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestFrom.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestTo.AccountID) + GetProfileUrl(FriendRequestTo.Username) + " is now your friend!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestTo.AccountID) + GetProfileUrl(FriendRequestTo.Username) + " là bạn ngay bây giờ!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(FriendRequestTo.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
@@ -191,7 +191,7 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestTo.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " is now your friend!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " là bạn ngay bây giờ!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(FriendRequestFrom.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
@@ -321,7 +321,7 @@ namespace Pes.Core.Impl
                           GetProfileImage(_userSession.CurrentUser.AccountID)
                           + GetProfileUrl(_userSession.CurrentUser.Username)
                           + " đã cập nhật <b>" + blog.Title +
-                          "</b> blog post!</div>";
+                          "!</div>";
             alert.Message = alertMessage;
             SaveAlert(alert);
             SendAlertToFriends(alert);

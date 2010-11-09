@@ -6,7 +6,7 @@ using SubSonic.SqlGeneration.Schema;
 
 namespace Pes.Core
 {
-	[SubSonicTableNameOverride("GroupMembers")]
+    [SubSonicTableNameOverride("GroupMembers")]
     public partial class GroupMember : EntityBase<GroupMember>
     {
         #region Properties
@@ -15,12 +15,12 @@ namespace Pes.Core
         public override object Id
         {
 
-            get { return ID; }
-            set { ID = (long)value; }
+            get { return GroupMemberID; }
+            set { GroupMemberID = (long)value; }
         }
 
 		[SubSonicPrimaryKey]
-		public long ID { get; set; }
+        public long GroupMemberID { get; set; }
 		public int GroupID { get; set; }
 		public int AccountID { get; set; }
 		public DateTime CreateDate { get; set; }
@@ -43,14 +43,14 @@ namespace Pes.Core
 				if (entity != null)
 					entity.CopyTo<GroupMember>(this);
 				else
-					this.ID = 0;
+                    this.GroupMemberID = 0;
 			}
         }
 
         public bool Save()
         {
             bool rs = false;
-            if (ID > 0)
+            if (GroupMemberID > 0)
                 rs = Update(this) > 0;
             else
                 rs = Add(this) != null;
