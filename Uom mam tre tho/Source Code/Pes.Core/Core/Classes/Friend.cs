@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using SubSonic.Extensions;
+using System.Linq.Dynamic;
 
 namespace Pes.Core
 {
@@ -28,7 +29,7 @@ namespace Pes.Core
             //Getmy friends indirect relationship
             var friends2 = (from f in Friend.All()
                             where f.MyFriendsAccountID == AccountID &&
-                            f.AccountID != AccountID 
+                            f.AccountID != AccountID
                             select f).Distinct();
 
             foreach (var o in friends2)
@@ -75,8 +76,8 @@ namespace Pes.Core
             IEnumerable<Account> accounts = from a in aAccount
                                             where accountIDs.Contains(a.AccountID)
                                             select a;
-            
-            return accounts.Skip(currentPage*pageSize).Take(pageSize).ToList();
+
+            return accounts.Skip(currentPage * pageSize).Take(pageSize).ToList();
         }
         public static void DeleteFriend(Friend friend)
         {
@@ -85,11 +86,19 @@ namespace Pes.Core
 
         public static void DeleteFriendByID(Int32 AccountIDToRemoveFriendFrom, Int32 FriendIDToRemove)
         {
-            Friend.DeleteMany(f =>
-                (
-                    f.AccountID == AccountIDToRemoveFriendFrom && f.MyFriendsAccountID == FriendIDToRemove)
-                    || (f.AccountID == FriendIDToRemove && f.MyFriendsAccountID == AccountIDToRemoveFriendFrom
-                ));
+            List<Friend> list = Friend.All().Where("(AccountID=@0 AND MyFriendsAccountID=@1) OR (AccountID=@1 AND MyFriendsAccountID=@0)",
+                AccountIDToRemoveFriendFrom, FriendIDToRemove).ToList();
+
+            //Friend.DeleteMany(f =>
+            //    (
+            //        f.AccountID == AccountIDToRemoveFriendFrom
+            //        && f.MyFriendsAccountID == FriendIDToRemove)
+            //    ||
+            //        (f.AccountID == FriendIDToRemove
+            //            && f.MyFriendsAccountID == AccountIDToRemoveFriendFrom)
+            //    );
+            if (list.Count > 0)
+                Friend.DeleteMany(list);
         }
 
         public static void SaveFriend(Friend friend)
