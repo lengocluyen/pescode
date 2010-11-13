@@ -5,6 +5,7 @@ namespace Pes.Core
         int PageNumItem { get; }
         string ToEmailAddress { get; }
         string FromEmailAddress { get; }
+        string PasswordEmail { get; }
         string SiteName { get; }
         string RootURL { get; }
         int NumberOfRecordsInPage { get; }
@@ -17,5 +18,6 @@ namespace Pes.Core
         int DefaultCacheDuration_Days { get; }
         int DefaultCacheDuration_Hours { get; }
         int DefaultCacheDuration_Minutes { get; }
+        
     }
 }

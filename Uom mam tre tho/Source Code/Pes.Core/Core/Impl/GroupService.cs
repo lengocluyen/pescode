@@ -42,7 +42,7 @@ namespace Pes.Core
             int result = 0;
             if (group.GroupID > 0)
             {
-                result = Group.SaveGroup(group);
+                result = Group.Update(group);
             }
             else
             {

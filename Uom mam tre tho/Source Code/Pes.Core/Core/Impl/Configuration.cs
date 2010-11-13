@@ -20,6 +20,10 @@ namespace Pes.Core.Impl
             get { return (string) getAppSetting(typeof (string), "FromEmailAddress"); }
         }
 
+        public string PasswordEmail
+        {
+            get { return (string)getAppSetting(typeof(string), "PasswordEmail"); }
+        }
         public int DefaultCacheDuration_Days
         {
             get { return (int) getAppSetting(typeof (int), "DefaultCacheDuration_Day"); }

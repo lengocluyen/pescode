@@ -20,6 +20,8 @@ namespace Pes.Core.Impl
         {
             Message.Subject = _configuration.SiteName + " - " + Message.Subject;
             SmtpClient smtp = new SmtpClient();
+            smtp.Credentials = new System.Net.NetworkCredential(_configuration.FromEmailAddress, _configuration.PasswordEmail);
+            smtp.EnableSsl = true;
             smtp.Send(Message);
         }
 

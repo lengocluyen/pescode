@@ -140,7 +140,7 @@ namespace Pes.Core.Impl
         }
         public void GoToHomePage()
         {
-            Redirect("~/Default.aspx");
+            Redirect("~/default.aspx");
         }
         public void GoToErrorPage()
         {

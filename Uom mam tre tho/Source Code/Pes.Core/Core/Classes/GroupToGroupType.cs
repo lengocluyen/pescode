@@ -23,22 +23,30 @@ namespace Pes.Core
                 //delete grouptogrouptypes
                 //Delete(
                 //    All().Where(g => itemsToDelete.Contains(g.GroupTypeID) && g.GroupID == GroupID).FirstOrDefault());
-
-                foreach (GroupToGroupType i in Find(g => itemsToDelete.Contains(g.GroupTypeID) && g.GroupID == GroupID))
+                if (itemsToDelete.Count > 0)
                 {
-                    Delete(i.GroupToGroupTypeID);
+                    foreach (GroupToGroupType i in Find(g => CheckItemsToDelete(itemsToDelete, g.GroupTypeID) && g.GroupID == GroupID))
+                    {
+                        Delete(i.GroupToGroupTypeID);
+                    }
                 }
-
                 //create the actual objects to insert
                 List<GroupToGroupType> typesToInsert = new List<GroupToGroupType>();
                 foreach (long l in itemsToInsert)
                 {
                     GroupToGroupType g = new GroupToGroupType() { GroupID = GroupID, GroupTypeID = l };
-                    Add(g);
+                    try { Add(g); }
+                    catch { Update(g); }
                 }
 
         }
-
+        public static bool CheckItemsToDelete(List<long> list,long id)
+        {
+            foreach (long i in list)
+                if (i==id)
+                    return true;
+            return false;
+        }
         public static void SaveGroupToGroupType(GroupToGroupType groupToGroupType)
         {
                 if (All().Where(gt => gt.GroupID == groupToGroupType.GroupID && gt.GroupTypeID == groupToGroupType.GroupTypeID).FirstOrDefault() == null)
