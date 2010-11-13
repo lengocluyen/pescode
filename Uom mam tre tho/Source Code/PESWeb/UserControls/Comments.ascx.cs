@@ -8,14 +8,22 @@ using Pes.Core;
 using StructureMap;
 namespace PESWeb.UserControls
 {
+
     public partial class Comments : System.Web.UI.UserControl, IComments
     {
         private CommentsPresenter _presenter;
         public string _IDRecord;
         public IConfiguration _config;
-
         public int SystemObjectID { get; set; }
-        public long SystemObjectRecordID{get ;set;}
+        public long SystemObjectRecordID { get; set; }
+
+        public SystemObject.Names SystemObject
+        {
+            set
+            {
+                SystemObjectID = (int)value;
+            }
+        }
 
         protected override void OnInit(EventArgs e)
         {
@@ -25,13 +33,13 @@ namespace PESWeb.UserControls
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            _presenter.LoadComments();
+            if (!IsPostBack)
+                _presenter.LoadComments();
         }
 
         protected void btnAddComment_Click(object sender, EventArgs e)
         {
             _presenter.AddComment(txtComment.Text);
-            txtComment.Text = "";
         }
 
         public void ShowCommentsBox(bool IsVisible)
@@ -46,7 +54,6 @@ namespace PESWeb.UserControls
 
         public void LoadComments(List<Comment> comments)
         {
-
             if (comments.Count > 0)
             {
                 if (comments.Count <= _config.PageNumItem - 3)
@@ -81,7 +88,7 @@ namespace PESWeb.UserControls
                         "</div>"));
                     }
                     phComments.Controls.Add(new LiteralControl("</div>"));
-                    
+
                     phComments.Controls.Add(new LiteralControl("<div class='exComments' style='margin-top:-8px'>"));
                     phComments.Controls.Add(new LiteralControl("<div class='comments'>"));
                     for (i = _config.PageNumItem - 3; i < comments.Count; i++)

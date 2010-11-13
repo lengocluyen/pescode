@@ -19,7 +19,7 @@ namespace PESWeb.UserControls
         public static int totalItems;
         public FriendsPresenter()
         {
-            
+
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _webContext = ObjectFactory.GetInstance<IWebContext>();
             _config = ObjectFactory.GetInstance<IConfiguration>();
@@ -38,8 +38,9 @@ namespace PESWeb.UserControls
         }
         internal void LoadAccounts()
         {
-            if (currentPage == null) currentPage = 0;
-                _view.LoadAccounts(Friend.GetFriendsAccountsByAccountID(_accountBeingViewed.AccountID,currentPage,pageSize));
+            if (currentPage == null)
+                currentPage = 0;
+            _view.LoadAccounts(Friend.GetFriendsAccountsByAccountID(_accountBeingViewed.AccountID, currentPage, pageSize));
         }
     }
 }

@@ -42,8 +42,8 @@ namespace PESWeb.UserControls
             c.SystemObjectID = _view.SystemObjectID;
             c.SystemObjectRecordID = _view.SystemObjectRecordID;
             Comment.SaveComment(c);
-            _view.ClearComments();
-            LoadComments();
+         //  _view.ClearComments();
+           // LoadComments();
         }
     }
 }
