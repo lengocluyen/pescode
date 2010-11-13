@@ -14,6 +14,15 @@ namespace PESWeb.UserControls {
     public partial class Comments {
         
         /// <summary>
+        /// pnlMore control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnlMore;
+        
+        /// <summary>
         /// repComment control.
         /// </summary>
         /// <remarks>

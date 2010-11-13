@@ -35,7 +35,8 @@ namespace PESWeb.UserControls
 
         internal void LoadComments()
         {
-            _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID));
+            _view.LoadComments(Comment.GetTopCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, 3));
+            // _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, 3));
         }
 
         internal void AddComment(string comment)
