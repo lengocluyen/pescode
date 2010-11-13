@@ -601,6 +601,10 @@
       <DependentUpon>PESServicesSession.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Services\Services.asmx.cs">
+      <DependentUpon>Services.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Services\VN\IITBusServices.cs" />
     <Compile Include="Services\VN\ITBusServices.svc.cs">
       <DependentUpon>ITBusServices.svc</DependentUpon>
@@ -726,7 +730,6 @@
     <Content Include="css\grid_fixed.css" />
     <Content Include="css\grid_fluid.css" />
     <Content Include="css\ie6.css" />
-    <Content Include="css\layout.css" />
     <Content Include="css\nav.css" />
     <Content Include="css\reset.css" />
     <Content Include="css\text.css" />
@@ -3280,12 +3283,18 @@
     <Content Include="ClientBin\Sounds\TiengChim.mp3" />
     <Content Include="ClientBin\Sounds\TiengChim.wma" />
     <Content Include="ClientBin\System.Windows.Controls.Toolkit.dll" />
+    <Content Include="css\960_24_col.css" />
     <Content Include="css\FirstPage.css" />
+    <Content Include="css\jquery.alerts.css" />
+    <Content Include="css\layout.css" />
     <Content Include="images\BackHome.jpg" />
     <Content Include="images\BackLearning.jpg" />
     <Content Include="images\BannerPes.png" />
+    <Content Include="images\buttonbg.png" />
     <Content Include="images\Children.jpg" />
     <Content Include="images\Children_dq.gif" />
+    <Content Include="images\delete11.png" />
+    <Content Include="images\delete15.png" />
     <Content Include="images\group.gif" />
     <Content Include="images\HomeTopBack.png" />
     <Content Include="images\letter.gif" />
@@ -3295,12 +3304,20 @@
     <Content Include="images\more.jpg" />
     <Content Include="images\next.jpeg" />
     <Content Include="images\Pes_logo.png" />
+    <Content Include="images\plus.gif" />
     <Content Include="images\previous.jpeg" />
+    <Content Include="images\quote.png" />
+    <Content Include="images\sprite.gif" />
     <Content Include="images\Studyinghome.png" />
     <Content Include="images\Text1.png" />
     <Content Include="images\Text2.png" />
     <Content Include="images\write.gif" />
+    <Content Include="js\jquery-1.4.3.min.js" />
+    <Content Include="js\jquery.alerts.js" />
+    <Content Include="js\jquery.autogrow.js" />
+    <Content Include="js\script.js" />
     <Content Include="Learning\Testing.aspx" />
+    <Content Include="Services\Services.asmx" />
     <Content Include="Tags\Tags.aspx" />
     <Content Include="UserControls\PESBanner.ascx" />
   </ItemGroup>
