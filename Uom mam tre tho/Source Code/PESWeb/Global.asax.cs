@@ -57,8 +57,10 @@ namespace PESWeb
                 x.For(typeof(IGenericRepository<>))
                       .LifecycleIs(InstanceScope.PerRequest)
                       .Use(typeof(GenericRepository<>))
-                      .WithCtorArg("connectionStringName").EqualTo(settings.Name)
-                      .WithCtorArg("options").EqualTo(SimpleRepositoryOptions.None);
+                      .CtorDependency<string>("connectionStringName").Is(settings.Name)
+                      .CtorDependency<SimpleRepositoryOptions>("options").Is(SimpleRepositoryOptions.None);
+                      //.WithCtorArg("connectionStringName").EqualTo(settings.Name)
+                      //.WithCtorArg("options").EqualTo(SimpleRepositoryOptions.None);
 
                 x.For(typeof(IRedirector)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(Redirector));
 
