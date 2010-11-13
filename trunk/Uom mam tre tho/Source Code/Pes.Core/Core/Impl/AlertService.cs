@@ -231,12 +231,21 @@ namespace Pes.Core.Impl
 
         public void AddStatusUpdateAlert(StatusUpdate statusUpdate)
         {
+            //alert = new Alert();
+            //alert.CreateDate = DateTime.Now;
+            //alert.AccountID = _userSession.CurrentUser.AccountID;
+            //alert.AlertTypeID = (int)AlertType.AlertTypes.StatusUpdate;
+            //alertMessage = "<div class=\"AlertHeader\">"
+            //    + GetProfileImage(_userSession.CurrentUser.AccountID) + GetProfileUrl(_userSession.CurrentUser.Username) + " " + statusUpdate.Status + "</div>";
+            //alert.Message = alertMessage;
+            //SaveAlert(alert);
+            //SendAlertToFriends(alert);
+
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = _userSession.CurrentUser.AccountID;
             alert.AlertTypeID = (int)AlertType.AlertTypes.StatusUpdate;
-            alertMessage = "<div class=\"AlertHeader\">"
-                + GetProfileImage(_userSession.CurrentUser.AccountID) + GetProfileUrl(_userSession.CurrentUser.Username) + " " + statusUpdate.Status + "</div>";
+            alertMessage = statusUpdate.Status;
             alert.Message = alertMessage;
             SaveAlert(alert);
             SendAlertToFriends(alert);
