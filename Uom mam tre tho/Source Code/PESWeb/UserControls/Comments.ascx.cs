@@ -30,6 +30,27 @@ namespace PESWeb.UserControls
             _presenter = new CommentsPresenter();
             _config = ObjectFactory.GetInstance<IConfiguration>();
             _presenter.Init(this, IsPostBack);
+            repComment.ItemDataBound += new RepeaterItemEventHandler(repComment_ItemDataBound);
+        }
+
+        void repComment_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                Comment data = e.Item.DataItem as Comment;
+                HyperLink lnk = (HyperLink)e.Item.FindControl("lnkDel");
+
+                if (data.CommentByAccountID == 8)
+                {
+                    lnk.Attributes["url"] = Page.ResolveClientUrl("~/Services/Service.asmx/DeleteComment/");
+                    lnk.Attributes["data"] = "commenId-" + data.CommentID;
+                    lnk.Visible = true;
+                }
+                else
+                {
+                    lnk.Visible = false;
+                }
+            }
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -42,72 +63,15 @@ namespace PESWeb.UserControls
             _presenter.AddComment(txtComment.Text);
         }
 
-        public void ShowCommentsBox(bool IsVisible)
-        {
-            this.Visible = IsVisible;
-        }
-
-        public void ClearComments()
-        {
-            phComments.Controls.Clear();
-        }
-
         public void LoadComments(List<Comment> comments)
         {
-            if (comments.Count > 0)
-            {
-                if (comments.Count <= _config.PageNumItem - 3)
-                {
-                    phComments.Controls.Add(new LiteralControl("<div class='comments'>"));
-                    foreach (Comment comment in comments)
-                    {
-                        phComments.Controls.Add(new LiteralControl(
-                        "<div class=\"cmt\">" +
-                                    "<a class=\"image\">" +
-                                        "<img src=\"/images/profileavatar/profileimage.aspx?AccountID=" + comment.CommentByAccountID + "\" alt=\"\" /></a>" +
-                                    "<div class=\"para\">" +
-                                        "<a href=\"#\" class=\"bold\">" + "(" + comment.CreateDate.ToShortDateString() + ") " + comment.CommentByUsername + ": " + "</a>" + comment.Body +
-                                    "</div>" +
-                        "</div>"));
-                    }
-                    phComments.Controls.Add(new LiteralControl("</div>"));
-                }
-                else
-                {
-                    phComments.Controls.Add(new LiteralControl("<div class='comments'>"));
-                    int i = 0;
-                    for (i = 0; i < _config.PageNumItem - 3; i++)
-                    {
-                        phComments.Controls.Add(new LiteralControl(
-                        "<div class=\"cmt\">" +
-                                    "<a class=\"image\">" +
-                                        "<img src=\"/images/profileavatar/profileimage.aspx?AccountID=" + comments[i].CommentByAccountID + "\" alt=\"\" /></a>" +
-                                    "<div class=\"para\">" +
-                                        "<a href=\"#\" class=\"bold\">" + "(" + comments[i].CreateDate.ToShortDateString() + ") " + comments[i].CommentByUsername + ": " + "</a>" + comments[i].Body +
-                                    "</div>" +
-                        "</div>"));
-                    }
-                    phComments.Controls.Add(new LiteralControl("</div>"));
+            repComment.DataSource = comments;
+            repComment.DataBind();
+        }
 
-                    phComments.Controls.Add(new LiteralControl("<div class='exComments' style='margin-top:-8px'>"));
-                    phComments.Controls.Add(new LiteralControl("<div class='comments'>"));
-                    for (i = _config.PageNumItem - 3; i < comments.Count; i++)
-                    {
-                        phComments.Controls.Add(new LiteralControl(
-                        "<div class=\"cmt\">" +
-                                    "<a class=\"image\">" +
-                                        "<img src=\"/images/profileavatar/profileimage.aspx?AccountID=" + comments[i].CommentByAccountID + "\" alt=\"\" /></a>" +
-                                    "<div class=\"para\">" +
-                                        "<a href=\"#\" class=\"bold\">" + "(" + comments[i].CreateDate.ToShortDateString() + ") " + comments[i].CommentByUsername + ": " + "</a>" + comments[i].Body +
-                                    "</div>" +
-                        "</div>"));
-                    }
-                    phComments.Controls.Add(new LiteralControl("</div>"));
-                    phComments.Controls.Add(new LiteralControl("</div>"));
-                    phComments.Controls.Add(new LiteralControl("<div class='exComments_title' style='width:70px;cursor:pointer;float:left;padding-right:3px;font-weight:bold'><span onclick=\"this.innerHTML=='Thu gọn'?this.innerHTML='Xem tất cả':this.innerHTML='Thu gọn'\">Xem tất cả</span></div>"));
-                }
+        public void ShowCommentsBox(bool IsVisible)
+        {
 
-            }
         }
     }
 }
