@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AuthMaster.Master" AutoEventWireup="true"
-    CodeBehind="ConfirmFriendshipRequest.aspx.cs" Inherits="PESWeb.Friends.ConfirmFriendshipRequest" %>
+    CodeBehind="ConfirmFriendInSite.aspx.cs" Inherits="PESWeb.Friends.ConfirmFriendInSite" %>
 
 <asp:Content ID="Content6" ContentPlaceHolderID="Content" runat="server">
     <div>
@@ -10,7 +10,8 @@
     </div>
     <div>
         <asp:Panel ID="pnlConfirm" runat="server">
-            <div class="divContainerRow" style="height: 105px;">
+            Kết bạn thành công!
+            <%--<div class="divContainerRow" style="height: 105px;">
                 <div class="divContainerCellHeader">
                     <asp:Image Width="100" Height="100" ID="imgProfileAvatar" runat="server" />
                     
@@ -18,7 +19,7 @@
                 <div class="divContainerCell">
                     <asp:Label ID="lblFullName" runat="server"></asp:Label>&nbsp;bạn của bạn trên&nbsp;
                     <asp:Label ID="lblSiteName1" runat="server"></asp:Label> mời bạn: 
-                    <%--<hr />--%>
+                    <hr />
                     Gia nhập
                     <asp:Label ID="lblSiteName2" runat="server"></asp:Label>
                     để kết nối tới bạn của bạn để có thể chia sẽ những tâm sự, hình ảnh... Nếu đã có
@@ -29,7 +30,7 @@
                         Text="Đăng ký "></asp:LinkButton>
                     để tạo tài khoản.
                 </div>
-            </div>
+            </div>--%>
         </asp:Panel>
         <asp:Panel ID="pnlError" runat="server">
             <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
