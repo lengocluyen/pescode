@@ -3,14 +3,38 @@
     <div class="index-comment">
         <span class="morecomments"><a href="#">Xem tất cả</a></span>
     </div>
-    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
-        <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="btnAddComment" EventName="Click" />
-        </Triggers>
-        <ContentTemplate>
-            <asp:PlaceHolder ID="phComments" runat="server"></asp:PlaceHolder>
-        </ContentTemplate>
-    </asp:UpdatePanel>
+    <asp:Repeater ID="repComment" runat="server">
+        <ItemTemplate>
+            <div class="index-comment">
+                <div class="ic-avatar">
+                    <a href='profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>'>
+                        <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("CommentByAccountID")%>"
+                            class="avatar" />
+                    </a>
+                </div>
+                <div class="ic-text">
+                    <div class="ic-meta ic-author">
+                        <a href='profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>' class="url">
+                            <%#Eval("CommentByUsername") %></a>
+                    </div>
+                    <div class="ic-content">
+                        <%#Eval("Body")%>
+                    </div>
+                    <div class="ic-meta ic-date">
+                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc hh:mm}")  %></div>
+                </div>
+                <div class="ic-edit" style="display: none">
+                  <%--  <a class="del15 confirm" url="/Services/DeleteComment" data='commentId-<%#Eval("CommentID")%>'>
+                    </a>--%>
+                    <asp:HyperLink ID="lnkDel" runat="server" CssClass="del15 confirm" />
+                </div>
+            </div>
+        </ItemTemplate>
+        <SeparatorTemplate>
+            <div class="clear">
+            </div>
+        </SeparatorTemplate>
+    </asp:Repeater>
 </div>
 <div class="index-comment">
     <textarea class="respondtext" id='respondtext-<%=SystemObjectRecordID%>'>Viết cảm nhận ...</textarea>

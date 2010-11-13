@@ -14,22 +14,13 @@ namespace PESWeb.UserControls {
     public partial class Comments {
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// repComment control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
-        /// <summary>
-        /// phComments control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phComments;
+        protected global::System.Web.UI.WebControls.Repeater repComment;
         
         /// <summary>
         /// txtComment control.
