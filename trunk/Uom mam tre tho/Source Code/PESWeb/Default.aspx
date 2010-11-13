@@ -57,8 +57,8 @@
                                         <%# Eval("Message")  %>
                                     </p>
                                     <div class="meta">
-                                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc hh:mm}")  %>
-                                        - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Bình luận</a>
+                                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc HH:mm}")  %>
+                                        - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Cảm nhận</a>
                                     </div>
                                     <PES:Comments runat="server" SystemObject="Alerts" SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />
                                 </div>
@@ -69,32 +69,14 @@
                             </div>
                         </SeparatorTemplate>
                     </asp:Repeater>
-                    <asp:PlaceHolder ID="ph_exFeeds" runat="server" Visible="false">
-                        <asp:Repeater ID="rp_exFead" runat="server">
-                            <ItemTemplate>
-                                <div class="Alert">
-                                    <asp:Label ID="lblMessage2" runat="server" Text='<%# ((Alert)Container.DataItem).Message  %>'></asp:Label>
-                                    <PES:Comments ID="HK2" runat="server" SystemObjectRecordID='<%# ((Alert)Container.DataItem).AlertID  %>'
-                                        SystemObjectID="7" />
-                                </div>
-                            </ItemTemplate>
-                            <SeparatorTemplate>
-                                <div class="AlertSeparator">
-                                </div>
-                            </SeparatorTemplate>
-                        </asp:Repeater>
-                    </asp:PlaceHolder>
                 </div>
             </div>
         </div>
         <asp:Label ID="lblMessage" runat="server"></asp:Label>
-        <div style="float: right; margin-top: 5px;">
-            <asp:ImageButton ID="bt_exFeeds" runat="server" ImageUrl="/images/more.jpg" />
-        </div>
         <!-- Navigation -->
         <div class="navigation">
             <div class="next">
-                <a href="#">Show Older Posts..</a>
+                <a href="#">Xem thêm</a>
             </div>
         </div>
         <div class="clear">

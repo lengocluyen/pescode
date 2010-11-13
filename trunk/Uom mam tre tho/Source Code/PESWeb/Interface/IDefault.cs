@@ -11,6 +11,5 @@ namespace PESWeb.Interface
         int ItemAdd { get; set; }
         int TotalItem { get; set; }
         void ShowAlerts(List<Alert> alerts);
-        void ShowAlertsExtra(List<Alert> alerts);
     }
 }

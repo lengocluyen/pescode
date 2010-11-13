@@ -36,38 +36,6 @@ namespace PESWeb
         {
             repFilter.DataSource = alerts;
             repFilter.DataBind();
-            if (TotalItem > 20)
-            {
-                bt_exFeeds.Visible = true;
-                bt_exFeeds.Click += new ImageClickEventHandler(bt_exFeeds_Click);
-            }
-            else
-            {
-                bt_exFeeds.Visible = false;
-                ph_exFeeds.Visible = false;
-            }
-            if (repFilter.Items.Count == 0)
-                lblMessage.Text = "You don't have any alerts yet!";
-        }
-
-        void bt_exFeeds_Click(object sender, ImageClickEventArgs e)
-        {
-            ph_exFeeds.Visible = true;
-
-            _presenter.ShowDisplayPaging();
-
-
-        }
-        public void ShowAlertsExtra(List<Alert> alerts)
-        {
-            rp_exFead.DataSource = alerts;
-            rp_exFead.DataBind();
-            DefaultPresenter.currentItem = repFilter.Items.Count + rp_exFead.Items.Count;
-            if (DefaultPresenter.currentItem >= TotalItem)
-            {
-                bt_exFeeds.Visible = false;
-                return;
-            }
         }
 
     }

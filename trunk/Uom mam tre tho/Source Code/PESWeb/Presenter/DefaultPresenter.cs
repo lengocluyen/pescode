@@ -26,7 +26,6 @@ namespace PESWeb.Presenter
             if (!_userSession.LoggedIn || _userSession.CurrentUser == null)
                 _redirector.GoToAccountLoginPage();
 
-
             _alertService = ObjectFactory.GetInstance<IAlertService>();
             _webContext = ObjectFactory.GetInstance<IWebContext>();
             _accountService = ObjectFactory.GetInstance<IAccountService>();
@@ -58,10 +57,6 @@ namespace PESWeb.Presenter
         private void ShowDisplay()
         {
             _view.ShowAlerts(_alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID));
-        }
-        public void ShowDisplayPaging()
-        {
-            _view.ShowAlertsExtra(_alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID, 20, _view.ItemAdd + currentItem -20));
         }
  
     }
