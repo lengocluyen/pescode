@@ -43,3 +43,14 @@ E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\ResolveAssemblyReference.cache
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.pdb
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.dll.config
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.dll
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\SubSonic.Core.pdb
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\DynamicQuery.dll
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\log4net.dll
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\StructureMap.dll
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\StructureMap.xml
+E:\Code\GoogleCode\Source Code\SubSonic.Core\bin\Debug\DynamicQuery.pdb
+E:\Code\GoogleCode\Source Code\SubSonic.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\GoogleCode\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.dll
+E:\Code\GoogleCode\Source Code\SubSonic.Core\obj\Debug\SubSonic.Core.pdb

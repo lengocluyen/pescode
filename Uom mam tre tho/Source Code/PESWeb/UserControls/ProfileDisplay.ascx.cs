@@ -18,7 +18,7 @@ namespace PESWeb.UserControls
         {
             _presenter = new ProfileDisplayPresenter();
             _presenter.Init(this);
-            ibDelete.Attributes.Add("onclick", "javascript:return confirm('Bạn có chắc chắnmuốn xóa người bạn này?')");
+            ibDelete.Attributes.Add("onclick", "javascript:return confirm('Bạn có chắc chắn muốn xóa người bạn này?')");
         }
 
         public bool ShowDeleteButton
@@ -44,7 +44,6 @@ namespace PESWeb.UserControls
             ibDelete.Attributes.Add("FriendsID", _account.AccountID.ToString());
             litAccountID.Text = account.AccountID.ToString();
             litAccountID2.Text = account.AccountID.ToString();
-
            
             //lblCreateDate.Text = account.CreateDate.ToString();
             imgAvatar.ImageUrl += "?AccountID=" + account.AccountID.ToString();

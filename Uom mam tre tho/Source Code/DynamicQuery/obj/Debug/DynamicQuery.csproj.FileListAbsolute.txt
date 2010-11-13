@@ -28,3 +28,8 @@ E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQ
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
 E:\LAM VIEC\NTDVSocialNetwork\PesGiaidoan 2\Uom mam tre tho\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb
+E:\Code\GoogleCode\Source Code\DynamicQuery\bin\Debug\DynamicQuery.dll
+E:\Code\GoogleCode\Source Code\DynamicQuery\bin\Debug\DynamicQuery.pdb
+E:\Code\GoogleCode\Source Code\DynamicQuery\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\GoogleCode\Source Code\DynamicQuery\obj\Debug\DynamicQuery.dll
+E:\Code\GoogleCode\Source Code\DynamicQuery\obj\Debug\DynamicQuery.pdb
