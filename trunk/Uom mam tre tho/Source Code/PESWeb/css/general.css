@@ -1,7 +1,6 @@
 ﻿@import url('reset.css');
-@import url('text.css');
-@import url('grid_fixed.css');
-@import url('grid_yui.css');
-@import url('layout_fb.css');
+@import url('960_24_col.css');
+@import url('layout.css');
+@import url('jquery.alerts.css');
 @import url('nav.css');
-@import url('colorbox.css');
+
