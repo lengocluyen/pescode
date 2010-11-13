@@ -39,12 +39,8 @@ namespace PESWeb
         {
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _redirector = ObjectFactory.GetInstance<IRedirector>();
-
-            // loi cho nay
             if (txtusernam != null)
                 txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
-
-
             if (!_userSession.LoggedIn || _userSession.CurrentUser == null)
                 _redirector.GoToAccountLoginPage();
 
@@ -86,6 +82,8 @@ namespace PESWeb
             // btSearch.ServerClick += new EventHandler(btnSearch_Click);
 
         }
+
+     
 
         void lbLogOut_Click(object sender, EventArgs e)
         {
@@ -139,6 +137,5 @@ namespace PESWeb
             if (txtSearch.Value.Trim().Length > 0)
                 _redirector.GoToSearch(txtSearch.Value);
         }
-
     }
 }
