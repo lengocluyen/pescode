@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Comments.ascx.cs" Inherits="PESWeb.UserControls.Comments" %>
 <div class="commentcontainer">
-    <div class="index-comment">
+    <div class="index-comment" runat="server" id="pnlMore">
         <span class="morecomments"><a href="#">Xem tất cả</a></span>
     </div>
     <asp:Repeater ID="repComment" runat="server">
@@ -21,7 +21,7 @@
                         <%#Eval("Body")%>
                     </div>
                     <div class="ic-meta ic-date">
-                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc hh:mm}")  %></div>
+                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc HH:mm}")%></div>
                 </div>
                 <div class="ic-edit" style="display: none">
                   <%--  <a class="del15 confirm" url="/Services/DeleteComment" data='commentId-<%#Eval("CommentID")%>'>
