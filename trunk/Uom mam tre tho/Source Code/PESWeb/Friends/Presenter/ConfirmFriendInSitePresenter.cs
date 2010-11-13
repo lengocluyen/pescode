@@ -2,20 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using PESWeb.Friends.Interface;
-using Pes.Core;
 using StructureMap;
+using Pes.Core;
 
-namespace PESWeb.Friends.Presenter
+namespace PESWeb.Friends
 {
-    public class ConfirmFriendshipRequestPresenter
+    public class ConfirmFriendInSitePresenter
     {
-        private IConfirmFriendshipRequest _view;
+        private IConfirmFriendInSite _view;
         private IWebContext _webContext;
         private IConfiguration _configuration;
         private IRedirector _redirector;
         private IFriendService _friendService;
-        public ConfirmFriendshipRequestPresenter()
+        public ConfirmFriendInSitePresenter()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
             _configuration = ObjectFactory.GetInstance<IConfiguration>();
@@ -23,7 +22,7 @@ namespace PESWeb.Friends.Presenter
             _friendService = ObjectFactory.GetInstance<IFriendService>();
         }
 
-        public void Init(IConfirmFriendshipRequest view)
+        public void Init(IConfirmFriendInSite view)
         {
             _view = view;
             if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
@@ -33,14 +32,16 @@ namespace PESWeb.Friends.Presenter
                 if (friendInvitation != null)
                 {
                     if (_webContext.CurrentUser != null){
-                        LoginClick();
-                        //if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
-                        //    _friendService.CreateFriendFromFriendInvitation(new Guid(_webContext.FriendshipRequest), _webContext.CurrentUser);
+                        //LoginClick();
+                        if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
+                            _friendService.CreateFriendFromFriendInvitation(new Guid(_webContext.FriendshipRequest), _webContext.CurrentUser);
+                         _view.ShowConfirmPanel(true);
+                        return;
                     }
 
-                    Account account = Account.GetAccountByID(friendInvitation.AccountID);
-                    _view.ShowConfirmPanel(true);
-                    _view.LoadDisplay(_webContext.FriendshipRequest, account.AccountID, account.FirstName, account.LastName, _configuration.SiteName);
+                    //Account account = Account.GetAccountByID(friendInvitation.AccountID);
+                   
+                    //_view.LoadDisplay(_webContext.FriendshipRequest, account.AccountID, account.FirstName, account.LastName, _configuration.SiteName);
                 }
                 else
                 {

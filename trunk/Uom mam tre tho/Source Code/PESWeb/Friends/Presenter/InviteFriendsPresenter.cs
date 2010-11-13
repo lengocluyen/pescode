@@ -36,8 +36,8 @@ namespace PESWeb.Friends.Presenter
                     if (_accountToInvite != null)
                     {
                         SendInvitation(_accountToInvite.Email,
-                                       _account.FirstName + " " + _account.LastName + " muốn kết bạn với bạn!");
-                        _view.ShowMessage(_accountToInvite.Username + " yêu cầu kết bạn đã được gửi!");
+                                       _accountToInvite.FirstName + " " + _accountToInvite.LastName + " muốn kết bạn với bạn!");
+                        _view.ShowMessage(" Yêu cầu kết bạn đã được gửi đến" + _accountToInvite.Username);
                         _view.TogglePnlInvite(false);
                     }
                 }
@@ -48,6 +48,7 @@ namespace PESWeb.Friends.Presenter
         {
             string resultMessage = "Mời kết bạn:<BR>";
             resultMessage += _email.SendInvitations(_userSession.CurrentUser, ToEmailArray, Message);
+            
             _view.ShowMessage(resultMessage);
             _view.ResetUI();
         }
