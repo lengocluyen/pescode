@@ -42,10 +42,10 @@
                 <td>
                     <asp:TextBox ID="txtVerifyPassword" TextMode="Password" runat="server" CssClass="text"
                         ValidationGroup="gr" />
-                    <asp:RequiredFieldValidator ID="reqVerifyPassword" runat="server" ErrorMessage="*"
+                   <%-- <asp:RequiredFieldValidator ID="reqVerifyPassword" runat="server" ErrorMessage="*"
                         ControlToValidate="txtPassword" ValidationGroup="gr" />
                     <asp:CompareValidator ID="cmp" runat="server" ControlToValidate="txtVerifyPassword"
-                        ControlToCompare="txtPassword" ValidationGroup="gr" />
+                        ControlToCompare="txtPassword" ValidationGroup="gr" />--%>
                 </td>
                 <td>
                 </td>

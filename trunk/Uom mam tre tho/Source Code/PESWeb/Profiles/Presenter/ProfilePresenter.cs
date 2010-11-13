@@ -47,7 +47,7 @@ namespace PESWeb.Profiles.Presenter
             }
             if (_accountBeingViewed == null)
                 _redirector.GoToAccountLoginPage();
-            if (_accountBeingViewed.Profile!=null&&_accountBeingViewed.Profile.ProfileID >0)
+            if (_accountBeingViewed.Profile != null && _accountBeingViewed.Profile.ProfileID > 0)
                 _privacyFlags = PrivacyFlag.GetPrivacyFlagsByProfileID(_accountBeingViewed.Profile.ProfileID);
             else
                 _redirector.GoToHomePage();

@@ -1,12 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="ManageProfile.aspx.cs" Inherits="PESWeb.Profiles.ManageProfile" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" runat="server">
+
+</asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
 
-    <div class="grid_13">
+   <%-- <div class="grid_13">
 	    <div class="page-heading hr">
 		    <h2>Quản lý thông tin cá nhân</h2>
         </div>
+    </div>--%>
+    <div>
+        username cho nay
     </div>
-
     <div class="grid_3">
         <p>
             <asp:Image ID="imgAvatar" runat="server" ImageUrl="~/images/profileAvatar/profileImage.aspx" Width="100%"/>

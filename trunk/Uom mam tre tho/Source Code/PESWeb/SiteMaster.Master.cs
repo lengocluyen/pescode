@@ -40,7 +40,11 @@ namespace PESWeb
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _redirector = ObjectFactory.GetInstance<IRedirector>();
 
-            txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
+            // loi cho nay
+            if (txtusernam != null)
+                txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
+
+
             if (!_userSession.LoggedIn || _userSession.CurrentUser == null)
                 _redirector.GoToAccountLoginPage();
 
@@ -76,10 +80,11 @@ namespace PESWeb
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            lbLogOut.Click += new EventHandler(lbLogOut_Click);
+            if (lbLogOut != null)
+                lbLogOut.Click += new EventHandler(lbLogOut_Click);
             //repPrimaryNav.ItemDataBound += new RepeaterItemEventHandler(repPrimaryNav_ItemDataBound);
-           // btSearch.ServerClick += new EventHandler(btnSearch_Click);
-        
+            // btSearch.ServerClick += new EventHandler(btnSearch_Click);
+
         }
 
         void lbLogOut_Click(object sender, EventArgs e)
@@ -89,7 +94,7 @@ namespace PESWeb
             _redirector.GoToWelcomePage();
         }
 
-      
+
 
         void repPrimaryNav_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
@@ -131,8 +136,9 @@ namespace PESWeb
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-             if(txtSearch.Value.Trim().Length>0)
-            _redirector.GoToSearch(txtSearch.Value);
+            if (txtSearch.Value.Trim().Length > 0)
+                _redirector.GoToSearch(txtSearch.Value);
         }
+
     }
 }

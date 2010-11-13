@@ -89,3 +89,16 @@ I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\bin\Debug\DynamicQuery.pdb
 I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
 I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.dll
 I:\Luan Van\Uom mam tre tho\Source Code\Pes.Core\obj\Debug\Pes.Core.pdb
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\Pes.Core.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\Pes.Core.pdb
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\DynamicQuery.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\StructureMap.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\SubSonic.Core.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\log4net.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\StructureMap.xml
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\SubSonic.Core.pdb
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\SubSonic.Core.xml
+E:\Code\GoogleCode\Source Code\Pes.Core\bin\Debug\DynamicQuery.pdb
+E:\Code\GoogleCode\Source Code\Pes.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\Code\GoogleCode\Source Code\Pes.Core\obj\Debug\Pes.Core.dll
+E:\Code\GoogleCode\Source Code\Pes.Core\obj\Debug\Pes.Core.pdb
