@@ -38,6 +38,7 @@ namespace Pes.Core
         Int32 FolderID { get; }
         Int32 PageNumber { get; }
         Int64 AlbumID { get; }
+        Int64 FileID { get; }
         Int32 FileTypeID { get; }
         Int64 BlogID { get; }
         Int32 ForumID { get; }

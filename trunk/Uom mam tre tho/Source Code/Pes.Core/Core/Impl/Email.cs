@@ -19,13 +19,14 @@ namespace Pes.Core.Impl
         private IUserSession _userSession;
         private IEmailService _emailService;
         private IAlertService _alertService;
-
+        private IMessageService _messageService;
         public Email()
         {
             _configuration = ObjectFactory.GetInstance<IConfiguration>();
             _alertService = ObjectFactory.GetInstance<IAlertService>();
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _emailService = ObjectFactory.GetInstance<IEmailService>();
+            
 
             TO_EMAIL_ADDRESS = _configuration.ToEmailAddress;
             FROM_EMAIL_ADDRESS = _configuration.FromEmailAddress;
@@ -33,14 +34,14 @@ namespace Pes.Core.Impl
 
         public void SendNewMessageNotification(Account sender, string ToEmail)
         {
-            foreach (string s in ToEmail.Split(new char[] {',',';'}))
+            foreach (string s in ToEmail.Split(new char[] { ',', ';' }))
             {
                 string message = sender.FirstName + " " + sender.LastName +
-                " bạn có một tin nhấn trên " + _configuration.SiteName + "!  Xin vui lòng đăng nhập vào " + _configuration.SiteName + 
-                " để xem.<HR>";
+                " bạn có một tin nhấn trên " + _configuration.SiteName + "!  Xin vui lòng đăng nhập vào <a href='http://tieuhoc.net'>" + _configuration.SiteName +
+                "</a> để xem.<HR>";
 
                 SendEmail(s, "", "", sender.FirstName + " " + sender.LastName +
-                    " bạn có một tin nhắn " +
+                    " bạn có một tin nhắn từ " +
                     _configuration.SiteName + "!", message);
             }
         }
@@ -74,7 +75,45 @@ namespace Pes.Core.Impl
                 //else
                 //{
                 //      send email
-                    SendFriendInvitation(s, sender.FirstName, sender.LastName, friendInvitation.GUID.ToString(), Message);
+                SendFriendInvitation(s, sender.FirstName, sender.LastName, friendInvitation.GUID.ToString(), Message);
+                //send into mailbox
+                Message = sender.FirstName + " " + sender.LastName +
+          "Muốn kết bạn với bạn!<HR><a href=\"" + _configuration.RootURL +
+          "Friends/ConfirmFriendInSite.aspx?InvitationKey=" + friendInvitation.GUID.ToString() + "\">" + _configuration.RootURL +
+          "Friends/ConfirmFriendInSite.aspx?InvitationKey=" + friendInvitation.GUID.ToString() + "</a><HR>" + Message;
+                Messages m = new Messages();
+                m.Body = Message;
+                m.Subject = "Thư mời kết bạn";
+                m.CreateDate = DateTime.Now;
+                m.MessageTypeID = (int)MessageTypes.FriendRequest;
+                m.SentByAccountID = _userSession.CurrentUser.AccountID;
+                m.MessageID = 0;
+                m.Save();
+
+                Int64 messageID = m.MessageID;
+
+                MessageRecipient sendermr = new MessageRecipient();
+                sendermr.AccountID = _userSession.CurrentUser.AccountID;
+                sendermr.MessageFolderID = (int)MessageFolders.Sent;
+                sendermr.MessageRecipientTypeID = (int)MessageRecipientTypes.TO;
+                sendermr.MessageID = messageID;
+                sendermr.MessageStatusTypeID = (int)MessageStatusTypes.Unread;
+                sendermr.MessageRecipientID = 0;
+                sendermr.Save();
+
+                Account toAccount = Account.GetAccountByEmail(s);
+                if (toAccount != null)
+                {
+                    MessageRecipient mr = new MessageRecipient();
+                    mr.AccountID = toAccount.AccountID;
+                    mr.MessageFolderID = (int)MessageFolders.Inbox;
+                    mr.MessageID = messageID;
+                    mr.MessageRecipientTypeID = (int)MessageRecipientTypes.TO;
+                    mr.MessageRecipientID = 0;
+                    mr.MessageStatusTypeID = 1;
+                    mr.Save();
+                    //_email.SendNewMessageNotification(toAccount, toAccount.Email);
+                }
                 //}
                 resultMessage += "• " + s + "<BR>";
             }
@@ -90,7 +129,7 @@ namespace Pes.Core.Impl
             foreach (Match m in re.Matches(text))
             {
                 string email = m.ToString();
-                if(!emails.Contains(email))
+                if (!emails.Contains(email))
                     emails.Add(email);
             }
             return emails;
@@ -100,13 +139,14 @@ namespace Pes.Core.Impl
         public void SendFriendInvitation(string toEmail, string fromFirstName, string fromLastName, string GUID, string Message)
         {
             Message = fromFirstName + " " + fromLastName +
-            " bạn được mời gia nhập vào " + _configuration.SiteName + "!<HR><a href=\"" + _configuration.RootURL +
+            "đã mời gia nhập vào " + _configuration.SiteName + "!<HR><a href=\"" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + GUID + "\">" + _configuration.RootURL +
             "Friends/ConfirmFriendshipRequest.aspx?InvitationKey=" + GUID + "</a><HR>" + Message;
 
-            SendEmail(toEmail, "", "", fromFirstName + " " + fromLastName + 
-                " có một thư mời gia nhập vào " + 
+            SendEmail(toEmail, "", "", fromFirstName + " " + fromLastName +
+                " có một thư mời gia nhập vào " +
                 _configuration.SiteName + "!", Message);
+
         }
 
         public void SendPasswordReminderEmail(string To, string EncryptedPassword, string Username)
@@ -129,7 +169,7 @@ namespace Pes.Core.Impl
 
         public void SendEmail(string From, string Subject, string Message)
         {
-            MailMessage mm = new MailMessage(From,TO_EMAIL_ADDRESS);
+            MailMessage mm = new MailMessage(From, TO_EMAIL_ADDRESS);
             mm.Subject = Subject;
             mm.Body = Message;
 
@@ -138,12 +178,12 @@ namespace Pes.Core.Impl
 
         public void SendEmail(string To, string CC, string BCC, string Subject, string Message)
         {
-            MailMessage mm = new MailMessage(FROM_EMAIL_ADDRESS,To);
+            MailMessage mm = new MailMessage(FROM_EMAIL_ADDRESS, To);
 
-            if(!string.IsNullOrEmpty(CC))
+            if (!string.IsNullOrEmpty(CC))
                 mm.CC.Add(CC);
 
-            if(!string.IsNullOrEmpty(BCC))
+            if (!string.IsNullOrEmpty(BCC))
                 mm.Bcc.Add(BCC);
 
             mm.Subject = Subject;
@@ -158,7 +198,7 @@ namespace Pes.Core.Impl
             MailMessage mm = new MailMessage();
             foreach (string to in To)
             {
-                mm.To.Add(to);   
+                mm.To.Add(to);
             }
             foreach (string cc in CC)
             {
@@ -180,7 +220,7 @@ namespace Pes.Core.Impl
         {
             foreach (string to in To)
             {
-                MailMessage mm = new MailMessage(FROM_EMAIL_ADDRESS,to);
+                MailMessage mm = new MailMessage(FROM_EMAIL_ADDRESS, to);
                 mm.Subject = Subject;
                 mm.Body = Message;
                 mm.IsBodyHtml = true;

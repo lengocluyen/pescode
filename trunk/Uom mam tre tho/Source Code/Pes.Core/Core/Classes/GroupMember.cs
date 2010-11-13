@@ -36,6 +36,8 @@ namespace Pes.Core
 
         public static void DeleteGroupMembers(List<int> MembersToDelete, int GroupID)
         {
+
+            if (MembersToDelete.Count < 1) return;
                 IEnumerable<GroupMember> members =
                     GroupMember.All().Where(gm => MembersToDelete.Contains(gm.AccountID) && gm.GroupID == GroupID);
                 foreach (GroupMember i in members)
@@ -44,6 +46,7 @@ namespace Pes.Core
 
         public static void ApproveGroupMembers(List<int> MembersToApprove, int GroupID)
         {
+            if (MembersToApprove.Count < 1) return;
                 IEnumerable<GroupMember> members =
                     GroupMember.All().Where(gm => MembersToApprove.Contains(gm.AccountID) && gm.GroupID == GroupID);
                 foreach (GroupMember member in members)
@@ -54,6 +57,7 @@ namespace Pes.Core
 
         public static void PromoteGroupMembersToAdmin(List<int> MembersToPromote, int GroupID)
         {
+            if (MembersToPromote.Count < 1) return;
                 IEnumerable<GroupMember> members =
                     GroupMember.All().Where(gm => MembersToPromote.Contains(gm.AccountID) && gm.GroupID == GroupID);
                 foreach (GroupMember member in members)
@@ -65,6 +69,7 @@ namespace Pes.Core
 
         public static void DemoteGroupMembersFromAdmin(List<int> MembersToDemote, int GroupID)
         {
+            if (MembersToDemote.Count < 1) return;
                 IEnumerable<GroupMember> members =
                     GroupMember.All().Where(gm => MembersToDemote.Contains(gm.AccountID) && gm.GroupID == GroupID);
                 foreach (GroupMember member in members)

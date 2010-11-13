@@ -225,6 +225,19 @@ namespace Pes.Core.Impl
                 return result;
             }
         }
+        public Int64 FileID
+        {
+            get
+            {
+                Int64 result;
+                if (!string.IsNullOrEmpty(GetQueryStringValue("FileID")))
+                    result = Convert.ToInt64(GetQueryStringValue("FileID"));
+                else
+                    result = 0;
+
+                return result;
+            }
+        }
         public Int32 PageNumber
         {
             get
