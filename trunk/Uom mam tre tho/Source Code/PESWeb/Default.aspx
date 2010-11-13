@@ -6,57 +6,68 @@
 <%@ Register Src="~/UserControls/Tags.ascx" TagPrefix="PES" TagName="Tags" %>
 <%@ Register Src="~/UserControls/Ratings.ascx" TagPrefix="PES" TagName="Ratings" %>
 <%@ Register Src="~/UserControls/Friends.ascx" TagPrefix="PES" TagName="Friends" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="LeftContent" runat="server">
+    <div class="grid_4">
+        LeftContent
+    </div>
+</asp:Content>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
     <!--Rating-->
     <%--<PES:Ratings ID="Rating1" runat="server" SystemObjectID="5" SystemObjectRecordID="127"/>--%>
     <!--Tagd-->
     <%--<PES:Tags Display="ShowCloudAndTagBox" runat="server" SystemObjectID="5" SystemObjectRecordID="114" />--%>
-    <div class="grid_9 suffix_4">
-        <div class="page-heading">
-            <div class="yui-gc">
-                <div class="yui-u first">
-                    <div class="ui-block-link">
-                        <i class="ui-image icon-friend-req"></i>
-                        <h2>
-                           <%=Resources.PESResources.newsfeed %></h2>
-                    </div>
-                </div>
-                <%--<div class="yui-u align-right">
-                    <a href="#" class="current">Top News</a> <a href="#">Most Recent</a>
-                </div>--%>
-            </div>
+    <div class="grid_14">
+        <div id="title">
+            <h1>
+                <%=Resources.PESResources.newsfeed %></h1>
         </div>
-    </div>
-    <!-- MID COLUMN -->
-    <div class="grid_9">
-        <div class="status">
-            <asp:TextBox ID="txtStatus" Text="Bạn đang nghĩ gì?" runat="server" TextMode="MultiLine" />
-            <div class="yui-g">
-                <div class="yui-u first">
+        <!-- end title -->
+        <div class="clear">
+        </div>
+        <div id="composer">
+            <div id="c-mention">
+                <textarea>Bạn đang nghĩ gì?</textarea>
+            </div>
+            <div id="c-form" style="display: none">
+                <div id="c-input">
+                    <asp:TextBox ID="txtStatus" CssClass="focus" runat="server" TextMode="MultiLine" />
                 </div>
-                <div class="yui-u align-right">
-                    <asp:Button ID="btnAddStatus" runat="server" CssClass="button" Text="Chia sẽ" />
+                <div id="c-buttons" class="alignright">
+                    <asp:Button ID="btnAddStatus" runat="server" CssClass="submit" Text="Chia sẽ" />
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="block">
-                <asp:Repeater ID="repFilter" runat="server">
-                    <ItemTemplate>
-                        <div class="Alert">
-                            <asp:Label ID="lblMessage" runat="server" Text='<%# ((Alert)Container.DataItem).Message  %>'></asp:Label>
-                            <PES:Comments ID="HK" runat="server" SystemObjectRecordID='<%# ((Alert)Container.DataItem).AlertID  %>'
-                                SystemObjectID="7" />
-                        </div>
-                    </ItemTemplate>
-                    <SeparatorTemplate>
-                        <div class="AlertSeparator">
-                        </div>
-                    </SeparatorTemplate>
-                </asp:Repeater>
-                <%-- <asp:UpdatePanel ID="upFeeds" runat="server" RenderMode="Inline" UpdateMode="Conditional">
-                    <ContentTemplate>--%>
-                <asp:Panel runat="server">
+        <div class="clear">
+        </div>
+        <!-- MID COLUMN -->
+        <div id="post-container">
+            <div id="posts">
+                <div class="post-list">
+                    <asp:Repeater ID="repFilter" runat="server">
+                        <ItemTemplate>
+                            <div class="post" id='post-<%#Eval("AlertID")  %>'>
+                                <div class="post-gravatar">
+                                    <a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
+                                        <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("AccountID")%>"
+                                            width="50" height="50" class="avatar" />
+                                    </a>
+                                </div>
+                                <div class="post-text">
+                                    <%# Eval("Message")  %>
+                                    <div class="meta">
+                                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc hh:mm}")  %>
+                                        - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Bình luận</a>
+                                    </div>
+                                    <PES:Comments runat="server" SystemObject="Alerts" 
+                                    SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                        <SeparatorTemplate>
+                            <div class="clear">
+                            </div>
+                        </SeparatorTemplate>
+                    </asp:Repeater>
                     <asp:PlaceHolder ID="ph_exFeeds" runat="server" Visible="false">
                         <asp:Repeater ID="rp_exFead" runat="server">
                             <ItemTemplate>
@@ -72,20 +83,23 @@
                             </SeparatorTemplate>
                         </asp:Repeater>
                     </asp:PlaceHolder>
-                </asp:Panel>
-                <asp:Label ID="lblMessage" runat="server"></asp:Label>
-                <div style="float: right; margin-top: 5px;">
-                    <asp:ImageButton ID="bt_exFeeds" runat="server" ImageUrl="/images/more.jpg" />
                 </div>
-                <%-- </ContentTemplate>
-                    <Triggers>
-                        <asp:AsyncPostBackTrigger ControlID="bt_exFeeds" EventName="Click" />
-                    </Triggers>
-                </asp:UpdatePanel>--%>
             </div>
         </div>
+        <asp:Label ID="lblMessage" runat="server"></asp:Label>
+        <div style="float: right; margin-top: 5px;">
+            <asp:ImageButton ID="bt_exFeeds" runat="server" ImageUrl="/images/more.jpg" />
+        </div>
+        <!-- Navigation -->
+        <div class="navigation">
+            <div class="next">
+                <a href="#">Show Older Posts..</a>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
     </div>
-    <div class="grid_4">
+    <div class="grid_6">
         <div class="box">
             <PES:Friends runat="server" ID="friens" />
         </div>
@@ -95,11 +109,13 @@
             </h2>
             <div class="block-c">
                 <div class="ui-block-link">
-                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> <%=Resources.PESResources.friend %>
+                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong>
+                        <%=Resources.PESResources.friend %>
                         <%=Resources.PESResources.request %></span></a>
                 </div>
                 <div class="ui-block-link">
-                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong> <%=Resources.PESResources.friend %>
+                    <i class="ui-image icon-friend-req"></i><a href="#"><span><strong>2</strong>
+                        <%=Resources.PESResources.friend %>
                         <%=Resources.PESResources.request %></span></a>
                 </div>
             </div>
@@ -112,7 +128,7 @@
                 <div class="ui-block-content">
                     <i class="ui-image icon-friend-req"></i>
                     <div class="ui-content">
-                        <a href="#">Nhóm flychips </a> thành viên của DLU.
+                        <a href="#">Nhóm flychips </a>thành viên của DLU.
                     </div>
                 </div>
                 <div class="ui-block-content">
