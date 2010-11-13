@@ -7,7 +7,6 @@ namespace Pes.Core
 {
     public partial class SystemObject
     {
-
         public enum Names
         {
             Accounts = 1,
@@ -15,7 +14,8 @@ namespace Pes.Core
             Blogs = 3,
             BoardPosts = 4,
             Files = 5,
-            Groups = 6
+            Groups = 6,
+            Alerts = 7
         }
     }
 }
