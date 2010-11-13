@@ -26,7 +26,7 @@
                 <div class="ic-edit" style="display: none">
                   <%--  <a class="del15 confirm" url="/Services/DeleteComment" data='commentId-<%#Eval("CommentID")%>'>
                     </a>--%>
-                    <asp:HyperLink ID="lnkDel" runat="server" CssClass="del15 confirm" />
+                    <asp:HyperLink ID="lnkDel" runat="server" CssClass="del15 confirm" Visible="false" />
                 </div>
             </div>
         </ItemTemplate>

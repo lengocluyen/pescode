@@ -53,13 +53,14 @@
                                     </a>
                                 </div>
                                 <div class="post-text">
-                                    <%# Eval("Message")  %>
+                                    <p>
+                                        <%# Eval("Message")  %>
+                                    </p>
                                     <div class="meta">
                                         <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc hh:mm}")  %>
                                         - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Bình luận</a>
                                     </div>
-                                    <PES:Comments runat="server" SystemObject="Alerts" 
-                                    SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />
+                                    <PES:Comments runat="server" SystemObject="Alerts" SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />
                                 </div>
                             </div>
                         </ItemTemplate>

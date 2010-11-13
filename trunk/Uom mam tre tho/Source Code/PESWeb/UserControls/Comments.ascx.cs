@@ -40,10 +40,10 @@ namespace PESWeb.UserControls
                 Comment data = e.Item.DataItem as Comment;
                 HyperLink lnk = (HyperLink)e.Item.FindControl("lnkDel");
 
-                if (data.CommentByAccountID == 8)
+                if (_presenter.IsOwner(data.CommentByAccountID))
                 {
-                    lnk.Attributes["url"] = Page.ResolveClientUrl("~/Services/Service.asmx/DeleteComment/");
-                    lnk.Attributes["data"] = "commenId-" + data.CommentID;
+                    lnk.Attributes["url"] = Page.ResolveClientUrl("~/Services/Services.asmx/DeleteComment");
+                    lnk.Attributes["data"] = "commentId-" + data.CommentID;
                     lnk.Visible = true;
                 }
                 else

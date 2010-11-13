@@ -13,9 +13,10 @@ namespace PESWeb.UserControls
         private IComments _view;
         private IWebContext _webContext;
 
-        public CommentsPresenter() 
+        public CommentsPresenter()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
+
         }
 
         internal void Init(IComments view, bool IsPostBack)
@@ -27,9 +28,14 @@ namespace PESWeb.UserControls
                 _view.ShowCommentsBox(false);
         }
 
+        internal bool IsOwner(int CommentByAccountID)
+        {
+            return _webContext.CurrentUser.AccountID == CommentByAccountID;
+        }
+
         internal void LoadComments()
         {
-            _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID,_view.SystemObjectRecordID));
+            _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID));
         }
 
         internal void AddComment(string comment)
@@ -42,8 +48,8 @@ namespace PESWeb.UserControls
             c.SystemObjectID = _view.SystemObjectID;
             c.SystemObjectRecordID = _view.SystemObjectRecordID;
             Comment.SaveComment(c);
-         //  _view.ClearComments();
-           // LoadComments();
+            //  _view.ClearComments();
+            // LoadComments();
         }
     }
 }
