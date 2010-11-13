@@ -227,7 +227,8 @@ input.del11:hover,a.del11:hover {
 }
 .post-text {
     float: right;
-    width: 490px;
+   /* width: 490px;*/
+   width:400px;
 }
 
 .post-text label input {
