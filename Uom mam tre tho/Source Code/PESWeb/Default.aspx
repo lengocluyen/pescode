@@ -53,9 +53,12 @@
                                     </a>
                                 </div>
                                 <div class="post-text">
-                                    <p>
+                                    <h2 class="title">
+                                            <%# Eval("AccountID")%> Cuong Do
+                                    </h2>
+                                    <div class="body">
                                         <%# Eval("Message")  %>
-                                    </p>
+                                    </div>
                                     <div class="meta">
                                         <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc HH:mm}")  %>
                                         - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Cảm nhận</a>
