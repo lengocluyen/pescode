@@ -1,0 +1,25 @@
+﻿{#foreach $T as data}
+<div class="index-comment">
+    <div class="ic-avatar">
+        <a href='profiles/profile.aspx?AccountID={$T.data.CommentByAccountID}'>
+            <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID={$T.data.CommentByAccountID}"
+                class="avatar" />
+        </a>
+    </div>
+    <div class="ic-text">
+        <div class="ic-meta ic-author">
+            <a href='profiles/profile.aspx?AccountID={$T.data.CommentByAccountID}' class="url">
+                {$T.data.CommentByUsername}</a>
+        </div>
+        <div class="ic-content">
+            {$T.data.Body}
+        </div>
+        <div class="ic-meta ic-date">
+         {$T.data.CreateDateString}
+        </div>
+    </div>
+    <div class="ic-edit" style="display: none">
+        <a class="del15 confirm"></a>
+    </div>
+</div>
+{#/for}
