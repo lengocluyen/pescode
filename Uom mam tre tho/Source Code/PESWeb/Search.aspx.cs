@@ -31,17 +31,17 @@ namespace PESWeb
 
             if (string.IsNullOrEmpty(_webContext.SearchText))
             {
-                lblSearchTerm.Text = "Please use the search box to the left!";
+                lblSearchTerm.Text = "Tìm kiếm ở ô bên trái!";
             }
             else
             {
                 if (!IsPostBack)
-                    lblSearchTerm.Text = "You searched for: " + _webContext.SearchText;
+                    lblSearchTerm.Text = "Bạn muốn tìm: " + _webContext.SearchText;
 
                 if (_webContext.SearchText.Length > 3)
                     _presenter.PerformSearch(_webContext.SearchText);
                 else
-                    lblSearchTerm.Text += " <BR><BR> Your search must contain more than 3 characters!";
+                    lblSearchTerm.Text += " <BR><BR> Phải có ít nhất 3 ký tự!";
             }
         }
 

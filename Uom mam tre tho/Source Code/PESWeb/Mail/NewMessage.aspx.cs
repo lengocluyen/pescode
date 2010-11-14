@@ -35,7 +35,7 @@ namespace PESWeb.Mail
         {
             txtSubject.Text = "RE: " + message.Message.Subject;
             txtTo.Text = message.Sender.Username;
-            txtMessage.Value = "<BR><BR><HR>Sent On: " + message.Message.CreateDate.ToString() + "<BR>Subject: " + message.Message.Subject + "<BR>Message: " + message.Message.Body;
+            txtMessage.Value = "<BR><BR><HR>Gửi từ ngày: " + message.Message.CreateDate.ToString() + "<BR>Tiêu đề: " + message.Message.Subject + "<BR>Nội dung: " + message.Message.Body;
         }
 
         public void LoadTo(string Username)

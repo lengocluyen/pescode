@@ -56,8 +56,12 @@ namespace PESWeb.Groups
             {
                 BoardPost.DeletePostsByForumID(forum.ForumID);
                 GroupForum.DeleteGroupForum(forum.ForumID, GroupID);
-                BoardForum.DeleteForum(forum);
+                var list1 = GroupForum.Find(g => g.GroupID == GroupID).ToList();
+                foreach (GroupForum i in list1) GroupForum.Delete(i.GroupForumsID);
+                //BoardForum.DeleteForum(forum);
             }
+            var list = GroupToGroupType.Find(g => g.GroupID == GroupID).ToList();
+            foreach (GroupToGroupType i in list) GroupToGroupType.Delete(i.GroupToGroupTypeID);
             GroupMember.DeleteAllGroupMembersForGroup(GroupID);
             Group.DeleteGroup(GroupID);
             LoadData();

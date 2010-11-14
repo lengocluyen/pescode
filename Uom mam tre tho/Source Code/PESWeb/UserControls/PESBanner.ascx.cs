@@ -13,10 +13,10 @@ namespace PESWeb.UserControls
     {
         string _webURL;
 
-        public string WebURL
+        public string webURL
         {
-            get { return _webURL; }
-            set { _webURL = value; }
+            get { return "webURL=" + _webContext.RootUrl; }
+            set { _webURL = "webURL=" + _webContext.RootUrl; }
         }
         private IWebContext _webContext;
         public PESBanner()
@@ -25,9 +25,6 @@ namespace PESWeb.UserControls
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            _webContext = ObjectFactory.GetInstance<IWebContext>();
-            _webURL = "webURL=" + _webContext.RootUrl;
-            this.slBanner.InitParameters = _webURL;
         }
     }
 }

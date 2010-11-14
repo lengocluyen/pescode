@@ -642,5 +642,9 @@ td.im-detail {
 .alignright {
     float: right;
 }
+.widthline
+{
+	line-height:15px;
+	}
 
 

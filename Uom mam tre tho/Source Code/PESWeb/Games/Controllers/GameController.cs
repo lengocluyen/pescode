@@ -10,7 +10,7 @@ using PESWeb.ActionFilter;
 
 namespace PESWeb.Controllers
 {
-    [UserAuthorize()]
+    //[UserAuthorize()]
     public class GameController : ApplicationController
     {
         private IGameService _gameRepository;
