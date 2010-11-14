@@ -28,11 +28,12 @@ namespace PESWeb.Friends
                 pdProfileDisplay.LoadDisplay(((Account)e.Item.DataItem));
             }
         }
-
+        
         public void LoadDisplay(List<Account> Accounts)
         {
             repFriends.DataSource = Accounts;
             repFriends.DataBind();
+            lbCountFriends.Text = Accounts.Count.ToString();
         }
     }
 }

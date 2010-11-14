@@ -2,20 +2,25 @@
     AutoEventWireup="true" CodeBehind="ManageGroup.aspx.cs" Inherits="PESWeb.Groups.ManageGroup" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Groups" runat="server">
-<div style="padding-left:10px;">
-      <ul class="menu1" style="margin-top:8px;">
-        <li><a href="/Groups/ManageGroup.aspx">
-            <img src="/images/group.gif" alt="" />Tạo nhóm mới</a></li>
-        <li><a href="/Groups/mygroups.aspx">
-            <img src="/images/group.gif" alt="" />Nhóm của tôi</a></li>
-    </ul>
-</div>
+    <div style="padding-left: 10px;">
+        <ul class="menu1" style="margin-top: 8px;">
+            <li><a href="/Groups/ManageGroup.aspx">
+                <img src="/images/group.gif" alt="" />Tạo nhóm mới</a></li>
+            <li><a href="/Groups/mygroups.aspx">
+                <img src="/images/group.gif" alt="" />Nhóm của tôi</a></li>
+        </ul>
+    </div>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="Content">
-    <div class="grid_10">
-        <div class="page-heading hr">
-            <h2>
-                Quản Lý Nhóm</h2>
+    <div class="grid_16">
+        <div id="title">
+            <h1>
+                Quản Lý Nhóm</h1>
+            <div class="alignright">
+                <a href="#" class="button gray">Tạo nhóm</a>
+            </div>
+        </div>
+        <div class="clear">
         </div>
         <div class="divContainerRow">
             <asp:Label ID="lblMessage" ForeColor="Red" runat="server"></asp:Label>
@@ -46,7 +51,10 @@
             <div class="divContainerCell">
                 &nbsp;</div>
             <textarea id="txtDescription" name="txtDescription" cols="92" rows="20" runat="server" />
-            <div class="divContainerCell"><div style="font-size:10px;color:#FF0000;"></div>Được công khai.</div>
+            <div class="divContainerCell">
+                <div style="font-size: 10px; color: #FF0000;">
+                </div>
+                Được công khai.</div>
             <div class="divContainerCellHeader">
                 Nội Dung:<asp:RequiredFieldValidator runat="server" ControlToValidate="txtBody" ErrorMessage="*"
                     ForeColor="Red"></asp:RequiredFieldValidator></div>
@@ -54,7 +62,10 @@
                 &nbsp;</div>
             <div class="divContainerCell">
                 <textarea id="txtBody" name="txtBody" cols="92" rows="20" runat="server" />
-                <div class="divContainerCell"><div style="font-size:10px;color:#FF0000;">Chỉ thành viên mới thấy nội dung này.</div></div>
+                <div class="divContainerCell">
+                    <div style="font-size: 10px; color: #FF0000;">
+                        Chỉ thành viên mới thấy nội dung này.</div>
+                </div>
                 <div class="divContainerCellHeader">
                     Loại Groups:</div>
                 <div class="divContainerCell">
@@ -73,7 +84,6 @@
                     runat="server" />
             </div>
         </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 

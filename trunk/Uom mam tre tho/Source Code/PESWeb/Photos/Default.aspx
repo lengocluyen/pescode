@@ -1,8 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true"
     CodeBehind="Default.aspx.cs" Inherits="PESWeb.Photos.Default" %>
 
+<%@ Register Src="~/UserControls/Friends.ascx" TagPrefix="PES" TagName="Friends" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_18">
+    <div class="grid_15">
         <div id="title">
             <h1>
                 Xem Album</h1>
@@ -18,7 +19,7 @@
         <div class="clear">
         </div>
         <div id="photos">
-            <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
+            <asp:ListView ID="lvAlbums" GroupItemCount="3" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
                 <LayoutTemplate>
                     <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
                 </LayoutTemplate>
@@ -30,6 +31,8 @@
                     </table>
                 </GroupTemplate>
                 <ItemTemplate>
+                    <td style="width: 10px;">
+                    </td>
                     <td>
                         <div class="pg-wrapper">
                             <asp:HyperLink ID="linkGallery" runat="server" /></div>
@@ -49,6 +52,8 @@
                         <asp:Literal Visible="false" ID="litFullPath" Text='<%#((Folder)Container.DataItem).FullPathToCoverImage %>'
                             runat="server"></asp:Literal>
                     </td>
+                    <td style="width: 10px;">
+                    </td>
                 </ItemTemplate>
                 <EmptyDataTemplate>
                     <%=Resources.PESResources.notImageUpload%>
@@ -56,4 +61,5 @@
             </asp:ListView>
         </div>
     </div>
+    <PES:Friends runat="server" ID="friens" />
 </asp:Content>

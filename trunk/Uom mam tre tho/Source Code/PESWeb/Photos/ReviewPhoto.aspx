@@ -4,7 +4,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="MainContent" runat="Server">
-    <div class="grid_18">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Album Name</h1>

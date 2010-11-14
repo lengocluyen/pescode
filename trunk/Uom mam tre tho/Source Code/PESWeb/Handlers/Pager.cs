@@ -315,7 +315,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "go" in the pager control.
         /// Default value: go
         /// </summary>
-        private string _GO = "go";
+        private string _GO = "đến";
         [Category("Globalization")]
         public string GoClause
         {
@@ -339,7 +339,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "from" in the pager control.
         /// Default value: From
         /// </summary>
-        private string _FROM = "From";
+        private string _FROM = "từ";
         [Category("Globalization")]
         public string FromClause
         {
@@ -351,7 +351,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "page" in the pager control.
         /// Default value: Page
         /// </summary>
-        private string _PAGE = "Page";
+        private string _PAGE = "Trang";
         [Category("Globalization")]
         public string PageClause
         {
@@ -375,7 +375,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "Showing Results" in the pager control.
         /// Default value: Showing Results
         /// </summary>
-        private string _SHOWING_RESULT = "Showing Results";
+        private string _SHOWING_RESULT = "đang...";
         [Category("Globalization")]
         public string ShowingResultClause
         {
@@ -387,7 +387,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "Show Result" in the pager control.
         /// Default value: Show Result
         /// </summary>
-        private string _SHOW_RESULT = "Show Result";
+        private string _SHOW_RESULT = "Kết quả";
         [Category("Globalization")]
         public string ShowResultClause
         {
@@ -399,7 +399,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "to First Page" in the pager control.
         /// Default value: to First Page
         /// </summary>
-        private string _BACK_TO_FIRST = "to First Page";
+        private string _BACK_TO_FIRST = "Trang đầu";
         [Category("Globalization")]
         public string BackToFirstClause
         {
@@ -411,7 +411,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "to Last Page" in the pager control.
         /// Default value: to Last Page
         /// </summary>
-        private string _GO_TO_LAST = "to Last Page";
+        private string _GO_TO_LAST = "Trang cuối";
         [Category("Globalization")]
         public string GoToLastClause
         {
@@ -423,7 +423,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "Back to Page" in the pager control.
         /// Default value: Back to Page
         /// </summary>
-        private string _BACK_TO_PAGE = "Back to Page";
+        private string _BACK_TO_PAGE = "Trở lại";
         [Category("Globalization")]
         public string BackToPageClause
         {
@@ -435,7 +435,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "Next to Page" in the pager control.
         /// Default value: Next to Page
         /// </summary>
-        private string _NEXT_TO_PAGE = "Next to Page";
+        private string _NEXT_TO_PAGE = "Trang kế";
         [Category("Globalization")]
         public string NextToPageClause
         {
@@ -716,7 +716,7 @@ namespace PESWeb
             System.Text.RegularExpressions.Regex regEx;
             Uri theURL = System.Web.HttpContext.Current.Request.Url;
             bool hasQueryStringParam = !string.IsNullOrEmpty(System.Web.HttpContext.Current.Request.ServerVariables["QUERY_STRING"]) ? true : false;
-            string tempHyperlink = "<a href=\"{0}\">page {1}</a>";
+            string tempHyperlink = "<a href=\"{0}\">Trang {1}</a>";
             string tempDiv = "<div style=\"display:none;\">{0}</div>";
             StringBuilder sb = new StringBuilder();
 
