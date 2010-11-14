@@ -219,14 +219,14 @@ if (typeof jQuery == "function") {
             return JSON.stringify({ 'data': data });
         }
 
-        function CreateTable(msg) {
-            $('#tbl').setTemplateURL('../Template/TemplateEmployee.htm',
-                         null, { filter_data: false });
-            $('#tbl').processTemplate(msg);
-        }
-
         $(".addcomment").click(function() {
             $this = $(this);
+            // disable comment input
+            $textarea = $this.parent().prev().children(".focus");
+            if ($textarea.attr("disabled") == "disabled")
+                return;
+            $textarea.attr("disabled", "disabled");
+
             $.ajax({
                 type: "POST",
                 url: "Services/Services.asmx/Test",
@@ -241,14 +241,17 @@ if (typeof jQuery == "function") {
                             null, { filter_data: false });
                         $temp.processTemplate(msg.d);
                         $container.append($temp.html());
-
+                        $textarea.val("");
+                        $textarea.blur();
                     }
                     else {
                         jAlert('error', msg.d, 'Thông báo lỗi');
                     }
+                    $textarea.attr("disabled", "");
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     jAlert('error', textStatus, 'Thông báo');
+                    $textarea.attr("disabled", "");
                 }
             });
             return false;
