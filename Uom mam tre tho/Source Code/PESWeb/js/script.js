@@ -1,4 +1,7 @@
-﻿function fixURL() {
+﻿
+
+
+function fixURL() {
     parts = window.location.href.split("#/");
     if (parts.length > 1) {
         window.location.href = parts[parts.length - 1];
@@ -14,7 +17,7 @@ function changeURL(href) {
 if (typeof jQuery == "function") {
     jQuery(document).ready(function($) {
         fixURL();
-        $("#post-container").css("display", "block");
+        //  $("#post-container").css("display", "block");
         init(jQuery, "body");
     });
 
@@ -32,24 +35,6 @@ if (typeof jQuery == "function") {
         //            return false;
         //        });
 
-<<<<<<< .mine
-=======
-        function commentform(post_id) {
-            if (typeof (post_id) != "undefined") {
-                // an textarea Write comment...
-                $(this).parent().next().next().css("display", "none");
-                // hien thi comment form tuong ung
-                $("#commentform-" + post_id).css("display", "block");
-                // dat con tro vao textbox
-                $("#commentform-" + post_id + " .focus:first").focus();
-            } else {
-                $(".respondtext").parent().css("display", "none");
-                $("div#comment_form").css("display", "block");
-                $("#commentform .focus:first").focus();
-            }
-        }
-
->>>>>>> .r49
         $("a.respondlink").click(function() {
             // lay id cua bai post tu sau dau gach ==> post-id
             post_id = $(this).attr('id').split("-")[1];
@@ -72,10 +57,10 @@ if (typeof jQuery == "function") {
 
         $(".commentcontainer .index-comment").hover(
               function() {
-                $(this).children(".ic-edit").css("display","block");
+                  $(this).children(".ic-edit").css("display", "block");
               },
               function() {
-                $(this).children(".ic-edit").css("display", "none");
+                  $(this).children(".ic-edit").css("display", "none");
               }
         );
 
@@ -181,7 +166,6 @@ if (typeof jQuery == "function") {
                 $('#c-form').css("display", "none");
             }
         });
-<<<<<<< .mine
 
         function parseData(Object) {
             try {
@@ -224,8 +208,8 @@ if (typeof jQuery == "function") {
             });
             return false;
         };
-=======
->>>>>>> .r49
+
+        $(".confirm").click(ajaxDelete);
 
         function createJsonData(id) {
             var data = {};
@@ -234,7 +218,7 @@ if (typeof jQuery == "function") {
             });
             return JSON.stringify({ 'data': data });
         }
-        
+
         function CreateTable(msg) {
             $('#tbl').setTemplateURL('../Template/TemplateEmployee.htm',
                          null, { filter_data: false });
@@ -257,7 +241,7 @@ if (typeof jQuery == "function") {
                             null, { filter_data: false });
                         $temp.processTemplate(msg.d);
                         $container.append($temp.html());
-                        
+
                     }
                     else {
                         jAlert('error', msg.d, 'Thông báo lỗi');
@@ -272,4 +256,3 @@ if (typeof jQuery == "function") {
 
     }
 }
-
