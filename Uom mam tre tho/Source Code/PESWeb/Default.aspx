@@ -53,14 +53,15 @@
                                     </a>
                                 </div>
                                 <div class="post-text">
-                                    <h2 class="title">
-                                            <%# Eval("AccountID")%> Cuong Do
-                                    </h2>
-                                    <div class="body">
+                                   <%-- <h2 class="title"><a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
+                                       Cuong Do
+                                        </a>
+                                    </h2>--%>
+                                   <%-- <div class="body">--%>
                                         <%# Eval("Message")  %>
-                                    </div>
+                                   <%-- </div>--%>
                                     <div class="meta">
-                                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc HH:mm}")  %>
+                                        <%# Eval("CreateDate", "{0:dd-MM-yyyy lúc HH:mm}")  %>
                                         - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Cảm nhận</a>
                                     </div>
                                     <PES:Comments runat="server" SystemObject="Alerts" SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />
