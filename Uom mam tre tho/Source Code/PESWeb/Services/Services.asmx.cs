@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Services;
 using System.Web.Script.Services;
 using Pes.Core;
+using StructureMap;
 
 namespace PESWeb.Services
 {
@@ -19,13 +20,26 @@ namespace PESWeb.Services
     [ScriptService]
     public class Services : System.Web.Services.WebService
     {
-
         [WebMethod]
         public string DeleteComment(int commentId)
         {
             if (IsValid())
                 return Comment.Delete(commentId) > 0 ? Boolean.TrueString : Boolean.FalseString;
             return Boolean.FalseString;
+        }
+        [WebMethod(EnableSession = true)]
+        public List<Comment> Test(Comment data)
+        {
+            if (IsValid())
+            {
+                IUserSession userSession = ObjectFactory.GetInstance<IUserSession>();
+                data.CommentByAccountID = userSession.CurrentUser.AccountID;
+                data.CommentByUsername = userSession.CurrentUser.Username;
+                data.CreateDate = DateTime.Now;
+                long commentID = Comment.SaveComment(data);
+                return Comment.Find(x => x.CommentID == commentID);
+            }
+            return null;
         }
 
         private bool IsValid()
