@@ -167,29 +167,14 @@ if (typeof jQuery == "function") {
             }
         });
 
-        function parseData(Object) {
-            try {
-                var array = Object.attr('data').split("-");
-                var url = Object.attr('url');
-                return {
-                    'data': "{" + array[0] + ":\"" + array[1] + "\"}",
-                    'url': url
-                };
-            }
-            catch (ex) {
-                return "";
-            }
-        };
-
         function ajaxDelete() {
             $this = $(this);
-            var params = parseData($this);
             jConfirm('Bạn có chắc chắn muốn xóa hay không?', 'Xác nhận', function(r) {
                 if (r == true) {
                     $.ajax({
                         type: "POST",
-                        url: params.url,
-                        data: params.data,
+                        url: "/Services/Services.asmx/DeleteComment",
+                        data: "{CommentID:\"" + $this.attr('data') + "\"}",
                         contentType: "application/json; charset=utf-8",
                         dataType: "json",
                         success: function(msg) {
@@ -218,7 +203,43 @@ if (typeof jQuery == "function") {
             });
             return JSON.stringify({ 'data': data });
         }
+        
+        $(".viewmore").click(function() {
+            $this = $(this);
+            // disable comment input
+            $textarea = $this.parent().prev().children(".focus");
+            if ($textarea.attr("disabled") == "disabled")
+                return;
+            $textarea.attr("disabled", "disabled");
 
+            $.ajax({
+                type: "POST",
+                url: "Services/Services.asmx/MoreComments",
+                data: createJsonData($this.attr('container')),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(msg) {
+                    if (msg.d.length > 0) {
+                        $container = $this.parent().parent();
+                        $temp = $("<div></div>");
+                        $temp.setTemplateURL('Template/TemplateComment.htm',
+                            null, { filter_data: false });
+                        $temp.processTemplate(msg.d);
+                        $container.prepend($temp.html());
+                    }
+                    else {
+                        jAlert('error', msg.d, 'Thông báo lỗi');
+                    }
+                    $textarea.attr("disabled", "");
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    jAlert('error', textStatus, 'Thông báo');
+                    $textarea.attr("disabled", "");
+                }
+            });
+            return false;
+        });
+        
         $(".addcomment").click(function() {
             $this = $(this);
             // disable comment input

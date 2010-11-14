@@ -10,7 +10,8 @@ namespace PESWeb.UserControls
     {
         int SystemObjectID { get; set; }
         long SystemObjectRecordID { get; set; }
-        void ShowCommentsBox(bool IsVisible);
+        void ShowViewComment(bool Value);
         void LoadComments(List<Comment> comments);
+        void ShowCommentInput(bool Value);
     }
 }

@@ -21,10 +21,10 @@ namespace PESWeb.Services
     public class Services : System.Web.Services.WebService
     {
         [WebMethod]
-        public string DeleteComment(int commentId)
+        public string DeleteComment(int CommentID)
         {
             if (IsValid())
-                return Comment.Delete(commentId) > 0 ? Boolean.TrueString : Boolean.FalseString;
+                return Comment.Delete(CommentID) > 0 ? Boolean.TrueString : Boolean.FalseString;
             return Boolean.FalseString;
         }
         [WebMethod(EnableSession = true)]
@@ -40,6 +40,13 @@ namespace PESWeb.Services
                 return Comment.Find(x => x.CommentID == commentID);
             }
             return null;
+        }
+        [WebMethod(EnableSession = true)]
+        public List<Comment> MoreComments(int SystemObjectID, long SystemObjectRecordID)
+        {
+            if (IsValid())
+                return Comment.GetMoreCommentsBySystemObject(SystemObjectID, SystemObjectRecordID);
+            return new List<Comment>();
         }
 
         private bool IsValid()

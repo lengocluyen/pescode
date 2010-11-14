@@ -23,6 +23,15 @@ namespace PESWeb.UserControls {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnlMore;
         
         /// <summary>
+        /// lnkMore control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkMore;
+        
+        /// <summary>
         /// repComment control.
         /// </summary>
         /// <remarks>
@@ -32,21 +41,12 @@ namespace PESWeb.UserControls {
         protected global::System.Web.UI.WebControls.Repeater repComment;
         
         /// <summary>
-        /// txtComment control.
+        /// pnlCommentInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtComment;
-        
-        /// <summary>
-        /// btnAddComment control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddComment;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pnlCommentInput;
     }
 }
