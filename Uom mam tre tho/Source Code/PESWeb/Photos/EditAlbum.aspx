@@ -2,7 +2,7 @@
     CodeBehind="EditAlbum.aspx.cs" Inherits="PESWeb.Photos.EditAlbum" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_18">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Sửa Album Ảnh</h1>

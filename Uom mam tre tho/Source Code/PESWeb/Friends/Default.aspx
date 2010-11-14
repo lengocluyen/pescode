@@ -7,11 +7,11 @@
     <div class="grid_14">
         <div id="title">
             <h1>
-                Bạn bè</h1>
+                Danh sách bạn bè</h1>
         </div>
         <div class="clear">
         </div>
-        <div class="toolbar">
+       <%-- <div class="toolbar">
             <div class="alignleft">
                 <select>
                     <option>Tat ca ban be</option>
@@ -29,7 +29,7 @@
             </div>
             <div class="clear">
             </div>
-        </div>
+        </div>--%>
         <div id="friend-container">
             <div id="friends">
                 <asp:Repeater ID="repFriends" runat="server" OnItemDataBound="repFriends_ItemDataBound">
@@ -41,12 +41,12 @@
         </div>
         <div class="f-pager">
             <div class="alignleft">
-                <span class="gray">Bạn có <asp:Label ID="lbCountFriends" runat="server" Text="<%#this.repFriends.Items.Count %>"></asp:Label> bạn bè</span>
+                <span class="gray">Bạn có <asp:Label ID="lbCountFriends" runat="server"></asp:Label> bạn bè</span>
             </div>
             
-            <div class="alignright">
+         <%--   <div class="alignright">
                 <a href="#">< Trước</a> | <a href="#">Sau ></a>
-            </div>
+            </div>--%>
             <div class="clear">
             </div>
         </div>

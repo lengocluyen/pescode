@@ -653,4 +653,177 @@ td.im-detail {
 	line-height:15px;
 	}
 
+/*header*/
+.BoxHeader
+{
+	height: 190px;
+	width: 100%;
+	background-image: url(../ClientBin/Banner/BannerPesBack.png);
+	background-repeat: repeat-x;
+}
+.logo
+{
+	float: left; padding: 0px; height: 30px; border-top: solid 1px #FFFFFF;
+}
+#header
+{
+	height: 205px;
+	background: url(../images/Studyinghome.jpg) no-repeat center top;
+	padding: 10px auto;
+}
+.PushDown
+{
+	margin-top:-30px;
+	position:relative;
+	z-index:100;
+}
+.top
+{
+	background: #4ca707;
+	height: 28px;
+	padding-right: 3px;
+	border-left: solid 1px #F1f1f1;
+	border-right: solid 1px #F1f1f1;
+	border-top: solid 1px #F1f1f1;
+}
+.block-search
+{
+	float: left;
+	background: #fff;
+	padding: 3px 0px 0 0px;
+	height: 17px;
+	width: 99%;
+	margin-top: 4px;
+	border: solid 1px #1d6e1f;
+}
+.block-search input.button
+{
+	float: right;
+	background: url(../images/search.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	cursor: pointer;
+}
+.btSearch
+{
+	float: right;
+	background: url(../images/search.gif) no-repeat;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	cursor: pointer;
+}
+.block-search input.text
+{
+	float: left;
+	border: 0;
+	font-size: 11px;
+	width: 88%;
+	padding: 1px 0 0 5px;
+	font-family: Tahoma,Arial,Sans-Serif;
+}
+.friendBox
+{
+	width:62px;height:90px;float: right;text-align:center;
+}
+.friendName{margin-left:-6px;}
+/* Blogs */
+.blogsList
+{
+	padding: 10px;
+}
+.blogsList li
+{
+	display: inline;
+	width: 200px;
+	height: 200px;
+	float: left;
+	padding: 10px;
+}
+.blogsTitle
+{
+	font-weight: bold;
+}
+.blogsAuthor, .blogsLocation, .blogsDescription
+{
+	font-size: 12px;
+}
+.blogsActionLink
+{
+	font-size: 10px;
+}
+/* common style */
+.divContainer
+{
+	width: 90%;
+	margin-bottom: 1em;
+}
+.divContainerBox
+{
+	border: solid 1px #a3bdef;
+	background-color: #ffffff;
+}
+.divContainerRow
+{
+	text-align: left;
+	float: none;
+	padding: 5px;
+}
+.divContainerCell
+{
+	display: block;
+	text-align: left;
+}
+.divContainerFooter
+{
+	text-align: right;
+}
+.divContainerTitle
+{
+	margin-bottom: 5px;
+	background-color: #FFFFFF;
+	border-bottom: solid 1px #a3bdef;
+	border-top: solid 1px #5c76a4;
+	font-weight: bold;
+	text-align: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+.divContainerCellHeader
+{
+	display: block;
+	height: 100%;
+	padding-right: 5px;
+	width: 150px;
+	text-align: right;
+	font-weight: bold;
+	float: left;
+}
+.divInnerRowHeader
+{
+	text-align: right;
+	width: 100px;
+	font-weight: bold;
+	float: left;
+	padding-right: 5px;
+}
+.divInnerRowCell
+{
+	width: 100%;
+	padding-left: 5px;
+}
+.divContainerHelpText
+{
+	color: #777777;
+	font-weight: normal;
+}
+.divContainerSeparator
+{
+	border-top: solid 1px #9ae029;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.textJustify{text-align:justify;}
 

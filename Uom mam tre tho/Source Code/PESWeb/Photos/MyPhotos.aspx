@@ -2,26 +2,31 @@
     CodeBehind="MyPhotos.aspx.cs" Inherits="PESWeb.Photos.MyPhotos" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_18">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Ảnh của tôi</h1>
+            <div class="alignright">
+                <a href="#" class="button gray">Đăng ảnh</a>
+            </div>
         </div>
         <div class="clear">
         </div>
         <div id="photos">
             <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
                 <LayoutTemplate>
-                   <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
+                    <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
                 </LayoutTemplate>
                 <GroupTemplate>
-                 <table class="photo-grid">
+                    <table class="photo-grid">
                         <tr>
                             <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                         </tr>
                     </table>
                 </GroupTemplate>
                 <ItemTemplate>
+                    <td style="width: 25px;">
+                    </td>
                     <td>
                         <asp:HyperLink CssClass="albumsActionLink" ID="linkEditAlbum" NavigateUrl="~/Photos/EditAlbum.aspx"
                             Text="Chỉnh sửa" runat="server"></asp:HyperLink>
@@ -42,6 +47,8 @@
                         <asp:Literal Visible="false" ID="litFolderID" Text='<%#((Folder)Container.DataItem).FolderID.ToString() %>'
                             runat="server"></asp:Literal>
                     </td>
+                    <%--<td style="width: 10px;">
+                    </td>--%>
                 </ItemTemplate>
                 <EmptyDataTemplate>
                     Bạn hiện không có hình ảnh nào!

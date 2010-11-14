@@ -45,13 +45,6 @@ namespace PESWeb.Photos
                 HyperLink linkGallery = e.Item.FindControl("linkGallery") as HyperLink;
                 Label lable = e.Item.FindControl("alCountphoto") as Label;
                 lable.Text = File.GetFilesByFolderID(long.Parse(litFolderID.Text)).Count.ToString();
-                //Label lblDescription = e.Item.FindControl("lblDescription") as Label;
-                //if (lblDescription.Text.Length > 150)
-                //{
-                //    lblDescription.Text = lblDescription.Text.Substring(0, 149);
-                //    lblDescription.Text += "...";
-                //}
-                
                 linkAuthor.NavigateUrl = "~/" + linkAuthor.Text;
                 linkAuthor.Text = "Người đăng - " + linkAuthor.Text;
                 linkGallery.NavigateUrl = "~/Photos/ViewAlbum.aspx?AlbumID=" + litFolderID.Text;

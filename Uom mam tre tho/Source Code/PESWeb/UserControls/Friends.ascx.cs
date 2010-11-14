@@ -9,11 +9,11 @@ using StructureMap;
 
 namespace PESWeb.UserControls
 {
-    public partial class Friends : System.Web.UI.UserControl,IFriends
+    public partial class Friends : System.Web.UI.UserControl, IFriends
     {
         protected IConfiguration _config;
         public int numpage;
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             _userSession = ObjectFactory.GetInstance<IUserSession>();
@@ -42,17 +42,29 @@ namespace PESWeb.UserControls
             }
             catch
             {
-                return;   
+                return;
             }
-            
+
         }
 
         protected void repFriends_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                ProfileDisplay pdProfileDisplay = e.Item.FindControl("pdProfileDisplay") as ProfileDisplay;
-                pdProfileDisplay.LoadDisplay(((Account)e.Item.DataItem));
+                //ProfileDisplay pdProfileDisplay = e.Item.FindControl("pdProfileDisplay") as ProfileDisplay;
+                //pdProfileDisplay.LoadDisplay(((Account)e.Item.DataItem));
+                Image imgAvatar = e.Item.FindControl("imgAvatar") as Image;
+                //LinkButton ibDelete = e.Item.FindControl("ibDelete") as LinkButton;
+                Label lblName = e.Item.FindControl("lblName") as Label;
+
+                Account acc = e.Item.DataItem as Account;
+                //ibDelete.Attributes.Add("onclick", "javascript:return confirm('Bạn có chắc chắn muốn xóa người bạn này?')");
+                //ibDelete.Attributes.Add("FriendsID", acc.AccountID.ToString());
+
+                imgAvatar.ImageUrl += "?AccountID=" + acc.AccountID.ToString();
+
+                lblName.Text = acc.LastName + " " + acc.FirstName;
+
             }
         }
         public void LoadAccounts(List<Account> list)
@@ -66,9 +78,9 @@ namespace PESWeb.UserControls
             {
                 if (FriendsPresenter.currentPage <= 0)
                 {
-                    FriendsPresenter.currentPage = numpage-1;
+                    FriendsPresenter.currentPage = numpage - 1;
                 }
-                else if (FriendsPresenter.currentPage >= numpage-1)
+                else if (FriendsPresenter.currentPage >= numpage - 1)
                     FriendsPresenter.currentPage = 0;
                 else
                     FriendsPresenter.currentPage--;
@@ -79,7 +91,7 @@ namespace PESWeb.UserControls
         {
             if (numpage > 1)
             {
-                if (FriendsPresenter.currentPage >= numpage-1)
+                if (FriendsPresenter.currentPage >= numpage - 1)
                     FriendsPresenter.currentPage = 0;
                 else
                     FriendsPresenter.currentPage++;
