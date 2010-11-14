@@ -36,7 +36,10 @@ namespace Pes.Core
         string UsernameToVerify { get; }
         Int32 MessageID { get; }
         Int32 FolderID { get; }
+        Int32 MessagesFolderID { get; }
         Int32 PageNumber { get; }
+        Int32 ReadPageNumber { get; }
+
         Int64 AlbumID { get; }
         Int64 FileID { get; }
         Int32 FileTypeID { get; }

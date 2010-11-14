@@ -14,7 +14,7 @@ namespace Pes.Core
         /// </summary>
         /// <param name="ob">Test_Result</param>
         /// <returns>1 success or -1 fail</returns>
-        public int Insert(Object ob)
+        public static int Insert(Object ob)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace Pes.Core
         /// </summary>
         /// <param name="ob">TEST_RESULTS</param>
         /// <returns>1 success or -1 fail</returns>
-        public int Update(object ob)
+        public static int Update(object ob)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace Pes.Core
         /// </summary>
         /// <param name="ob">TEST_RESULTS</param>
         /// <returns>1 success or -1 fail</returns>
-        public int Delete(Object ob)
+        public static int Delete(Object ob)
         {
             try
             {

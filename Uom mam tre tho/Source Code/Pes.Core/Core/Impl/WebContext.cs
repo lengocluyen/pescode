@@ -250,6 +250,20 @@ namespace Pes.Core.Impl
                 return result;
             }
         }
+
+        public Int32 ReadPageNumber
+        {
+            get
+            {
+                Int32 result;
+                if (!string.IsNullOrEmpty(GetQueryStringValue("ReadPageNumber")))
+                    result = Convert.ToInt32(GetQueryStringValue("ReadPageNumber"));
+                else
+                    result = 1;
+                return result;
+            }
+        }
+        
         public Int32 FolderID
         {
             get
@@ -262,6 +276,20 @@ namespace Pes.Core.Impl
                 return result;
             }
         }
+
+        public Int32 MessagesFolderID
+        {
+            get
+            {
+                Int32 result;
+                if (!string.IsNullOrEmpty(GetQueryStringValue("folder")))
+                    result = Convert.ToInt32(GetQueryStringValue("folder"));
+                else
+                    result = 1;
+                return result;
+            }
+        }
+
         public Int32 MessageID
         {
             get
