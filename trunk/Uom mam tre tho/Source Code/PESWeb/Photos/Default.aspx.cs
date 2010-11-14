@@ -35,7 +35,6 @@ namespace PESWeb.Photos
                 lvAlbums.DataBind();
             }
         }
-
         protected void lbAlbums_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
             if (e.Item.ItemType == ListViewItemType.DataItem)
@@ -44,13 +43,14 @@ namespace PESWeb.Photos
                 Literal litFullPath = e.Item.FindControl("litFullPath") as Literal;
                 HyperLink linkAuthor = e.Item.FindControl("linkAuthor") as HyperLink;
                 HyperLink linkGallery = e.Item.FindControl("linkGallery") as HyperLink;
-                Label lblDescription = e.Item.FindControl("lblDescription") as Label;
-
-                if (lblDescription.Text.Length > 150)
-                {
-                    lblDescription.Text = lblDescription.Text.Substring(0, 149);
-                    lblDescription.Text += "...";
-                }
+                Label lable = e.Item.FindControl("alCountphoto") as Label;
+                lable.Text = File.GetFilesByFolderID(long.Parse(litFolderID.Text)).Count.ToString();
+                //Label lblDescription = e.Item.FindControl("lblDescription") as Label;
+                //if (lblDescription.Text.Length > 150)
+                //{
+                //    lblDescription.Text = lblDescription.Text.Substring(0, 149);
+                //    lblDescription.Text += "...";
+                //}
                 
                 linkAuthor.NavigateUrl = "~/" + linkAuthor.Text;
                 linkAuthor.Text = "Người đăng - " + linkAuthor.Text;

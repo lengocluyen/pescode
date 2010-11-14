@@ -5,7 +5,7 @@ using System.Web;
 using StructureMap;
 using Pes.Core;
 using System.Web.Routing;
-
+using Pes.Core.Impl;
 namespace PESWeb.Handlers
 {
     public class UrlRewrite : IHttpModule
@@ -13,7 +13,7 @@ namespace PESWeb.Handlers
         private IWebContext _WebContext;
         public UrlRewrite()
         {
-            _WebContext = ObjectFactory.GetInstance<IWebContext>();
+            _WebContext = new WebContext();
         }
 
         public void Init(HttpApplication application)
@@ -61,7 +61,7 @@ namespace PESWeb.Handlers
 
                         Blog blog = Blog.GetBlogByPageName(blogPageName, acc.AccountID);
 
-                        context.RewritePath("../blogs/ViewPost.aspx?BlogID=" + blog.BlogID.ToString());
+                        context.RewritePath("~/blogs/ViewPost.aspx?BlogID=" + blog.BlogID.ToString());
                     }
                     else
                     {

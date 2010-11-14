@@ -10,7 +10,7 @@ using PESWeb.ActionFilter;
 
 namespace PESWeb.Controllers
 {
-    [UserAuthorize()]
+    //[UserAuthorize()]
     public class AccountGamesController : ApplicationController
     {
         //

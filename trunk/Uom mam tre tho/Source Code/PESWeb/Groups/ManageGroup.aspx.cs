@@ -43,7 +43,7 @@ namespace PESWeb.Groups
                 group.CreateDate = Convert.ToDateTime(litCreateDate.Text);
                 group.UpdateDate = Convert.ToDateTime(litUpdateDate.Text);
                 group.AccountID = Convert.ToInt32(litAccountID.Text);
-                group.Timestamp = litTimestamp.Text.StringToTimestamp();
+                group.Timestamp = null;
                 group.MemberCount = Convert.ToInt32(litMemberCount.Text);
             }
 
@@ -86,7 +86,8 @@ namespace PESWeb.Groups
             litGroupID.Text = group.GroupID.ToString();
             litCreateDate.Text = group.CreateDate.ToString();
             litUpdateDate.Text = group.UpdateDate.ToString();
-            litTimestamp.Text = group.Timestamp.TimestampToString();
+            try { litTimestamp.Text = group.Timestamp.TimestampToString(); }
+            catch { litTimestamp.Text=""; }
             litMemberCount.Text = group.MemberCount.ToString();
             litAccountID.Text = group.AccountID.ToString();
             litFileID.Text = group.FileID.ToString();

@@ -40,10 +40,15 @@ namespace PESWeb.Groups
 
         public void LoadData(List<Account> Members, List<Account> MembersToApprove)
         {
-            repMembers.DataSource = Members;
-            repMembers.DataBind();
-            repMembersToApprove.DataSource = MembersToApprove;
-            repMembersToApprove.DataBind();
+            if (Members.Count > 0)
+            {
+                repMembers.DataSource = Members;
+                repMembers.DataBind();
+                repMembersToApprove.DataSource = MembersToApprove;
+                repMembersToApprove.DataBind();
+            }
+            else
+                ShowMessage("Hiện chưa thành viên nào!");
         }
 
         public void lbPrevious_Click(object sender, EventArgs e)

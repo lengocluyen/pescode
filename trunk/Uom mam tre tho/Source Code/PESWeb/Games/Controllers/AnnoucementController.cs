@@ -9,7 +9,7 @@ using PESWeb.ActionFilter;
 
 namespace PESWeb.Controllers
 {
-    [UserAuthorize()]
+    //[UserAuthorize()]
     public class AnnoucementController : ApplicationController
     {
         public IGameService _gamesServices;

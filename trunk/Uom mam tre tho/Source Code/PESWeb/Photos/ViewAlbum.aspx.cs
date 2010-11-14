@@ -49,14 +49,13 @@ namespace PESWeb.Photos
                     lblFileName.Text = lblFileName.Text.Substring(0, 25);
                 Literal litFileExtension = e.Item.FindControl("litFileExtension") as Literal;
                 Literal litFileID = e.Item.FindControl("litFileID") as Literal;
-                PESWeb.UserControls.Tags Tags1 = e.Item.FindControl("Tags1") as PESWeb.UserControls.Tags;
-                //PESWeb.UserControls.Moderations Moderations1 =
-                //    e.Item.FindControl("Moderations1") as Fisharoo.FisharooWeb.UserControls.Moderations;
+                //PESWeb.UserControls.Tags Tags1 = e.Item.FindControl("Tags1") as PESWeb.UserControls.Tags;
+              
 
-                //Moderations1.SystemObjectRecordID = Convert.ToInt64(litFileID.Text);
-                Tags1.SystemObjectRecordID = Convert.ToInt64(litFileID.Text);
+                //Tags1.SystemObjectRecordID = Convert.ToInt64(litFileID.Text);
                 string pathToImage = "~/files/photos/" + linkImage.NavigateUrl + "/" + litImageName.Text;
-                linkImage.NavigateUrl = pathToImage + "__o." + litFileExtension.Text;
+                //linkImage.NavigateUrl = pathToImage + "__o." + litFileExtension.Text;
+                 linkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + litFileID.Text;
                 linkImage.ImageUrl = pathToImage + "__s." + litFileExtension.Text;
             }
             if(e.Item.ItemType == ListViewItemType.EmptyItem)

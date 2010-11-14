@@ -33,61 +33,77 @@ namespace PESWeb.Groups
             _view = view;
 
             //do we show the buttons?
-            if(_webContext.CurrentUser == null)
+            if (_webContext.CurrentUser == null)
                 _view.SetButtonsVisibility(false);
             else if (_groupService.IsOwnerOrAdministrator(_webContext.CurrentUser.AccountID, _webContext.GroupID))
                 _view.SetButtonsVisibility(true);
             else
                 _view.SetButtonsVisibility(false);
 
-            if(!IsPostBack)
+            if (!IsPostBack)
                 LoadData();
         }
 
         public void Next()
         {
-            _redirector.GoToGroupsMembers(_webContext.GroupID,(_webContext.PageNumber + 1));
+            _redirector.GoToGroupsMembers(_webContext.GroupID, (_webContext.PageNumber + 1));
         }
 
         public void Previous()
         {
-            _redirector.GoToGroupsMembers(_webContext.GroupID,(_webContext.PageNumber - 1));
+            _redirector.GoToGroupsMembers(_webContext.GroupID, (_webContext.PageNumber - 1));
         }
 
         public void LoadData()
         {
             Account._configuration = ObjectFactory.GetInstance<IConfiguration>();
-            
+
             _view.LoadData(Account.GetApprovedAccountsByGroupID(_webContext.GroupID, _webContext.PageNumber),
                            Account.GetAccountsToApproveByGroupID(_webContext.GroupID));
         }
 
         public void ApproveMembers(List<int> MemberIDs)
         {
-            GroupMember.ApproveGroupMembers(MemberIDs, _webContext.GroupID);
-            LoadData();
-            _view.ShowMessage("Members approved!");
+            if (MemberIDs.Count > 0)
+            {
+                GroupMember.ApproveGroupMembers(MemberIDs, _webContext.GroupID);
+                LoadData();
+                _view.ShowMessage("Thành viên được chấp nhận!");
+            }
+            else { _view.ShowMessage("Không có thành viên được chọn!"); }
         }
 
         public void DeleteMembers(List<int> MemberIDs)
         {
-            GroupMember.DeleteGroupMembers(MemberIDs, _webContext.GroupID);
-            LoadData();
-            _view.ShowMessage("Members deleted!");
+            if (MemberIDs.Count > 0)
+            {
+                GroupMember.DeleteGroupMembers(MemberIDs, _webContext.GroupID);
+                LoadData();
+                _view.ShowMessage("Xóa thành công!");
+            }
+            else { _view.ShowMessage("Không có thành viên được chọn!"); }
         }
 
         public void PromoteMembers(List<int> MemberIDs)
         {
-            GroupMember.PromoteGroupMembersToAdmin(MemberIDs, _webContext.GroupID);
-            LoadData();
-            _view.ShowMessage("Members promoted!");
+            if (MemberIDs.Count > 0)
+            {
+                GroupMember.PromoteGroupMembersToAdmin(MemberIDs, _webContext.GroupID);
+                LoadData();
+                _view.ShowMessage("Đã nâng cấp thành viên!");
+            }
+            else { _view.ShowMessage("Không có thành viên được chọn!"); }
         }
 
         public void DemoteMembers(List<int> MemberIDs)
         {
-            GroupMember.DemoteGroupMembersFromAdmin(MemberIDs, _webContext.GroupID);
-            LoadData();
-            _view.ShowMessage("Members demoted!");
+            if (MemberIDs.Count > 0)
+            {
+                GroupMember.DemoteGroupMembersFromAdmin(MemberIDs, _webContext.GroupID);
+                LoadData();
+                _view.ShowMessage("Đã giáng cấp thành viên!");
+            }
+            else { _view.ShowMessage("Không có thành viên được chọn!"); }
         }
 
         public void Back()

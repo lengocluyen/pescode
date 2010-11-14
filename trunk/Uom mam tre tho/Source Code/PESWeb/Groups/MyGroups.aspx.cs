@@ -49,7 +49,7 @@ namespace PESWeb.Groups
 
                 ibDelete.Attributes.Add("GroupID", litGroupID.Text);
                 ibEdit.Attributes.Add("GroupID", litGroupID.Text);
-                ibDelete.Attributes.Add("onclick","return confirm('Are you sure you want to delete this group?');");
+                ibDelete.Attributes.Add("onclick","return confirm('Bạn có thật sự muốn xóa nhóm này?');");
                 lbPageName.Attributes.Add("PageName", litPageName.Text);
                 imgGroupImage.ImageUrl = "/files/photos/" + _presenter.GetImageByID(Convert.ToInt64(litImageID.Text), File.Sizes.S);
             }

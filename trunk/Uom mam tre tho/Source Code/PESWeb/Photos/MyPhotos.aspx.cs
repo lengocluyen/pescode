@@ -53,7 +53,7 @@ namespace PESWeb.Photos
                 }
 
                 linkEditAlbum.NavigateUrl += "?AlbumID=" + litFolderID.Text;
-                linkDeleteAlbum.Attributes.Add("OnClick","javascript:return(confirm('Are you sure you want to delete this album?'));");
+                linkDeleteAlbum.Attributes.Add("OnClick","javascript:return(confirm('Bạn có chắc chắn muốn xóa album này?'));");
                 linkDeleteAlbum.Attributes.Add("FolderID",litFolderID.Text);
                 linkViewAlbum.NavigateUrl += "?AlbumID=" + litFolderID.Text;
             }

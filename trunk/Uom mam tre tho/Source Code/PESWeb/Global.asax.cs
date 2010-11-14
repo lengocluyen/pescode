@@ -89,11 +89,12 @@ namespace PESWeb
                 x.For(typeof(IAlertService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(AlertService));
 
                 x.For(typeof(IPrivacyService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(PrivacyService));
+                
+                x.For(typeof(IMessageService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(MessageService));
 
                 x.For(typeof(IFriendService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(FriendService));
 
-                x.For(typeof(IMessageService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(MessageService));
-
+             
                 x.For(typeof(IFileService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(FileService));
                 x.For(typeof(IFolderService)).LifecycleIs(InstanceScope.PerRequest).Use(typeof(FolderService));
 

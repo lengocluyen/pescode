@@ -14,7 +14,7 @@ function changeURL(href) {
 if (typeof jQuery == "function") {
     jQuery(document).ready(function($) {
         fixURL();
-        //  $("#post-container").css("display", "block");
+        $("#post-container").css("display", "block");
         init(jQuery, "body");
     });
 
@@ -45,7 +45,7 @@ if (typeof jQuery == "function") {
                 $("div#comment_form").css("display", "block");
                 $("#commentform .focus:first").focus();
             }
-        };
+        }
 
         $("a.respondlink").click(function() {
             // lay id cua bai post tu sau dau gach ==> post-id
@@ -69,10 +69,10 @@ if (typeof jQuery == "function") {
 
         $(".commentcontainer .index-comment").hover(
               function() {
-                  $(this).children(".ic-edit").css("display", "block");
+                $(this).children(".ic-edit").css("display","block");
               },
               function() {
-                  $(this).children(".ic-edit").css("display", "none");
+                $(this).children(".ic-edit").css("display", "none");
               }
         );
 
@@ -178,50 +178,7 @@ if (typeof jQuery == "function") {
                 $('#c-form').css("display", "none");
             }
         });
-        
-        function parseData(Object) {
-            try {
-                var array = Object.attr('data').split("-");
-                var url = Object.attr('url');
-                return {
-                    'data': "{" + array[0] + ":\"" + array[1] + "\"}",
-                    'url': url
-                };
-            }
-            catch (ex) {
-                return "";
-            }
-        };
-        
-        function ajaxDelete() {
-            $this = $(this);
-            var params = parseData($this);
-            jConfirm('Bạn có chắc chắn muốn xóa hay không?', 'Xác nhận', function(r) {
-                if (r == true) {
-                    $.ajax({
-                        type: "POST",
-                        url: params.url,
-                        data: params.data,
-                        contentType: "application/json; charset=utf-8",
-                        dataType: "json",
-                        success: function(msg) {
-                            if (msg.d == 'True')
-                                $this.parent().parent().fadeOut(function() {
-                                    $(this).remove();
-                                });
-                            else
-                                jAlert('error', msg.d, 'Thông báo lỗi');
-                        },
-                        error: function(XMLHttpRequest, textStatus, errorThrown) {
-                            jAlert('error', textStatus, 'Thông báo');
-                        }
-                    });
-                }
-            });
-            return false;
-        };
-
-        $(".confirm").click(ajaxDelete);
 
     }
 }
+
