@@ -13,8 +13,8 @@ namespace Pes.Core
 
         public override object Id
         {
-            get { return TestResultID; }
-            set { TestResultID = (int)value; }
+            get;
+            set;
         }
 
         [SubSonicPrimaryKey]

@@ -19,7 +19,11 @@ namespace Pes.Core
                 if (result % 10 == 0)
                     result /= 10;
                 else
+                {
+                    if((result /= 10)<1)
+                        result = 1;
                     result /= 10 + 1;
+                }
             }
             return result;
         }
@@ -29,31 +33,31 @@ namespace Pes.Core
             List<Account> aAccount = Account.All().ToList();
             List<MessageRecipient> aMessageRecipient = MessageRecipient.All().ToList();
 
-           IEnumerable<MessageWithRecipient> messages = 
-                (from r in aMessageRecipient
-                join m in aMessage on r.MessageID equals m.MessageID
-                join a in aAccount on m.SentByAccountID equals a.AccountID
-                where r.AccountID == AccountID && r.MessageFolderID == (int)Folder
-                orderby m.CreateDate descending
-                select new MessageWithRecipient()
-                {
-                    Sender = a,
-                    Message = m,
-                    MessageRecipient = r
-                }).Skip((PageNumber - 1) * 10).Take(10);
+            IEnumerable<MessageWithRecipient> messages =
+                 (from r in aMessageRecipient
+                  join m in aMessage on r.MessageID equals m.MessageID
+                  join a in aAccount on m.SentByAccountID equals a.AccountID
+                  where r.AccountID == AccountID && r.MessageFolderID == (int)Folder
+                  orderby m.CreateDate descending
+                  select new MessageWithRecipient()
+                  {
+                      Sender = a,
+                      Message = m,
+                      MessageRecipient = r
+                  }).Skip((PageNumber - 1) * 10).Take(10);
 
-           return messages.ToList();
-         }
+            return messages.ToList();
+        }
 
         public static MessageWithRecipient GetMessageByMessageID(Int32 MessageID, Int32 RecipientAccountID)
         {
-            List<Messages> aMessage = All().ToList();
-            List<Account> aAccount = Account.All().ToList();
-            List<MessageRecipient> aMessageRecipient = MessageRecipient.All().ToList();
+            IEnumerable<Messages> aMessage = All();
+            IEnumerable<Account> aAccount = Account.All();
+            IEnumerable<MessageRecipient> aMessageRecipient = MessageRecipient.All();
 
             var message = (from r in aMessageRecipient
-                            join m in aMessage on r.MessageID equals m.MessageID
-                            join a in aAccount on m.SentByAccountID equals a.AccountID
+                           join m in aMessage on r.MessageID equals m.MessageID
+                           join a in aAccount on m.SentByAccountID equals a.AccountID
                            where r.AccountID == RecipientAccountID &&
                            m.MessageID == MessageID
                            where r.AccountID == RecipientAccountID && m.MessageID == MessageID
@@ -63,6 +67,27 @@ namespace Pes.Core
                                Message = m,
                                MessageRecipient = r
                            }).FirstOrDefault();
+            return message;
+        }
+
+        public static IEnumerable<MessageWithRecipient> GetListMessageByMessageID(Int32 MessageID, Int32 RecipientAccountID)
+        {
+            IEnumerable<Messages> aMessage = All();
+            IEnumerable<Account> aAccount = Account.All();
+            IEnumerable<MessageRecipient> aMessageRecipient = MessageRecipient.All();
+
+            var message = (from r in aMessageRecipient
+                           join m in aMessage on r.MessageID equals m.MessageID
+                           join a in aAccount on m.SentByAccountID equals a.AccountID
+                           where r.AccountID == RecipientAccountID &&
+                           m.MessageID == MessageID
+                           where r.AccountID == RecipientAccountID && m.MessageID == MessageID
+                           select new MessageWithRecipient()
+                           {
+                               Sender = a,
+                               Message = m,
+                               MessageRecipient = r
+                           }).Distinct();
             return message;
         }
 
