@@ -8,14 +8,24 @@ using Pes.Core;
 
 namespace PESWeb.Mail
 {
-    public partial class Default : System.Web.UI.Page,IDefault
+    public partial class Default : System.Web.UI.Page, IDefault
     {
         private DefaultPresenter _presenter;
+
         protected override void OnInit(EventArgs e)
         {
             _presenter = new DefaultPresenter();
             _presenter.Init(this);
             base.OnInit(e);
+        }
+
+        protected string Substring(string str, int num)
+        {
+            if (str.Length > num)
+                return str.Substring(0, num);
+            else
+                return str;
+                
         }
 
         public void LoadMessages(List<MessageWithRecipient> Messages)
@@ -62,23 +72,35 @@ namespace PESWeb.Mail
 
         public void DisplayPageNavigation(Int32 PageCount, MessageFolders folder, Int32 CurrentPage)
         {
-            if (PageCount == CurrentPage)
-                linkNext.Visible = false;
-            if (CurrentPage == 1)
-                linkPrevious.Visible = false;
 
-            linkNext.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&page=" +
+            if (PageCount == CurrentPage)
+            {
+                linkNext.Visible = false;
+                HyperLink_BootomNext.Visible = false;
+            }
+            if (CurrentPage == 1)
+            {
+                linkPrevious.Visible = false;
+                HyperLink_BootomNPrev.Visible = false;
+            }
+
+            linkNext.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&PageNumber=" +
                                    (CurrentPage + 1).ToString();
-            linkPrevious.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&page=" +
+            linkPrevious.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&PageNumber=" +
+                                       (CurrentPage - 1).ToString();
+
+            HyperLink_BootomNext.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&PageNumber=" +
+                        (CurrentPage + 1).ToString();
+            HyperLink_BootomNPrev.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&PageNumber=" +
                                        (CurrentPage - 1).ToString();
 
             for (int i = 1; i <= PageCount; i++)
             {
                 HyperLink link = new HyperLink();
                 link.Text = i.ToString();
-                link.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&page=" + i.ToString();
-                phPages.Controls.Add(link);
-                phPages.Controls.Add(new LiteralControl("&nbsp;"));
+                link.NavigateUrl = "~/mail/default.aspx?folder=" + ((int)folder).ToString() + "&PageNumber=" + i.ToString();
+                //phPages.Controls.Add(link);
+                //phPages.Controls.Add(new LiteralControl("&nbsp;"));
             }
         }
     }

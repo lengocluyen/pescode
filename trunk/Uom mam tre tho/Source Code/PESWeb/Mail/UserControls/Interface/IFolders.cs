@@ -8,6 +8,7 @@ namespace PESWeb.Mail
 {
     public interface IFolders
     {
-        void LoadFolders(List<MessageFolder> Folders);
+        //void LoadFolders(List<MessageFolder> Folders);
+
     }
 }

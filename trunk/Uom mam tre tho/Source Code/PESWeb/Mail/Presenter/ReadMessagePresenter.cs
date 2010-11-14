@@ -23,7 +23,10 @@ namespace PESWeb.Mail
         public void Init(IReadMessage view)
         {
             _view = view;
+
             _view.LoadMessage(Messages.GetMessageByMessageID(_webContext.MessageID, _userSession.CurrentUser.AccountID));
+
+
         }
         public void Reply()
         {
