@@ -218,9 +218,8 @@ input.del11:hover,a.del11:hover {
 }
 
 .post .title {
-    margin-bottom: 10px;
-    font-size: 13px;
     font-weight:bold;
+    margin-bottom:6px;
 }
 
 .post p {
@@ -248,8 +247,7 @@ input.del11:hover,a.del11:hover {
 
 .post .meta, .post .post-meta, .comments .meta {
     color: #777;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin:6px 0;
 }
 
 .post-gravatar {
