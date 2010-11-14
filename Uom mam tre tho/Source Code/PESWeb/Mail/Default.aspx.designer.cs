@@ -32,6 +32,15 @@ namespace PESWeb.Mail {
         protected global::System.Web.UI.WebControls.Button btnDelete;
         
         /// <summary>
+        /// Button1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        /// <summary>
         /// linkPrevious control.
         /// </summary>
         /// <remarks>
@@ -39,15 +48,6 @@ namespace PESWeb.Mail {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink linkPrevious;
-        
-        /// <summary>
-        /// phPages control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phPages;
         
         /// <summary>
         /// linkNext control.
@@ -68,12 +68,21 @@ namespace PESWeb.Mail {
         protected global::System.Web.UI.WebControls.Repeater repMessages;
         
         /// <summary>
-        /// friens control.
+        /// HyperLink_BootomNPrev control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::PESWeb.UserControls.Friends friens;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink_BootomNPrev;
+        
+        /// <summary>
+        /// HyperLink_BootomNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink_BootomNext;
     }
 }

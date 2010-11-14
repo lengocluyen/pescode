@@ -19,7 +19,7 @@ namespace PESWeb.Mail
         public void Init(IFolders view)
         {
             _view = view;
-            _view.LoadFolders(MessageFolder.GetMessageFoldersByAccountID(_userSession.CurrentUser.AccountID));
+            //_view.LoadFolders(MessageFolder.GetMessageFoldersByAccountID(_userSession.CurrentUser.AccountID));
         }
 
     }

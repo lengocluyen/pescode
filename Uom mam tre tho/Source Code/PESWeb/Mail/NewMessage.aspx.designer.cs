@@ -14,22 +14,13 @@ namespace PESWeb.Mail {
     public partial class NewMessage {
         
         /// <summary>
-        /// Fmail control.
+        /// Folders1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::PESWeb.Mail.UserControls.Folders Fmail;
-        
-        /// <summary>
-        /// friendslist control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::PESWeb.Mail.UserControls.Friends friendslist;
+        protected global::PESWeb.Mail.UserControls.Folders Folders1;
         
         /// <summary>
         /// pnlSendMessage control.

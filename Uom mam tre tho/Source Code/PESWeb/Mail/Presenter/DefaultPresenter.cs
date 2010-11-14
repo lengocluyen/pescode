@@ -25,10 +25,10 @@ namespace PESWeb.Mail
             if (_userSession.CurrentUser != null)
             {
                 _view.LoadMessages(Messages.GetMessageByAccountID(_userSession.CurrentUser.AccountID,
-                    _webContext.PageNumber, (MessageFolders)_webContext.FolderID));
+                    _webContext.PageNumber, (MessageFolders)_webContext.MessagesFolderID));
 
                 _view.DisplayPageNavigation(Messages.GetPageCount((MessageFolders) _webContext.FolderID,
-                    _userSession.CurrentUser.AccountID),(MessageFolders)_webContext.FolderID,_webContext.PageNumber);
+                    _userSession.CurrentUser.AccountID),(MessageFolders)_webContext.MessagesFolderID,_webContext.PageNumber);
             }
         }
         public void DeleteSelected()
@@ -39,7 +39,7 @@ namespace PESWeb.Mail
                 MessageWithRecipient m = Messages.GetMessageByMessageID(i, _userSession.CurrentUser.AccountID);
                 MessageRecipient.DeleteMessageRecipient(m.MessageRecipient);
             }
-            HttpContext.Current.Response.Redirect("~/mail/default.aspx?folder=" + _webContext.FolderID + "&page=" + _webContext.PageNumber);
+            HttpContext.Current.Response.Redirect("~/mail/default.aspx?folder=" + _webContext.FolderID + "&PageNumber=" + _webContext.PageNumber);
         }
         public void MarkSelectedAsUnread()
         {

@@ -12,14 +12,5 @@ namespace PESWeb.Mail.UserControls {
     
     
     public partial class Folders {
-        
-        /// <summary>
-        /// repFolders control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repFolders;
     }
 }
