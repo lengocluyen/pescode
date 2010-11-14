@@ -32,6 +32,8 @@ if (typeof jQuery == "function") {
         //            return false;
         //        });
 
+<<<<<<< .mine
+=======
         function commentform(post_id) {
             if (typeof (post_id) != "undefined") {
                 // an textarea Write comment...
@@ -47,6 +49,7 @@ if (typeof jQuery == "function") {
             }
         }
 
+>>>>>>> .r49
         $("a.respondlink").click(function() {
             // lay id cua bai post tu sau dau gach ==> post-id
             post_id = $(this).attr('id').split("-")[1];
@@ -177,6 +180,94 @@ if (typeof jQuery == "function") {
                 $('#c-mention').css("display", "block");
                 $('#c-form').css("display", "none");
             }
+        });
+<<<<<<< .mine
+
+        function parseData(Object) {
+            try {
+                var array = Object.attr('data').split("-");
+                var url = Object.attr('url');
+                return {
+                    'data': "{" + array[0] + ":\"" + array[1] + "\"}",
+                    'url': url
+                };
+            }
+            catch (ex) {
+                return "";
+            }
+        };
+
+        function ajaxDelete() {
+            $this = $(this);
+            var params = parseData($this);
+            jConfirm('Bạn có chắc chắn muốn xóa hay không?', 'Xác nhận', function(r) {
+                if (r == true) {
+                    $.ajax({
+                        type: "POST",
+                        url: params.url,
+                        data: params.data,
+                        contentType: "application/json; charset=utf-8",
+                        dataType: "json",
+                        success: function(msg) {
+                            if (msg.d == 'True')
+                                $this.parent().parent().fadeOut(function() {
+                                    $(this).remove();
+                                });
+                            else
+                                jAlert('error', msg.d, 'Thông báo lỗi');
+                        },
+                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                            jAlert('error', textStatus, 'Thông báo');
+                        }
+                    });
+                }
+            });
+            return false;
+        };
+=======
+>>>>>>> .r49
+
+        function createJsonData(id) {
+            var data = {};
+            $("#" + id).find('[attrName]').each(function() {
+                data[$(this).attr('attrName')] = this.value;
+            });
+            return JSON.stringify({ 'data': data });
+        }
+        
+        function CreateTable(msg) {
+            $('#tbl').setTemplateURL('../Template/TemplateEmployee.htm',
+                         null, { filter_data: false });
+            $('#tbl').processTemplate(msg);
+        }
+
+        $(".addcomment").click(function() {
+            $this = $(this);
+            $.ajax({
+                type: "POST",
+                url: "Services/Services.asmx/Test",
+                data: createJsonData($this.attr('container')),
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(msg) {
+                    if (msg.d.length > 0) {
+                        $container = $this.parent().parent().prev().prev();
+                        $temp = $("<div></div>");
+                        $temp.setTemplateURL('Template/TemplateComment.htm',
+                            null, { filter_data: false });
+                        $temp.processTemplate(msg.d);
+                        $container.append($temp.html());
+                        
+                    }
+                    else {
+                        jAlert('error', msg.d, 'Thông báo lỗi');
+                    }
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    jAlert('error', textStatus, 'Thông báo');
+                }
+            });
+            return false;
         });
 
     }
