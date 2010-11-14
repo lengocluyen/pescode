@@ -293,11 +293,10 @@ input.del11:hover,a.del11:hover {
     position: relative;
 }
 
-.morecomments {
-    display: block;
-}
-.morecomments a {
+
+ a.morecomments {
     margin-left: 18px;
+    display: block;
 }
 
 .ic-avatar {

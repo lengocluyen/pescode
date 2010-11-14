@@ -42,8 +42,8 @@ namespace PESWeb.UserControls
 
                 if (_presenter.IsOwner(data.CommentByAccountID))
                 {
-                    lnk.Attributes["url"] = Page.ResolveClientUrl("~/Services/Services.asmx/DeleteComment");
-                    lnk.Attributes["data"] = "commentId-" + data.CommentID;
+                    //lnk.Attributes["url"] = Page.ResolveClientUrl("~/Services/Services.asmx/DeleteComment");
+                    lnk.Attributes["data"] = data.CommentID.ToString();
                     lnk.Visible = true;
                 }
                 else
@@ -60,7 +60,7 @@ namespace PESWeb.UserControls
 
         protected void btnAddComment_Click(object sender, EventArgs e)
         {
-            _presenter.AddComment(txtComment.Text);
+            //_presenter.AddComment(txtComment.Text);
         }
 
         public void LoadComments(List<Comment> comments)
@@ -69,9 +69,21 @@ namespace PESWeb.UserControls
             repComment.DataBind();
         }
 
-        public void ShowCommentsBox(bool IsVisible)
+        public void ShowViewComment(bool Value)
         {
-
+            pnlMore.Visible = Value;
+            if (pnlMore.Visible)
+            {
+                lnkMore.Text = string.Format("Xem tất cả ({0})", _presenter.MoreComments);
+                lnkMore.Attributes["SystemObjectID"] = SystemObjectID.ToString();
+                lnkMore.Attributes["SystemObjectRecordID"] = SystemObjectRecordID.ToString();
+            }
         }
+
+        public void ShowCommentInput(bool Value)
+        {
+            pnlCommentInput.Attributes["style"] = "display:" + ((Value == true) ? "block" : "none");
+        }
+
     }
 }

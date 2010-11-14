@@ -12,20 +12,29 @@ namespace PESWeb.UserControls
     {
         private IComments _view;
         private IWebContext _webContext;
+        private int moreComments = -1;
+        public int MoreComments
+        {
+            get
+            {
+                if (moreComments == -1)
+                    moreComments = Comment.CountMore(_view.SystemObjectID, _view.SystemObjectRecordID);
+                return moreComments;
+            }
+        }
 
         public CommentsPresenter()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
-
         }
 
         internal void Init(IComments view, bool IsPostBack)
         {
             _view = view;
-            if (_webContext.CurrentUser != null)
-                _view.ShowCommentsBox(true);
-            else
-                _view.ShowCommentsBox(false);
+            //if (_webContext.CurrentUser != null)
+            //    _view.ShowViewComment(true);
+            //else
+            //    _view.ShowViewComment(false);
         }
 
         internal bool IsOwner(int CommentByAccountID)
@@ -35,8 +44,19 @@ namespace PESWeb.UserControls
 
         internal void LoadComments()
         {
-            _view.LoadComments(Comment.GetTopCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, 3));
-            // _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, 3));
+            List<Comment> list = Comment.GetTopCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, MoreComments);
+            if (list.Count > 0)
+            {
+                // _view.LoadComments(Comment.GetCommentsBySystemObject(_view.SystemObjectID, _view.SystemObjectRecordID, 3));
+                _view.LoadComments(list);
+                _view.ShowViewComment(MoreComments > 0);
+                _view.ShowCommentInput(true);
+            }
+            else
+            {
+                _view.ShowViewComment(false);
+                _view.ShowCommentInput(false);
+            }
         }
 
         internal void AddComment(string comment)

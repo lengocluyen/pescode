@@ -1,7 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Comments.ascx.cs" Inherits="PESWeb.UserControls.Comments" %>
 <div class="commentcontainer">
     <div class="index-comment" runat="server" id="pnlMore">
-        <span class="morecomments"><a href="#">Xem tất cả</a></span>
+            <asp:HyperLink ID="lnkMore" runat="server" 
+                CssClass="morecomments viewmore"></asp:HyperLink>
     </div>
     <asp:Repeater ID="repComment" runat="server">
         <ItemTemplate>
@@ -21,11 +22,9 @@
                         <%#Eval("Body")%>
                     </div>
                     <div class="ic-meta ic-date">
-                        <%# Eval("CreateDate", "{0:dd/MM/yyyy lúc HH:mm}")%></div>
+                        <%# Eval("CreateDateString")%></div>
                 </div>
                 <div class="ic-edit" style="display: none">
-                  <%--  <a class="del15 confirm" url="/Services/DeleteComment" data='commentId-<%#Eval("CommentID")%>'>
-                    </a>--%>
                     <asp:HyperLink ID="lnkDel" runat="server" CssClass="del15 confirm" Visible="false" />
                 </div>
             </div>
@@ -36,16 +35,18 @@
         </SeparatorTemplate>
     </asp:Repeater>
 </div>
-<div class="index-comment">
+<div class="index-comment" runat="server" id="pnlCommentInput">
     <textarea class="respondtext" id='respondtext-<%=SystemObjectRecordID%>'>Viết cảm nhận ...</textarea>
 </div>
-<div id='commentform-<%=SystemObjectRecordID%>' class="index-comment comment-form"
-    style="display: none">
+<div id='commentform-<%=SystemObjectRecordID%>' class="index-comment comment-form" style="display: none">
+    <input type="hidden" value='<%=SystemObjectRecordID%>' 
+        attrName="SystemObjectRecordID"/>
+    <input type="hidden" value='<%=SystemObjectID%>' 
+        attrName="SystemObjectID"/>
     <div class="form_comment">
-        <asp:TextBox ID="txtComment" runat="server" TextMode="MultiLine" CssClass="focus" />
+        <textarea class="focus" attrName="Body"></textarea>
     </div>
     <div class="form_submit form_submit_right">
-        <asp:Button CssClass="button blue" Text="Đăng" ID="btnAddComment" runat="server"
-            OnClick="btnAddComment_Click" />
+        <input type="button" class="button blue addcomment" value="Đăng" container='commentform-<%=SystemObjectRecordID%>' />
     </div>
 </div>
