@@ -4,63 +4,57 @@
 <%@ Register Src="~/UserControls/Friends.ascx" TagPrefix="PES" TagName="Friends" %>
 <%@ Register TagPrefix="PES" Namespace="PESWeb" Assembly="PESWeb" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_15">
+    <div class="grid_14">
         <div id="title">
             <h1>
                 Blogs của tôi</h1>
             <div class="alignright">
-                <a href="#" class="button gray">Viết Blogs</a>
+                <a href="../blogs/Post.aspx" class="button gray">Viết Blogs</a>
             </div>
         </div>
         <div class="clear">
         </div>
-        <div id="photos">
-            <asp:ListView ID="lvBlogs" runat="server" GroupItemCount="4" OnItemDataBound="lvBlogs_ItemDataBound">
+        <div class="post-list">
+            <asp:ListView ID="lvBlogs" runat="server" OnItemDataBound="lvBlogs_ItemDataBound">
                 <LayoutTemplate>
-                    <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
+                    <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                 </LayoutTemplate>
-                <GroupTemplate>
-                    <table class="photo-grid">
-                        <tr>
-                            <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                        </tr>
-                    </table>
-                </GroupTemplate>
                 <ItemTemplate>
-                    <td>
-                        <h2 class="blogsTitle">
-                            <asp:HyperLink ID="linkTitle" runat="server" Text='<%#((Blog)Container.DataItem).Title %>'></asp:HyperLink></h2>
-                        <br />
-                        <p class="blogsDescription">
-                            <asp:LinkButton ID="lbEdit" runat="server" CssClass="blogsActionLink" OnClick="lbEdit_Click">Chỉnh sửa</asp:LinkButton>
-                            -
-                            <asp:LinkButton ID="lbDelete" runat="server" CssClass="blogsActionLink" OnClick="lbDelete_Click">Xóa</asp:LinkButton><br />
-                            Ngày tạo:
-                            <%#((Blog)Container.DataItem).CreateDate %><br />
-                            Người đăng:
-                            <%#Account.GetAccountByID(((Blog)Container.DataItem).AccountID).Username %><br />
-                            <%#((Blog)Container.DataItem).Subject %><asp:Literal Visible="false" ID="litBlogID"
-                                runat="server" Text='<%#((Blog)Container.DataItem).BlogID %>'></asp:Literal>
-                            <asp:Literal ID="litPageName" runat="server" Visible="false" Text='<%#((Blog)Container.DataItem).PageName %>'></asp:Literal>
-                            <asp:Literal ID="litUsername" runat="server" Visible="false" Text='<%#Account.GetAccountByID(((Blog)Container.DataItem).AccountID).Username %>'></asp:Literal>
-                        </p>
-                    </td>
+                    <div class="post" id='post-<%#((Blog)Container.DataItem).BlogID %>'>
+                        <div class="post-gravatar">
+                            <asp:HyperLink ID="linkAvatar" runat="server">
+                                <asp:Image ID="imaAvatar" runat="server" Width="50" Height="50" CssClass="avatar" />
+                            </asp:HyperLink>
+                        </div>
+                        <div class="post-text">
+                            <h2 class="title">
+                                <asp:HyperLink ID="linkTitle" runat="server" Text='<%#((Blog)Container.DataItem).Title %>'></asp:HyperLink></h2>
+                            <div class="body">
+                                <%#((Blog)Container.DataItem).Subject %><asp:Literal ID="litBlogID" runat="server"
+                                    Text='<%#((Blog)Container.DataItem).BlogID %>'></asp:Literal>
+                                <asp:Literal ID="litPageName" runat="server" Visible="false" Text='<%#((Blog)Container.DataItem).PageName %>'></asp:Literal>
+                                <asp:Literal ID="litUsername" runat="server" Visible="false" Text='<%#Account.GetAccountByID(((Blog)Container.DataItem).AccountID).Username %>'></asp:Literal>
+                            </div>
+                             <div class="meta">
+                                <%# Eval("CreateDate", "{0:dd-MM-yyyy lúc HH:mm}")  %>
+                            </div>
+                            <%--<PES:Comments runat="server" SystemObject="Alerts" SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />--%>
+                        </div>
+                    </div>
+                   
                 </ItemTemplate>
                 <EmptyDataTemplate>
-                    Bạn chưa đăng bài Blogs nào!
+                    Bạn chưa đăng bài blogs nào!
                 </EmptyDataTemplate>
             </asp:ListView>
         </div>
         <div class="clear">
         </div>
-        <div style="text-align: center">
+        <div style="text-align: center;">
             <PES:Pager ID="pager" runat="server" />
-            </center>
         </div>
     </div>
-    <div class="grid_3" style="margin-top: 35px">
-        <div class="box">
-            <PES:Friends runat="server" ID="friens" />
-        </div>
+    <div class="grid_5" style="margin-top: 35px">
+        <PES:Friends runat="server" ID="friens" />
     </div>
 </asp:Content>

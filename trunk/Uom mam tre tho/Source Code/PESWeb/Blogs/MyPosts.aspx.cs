@@ -56,18 +56,20 @@ namespace PESWeb.Blogs
         
         public void lvBlogs_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
-            Literal litBlogID = e.Item.FindControl("litBlogID") as Literal;
-            HyperLink linkTitle = e.Item.FindControl("linkTitle") as HyperLink;
-            Literal litPageName = e.Item.FindControl("litPageName") as Literal;
-            Literal litUsername = e.Item.FindControl("litUsername") as Literal;
-            LinkButton lbEdit = e.Item.FindControl("lbEdit") as LinkButton;
-            LinkButton lbDelete = e.Item.FindControl("lbDelete") as LinkButton;
-
-            lbEdit.Attributes.Add("BlogID",litBlogID.Text);
-            lbDelete.Attributes.Add("BlogID",litBlogID.Text);
-
-            //linkTitle.NavigateUrl = "~/Blogs/ViewPost.aspx?BlogID=" + litBlogID.Text;
-            linkTitle.NavigateUrl = "~/Blogs/" + litUsername.Text + "/" + litPageName.Text + ".aspx";
+            if (e.Item.ItemType == ListViewItemType.DataItem)
+            {
+                Blog data = ((ListViewDataItem)e.Item).DataItem as Blog;
+                HyperLink linkAvatar = e.Item.FindControl("linkAvatar") as HyperLink;
+                linkAvatar.NavigateUrl = "~/profiles/profile.aspx?AccountID=" + data.AccountID;
+                Image imaAvatar = e.Item.FindControl("imaAvatar") as Image;
+                imaAvatar.ImageUrl = "~/images/ProfileAvatar/ProfileImage.aspx?AccountID=" + data.AccountID;
+                Literal litBlogID = e.Item.FindControl("litBlogID") as Literal;
+                HyperLink linkTitle = e.Item.FindControl("linkTitle") as HyperLink;
+                Literal litPageName = e.Item.FindControl("litPageName") as Literal;
+                Literal litUsername = e.Item.FindControl("litUsername") as Literal;
+                linkTitle.NavigateUrl = "~/Blogs/ViewPost.aspx?BlogID=" + litBlogID.Text;
+                //linkTitle.NavigateUrl = "~/Blogs/" + litUsername.Text + "/" + litPageName.Text + ".aspx";
+            }
         }
 
         public void lbEdit_Click(object sender, EventArgs e)

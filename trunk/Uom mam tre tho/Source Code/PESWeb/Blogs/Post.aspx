@@ -1,8 +1,11 @@
 ﻿<%@ Page Language="C#" ValidateRequest="false" MasterPageFile="~/SiteMaster.Master"
     AutoEventWireup="true" CodeBehind="Post.aspx.cs" Inherits="PESWeb.Blogs.Post" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <script src="../ckeditor/ckeditor.js" type="text/javascript"></script>
+</asp:Content>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_18">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Viết Blogs</h1>
@@ -36,18 +39,11 @@
                 <asp:CheckBox ID="chkIsPublished" runat="server"></asp:CheckBox></div>
         </div>
         <div class="divContainerRow">
-            <div class="divContainerCell" style="padding-left: 20px;">
-                <textarea id="txtMessage" name="txtMessage" cols="92" rows="20" runat="server" />
-                <asp:Literal ID="litBlogID" runat="server" Visible="false"></asp:Literal>
-            </div>
+            <textarea id="txtMessage" name="txtMessage" cols="92" rows="50" runat="server" />
+            <asp:Literal ID="litBlogID" runat="server" Visible="false"></asp:Literal>
         </div>
         <div class="divContainerFooter">
             <asp:Button ID="btnSave" CssClass="button green" runat="server" Text="Save" OnClick="btnSave_Click" />
         </div>
     </div>
-</asp:Content>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
-    <script src="../ckeditor/ckeditor.js" type="text/javascript"></script>
-
 </asp:Content>
