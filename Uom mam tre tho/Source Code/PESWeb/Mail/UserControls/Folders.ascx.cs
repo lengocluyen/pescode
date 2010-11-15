@@ -35,19 +35,19 @@ namespace PESWeb.Mail.UserControls
             if (IsNewMessage)
                 folderID = -1;
 
-            //bool IsReadMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "ReadMessage.aspx", true) == 0;
-            //if (IsReadMessage)
-            //{
-            //    folderID = -1;
-            //    IsNewMessage = false;
-            //}
+            bool IsReadMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "ReadMessage.aspx", true) == 0;
+            if (IsReadMessage)
+            {
+                folderID = -1;
+                IsNewMessage = false;
+            }
             CatHTML = string.Format(@"
                 <li class='{4}'><a id='createmaillink' href='NewMessage.aspx' title='Soạn thư'>Soạn thư</a></li>
                 <li class='{5}'><a id='inboxlonk' href='Default.aspx?folder={0}'>Hộp thư đến</a></li>
                 <li class='{6}'><a id='sendlink' href='Default.aspx?folder={1}'>Hộp thư đi</a></li>
                 <li class='{7}'><a id='draflink' href='Default.aspx?folder={2}'>Thư nháp</a></li>
                 <li class='{8}'><a id='spamlink' href='Default.aspx?folder={3}'>Thư rác</a></li>",
-                   (int)MessageFolders.Inbox, (int)MessageFolders.Sent, (int)MessageFolders.Spam, (int)MessageFolders.Trash,
+                   (int)MessageFolders.Inbox, (int)MessageFolders.Sent, (int)MessageFolders.Trash, (int)MessageFolders.Spam,
                     IsNewMessage ? "current-cat" : "cat-item", SetCSS(1), SetCSS(2), SetCSS(3), SetCSS(4));
 
         }
