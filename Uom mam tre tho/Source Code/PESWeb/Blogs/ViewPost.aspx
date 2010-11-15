@@ -7,7 +7,7 @@
             <h1>
                 Blogs</h1>
             <div class="alignright">
-                <a href="#" class="button gray">Viết Blogs</a>
+                <a href="../blogs/post.aspx" class="button gray">Viết Blogs</a>
             </div>
         </div>
         <div class="clear">
