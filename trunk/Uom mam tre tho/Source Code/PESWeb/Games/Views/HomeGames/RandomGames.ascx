@@ -7,7 +7,7 @@
 
         var content = "";
         content += "<div class=\"divShowAGame\">";
-        content += "<a href=\"Game/Play/" + id + "\">";
+        content += "<a href=\"../Game/Play/" + id + "\">";
         content += "<img src=\"" + prefix + "../Content/GameImages/" + img + "\" /></a></div>";
         content += "<div style=\"float: left\"><div class=\"textHead1\" style=\"padding-top: 10px; padding-bottom: 5px\">";
         content += "<a href=\"" + prefix + "Game/Play/" + id + "\">" + title + "</a>";

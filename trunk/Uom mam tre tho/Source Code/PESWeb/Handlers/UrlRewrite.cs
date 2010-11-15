@@ -76,7 +76,7 @@ namespace PESWeb.Handlers
                     string groupPageName = arr[arr.Length - 1];
                     groupPageName = groupPageName.Replace(".aspx", "");
                     Group group = Group.GetGroupByPageName(groupPageName);
-                    context.RewritePath("/groups/viewgroup.aspx?GroupID=" + group.GroupID.ToString());
+                    context.RewritePath("~/groups/viewgroup.aspx?GroupID=" + group.GroupID.ToString());
                 }
                 #endregion
                 #region TAGS
@@ -103,7 +103,7 @@ namespace PESWeb.Handlers
 
                     if (tag != null)
                     {
-                        context.RewritePath("/tags/tags.aspx?TagID=" + tag.TagID);
+                        context.RewritePath("~/tags/tags.aspx?TagID=" + tag.TagID);
                     }
                 }
                 #endregion

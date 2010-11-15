@@ -16,19 +16,19 @@ using StructureMap;
 
 namespace PESWeb.Photos
 {
-    public partial class ViewAlbum : System.Web.UI.Page, IViewAlbum 
+    public partial class ViewAlbum : System.Web.UI.Page, IViewAlbum
     {
-        private IWebContext _webContext;
+        public IWebContext _webContext;
         private ViewAlbumPresenter _presenter;
         private IRedirector _redirector;
         private IUserSession _userSession;
 
-        
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-        }
 
+        }
+        public long albumID = 0;
         protected override void OnInit(EventArgs e)
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
@@ -40,25 +40,30 @@ namespace PESWeb.Photos
 
         protected void lvAlbum_ItemDataBound(object sender, ListViewItemEventArgs e)
         {
-            if(e.Item.ItemType == ListViewItemType.DataItem)
+            if (e.Item.ItemType == ListViewItemType.DataItem)
             {
-                HyperLink linkImage = e.Item.FindControl("linkImage") as HyperLink;
+                File data = ((ListViewDataItem)e.Item).DataItem as File;
+
                 Literal litImageName = e.Item.FindControl("litImageName") as Literal;
                 Label lblFileName = e.Item.FindControl("lblFileName") as Label;
                 if (lblFileName.Text.Length > 25)
                     lblFileName.Text = lblFileName.Text.Substring(0, 25);
                 Literal litFileExtension = e.Item.FindControl("litFileExtension") as Literal;
                 Literal litFileID = e.Item.FindControl("litFileID") as Literal;
-                //PESWeb.UserControls.Tags Tags1 = e.Item.FindControl("Tags1") as PESWeb.UserControls.Tags;
-              
 
-                //Tags1.SystemObjectRecordID = Convert.ToInt64(litFileID.Text);
-                string pathToImage = "~/files/photos/" + linkImage.NavigateUrl + "/" + litImageName.Text;
-                //linkImage.NavigateUrl = pathToImage + "__o." + litFileExtension.Text;
-                 linkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + litFileID.Text;
-                linkImage.ImageUrl = pathToImage + "__s." + litFileExtension.Text;
+                HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
+                string pathToImage = "~/files/photos/" + lnkImage.NavigateUrl + "/" + litImageName.Text;
+
+
+                lnkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
+
+
+                Image image = e.Item.FindControl("Image") as Image;
+                image.ImageUrl = pathToImage + "__s." + litFileExtension.Text;
+                image.AlternateText = data.FileName;
+
             }
-            if(e.Item.ItemType == ListViewItemType.EmptyItem)
+            else if (e.Item.ItemType == ListViewItemType.EmptyItem)
             {
                 HyperLink linkAddPhotos = e.Item.FindControl("linkAddPhotos") as HyperLink;
                 linkAddPhotos.NavigateUrl = "~/photos/AddPhotos.aspx?AlbumID=" + _webContext.AlbumID.ToString();
@@ -70,14 +75,16 @@ namespace PESWeb.Photos
             lblAlbumName.Text = folder.Name;
             lblLocation.Text = folder.Location;
             lblDescription.Text = folder.Description;
-            lblCreateDate.Text = folder.CreateDate.ToString();
+            lblCreateDate.Text = folder.CreateDate.ToString("dd-MM-yyyy lúc HH:mm");
 
-            if(folder.AccountID != _userSession.CurrentUser.AccountID)
+            if (folder.AccountID != _userSession.CurrentUser.AccountID)
             {
                 btnEditPhotos.Visible = false;
                 btnEditAlbum.Visible = false;
                 btnAddPhotos.Visible = false;
             }
+            albumID = folder.FolderID;
+            comments.SystemObjectRecordID = folder.FolderID;
         }
 
         public void LoadPhotos(List<File> files)
@@ -96,7 +103,7 @@ namespace PESWeb.Photos
             _redirector.GoToPhotosEditAlbum(_webContext.AlbumID);
         }
 
-        protected void btnAddPhotos_Click(object sender, EventArgs e)
+        protected void lbAddPhotos_Click(object sender, EventArgs e)
         {
             _redirector.GoToPhotosAddPhotos(_webContext.AlbumID);
         }

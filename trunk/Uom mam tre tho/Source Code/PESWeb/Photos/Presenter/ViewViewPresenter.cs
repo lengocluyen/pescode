@@ -34,6 +34,19 @@ namespace PESWeb.Photos.Presenter
             }
             return -1;
         }
+        public long ImagePrivious(long id)
+        {
+            List<File> list = File.GetFilesByFolderID(File.GetFileByID(id).DefaultFolderID);
+            if (list[0].FileID == id) { return list[list.Count-1].FileID; }
+            for (int i = 1; i < list.Count; i++)
+            {
+                if (list[i].FileID == id)
+                {
+                    return list[i - 1].FileID;
+                }
+            }
+            return -1;
+        }
         public void LoadImageNext(long id)
         {
             _view.LoadUI(File.GetFileByID(ImageNext(id)));

@@ -45,21 +45,29 @@ namespace PESWeb.Photos
         public void SaveAlbum(string Name, string Description, string Location)
         {
             Folder folder = new Folder();
+            Int64 result = 0;
             if (_webContext.AlbumID > 0)
             {
                 folder = Folder.GetFolderByID(_webContext.AlbumID);
+                folder.Description = Description;
+                folder.Name = Name;
+                folder.Location = Location;
+                folder.IsPublicResource = false;
+                result = Folder.UpdateFolder(folder);
+                _redirector.GoToPhotosAddPhotos(result);
             }
             else
             {
                 folder.AccountID = _userSession.CurrentUser.AccountID;
+                folder.Description = Description;
+                folder.Name = Name;
+                folder.Location = Location;
+                folder.IsPublicResource = false;
+                folder.CreateDate = DateTime.Now;
+                result = Folder.SaveFolder(folder);
+                _redirector.GoToPhotosAddPhotos(result);
             }
-            folder.Description = Description;
-            folder.Name = Name;
-            folder.Location = Location;
-            folder.IsPublicResource = false;
-            folder.CreateDate = DateTime.Now;
-            Int64 result = Folder.SaveFolder(folder);
-            _redirector.GoToPhotosAddPhotos(result);
+            
         }
     }
 }

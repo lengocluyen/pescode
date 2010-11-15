@@ -6,7 +6,7 @@
                 Tag</div>
             <div class="hiddenTag">
                 <asp:TextBox ID="txtTag" runat="server"></asp:TextBox>
-                <asp:Button CssClass="button" ID="btnTag" runat="server" Text="Tag" OnClick="btnTag_Click" />
+                <asp:Button CssClass="button green" ID="btnTag" runat="server" Text="Tag" OnClick="btnTag_Click" />
             </div>
         </asp:Panel>
         <asp:Panel runat="server" ID="pnlTagCloud" Visible="false">

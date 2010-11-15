@@ -39,16 +39,23 @@ namespace PESWeb.Photos
         {
             if (e.Item.ItemType == ListViewItemType.DataItem)
             {
+                Folder data = ((ListViewDataItem)e.Item).DataItem as Folder;
                 Literal litFolderID = e.Item.FindControl("litFolderID") as Literal;
                 Literal litFullPath = e.Item.FindControl("litFullPath") as Literal;
                 HyperLink linkAuthor = e.Item.FindControl("linkAuthor") as HyperLink;
-                HyperLink linkGallery = e.Item.FindControl("linkGallery") as HyperLink;
+                
+                HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
+                lnkImage.NavigateUrl = "~/Photos/ViewAlbum.aspx?AlbumID=" + data.FolderID;
+
+                Image image = e.Item.FindControl("Image") as Image;
+                image.ImageUrl = "~/Files/Photos/" + data.FullPathToCoverImage;
+                image.AlternateText = data.Name;
+
+
                 Label lable = e.Item.FindControl("alCountphoto") as Label;
                 lable.Text = File.GetFilesByFolderID(long.Parse(litFolderID.Text)).Count.ToString();
                 linkAuthor.NavigateUrl = "~/" + linkAuthor.Text;
                 linkAuthor.Text = "Người đăng - " + linkAuthor.Text;
-                linkGallery.NavigateUrl = "~/Photos/ViewAlbum.aspx?AlbumID=" + litFolderID.Text;
-                linkGallery.ImageUrl = _webContext.RootUrl + "files/photos/" + litFullPath.Text;
             }
         }
     }

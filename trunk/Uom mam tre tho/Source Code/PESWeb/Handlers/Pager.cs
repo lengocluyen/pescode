@@ -327,7 +327,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "of" in the pager control.
         /// Default value: of
         /// </summary>
-        private string _OF = " of ";
+        private string _OF = " của ";
         [Category("Globalization")]
         public string OfClause
         {

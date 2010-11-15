@@ -294,7 +294,11 @@ input.del11:hover,a.del11:hover {
     padding: 4px;
     position: relative;
 }
-
+.index-comment.nomargin{
+  
+    margin-left:0px;
+  
+}
 .morecomments a
 {
     cursor:pointer;
@@ -602,6 +606,15 @@ td.im-detail {
 }
 .pg-meta {
     color: #777;
+}
+
+.ip-img img
+{
+	max-width:790px;
+}
+.ip-desc
+{
+	line-height:1.4;
 }
 /* end photos */
 

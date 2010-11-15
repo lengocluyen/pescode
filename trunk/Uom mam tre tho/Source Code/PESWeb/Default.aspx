@@ -122,7 +122,7 @@
                     <i class="ui-image icon-friend-req"></i>
                     <div class="ui-content">
                         <div>
-                            TIEUHOC.NET</div>
+                            tieuhoc.net</div>
                         <a href="#">Mạng xã hội ươm mầm ước mơ trẻ thơ</a>
                     </div>
                 </div>
