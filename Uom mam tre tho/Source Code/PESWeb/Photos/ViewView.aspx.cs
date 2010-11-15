@@ -16,12 +16,10 @@ namespace PESWeb.Photos
         protected void Page_Load(object sender, EventArgs e)
         {
             _presenter = new ViewViewPresenter(this);
-            //if (!IsPostBack)
-            //{
                 _presenter.Init();
-            //}
         }
         public string fileID = "";
+        public string createday = "";
         public void LoadUI(File file)
         {
             fileID = file.FileID.ToString();
@@ -32,24 +30,17 @@ namespace PESWeb.Photos
             lblDescription.Text = file.Description;
             Tags1.SystemObjectRecordID = Convert.ToInt64(file.FileID);
             Tags1.SystemObjectID = 5;
-            Comments1.SystemObjectRecordID = Convert.ToInt64(file.FileID);
+            comments.SystemObject = SystemObject.Names.Files;
+            comments.SystemObjectRecordID = Convert.ToInt64(file.FileID);
             string pathToImage = "/files/photos/" + path1 + "/" + litImageName.Text;
             litFileID.Text = file.FileID.ToString();
             //linkImage.NavigateUrl = pathToImage + "__o." + litFileExtension.Text;
             linkImage.NavigateUrl = "~/photos/ViewView.aspx?FileID=" + _presenter.ImageNext(file.FileID);
             linkImage.ImageUrl = pathToImage + "__o." + litFileExtension.Text;
-            //PESWeb.UserControls.Tags tags = (PESWeb.UserControls.Tags)LoadControl("~/Usercontrols/Tags.ascx");
-            //tags.SystemObjectID = 5;
-            //tags.Display = PESWeb.UserControls.TagState.ShowCloudAndTagBox;
-            //tags.SystemObjectRecordID = file.FileID;
-            //phControl.Controls.Add(tags);
+            linkNext.NavigateUrl = "~/photos/ViewView.aspx?FileID=" + _presenter.ImageNext(file.FileID);
+            linkPrivious.NavigateUrl = "~/photos/ViewView.aspx?FileID=" + _presenter.ImagePrivious(file.FileID);
+            lblCreated.Text = file.CreateDate.ToString("dd-MM-yyyy lúc HH:mm");
             
         }
-
-        //protected void img_Click(object sender, ImageClickEventArgs e)
-        //{
-        //    _presenter.LoadImageNext(long.Parse(this.litFileID.Text));
-        //    //upPanelViewPhoto.Update();
-        //}
     }
 }

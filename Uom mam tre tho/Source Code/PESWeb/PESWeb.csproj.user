@@ -6,16 +6,17 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <StartPageUrl>Default.aspx</StartPageUrl>
+          <StartPageUrl>Home.aspx</StartPageUrl>
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
-          <SilverlightDebugging>True</SilverlightDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
           <NativeDebugging>False</NativeDebugging>
           <SQLDebugging>False</SQLDebugging>
           <PublishCopyOption>RunFiles</PublishCopyOption>
-          <PublishTargetLocation>C:\Users\LeNgocLuyen\Desktop\</PublishTargetLocation>
-          <PublishDeleteAllFiles>True</PublishDeleteAllFiles>
-          <PublishCopyAppData>False</PublishCopyAppData>
+          <PublishTargetLocation>
+          </PublishTargetLocation>
+          <PublishDeleteAllFiles>False</PublishDeleteAllFiles>
+          <PublishCopyAppData>True</PublishCopyAppData>
           <ExternalProgram>
           </ExternalProgram>
           <StartExternalURL>

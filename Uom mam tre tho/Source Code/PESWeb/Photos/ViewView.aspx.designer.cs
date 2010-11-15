@@ -32,6 +32,24 @@ namespace PESWeb.Photos {
         protected global::System.Web.UI.WebControls.Label lblFileName;
         
         /// <summary>
+        /// linkNext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkNext;
+        
+        /// <summary>
+        /// linkPrivious control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkPrivious;
+        
+        /// <summary>
         /// linkImage control.
         /// </summary>
         /// <remarks>
@@ -86,12 +104,21 @@ namespace PESWeb.Photos {
         protected global::PESWeb.UserControls.Tags Tags1;
         
         /// <summary>
-        /// Comments1 control.
+        /// lblCreated control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::PESWeb.UserControls.Comments Comments1;
+        protected global::System.Web.UI.WebControls.Label lblCreated;
+        
+        /// <summary>
+        /// comments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.Comments comments;
     }
 }

@@ -13,5 +13,5 @@
 </div>
 <div class="divMenuChildRegister">
     <%--<%=Html.ActionLink(" ", "Index", "Home", new object { }, new object { })%>--%>
-    <a href="../../Learning/defaults.aspx"></a>
+    <a href="../default.aspx"></a>
 </div>

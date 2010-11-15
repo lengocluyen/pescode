@@ -10,17 +10,41 @@
                 Album Ảnh:
                 <asp:Label ID="lblAlbumName" runat="server" /></h1>
         </div>
+        <div class="toolbar">
+            <div class="buttons">
+                <div class="alignleft">
+                    <asp:Label Style="font-weight: bold;" ID="lblFileName" runat="server"></asp:Label>
+                </div>
+                <div class="alignright">
+                    <asp:HyperLink ID="linkNext" CssClass="button gray" runat="server">Trước</asp:HyperLink>
+                    &nbsp;&nbsp;<asp:HyperLink ID="linkPrivious" CssClass="button gray" runat="server">Sau</asp:HyperLink>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
         <div id="photos">
-            <asp:Label Style="font-weight: bold;" ID="lblFileName" runat="server"></asp:Label>
-            <br />
-            <asp:HyperLink ID="linkImage" runat="server"></asp:HyperLink>
-            <asp:Literal Visible="false" ID="litImageName" runat="server"></asp:Literal>
-            <asp:Literal Visible="false" ID="litFileExtension" runat="server"></asp:Literal><br />
-            <asp:Label ID="lblDescription" runat="server"> </asp:Label>
-            <asp:Literal Visible="false" ID="litFileID" runat="server"></asp:Literal>
-            <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" Display="ShowCloudAndTagBox" />
-            <PES:Comments ID="Comments1" runat="server" SystemObjectID="5"  />
-         
+            <div class="index-photo">
+                <div class="ip-img">
+                    <asp:HyperLink ID="linkImage" runat="server"></asp:HyperLink>
+                </div>
+                <asp:Literal Visible="false" ID="litImageName" runat="server"></asp:Literal>
+                <asp:Literal Visible="false" ID="litFileExtension" runat="server"></asp:Literal>
+                <div class="ip-desc">
+                    <asp:Label ID="lblDescription" runat="server"> </asp:Label>
+                </div>
+                <asp:Literal Visible="false" ID="litFileID" runat="server"></asp:Literal>
+                <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" Display="ShowCloudAndTagBox" />
+                <div class="post-text">
+                    <div class="body">
+                    </div>
+                    <div class="meta">
+                        <asp:Label ID="lblCreated" runat="server"></asp:Label>
+                        - <a href="#" id='respondlink-<%=fileID %>' class="respondlink">Cảm nhận</a>
+                    </div>
+                    <PES:Comments ID="comments" SystemObject="Files" runat="server" />
+                </div>
+            </div>
         </div>
     </div>
 </asp:Content>

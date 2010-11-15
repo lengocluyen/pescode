@@ -23,15 +23,6 @@ namespace PESWeb.Photos {
         protected global::System.Web.UI.WebControls.Label lblAlbumName;
         
         /// <summary>
-        /// lblCreateDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCreateDate;
-        
-        /// <summary>
         /// lblLocation control.
         /// </summary>
         /// <remarks>
@@ -48,15 +39,6 @@ namespace PESWeb.Photos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDescription;
-        
-        /// <summary>
-        /// lvGallery control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvGallery;
         
         /// <summary>
         /// btnAddPhotos control.
@@ -84,5 +66,41 @@ namespace PESWeb.Photos {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEditAlbum;
+        
+        /// <summary>
+        /// lvGallery control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lvGallery;
+        
+        /// <summary>
+        /// Tags1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.Tags Tags1;
+        
+        /// <summary>
+        /// lblCreateDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCreateDate;
+        
+        /// <summary>
+        /// comments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.Comments comments;
     }
 }
