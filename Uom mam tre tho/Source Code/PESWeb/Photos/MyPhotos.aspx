@@ -19,40 +19,35 @@
                 </LayoutTemplate>
                 <GroupTemplate>
                     <table class="photo-grid">
-                        <tr>
-                            <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                        </tr>
+                        <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                     </table>
                 </GroupTemplate>
                 <ItemTemplate>
-                    <td style="width: 25px;">
-                    </td>
                     <td>
-                        <asp:HyperLink CssClass="albumsActionLink" ID="linkEditAlbum" NavigateUrl="~/Photos/EditAlbum.aspx"
-                            Text="Chỉnh sửa" runat="server"></asp:HyperLink>
-                        -
-                        <asp:HyperLink CssClass="albumsActionLink" ID="linkViewAlbum" NavigateUrl="~/Photos/ViewAlbum.aspx"
-                            Text="Xem" runat="server"></asp:HyperLink>
-                        -
-                        <asp:LinkButton CssClass="albumsActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
-                            runat="server"></asp:LinkButton><br />
-                        <asp:Label CssClass="albumsTitle" ID="lblName" Text='<%#((Folder)Container.DataItem).Name %>'
-                            runat="server"></asp:Label><br />
-                        <img src="<%#_webContext.RootUrl %>files/photos/<%#((Folder)Container.DataItem).FullPathToCoverImage %>" /><br />
-                        <asp:Label CssClass="albumsLocation" Text="ở - " runat="server"></asp:Label>
-                        <asp:Label CssClass="albumsLocation" ID="lblLocation" Text='<%#((Folder)Container.DataItem).Location %>'
-                            runat="server"></asp:Label><br />
-                        <asp:Label CssClass="albumsDescription" ID="lblDescription" Text='<%#((Folder)Container.DataItem).Description %>'
-                            runat="server"></asp:Label>
-                        <asp:Literal Visible="false" ID="litFolderID" Text='<%#((Folder)Container.DataItem).FolderID.ToString() %>'
-                            runat="server"></asp:Literal>
+                        <div class="pg-action">
+                            <asp:HyperLink CssClass="albumsActionLink" ID="lnkEdit" 
+                                Text="Chỉnh sửa" runat="server"></asp:HyperLink>
+                            <asp:LinkButton CssClass="albumsActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
+                                runat="server"></asp:LinkButton>
+                        </div>
+                        <asp:HyperLink ID="lnkImage" runat="server">
+                            <div class="pg-album">
+                                <asp:Image ID="Image" runat="server" />
+                            </div>
+                        </asp:HyperLink>
+                        <div class="pg-detail">
+                            <div class="pg-name">
+                                <asp:HyperLink ID="lnkView" runat="server" />
+                            </div>
+                        </div>
                     </td>
-                    <%--<td style="width: 10px;">
-                    </td>--%>
                 </ItemTemplate>
                 <EmptyDataTemplate>
-                    Bạn hiện không có hình ảnh nào!
+                    <div class="mb info">
+                        Bạn hiện không có hình ảnh nào!
+                    </div>
                 </EmptyDataTemplate>
             </asp:ListView>
         </div>
+    </div>
 </asp:Content>
