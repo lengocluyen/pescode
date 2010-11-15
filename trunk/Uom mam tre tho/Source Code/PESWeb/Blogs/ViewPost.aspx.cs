@@ -19,6 +19,11 @@ namespace PESWeb.Blogs
         private ViewPostPresenter _presenter;
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
             _presenter = new ViewPostPresenter();
             _presenter.Init(this);
         }

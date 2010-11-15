@@ -13,7 +13,7 @@
         </div>
         <div class="clear">
         </div>
-        <div class="post" id="post-<%#this.blogID%>">
+        <div class="post" id='post-<%=blogID %>'>
             <div class="post-gravatar">
                 <asp:HyperLink ID="linkProfile" runat="server">
                     <asp:Image ID="imgAvatar" ImageUrl="/images/profileavatar/profileimage.aspx" runat="server"
@@ -28,11 +28,12 @@
                 </div>
                 <div class="meta">
                     Ngày viết:
-                    <asp:Label ID="lblCreated" runat="server"></asp:Label> - <a href="#" id='respondlink-<%#this.blogID%>' class="respondlink">Cảm nhận</a>
+                    <asp:Label ID="lblCreated" runat="server"></asp:Label> - <a href="#" id='respondlink-<%=blogID %>' class="respondlink">Cảm nhận</a>
                    <%-- Lần cập nhật cuối:
                     <asp:Label ID="lblUpdated" runat="server"></asp:Label><br />--%>
                 </div>
-                <PES:Comments ID="comments" runat="server" SystemObjectRecordID='<%#this.blogID %>' SystemObject="Blogs" />
+                <PES:Comments ID="comments" runat="server" 
+                    SystemObject="Blogs" />
             </div>
         </div>
         
