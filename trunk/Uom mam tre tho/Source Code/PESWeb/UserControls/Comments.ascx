@@ -1,8 +1,8 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Comments.ascx.cs" Inherits="PESWeb.UserControls.Comments" %>
 <div class="commentcontainer">
-    <div class="index-comment" runat="server" id="pnlMore">
+    <div class="index-comment morecomments" runat="server" id="pnlMore">
             <asp:HyperLink ID="lnkMore" runat="server" 
-                CssClass="morecomments viewmore"></asp:HyperLink>
+                CssClass="viewmore"></asp:HyperLink>
     </div>
     <asp:Repeater ID="repComment" runat="server">
         <ItemTemplate>

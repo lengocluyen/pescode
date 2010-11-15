@@ -75,8 +75,8 @@ namespace PESWeb.UserControls
             if (pnlMore.Visible)
             {
                 lnkMore.Text = string.Format("Xem tất cả ({0})", _presenter.MoreComments);
-                lnkMore.Attributes["SystemObjectID"] = SystemObjectID.ToString();
-                lnkMore.Attributes["SystemObjectRecordID"] = SystemObjectRecordID.ToString();
+                lnkMore.Attributes["data"] = SystemObjectID + "-" + SystemObjectRecordID + "-" + _presenter.MoreComments;
+                //lnkMore.Attributes["SystemObjectRecordID"] = SystemObjectRecordID.ToString();
             }
         }
 
