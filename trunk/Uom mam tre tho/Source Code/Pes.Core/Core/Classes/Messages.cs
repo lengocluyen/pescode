@@ -20,7 +20,7 @@ namespace Pes.Core
                     result /= 10;
                 else
                 {
-                    if((result /= 10)<1)
+                    if ((result /= 10) < 1)
                         result = 1;
                     result /= 10 + 1;
                 }
@@ -29,24 +29,47 @@ namespace Pes.Core
         }
         public static List<MessageWithRecipient> GetMessageByAccountID(Int64 AccountID, Int32 PageNumber, MessageFolders Folder)
         {
-            List<Messages> aMessage = All().ToList();
-            List<Account> aAccount = Account.All().ToList();
-            List<MessageRecipient> aMessageRecipient = MessageRecipient.All().ToList();
+            //List<Messages> aMessage = All().ToList();
+            //List<Account> aAccount = Account.All().ToList();
+            //List<MessageRecipient> aMessageRecipient = MessageRecipient.All().ToList();
 
-            IEnumerable<MessageWithRecipient> messages =
-                 (from r in aMessageRecipient
-                  join m in aMessage on r.MessageID equals m.MessageID
-                  join a in aAccount on m.SentByAccountID equals a.AccountID
-                  where r.AccountID == AccountID && r.MessageFolderID == (int)Folder
-                  orderby m.CreateDate descending
-                  select new MessageWithRecipient()
-                  {
-                      Sender = a,
-                      Message = m,
-                      MessageRecipient = r
-                  }).Skip((PageNumber - 1) * 10).Take(10);
+            //IEnumerable<MessageWithRecipient> messages =
+            //     (from r in aMessageRecipient
+            //      join m in aMessage on r.MessageID equals m.MessageID
+            //      join a in aAccount on m.SentByAccountID equals a.AccountID
+            //      where r.AccountID == AccountID && r.MessageFolderID == (int)Folder
+            //      orderby m.CreateDate descending
+            //      select new MessageWithRecipient()
+            //      {
+            //          Sender = a,
+            //          Message = m,
+            //          MessageRecipient = r
+            //      }).Skip((PageNumber - 1) * 10).Take(10);
 
-            return messages.ToList();
+            //return messages.ToList();
+
+            var query = (from r in MessageRecipient.All()
+                         join m in Messages.All() on r.MessageID equals m.MessageID
+                         join a in Account.All() on m.SentByAccountID equals a.AccountID
+                         where r.AccountID == AccountID && r.MessageFolderID == (int)Folder
+                         orderby m.CreateDate descending
+                         select new
+                         {
+                             Sender = a,
+                             Message = m,
+                             MessageRecipient = r
+                         }).Skip((PageNumber - 1) * 10).Take(10);
+
+            List<MessageWithRecipient> list = new List<MessageWithRecipient>();
+            foreach (var item in query)
+            {
+                MessageWithRecipient m = new MessageWithRecipient();
+                m.Sender = item.Sender;
+                m.Message = item.Message;
+                m.MessageRecipient = item.MessageRecipient;
+                list.Add(m);
+            }
+            return list;
         }
 
         public static MessageWithRecipient GetMessageByMessageID(Int32 MessageID, Int32 RecipientAccountID)
