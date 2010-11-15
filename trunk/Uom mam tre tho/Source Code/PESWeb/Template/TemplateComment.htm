@@ -1,14 +1,14 @@
 ﻿{#foreach $T as Comment}
 <div class="index-comment notinit">
     <div class="ic-avatar">
-        <a href='profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}'>
-            <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID={$T.Comment.CommentByAccountID}"
+        <a href='/profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}'>
+            <img alt="" src="/images/ProfileAvatar/ProfileImage.aspx?AccountID={$T.Comment.CommentByAccountID}"
                 class="avatar" />
         </a>
     </div>
     <div class="ic-text">
         <div class="ic-meta ic-author">
-            <a href='profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}' class="url">
+            <a href='/profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}' class="url">
                 {$T.Comment.CommentByUsername}</a>
         </div>
         <div class="ic-content">

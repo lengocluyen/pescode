@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Pes.Core;
 using StructureMap;
+using System.Web.UI.HtmlControls;
 
 namespace PESWeb
 {
@@ -39,10 +40,11 @@ namespace PESWeb
         {
             _userSession = ObjectFactory.GetInstance<IUserSession>();
             _redirector = ObjectFactory.GetInstance<IRedirector>();
-            if (txtusernam != null)
-                txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
             if (!_userSession.LoggedIn || _userSession.CurrentUser == null)
                 _redirector.GoToAccountLoginPage();
+            if (txtusernam != null)
+                txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
+            
 
             _navigation = ObjectFactory.GetInstance<INavigation>();
             _alertService = ObjectFactory.GetInstance<IAlertService>();
@@ -81,6 +83,31 @@ namespace PESWeb
             //repPrimaryNav.ItemDataBound += new RepeaterItemEventHandler(repPrimaryNav_ItemDataBound);
             // btSearch.ServerClick += new EventHandler(btnSearch_Click);
 
+            //string url = ResolveClientUrl("~/js/");
+            HtmlGenericControl js = new HtmlGenericControl("script");
+            js.Attributes["type"] = "text/javascript";
+            js.Attributes["src"] = ResolveClientUrl("~/js/jquery-1.4.3.min.js");
+            Page.Header.Controls.AddAt(1, js);
+
+            js = new HtmlGenericControl("script");
+            js.Attributes["type"] = "text/javascript";
+            js.Attributes["src"] = ResolveClientUrl("~/js/jquery-jtemplates.js");
+            Page.Header.Controls.AddAt(2, js);
+
+            js = new HtmlGenericControl("script");
+            js.Attributes["type"] = "text/javascript";
+            js.Attributes["src"] = ResolveClientUrl("~/js/jquery.autogrow.js");
+            Page.Header.Controls.AddAt(3, js);
+
+            js = new HtmlGenericControl("script");
+            js.Attributes["type"] = "text/javascript";
+            js.Attributes["src"] = ResolveClientUrl("~/js/jquery.alerts.js");
+            Page.Header.Controls.AddAt(4, js);
+
+            js = new HtmlGenericControl("script");
+            js.Attributes["type"] = "text/javascript";
+            js.Attributes["src"] = ResolveClientUrl("~/js/script.js");
+            Page.Header.Controls.AddAt(5, js);
         }
 
      
