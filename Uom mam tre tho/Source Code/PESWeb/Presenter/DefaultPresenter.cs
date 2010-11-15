@@ -18,7 +18,7 @@ namespace PESWeb.Presenter
         private IRedirector _redirector;
         private IPrivacyService _privacyService;
         private Account _accountBeingViewed;
-        public static int currentItem=20;
+        public static int currentItem = 20;
         public DefaultPresenter()
         {
             _redirector = ObjectFactory.GetInstance<IRedirector>();
@@ -37,10 +37,10 @@ namespace PESWeb.Presenter
         }
         public void Init(IDefault view, bool postBack)
         {
-                _view = view;
-                _view.TotalItem = Alert.CountAlertsByAccountID(_accountBeingViewed.AccountID);
-                ShowDisplay();
-            
+            _view = view;
+            _view.TotalItem = Alert.CountAlertsByAccountID(_accountBeingViewed.AccountID);
+            ShowDisplay();
+
         }
         public void AddStatus(string text)
         {
@@ -58,6 +58,6 @@ namespace PESWeb.Presenter
         {
             _view.ShowAlerts(_alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID));
         }
- 
+
     }
 }

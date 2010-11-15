@@ -289,14 +289,17 @@ input.del11:hover,a.del11:hover {
     float: left;
     clear: both;
     margin-top: 2px;
-    padding: 7px;
+    padding: 4px;
     position: relative;
 }
 
-
- a.morecomments {
-    margin-left: 18px;
-    display: block;
+.morecomments a
+{
+    cursor:pointer;
+}
+.morecomments img
+{
+   padding-left:20px;
 }
 
 .ic-avatar {
@@ -309,6 +312,7 @@ input.del11:hover,a.del11:hover {
 .ic-text {
     width: 340px;
     float: right;
+    padding-top:5px;
 }
 .ic-meta {
     line-height:1.4;
