@@ -51,8 +51,8 @@
                                 </td>
                                 <td class="im-icon">
                                     <div class="im-icon">
-                                        <a href='profiles/profile.aspx?AccountID=<%# ((MessageWithRecipient)Container.DataItem).Sender.AccountID%>'>
-                                            <img alt="" style="height: 40px" src="../images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#((MessageWithRecipient)Container.DataItem).Sender.AccountID%>" /></a>
+                                        <a href='/profiles/profile.aspx?AccountID=<%# ((MessageWithRecipient)Container.DataItem).Sender.AccountID%>'>
+                                            <img alt="" width="50" height="50" src="/images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#((MessageWithRecipient)Container.DataItem).Sender.AccountID%>" /></a>
                                     </div>
                                 </td>
                                 <td class="im-envelope">

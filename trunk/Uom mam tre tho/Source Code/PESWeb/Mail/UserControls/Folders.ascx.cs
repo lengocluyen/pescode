@@ -35,12 +35,12 @@ namespace PESWeb.Mail.UserControls
             if (IsNewMessage)
                 folderID = -1;
 
-            bool IsReadMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "ReadMessage.aspx", true) == 0;
-            if (IsReadMessage)
-            {
-                folderID = -1;
-                IsNewMessage = false;
-            }
+            //bool IsReadMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "ReadMessage.aspx", true) == 0;
+            //if (IsReadMessage)
+            //{
+            //    folderID = -1;
+            //    IsNewMessage = false;
+            //}
             CatHTML = string.Format(@"
                 <li class='{4}'><a id='createmaillink' href='NewMessage.aspx' title='Soạn thư'>Soạn thư</a></li>
                 <li class='{5}'><a id='inboxlonk' href='Default.aspx?folder={0}'>Hộp thư đến</a></li>
