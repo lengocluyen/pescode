@@ -17,7 +17,7 @@ namespace Pes.Core
 
         void AddFriendAddedAlert(Account FriendRequestFrom, Account FriendRequestTo);
         void AddFriendRequestAlert(Account FriendRequestFrom, Account FriendRequestTo, Guid requestGuid, string Message);
-        void AddStatusUpdateAlert(StatusUpdate statusUpdate);
+        long AddStatusUpdateAlert(StatusUpdate statusUpdate);
         void AddNewBoardPostAlert(BoardCategory category, BoardForum forum, BoardPost post, BoardPost thread);
         void AddNewBoardThreadAlert(BoardCategory category, BoardForum forum, BoardPost post);
         void AddNewBoardThreadAlert(BoardCategory category, BoardForum forum, BoardPost post, Group group);
