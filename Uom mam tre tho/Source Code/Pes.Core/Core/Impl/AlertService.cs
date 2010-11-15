@@ -229,7 +229,7 @@ namespace Pes.Core.Impl
             SaveAlert(alert);
         }
 
-        public void AddStatusUpdateAlert(StatusUpdate statusUpdate)
+        public long AddStatusUpdateAlert(StatusUpdate statusUpdate)
         {
             //alert = new Alert();
             //alert.CreateDate = DateTime.Now;
@@ -240,7 +240,7 @@ namespace Pes.Core.Impl
             //alert.Message = alertMessage;
             //SaveAlert(alert);
             //SendAlertToFriends(alert);
-
+            
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = _userSession.CurrentUser.AccountID;
@@ -249,6 +249,7 @@ namespace Pes.Core.Impl
             alert.Message = alertMessage;
             SaveAlert(alert);
             SendAlertToFriends(alert);
+            return alert.AlertID;
         }
         public void AddBlogAlert(Blog blog)
         {

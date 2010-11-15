@@ -2,11 +2,18 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using SubSonic.Extensions;
+using SubSonic.SqlGeneration.Schema;
 
 namespace Pes.Core
 {
     public partial class Alert
     {
+        [SubSonicIgnore]
+        public string CreateDateString
+        {
+            get { return CreateDate.ToString("dd-MM-yyyy lúc HH:mm"); }
+        }
+
         public  static void SaveAlert(Alert alert)
         {
             if (alert.AlertID > 0)
