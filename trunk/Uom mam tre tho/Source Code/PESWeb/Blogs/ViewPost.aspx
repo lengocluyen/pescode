@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true"
     CodeBehind="ViewPost.aspx.cs" Inherits="PESWeb.Blogs.ViewPost" %>
 
+<%@ Register Src="~/UserControls/Comments.ascx" TagPrefix="PES" TagName="Comments" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
     <div class="grid_20">
         <div id="title">
@@ -12,23 +13,28 @@
         </div>
         <div class="clear">
         </div>
-        <div class="textJustify">
-            <br />
-            <div class="divContainerCell" style="min-height: 300px;">
-                <h2 style="padding-left: 7px;">
-                    <asp:Label ID="lblTitle" runat="server"></asp:Label></h2>
-                <br />
+        <div class="post" id="post-<%#this.blogID%>">
+            <div class="post-gravatar">
                 <asp:HyperLink ID="linkProfile" runat="server">
-                    <asp:Image Style="padding-bottom: 5px; float: left; margin: 10px;" Width="100" Height="100"
-                        ID="imgAvatar" runat="server" ImageUrl="/images/profileavatar/profileimage.aspx" />
+                    <asp:Image ID="imgAvatar" ImageUrl="/images/profileavatar/profileimage.aspx" runat="server"
+                        Width="50" Height="50" CssClass="avatar" />
                 </asp:HyperLink>
-                Ngày tạo:
-                <asp:Label ID="lblCreated" runat="server"></asp:Label>
-                Lần cập nhật cuối:
-                <asp:Label ID="lblUpdated" runat="server"></asp:Label><br />
-                <br />
-                <asp:Label ID="lblPost" runat="server"></asp:Label>
+            </div>
+            <div class="post-text">
+                <h2 class="title">
+                    <asp:Label ID="lblTitle" runat="server"></asp:Label></h2>
+                <div class="body">
+                    <asp:Label ID="lblPost" runat="server"></asp:Label>
+                </div>
+                <div class="meta">
+                    Ngày viết:
+                    <asp:Label ID="lblCreated" runat="server"></asp:Label> - <a href="#" id='respondlink-<%#this.blogID%>' class="respondlink">Cảm nhận</a>
+                   <%-- Lần cập nhật cuối:
+                    <asp:Label ID="lblUpdated" runat="server"></asp:Label><br />--%>
+                </div>
+                <PES:Comments ID="comments" runat="server" SystemObjectRecordID='<%#this.blogID %>' SystemObject="Blogs" />
             </div>
         </div>
+        
     </div>
 </asp:Content>
