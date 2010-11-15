@@ -8,7 +8,10 @@
         LeftContent
     </div>
 </asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
+<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+    <ContentTemplate>
     <div class="grid_20">
         <div id="title">
             <h1>
@@ -21,7 +24,7 @@
             <div class="buttons">
                 <div class="alignleft">
                     <asp:Button ID="btnDelete" CssClass="button gray" Text="Xóa" runat="server" OnClick="btnDelete_Click" />
-                    <asp:Button ID="Button1" CssClass="button gray" Text="Đánh dấu" runat="server" />
+                    <%--<asp:Button ID="Button1" CssClass="button gray" Text="Đánh dấu" runat="server" />--%>
                 </div>
                 <div class="alignright">
                     <asp:HyperLink ID="linkPrevious" runat="server" CssClass="next" Text="&lt Trước"></asp:HyperLink>
@@ -85,7 +88,10 @@
             </div>
         </div>
     </div>
+    </ContentTemplate>
+</asp:UpdatePanel>
 </asp:Content>
+
 <asp:Content runat="server" ID="ContentHead" ContentPlaceHolderID="head">
     <%--<script src="../js/CustomJQuery/Mail_jquery.js" type="text/javascript"></script>--%>
 
