@@ -20,17 +20,21 @@ namespace PESWeb.Mail
             _presenter.Init(this);
             
         }
+
         public void LoadMessage(MessageWithRecipient message)
         {
+            
             MessageReci = message;
+            if (message == null)
+            { 
+                
+            }
 
             linkFrom.Text = message.Sender.Username;
 
-            linkFrom.NavigateUrl = "../profiles/profile.aspx?AccountID=" + message.Sender.AccountID;
-            Hyp_Account.NavigateUrl = "../profiles/profile.aspx?AccountID=" + message.Sender.AccountID;
-            img_Account.ImageUrl = "../images/ProfileAvatar/ProfileImage.aspx?AccountID=" + message.Sender.AccountID;
-            linkNext.NavigateUrl = "~/mail/ReadMessage.aspx?MessageID=" + (message.MessageRecipient.MessageID + 1).ToString();
-            linkPrevious.NavigateUrl = "~/mail/ReadMessage.aspx?MessageID=" + (message.MessageRecipient.MessageID - 1).ToString();
+            linkFrom.NavigateUrl = "~/profiles/profile.aspx?AccountID=" + message.Sender.AccountID;
+            Hyp_Account.NavigateUrl = "~/profiles/profile.aspx?AccountID=" + message.Sender.AccountID;
+            img_Account.ImageUrl = "~/images/ProfileAvatar/ProfileImage.aspx?AccountID=" + message.Sender.AccountID;
         }
 
         public void btnReply_Click(object sender, EventArgs e)

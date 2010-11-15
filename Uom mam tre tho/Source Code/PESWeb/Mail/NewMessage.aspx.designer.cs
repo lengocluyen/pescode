@@ -23,6 +23,15 @@ namespace PESWeb.Mail {
         protected global::PESWeb.Mail.UserControls.Folders Folders1;
         
         /// <summary>
+        /// btnSend control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSend;
+        
+        /// <summary>
         /// pnlSendMessage control.
         /// </summary>
         /// <remarks>
@@ -57,15 +66,6 @@ namespace PESWeb.Mail {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtMessage;
-        
-        /// <summary>
-        /// btnSend control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSend;
         
         /// <summary>
         /// pnlSent control.
