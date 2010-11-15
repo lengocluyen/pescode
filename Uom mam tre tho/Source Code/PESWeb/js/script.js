@@ -113,7 +113,7 @@ if (typeof jQuery == "function") {
 
                 $.ajax({
                     type: "POST",
-                    url: "Services/Services.asmx/MoreComments",
+                    url: "/Services/Services.asmx/MoreComments",
                     data: data,
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -121,7 +121,7 @@ if (typeof jQuery == "function") {
                         if (msg.d.length > 0) {
                             $container = $this.parent().parent();
                             $temp = $("<div></div>");
-                            $temp.setTemplateURL('Template/TemplateComment.htm',
+                            $temp.setTemplateURL('/Template/TemplateComment.htm',
                             null, { filter_data: false });
                             $temp.processTemplate(msg.d);
                             $container.children(":first").after($temp.html());
@@ -161,7 +161,7 @@ if (typeof jQuery == "function") {
                 $textarea.attr("disabled", "disabled");
                 $.ajax({
                     type: "POST",
-                    url: "Services/Services.asmx/AddComment",
+                    url: "/Services/Services.asmx/AddComment",
                     data: createJsonData($this.attr('container')),
                     contentType: "application/json; charset=utf-8",
                     dataType: "json",
@@ -169,7 +169,7 @@ if (typeof jQuery == "function") {
                         if (msg.d.length > 0) {
                             $container = $this.parent().parent().prev().prev();
                             $temp = $("<div></div>");
-                            $temp.setTemplateURL('Template/TemplateComment.htm',
+                            $temp.setTemplateURL('/Template/TemplateComment.htm',
                             null, { filter_data: false });
                             $temp.processTemplate(msg.d);
                             $container.append($temp.children());
@@ -230,7 +230,7 @@ if (typeof jQuery == "function") {
             $textarea.attr("disabled", "disabled");
             $.ajax({
                 type: "POST",
-                url: "Services/Services.asmx/AddStatusUpdate",
+                url: "/Services/Services.asmx/AddStatusUpdate",
                 data: "{Text:\"" + $textarea.val() + "\"}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
@@ -238,7 +238,7 @@ if (typeof jQuery == "function") {
                     if (msg.d.length > 0) {
                         $container = $("#posts .post-list");
                         $temp = $("<div></div>");
-                        $temp.setTemplateURL('Template/TemplateStatus.htm',
+                        $temp.setTemplateURL('/Template/TemplateStatus.htm',
                             null, { filter_data: false });
                         $temp.processTemplate(msg.d);
                         $container.prepend($temp.children());
@@ -409,7 +409,7 @@ var data = "{SystemObjectID:\"" + array[0] + "\",SystemObjectRecordID:\"" + arra
 
 $.ajax({
 type: "POST",
-url: "Services/Services.asmx/MoreComments",
+url: "/Services/Services.asmx/MoreComments",
 data: data,
 contentType: "application/json; charset=utf-8",
 dataType: "json",
@@ -417,7 +417,7 @@ success: function(msg) {
 if (msg.d.length > 0) {
 $container = $this.parent().parent();
 $temp = $("<div></div>");
-$temp.setTemplateURL('Template/TemplateComment.htm',
+$temp.setTemplateURL('/Template/TemplateComment.htm',
 null, { filter_data: false });
 $temp.processTemplate(msg.d);
 $container.children(":first").after($temp.html());

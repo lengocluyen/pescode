@@ -8,14 +8,14 @@
         <ItemTemplate>
             <div class="index-comment">
                 <div class="ic-avatar">
-                    <a href='profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>'>
-                        <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("CommentByAccountID")%>"
+                    <a href='/profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>'>
+                        <img alt="" src="/images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("CommentByAccountID")%>"
                             class="avatar" />
                     </a>
                 </div>
                 <div class="ic-text">
                     <div class="ic-meta ic-author">
-                        <a href='profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>' class="url">
+                        <a href='/profiles/profile.aspx?AccountID=<%#Eval("CommentByAccountID")%>' class="url">
                             <%#Eval("CommentByUsername") %></a>
                     </div>
                     <div class="ic-content">
