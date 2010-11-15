@@ -22,15 +22,15 @@ namespace PESWeb
         protected override void OnInit(EventArgs e)
         {
             ItemAdd = 5;
-            btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
+            //btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
             _presenter = new DefaultPresenter();
             _presenter.Init(this, IsPostBack);
         }
 
         void btnAddStatus_Click(object sender, EventArgs e)
         {
-            _presenter.AddStatus(txtStatus.Text);
-            txtStatus.Text = "";
+            //_presenter.AddStatus(txtStatus.Text);
+            //txtStatus.Text = "";
         }
         public void ShowAlerts(List<Alert> alerts)
         {

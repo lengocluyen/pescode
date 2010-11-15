@@ -30,10 +30,12 @@
             </div>
             <div id="c-form" style="display: none">
                 <div id="c-input">
-                    <asp:TextBox ID="txtStatus" CssClass="focus" runat="server" TextMode="MultiLine" />
+                    <%--<asp:TextBox ID="txtStatus" CssClass="focus" runat="server" TextMode="MultiLine" />--%>
+                    <textarea class="focus"></textarea>
                 </div>
                 <div id="c-buttons" class="alignright">
-                    <asp:Button ID="btnAddStatus" runat="server" CssClass="submit" Text="Chia sẽ" />
+                    <%--<asp:Button ID="btnAddStatus" runat="server" CssClass="submit" Text="Chia sẽ" />--%>
+                    <input type="button" class="submit" value="Chia sẽ" id="addstatus"/>
                 </div>
             </div>
         </div>
@@ -53,13 +55,13 @@
                                     </a>
                                 </div>
                                 <div class="post-text">
-                                   <%-- <h2 class="title"><a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
-                                       Cuong Do
-                                        </a>
-                                    </h2>--%>
-                                   <%-- <div class="body">--%>
-                                        <%# Eval("Message")  %>
-                                   <%-- </div>--%>
+                                    <%--<div class="body">
+                                        <span class="title"><a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
+                                           Cuong Do
+                                            </a>
+                                        </span>--%>
+                                    <%# Eval("Message")  %>
+                                    <%--</div>--%>
                                     <div class="meta">
                                         <%# Eval("CreateDate", "{0:dd-MM-yyyy lúc HH:mm}")  %>
                                         - <a href="#" id='respondlink-<%#Eval("AlertID")%>' class="respondlink">Cảm nhận</a>
