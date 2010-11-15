@@ -14,15 +14,6 @@ namespace PESWeb.Blogs {
     public partial class ViewPost {
         
         /// <summary>
-        /// lblTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblTitle;
-        
-        /// <summary>
         /// linkProfile control.
         /// </summary>
         /// <remarks>
@@ -41,22 +32,13 @@ namespace PESWeb.Blogs {
         protected global::System.Web.UI.WebControls.Image imgAvatar;
         
         /// <summary>
-        /// lblCreated control.
+        /// lblTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblCreated;
-        
-        /// <summary>
-        /// lblUpdated control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblUpdated;
+        protected global::System.Web.UI.WebControls.Label lblTitle;
         
         /// <summary>
         /// lblPost control.
@@ -66,5 +48,23 @@ namespace PESWeb.Blogs {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblPost;
+        
+        /// <summary>
+        /// lblCreated control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCreated;
+        
+        /// <summary>
+        /// comments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.Comments comments;
     }
 }

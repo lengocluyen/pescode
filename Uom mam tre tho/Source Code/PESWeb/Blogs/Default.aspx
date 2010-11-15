@@ -39,7 +39,7 @@
                         <div class="meta">
                             <%# Eval("CreateDate", "{0:dd-MM-yyyy lúc HH:mm}")  %>
                         </div>
-                        <%--<PES:Comments runat="server" SystemObject="Alerts" SystemObjectRecordID='<%#((Alert)Container.DataItem).AlertID%>' />--%>
+                      
                     </div>
                 </div>
             </ItemTemplate>

@@ -22,15 +22,17 @@ namespace PESWeb.Blogs
             _presenter = new ViewPostPresenter();
             _presenter.Init(this);
         }
-
+        public string blogID = "";
         public void LoadPost(Blog blog)
         {
             linkProfile.NavigateUrl = "/" + Account.GetAccountByID(blog.AccountID).Username;
             lblTitle.Text = blog.Title;
             lblPost.Text = blog.Post;
             imgAvatar.ImageUrl += "?AccountID=" + blog.AccountID.ToString();
-            lblCreated.Text = blog.CreateDate.ToString();
-            lblUpdated.Text = blog.UpdateDate.ToString();
+            lblCreated.Text = blog.CreateDate.ToString("dd-MM-yyyy lúc HH:mm");
+            //lblUpdated.Text = blog.UpdateDate.ToString("dd-MM-yyyy lúc HH:mm");
+            comments.SystemObjectRecordID = blog.BlogID;
+            blogID = blog.BlogID.ToString();
         }
     }
 }
