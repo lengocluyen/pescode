@@ -42,6 +42,7 @@
                       
                     </div>
                 </div>
+                <div class="clear"></div>
             </ItemTemplate>
             <EmptyDataTemplate>
                 Bạn chưa đăng bài blogs nào!
