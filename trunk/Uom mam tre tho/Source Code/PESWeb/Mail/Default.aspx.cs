@@ -19,7 +19,7 @@ namespace PESWeb.Mail
             base.OnInit(e);
         }
 
-        protected string Substring(string str, int num)
+        public string Substring(string str, int num)
         {
             if (str.Length > num)
                 return str.Substring(0, num);
@@ -45,7 +45,7 @@ namespace PESWeb.Mail
 
                 chkMessage.Attributes.Add("MessageID", wmr.Message.MessageID.ToString());
                 linkMessage.NavigateUrl = "~/mail/ReadMessage.aspx?MessageID=" + wmr.Message.MessageID.ToString();
-                linkProfile.NavigateUrl = "~/" + wmr.Sender.Username;
+                linkProfile.NavigateUrl = "~/profiles/profile.aspx?AccountID=" + wmr.Sender.AccountID;
             }
         }
 

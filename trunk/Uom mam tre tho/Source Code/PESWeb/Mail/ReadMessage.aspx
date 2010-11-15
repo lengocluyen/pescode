@@ -24,9 +24,6 @@
                         OnClick="btnReply_Click" Text="Phản hồi" />
                 </div>
                 <div class="alignright">
-                    <asp:HyperLink ID="linkPrevious" runat="server" Text="&lt Trước"></asp:HyperLink>
-                    |
-                    <asp:HyperLink ID="linkNext" runat="server" Text="Sau &gt"></asp:HyperLink>
                 </div>
                 <div class="clear">
                 </div>
@@ -50,7 +47,7 @@
                     <tr>
                         <td colspan="3">
                             <br />
-                            <%=MessageReci.Message.Body %>
+                                <%=MessageReci.Message.Body %>
                             <br />
                         </td>
                     </tr>
