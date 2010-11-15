@@ -209,12 +209,13 @@ input.del11:hover,a.del11:hover {
 
 
 .post {
-    /*clear: both;*/
-    float: left;
+    clear: both;
+  /*  float: left;*/
     border-top: 1px solid #D8DFEA;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 8px;
+  
 }
 
 .post .title {
@@ -258,10 +259,10 @@ input.del11:hover,a.del11:hover {
     width: 50px;
     height: 50px;
 }
+
 .post-text {
-    float: right;
-   /* width: 490px;*/
-   width:400px;
+    /* float: right;
+   width: 490px;*/
 }
 
 .post-text label input {
@@ -288,7 +289,8 @@ input.del11:hover,a.del11:hover {
     width: 385px;
     float: left;
     clear: both;
-    margin-top: 2px;
+    /*margin-top: 2px;*/
+    margin:2px 0 0 60px;
     padding: 4px;
     position: relative;
 }
@@ -582,6 +584,14 @@ td.im-detail {
     margin: 2px;
     height: 120px;
     width: 161px;
+    border:solid 1px #ccc !important;
+}
+.pg-action{
+    margin-bottom:5px;
+    text-align:right;
+}
+.pg-action a{
+    margin-left:5px;
 }
 .pg-detail {
     margin-left: 8px;
