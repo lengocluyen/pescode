@@ -13,7 +13,8 @@ namespace PESWeb.Mail.UserControls
     {
         protected IWebContext _webContext;
         private FoldersPresenter _presenter;
-
+        public string CatHTML = "";
+        int folderID = 0;
         public Folders()
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
@@ -23,27 +24,37 @@ namespace PESWeb.Mail.UserControls
         {
             _presenter = new FoldersPresenter();
             _presenter.Init(this);
+            LoadCategories();
         }
-        //public void LoadFolders(List<MessageFolder> Folders)
-        //{
-            //repFolders.DataSource = Folders;
-            //repFolders.DataBind();
-        //}
-        //protected void repFolders_ItemDataBound(object sender, RepeaterItemEventArgs e)
-        //{
-        //    if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
-        //    {
 
-        //        HyperLink linkFolder = e.Item.FindControl("linkFolder") as HyperLink;
-        //        Image im = e.Item.FindControl("ImageLink") as Image;
-        //        Label lb = e.Item.FindControl("LabelLink") as Label;
-        //        im.ImageUrl = "~/images/letter.gif";
-        //        lb.Text = ((MessageFolder)e.Item.DataItem).FolderName;
-        //        //linkFolder.Text = ((MessageFolder)e.Item.DataItem).FolderName;
+        private void LoadCategories()
+        {
+            folderID = _webContext.FolderID;
 
-        //        linkFolder.NavigateUrl = "~/Mail/Default.aspx?folder=" + ((MessageFolder)e.Item.DataItem).MessageFolderID.ToString();
-        //        linkFolder.Attributes.Add("FolderID", ((MessageFolder)e.Item.DataItem).MessageFolderID.ToString());
-        //    }
-        //}
+            bool IsNewMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "NewMessage.aspx", true) == 0;
+            if (IsNewMessage)
+                folderID = -1;
+
+            bool IsReadMessage = String.Compare(System.IO.Path.GetFileName(Request.FilePath), "ReadMessage.aspx", true) == 0;
+            if (IsReadMessage)
+            {
+                folderID = -1;
+                IsNewMessage = false;
+            }
+            CatHTML = string.Format(@"
+                <li class='{4}'><a id='createmaillink' href='NewMessage.aspx' title='Soạn thư'>Soạn thư</a></li>
+                <li class='{5}'><a id='inboxlonk' href='Default.aspx?folder={0}'>Hộp thư đến</a></li>
+                <li class='{6}'><a id='sendlink' href='Default.aspx?folder={1}'>Hộp thư đi</a></li>
+                <li class='{7}'><a id='draflink' href='Default.aspx?folder={2}'>Thư nháp</a></li>
+                <li class='{8}'><a id='spamlink' href='Default.aspx?folder={3}'>Thư rác</a></li>",
+                   (int)MessageFolders.Inbox, (int)MessageFolders.Sent, (int)MessageFolders.Spam, (int)MessageFolders.Trash,
+                    IsNewMessage ? "current-cat" : "cat-item", SetCSS(1), SetCSS(2), SetCSS(3), SetCSS(4));
+
+        }
+
+        private string SetCSS(int num)
+        {
+            return folderID == num ? "current-cat" : "cat-item";
+        }
     }
 }
