@@ -44,9 +44,10 @@ namespace PESWeb.Mail
         }
         private void BuildJS()
         {
+
             StringBuilder _js = new StringBuilder();
             _js.AppendLine("<script type=''text/javascript' language='javascript'>");
-            _js.AppendLine("CKEDITOR.replace('" + txtMessage.ClientID + "',{extraPlugins : 'uicolor',uiColor: '#C1E8C1',skin:'kama'});");
+            _js.AppendLine("CKEDITOR.replace('" + txtMessage.ClientID + "',{extraPlugins : 'uicolor',uiColor: '#C1E8C1',skin:'kama',toolbar:[[ 'Bold', 'Italic', '-', 'NumberedList', 'BulletedList', '-', 'Link', 'Unlink' ]]});");
             _js.AppendLine("</script>");
             ClientScript.RegisterStartupScript(GetType(), "CKEditor", _js.ToString());
         }

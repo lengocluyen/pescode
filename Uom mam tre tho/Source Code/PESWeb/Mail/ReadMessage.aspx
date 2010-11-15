@@ -47,7 +47,7 @@
                     <tr>
                         <td colspan="3">
                             <br />
-                                <%=MessageReci.Message.Body %>
+                            <%=MessageReci.Message.Body %>
                             <br />
                         </td>
                     </tr>

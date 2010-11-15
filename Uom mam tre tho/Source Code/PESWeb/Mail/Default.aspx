@@ -20,7 +20,7 @@
         <div class="toolbar">
             <div class="buttons">
                 <div class="alignleft">
-                    <asp:Button ID="btnDelete" CssClass="button gray" Text="Xóa" runat="server" OnClick="btnDelete_Click"/>
+                    <asp:Button ID="btnDelete" CssClass="button gray" Text="Xóa" runat="server" OnClick="btnDelete_Click" />
                     <asp:Button ID="Button1" CssClass="button gray" Text="Đánh dấu" runat="server" />
                 </div>
                 <div class="alignright">
@@ -87,7 +87,6 @@
     </div>
 </asp:Content>
 <asp:Content runat="server" ID="ContentHead" ContentPlaceHolderID="head">
-
     <%--<script src="../js/CustomJQuery/Mail_jquery.js" type="text/javascript"></script>--%>
 
     <script type="text/javascript">
