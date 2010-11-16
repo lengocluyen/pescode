@@ -96,7 +96,7 @@ namespace PESWeb
 
             js = new HtmlGenericControl("script");
             js.Attributes["type"] = "text/javascript";
-            js.Attributes["src"] = ResolveClientUrl("~/js/jquery.autogrow.js");
+            js.Attributes["src"] = ResolveClientUrl("~/js/jquery.elastic.js");
             Page.Header.Controls.AddAt(3, js);
 
             js = new HtmlGenericControl("script");
