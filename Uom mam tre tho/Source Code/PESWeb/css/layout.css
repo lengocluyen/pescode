@@ -39,9 +39,9 @@ input.submit {
     background-position: 0 -50px;
     color: White;
     border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;
-    font-size:11px;
+    font-size: 11px;
     padding: 3px 6px 3px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 input.button, a.button {
@@ -94,9 +94,9 @@ input.del15, a.del15 {
     height: 15px;
     display: block;
     background: url(../images/delete15.png) 0 0;
-    cursor:pointer;
+    cursor: pointer;
 }
-input.del15:hover,a.del15:hover {
+input.del15:hover, a.del15:hover {
     background: url(../images/delete15.png) 0 15px;
 }
 
@@ -105,9 +105,9 @@ input.del11, a.del11 {
     height: 11px;
     display: block;
     background: url(../images/delete11.png) 0 0;
-    cursor:pointer;
+    cursor: pointer;
 }
-input.del11:hover,a.del11:hover {
+input.del11:hover, a.del11:hover {
     background: url(../images/delete11.png) 0 11px;
 }
 
@@ -209,18 +209,16 @@ input.del11:hover,a.del11:hover {
 
 
 .post {
-    clear: both;
-  /*  float: left;*/
+    clear: both; /*  float: left;*/
     border-top: 1px solid #D8DFEA;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 8px;
-  
 }
 
 .post .title {
-    font-weight:bold;
-    margin-bottom:6px;
+    font-weight: bold;
+    margin-bottom: 6px;
 }
 
 .post p {
@@ -248,7 +246,7 @@ input.del11:hover,a.del11:hover {
 
 .post .meta, .post .post-meta, .comments .meta {
     color: #777;
-    margin:6px 0;
+    margin: 6px 0;
 }
 
 .post-gravatar {
@@ -261,8 +259,7 @@ input.del11:hover,a.del11:hover {
 }
 
 .post-text {
-    /* float: right;
-   width: 490px;*/
+    /* float: right;    width: 490px;*/
 }
 
 .post-text label input {
@@ -275,8 +272,8 @@ input.del11:hover,a.del11:hover {
     background: #fff;
 }
 
-.post-text .body{
-    line-height:1.3;
+.post-text .body {
+    line-height: 1.3;
 }
 
 .post-text ul li {
@@ -288,24 +285,19 @@ input.del11:hover,a.del11:hover {
     background: #ECEFF5;
     width: 385px;
     float: left;
-    clear: both;
-    /*margin-top: 2px;*/
-    margin:2px 0 0 60px;
+    clear: both; /*margin-top: 2px;*/
+    margin: 2px 0 0 60px;
     padding: 4px;
     position: relative;
 }
-.index-comment.nomargin{
-  
-    margin-left:0px;
-  
+.index-comment.nomargin {
+    margin-left: 0px;
 }
-.morecomments a
-{
-    cursor:pointer;
+.morecomments a {
+    cursor: pointer;
 }
-.morecomments img
-{
-   padding-left:20px;
+.morecomments img {
+    padding-left: 20px;
 }
 
 .ic-avatar {
@@ -318,10 +310,10 @@ input.del11:hover,a.del11:hover {
 .ic-text {
     width: 340px;
     float: right;
-    padding-top:5px;
+    padding-top: 5px;
 }
 .ic-meta {
-    line-height:1.4;
+    line-height: 1.4;
 }
 
 .ic-author {
@@ -359,7 +351,11 @@ input.del11:hover,a.del11:hover {
     width: 310px;
     color: #000;
 }
-
+label.label {
+    width: 70px;
+    display: block;
+    float: left;
+}
 .form_submit_right {
     text-align: right;
 }
@@ -429,17 +425,15 @@ textarea.respondtext {
     font-weight: bold;
     background-color: #F2F2F2;
     border-top: 1px solid #cccccc;
-
 }
 .toolbar .buttons {
     margin: 5px 0;
 }
-.mailtoolbar
-{
+.mailtoolbar {
     border-top: 1px solid #EEEEE0;
-    font-weight:bold;
-    padding:10px 0;
-    margin-top:20px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 .mailselect {
     margin-bottom: 10px;
@@ -589,14 +583,14 @@ td.im-detail {
     margin: 2px;
     height: 120px;
     width: 161px;
-    border:solid 1px #ccc !important;
+    border: solid 1px #ccc !important;
 }
-.pg-action{
-    margin-bottom:5px;
-    text-align:right;
+.pg-action {
+    margin-bottom: 5px;
+    text-align: right;
 }
-.pg-action a{
-    margin-left:5px;
+.pg-action a {
+    margin-left: 5px;
 }
 .pg-detail {
     margin-left: 8px;
@@ -609,13 +603,11 @@ td.im-detail {
     color: #777;
 }
 
-.ip-img img
-{
-	max-width:790px;
+.ip-img img {
+    max-width: 790px;
 }
-.ip-desc
-{
-	line-height:1.4;
+.ip-desc {
+    line-height: 1.4;
 }
 /* end photos */
 
@@ -644,6 +636,25 @@ td.im-detail {
 
 /* end box style */
 
+table.tag-list{
+    width:100%;
+}
+.tag-list td{
+    padding:4px;
+}
+.tag-list b{
+    font-size:12px;
+    color:#3B5998;
+    padding-top:10px;
+    display:block;
+}
+.tag-list td a{
+    margin-right:10px;
+}
+.tag-list td.label{
+    padding-left:20px;
+}
+/* end tag list */
 #footer {
     border-top: 1px solid #DDDDDD;
     clear: both;
@@ -652,7 +663,7 @@ td.im-detail {
     padding-top: 5px;
     text-align: right;
     width: 100%;
-    color:#777;
+    color: #777;
 }
 
 .nofloat {
@@ -673,12 +684,11 @@ td.im-detail {
 .alignright {
     float: right;
 }
-.widthline
-{
-	line-height:15px;
-	}
+.widthline {
+    line-height: 15px;
+}
 
-/*header*/
+
 .BoxHeader
 {
 	height: 190px;
@@ -753,7 +763,8 @@ td.im-detail {
 	width:62px;height:90px;float: right;text-align:center;
 }
 .friendName{margin-left:-6px;}
-/* Blogs */
+
+
 .blogsList
 {
 	padding: 10px;
@@ -778,7 +789,7 @@ td.im-detail {
 {
 	font-size: 10px;
 }
-/* common style */
+
 .divContainer
 {
 	width: 90%;
@@ -851,4 +862,3 @@ td.im-detail {
 	padding-bottom: 7px;
 }
 .textJustify{text-align:justify;}
-
