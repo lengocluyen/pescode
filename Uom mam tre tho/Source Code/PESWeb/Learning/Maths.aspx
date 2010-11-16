@@ -13,7 +13,7 @@
     </asp:ScriptManager>
     <center>
         <asp:Silverlight ID="dienroi" runat="server" Height="700px" Width="100%" Source="~/ClientBin/PrimaryEducationSystem.Study.Lessons.xap"
-            MinimumVersion="3.0.40624.0" Windowless="true" />
+            MinimumVersion="3.0.40624.0"/>
    </center>
    </form>
 </body>
