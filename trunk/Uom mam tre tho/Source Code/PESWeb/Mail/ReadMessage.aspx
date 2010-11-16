@@ -2,13 +2,13 @@
     CodeBehind="ReadMessage.aspx.cs" Inherits="PESWeb.Mail.ReadMessage" %>
 
 <%@ Register Src="~/Mail/UserControls/Folders.ascx" TagPrefix="PES" TagName="Folders" %>
-<asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" runat="server">
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" runat="server">
     <div class="grid_4">
         LeftContent
     </div>
-</asp:Content>
+</asp:Content>--%>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 <%=MessageReci.Message.Subject%>
