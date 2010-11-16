@@ -19,7 +19,7 @@ if (typeof jQuery == "function") {
     });
 
     function init() {
-    
+
         function mentionform() {
             $(this).parent().css("display", "none");
             if ($(this).hasClass("single")) {
@@ -36,7 +36,7 @@ if (typeof jQuery == "function") {
             });
             return JSON.stringify({ 'data': data });
         };
-        
+
         function initDelComment(selector) {
             selector.hover(
                   function() {
@@ -94,7 +94,7 @@ if (typeof jQuery == "function") {
                 }
                 return false;
             });
-            
+
             // Xem tat ca
             selector.find(".morecomments .viewmore").click(function() {
                 $this = $(this);
@@ -190,17 +190,15 @@ if (typeof jQuery == "function") {
                 });
                 return false;
             });
-            
+
             // Textbox form input
-            selector.find('.form_comment textarea').autogrow({
-                minHeight: 30
-            }).blur(function() {
+            selector.find('.form_comment textarea').blur(function() {
                 $this = $(this);
                 if ($this.val().length == 0) {
                     $this.parent().parent().css("display", "none");
                     $this.parent().parent().prev().css("display", "block");
                 }
-            });
+            }).elastic();
         }
 
         initAddComment($(".post-text"));
@@ -212,14 +210,14 @@ if (typeof jQuery == "function") {
             $("#c-form .focus:first").focus();
         });
 
-        $('#c-input textarea').autogrow({
-            minHeight: 36, maxHeight: 230
-        }).blur(function() {
+      
+        $('#c-input textarea').blur(function() {
             if ($(this).val().length == 0) {
                 $('#c-mention').css("display", "block");
                 $('#c-form').css("display", "none");
             }
-        });
+        }).elastic();
+
         // init button addstatus
         $("#addstatus").click(function() {
             $this = $(this);
