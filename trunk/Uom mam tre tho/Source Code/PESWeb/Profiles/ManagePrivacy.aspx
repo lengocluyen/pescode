@@ -9,7 +9,7 @@
         </div>
         <div class="clear">
         </div>
-        <div class="mb blue">
+        <div class="mb info">
             Bạn hãy sử dụng các cài đặt bên dưới để kiểm quyền truy cập hoặc xem thông tin trên
             trang cá nhân của bạn.
         </div>
