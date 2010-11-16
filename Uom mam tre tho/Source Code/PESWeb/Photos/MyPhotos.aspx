@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true"
+﻿
+
+<%@ Page Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true"
     CodeBehind="MyPhotos.aspx.cs" Inherits="PESWeb.Photos.MyPhotos" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
