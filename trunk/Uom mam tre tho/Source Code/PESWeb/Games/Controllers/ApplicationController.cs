@@ -13,11 +13,11 @@ namespace PESWeb.Controllers
         public ApplicationController()
         {
             _userSession = ObjectFactory.GetInstance<IUserSession>();
-            if (_userSession.Username != "")
+            if (_userSession.LoggedIn)
             {
                 ViewData["UserLogin"] = _userSession.Username;
-                _userSession.LoggedIn = true;
-                _userSession.CurrentUser = Account.GetAccountByUsername(_userSession.Username);
+                //_userSession.LoggedIn = true;
+                //_userSession.CurrentUser = Account.GetAccountByUsername(_userSession.Username);
             }
         }
     }

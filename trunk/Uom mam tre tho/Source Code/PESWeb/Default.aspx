@@ -12,7 +12,7 @@
     </div>
 </asp:Content>--%>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
-   <div class="grid_15">
+   <div class="grid_14">
         <div id="title">
             <h1>
                 <%=Resources.PESResources.newsfeed %></h1>
@@ -84,9 +84,9 @@
         <div class="clear">
         </div>
     </div>
-    <div class="grid_5">
+    <div class="grid_5" style="margin-top:20px;">
         <PES:Friends runat="server" ID="friens" />
-        <div class="box">
+        <%--<div class="box">
             <h2>
                 <%=Resources.PESResources.request %><a class="subtitle" href="#"><%=Resources.PESResources.seeAll %></a>
             </h2>
@@ -123,6 +123,6 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
     </div>
 </asp:Content>

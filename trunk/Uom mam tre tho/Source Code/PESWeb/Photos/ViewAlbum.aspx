@@ -5,7 +5,7 @@
 <%@ Register Src="~/UserControls/Tags.ascx" TagName="Tags" TagPrefix="PES" %>
 <%@ Register Src="~/UserControls/Comments.ascx" TagName="Comments" TagPrefix="PES" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <div class="widthline">
                 <h1>

@@ -117,7 +117,9 @@ input.del11:hover, a.del11:hover {
 #header {
     height: 34px;
 }
-
+#avatar-info{
+    margin-top:20px
+}
 /* title */
 #title {
     margin: 20px 0 10px 0;
@@ -449,6 +451,11 @@ textarea.respondtext {
     /* border-right: 1px solid #D8DFEA;     border-top: 1px solid #94A3C4;*/
     padding-bottom: 10px;
 }
+
+.widget {
+    /* border-right: 1px solid #D8DFEA;     border-top: 1px solid #94A3C4;*/
+    padding-bottom: 10px;
+}
 .widget h2 {
     background: #ECEFF5 scroll 0px 0px;
     border-top: 0 none;
@@ -461,13 +468,35 @@ textarea.respondtext {
     list-style: none;
     padding: 0px 7px 10px 8px;
 }
+
 .widget li {
     margin-top: 5px;
+    
 }
 .widget ul li a {
     margin: 0;
     padding: 0;
 }
+ul.menuleft{
+    border-top:solid 1px #ccc;
+    margin-top:20px;
+}
+ul.menuleft li{
+    display:block;
+    clear:both;
+    line-height:1.7;
+    padding-bottom:20px;
+}
+ul.menuleft a{
+    font-weight:bold;
+    float:left
+}
+ul.menuleft img{
+    width:20px;
+    float:left;
+    margin-right:5px;
+}
+
 .widget-content {
     padding: 0 5px;
 }
@@ -633,7 +662,7 @@ td.im-detail {
     margin-top: 11px;
 }
 .photo-grid td {
-    padding: 0 31px 8px 1px;
+    padding: 0 10px 8px 1px;
     width: 171px;
     vertical-align: top;
     text-align: left;
@@ -681,7 +710,7 @@ td.im-detail {
     padding: 10px;
     margin-bottom: 10px;
     color: #000;
-    text-align:center;
+    text-align: center;
 }
 
 .mb.grey {
@@ -722,33 +751,31 @@ table.tag-list {
     padding-left: 20px;
 }
 /* end tag list */
-.upload-avatar h3
-{
-    font-size:14px;
-    margin:15px 0 10px 0;
+.upload-avatar h3 {
+    font-size: 14px;
+    margin: 15px 0 10px 0;
     background: #ECEFF5 scroll 0px 0px;
     display: block;
     font-size: 11px;
     padding: 10px;
-    
 }
-.upload-avatar h5{
-    margin-bottom:10px;
-    font-size:12px;
+.upload-avatar h5 {
+    margin-bottom: 10px;
+    font-size: 12px;
 }
 
-.ua-center{
-    text-align:center;
+.ua-center {
+    text-align: center;
 }
-.ua-hint{
-    line-height:1.4;
-    margin-bottom:10px;
+.ua-hint {
+    line-height: 1.4;
+    margin-bottom: 10px;
 }
-.ua-buttons{
-    margin-top:10px;
+.ua-buttons {
+    margin-top: 10px;
 }
-#gravatar-info{
-    line-height:1.5;
+#gravatar-info {
+    line-height: 1.5;
 }
 /* end upload avatar*/
 #footer {

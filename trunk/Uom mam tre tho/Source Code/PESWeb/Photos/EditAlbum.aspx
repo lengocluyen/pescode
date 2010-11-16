@@ -11,19 +11,19 @@
         </div>
         <div style="margin-top: 20px">
             <div class="comment-form">
-                <div class="form_input">
+                <div class="form-input">
                     <label class="label">
                         Tên Album</label>
                     <asp:TextBox ID="txtFolderName" runat="server" Width="318px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="reqFolderName" ControlToValidate="txtFolderName"
                         SetFocusOnError="true" ErrorMessage="*" runat="server" />
                 </div>
-                <div class="form_input">
+                <div class="form-input">
                     <label class="label">
                         Địa điểm</label>
                     <asp:TextBox ID="txtLocation" runat="server" Width="318px"></asp:TextBox>
                 </div>
-                <div class="form_input">
+                <div class="form-input">
                     <label class="label">
                         Mô tả</label>
                     <asp:TextBox Columns="30" Rows="8" ID="txtDescription" Width="375px" MaxLength="500"

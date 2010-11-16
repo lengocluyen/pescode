@@ -4,7 +4,7 @@
     CodeBehind="MyPhotos.aspx.cs" Inherits="PESWeb.Photos.MyPhotos" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 Ảnh của tôi</h1>

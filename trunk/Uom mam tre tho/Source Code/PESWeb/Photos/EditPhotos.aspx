@@ -2,7 +2,7 @@
     CodeBehind="EditPhotos.aspx.cs" Inherits="PESWeb.Photos.EditPhotos" %>
 
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 Sửa hình ảnh</h1>

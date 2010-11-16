@@ -3,7 +3,7 @@
 
 <%@ Register Src="~/UserControls/Friends.ascx" TagPrefix="PES" TagName="Friends" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_15">
+    <div class="grid_14">
         <div id="title">
             <h1>
                 Xem Album</h1>

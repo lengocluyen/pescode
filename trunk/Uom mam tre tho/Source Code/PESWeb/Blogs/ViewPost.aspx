@@ -3,7 +3,7 @@
 
 <%@ Register Src="~/UserControls/Comments.ascx" TagPrefix="PES" TagName="Comments" %>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 Blogs</h1>
