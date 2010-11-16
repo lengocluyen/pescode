@@ -84,6 +84,16 @@ namespace PESWeb.Mail
 
         public void DisplayPageNavigation(Int32 PageCount, MessageFolders folder, Int32 CurrentPage)
         {
+            if (PageCount <= 1)
+            {
+                lbnextPrev.Text = "";
+                lbnextprev_bottom.Text = "";
+            }
+            else
+            {
+                lbnextPrev.Text = "|";
+                lbnextprev_bottom.Text = "|";
+            }
 
             if (PageCount == CurrentPage)
             {
