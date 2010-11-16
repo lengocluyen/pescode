@@ -31,8 +31,28 @@ namespace PESWeb.Profiles
 
         public void ShowUpdates(List<StatusUpdate> StatusUpdates)
         {
-            repStatusUpdates.DataSource = StatusUpdates;
-            repStatusUpdates.DataBind();
+             lvStatus.DataSource = StatusUpdates;
+                lvStatus.DataBind();
+            
+        }
+        public void lvStatus_ItemDataBound(object sender, ListViewItemEventArgs e)
+        {
+            if (e.Item.ItemType == ListViewItemType.DataItem)
+            {
+                StatusUpdate data = ((ListViewDataItem)e.Item).DataItem as StatusUpdate;
+                HyperLink linkAvatar = e.Item.FindControl("linkAvatar") as HyperLink;
+                linkAvatar.NavigateUrl = "~/profiles/profile.aspx?AccountID=" + data.AccountID;
+                Image imaAvatar = e.Item.FindControl("imaAvatar") as Image;
+                imaAvatar.ImageUrl = "~/images/ProfileAvatar/ProfileImage.aspx?AccountID=" + data.AccountID;
+
+                Label lbStatus = e.Item.FindControl("lbStatus") as Label;
+                lbStatus.Text = data.Status;
+
+                Label lbCreateDate = e.Item.FindControl("lbCreateDate") as Label;
+                lbCreateDate.Text = data.CreateDate.ToString("dd-MM-yyyy lúc HH:mm");
+
+
+            }
         }
     }
 }

@@ -5,7 +5,7 @@
 <%@ Register Src="~/UserControls/Tags.ascx" TagName="Tags" TagPrefix="PES" %>
 <%@ Register Src="~/UserControls/Comments.ascx" TagName="Comments" TagPrefix="PES" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_18">
+    <div class="grid_20">
         <div id="title">
             <div class="widthline">
                 <h1>
@@ -33,7 +33,6 @@
                         OnClick="lbEditPhotos_Click"></asp:Button>
                     <asp:Button ID="btnEditAlbum" runat="server" CssClass="button gray" Text="Chỉnh sửa album"
                         OnClick="lbEditAlbum_Click"></asp:Button>
-                    <%--<a href="#">< Trước</a> | <a href="#">Sau ></a>--%>
                 </div>
                 <div class="clear">
                 </div>
@@ -62,24 +61,16 @@
                         <div class="pg-detail">
                             <div class="pg-name">
                                 <asp:HyperLink ID="lnkView" runat="server" />
-                                <%--<asp:Label Style="font-weight: bold;" ID="lblFileName" Text='<%#((File)Container.DataItem).FileName %>'
-                            runat="server"></asp:Label>--%>
                             </div>
                         </div>
-                        <asp:Literal Visible="false" ID="litImageName" runat="server" Text='<%#((File)Container.DataItem).FileSystemName.ToString() %>'></asp:Literal>
-                        <asp:Literal Visible="false" ID="litFileExtension" runat="server" Text='<%# ((File)Container.DataItem).Extension.ToString() %>'></asp:Literal><br />
                         <asp:Label ID="lblDescription" runat="server" Text='<%#((File)Container.DataItem).Description %>'></asp:Label>
-                        <asp:Literal Visible="false" ID="litFileID" Text='<%#((File)Container.DataItem).FileID %>'
-                            runat="server"></asp:Literal>
                     </td>
                 </ItemTemplate>
                 <EmptyItemTemplate>
-                    <%-- Không có hình ảnh nào trong album.
-                    <asp:HyperLink ID="linkAddPhotos" runat="server" Text="Click here to add photos"></asp:HyperLink>.--%>
                 </EmptyItemTemplate>
             </asp:ListView>
             <div style="margin:10px 0">
-                <PES:Tags ID="Tags1" runat="server" SystemObjectID="8" SystemObjectRecordID='<%#this._webContext.AlbumID %>'
+                <PES:Tags ID="Tags1" runat="server" SystemObjectID="8"
                     Display="ShowCloudAndTagBox" />
             </div>
             <div class="alignleft">

@@ -16,13 +16,13 @@
         <div id="title">
             <h1>
                 <%=Resources.PESResources.group%></h1>
-            <%--<div class="alignright">
-                <a href="#" class="button gray">Tạo nhóm</a>
-            </div>--%>
+            <div class="alignright">
+                <a href="../Groups/ManageGroup.aspx" class="button green">Tạo nhóm mới</a>
+            </div>
         </div>
         <div class="clear">
         </div>
-        <div id="photos">
+        <div class="post">
             <asp:Label ID="lblMessage" ForeColor="Red" runat="server"></asp:Label>
             <asp:ListView ID="lvGroups" GroupItemCount="4" runat="server" OnItemDataBound="lvGroups_ItemDataBound">
                 <LayoutTemplate>
@@ -30,18 +30,24 @@
                 </LayoutTemplate>
                 <GroupTemplate>
                     <table class="photo-grid">
-                        <tr>
-                            <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                        </tr>
+                        <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                     </table>
                 </GroupTemplate>
                 <ItemTemplate>
                     <td>
                         <asp:Literal Visible="false" ID="litImageID" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).FileID %>'></asp:Literal>
                         <asp:Literal ID="litPageName" Visible="false" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).PageName %>'></asp:Literal>
-                        <asp:LinkButton OnClick="lbPageName_Click" ID="lbPageName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:LinkButton>
-                        <asp:Image ID="imgGroupImage" runat="server" />
-                        <asp:Label ID="lblName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:Label>
+                        <asp:HyperLink ID="lnkImage" runat="server">
+                            <div class="pg-album">
+                                <asp:Image ID="imgGroupImage" runat="server" />
+                            </div>
+                        </asp:HyperLink>
+                        <div class="pg-detail">
+                            <div class="pg-name">
+                                <asp:LinkButton OnClick="lbPageName_Click" ID="lbPageName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:LinkButton>
+                            </div>
+                        </div>
+                        <%--<asp:Label ID="lblName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:Label>--%>
                     </td>
                 </ItemTemplate>
                 <EmptyDataTemplate>

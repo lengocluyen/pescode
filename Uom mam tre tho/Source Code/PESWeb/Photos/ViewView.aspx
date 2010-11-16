@@ -37,6 +37,7 @@
                 <div style="margin:10px 0">
                     <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" Display="ShowCloudAndTagBox" />
                 </div>
+                <br />
                 <div class="post-text">
                     <div class="body">
                     </div>

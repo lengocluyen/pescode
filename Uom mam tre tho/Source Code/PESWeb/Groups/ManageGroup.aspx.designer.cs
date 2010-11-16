@@ -86,6 +86,15 @@ namespace PESWeb.Groups {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtBody;
         
         /// <summary>
+        /// rfvBody control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvBody;
+        
+        /// <summary>
         /// lbGroupTypes control.
         /// </summary>
         /// <remarks>

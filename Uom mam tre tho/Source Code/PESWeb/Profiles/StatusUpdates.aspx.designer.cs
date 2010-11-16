@@ -14,12 +14,21 @@ namespace PESWeb.Profiles {
     public partial class StatusUpdates {
         
         /// <summary>
-        /// repStatusUpdates control.
+        /// lvStatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repStatusUpdates;
+        protected global::System.Web.UI.WebControls.ListView lvStatus;
+        
+        /// <summary>
+        /// friens control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::PESWeb.UserControls.Friends friens;
     }
 }

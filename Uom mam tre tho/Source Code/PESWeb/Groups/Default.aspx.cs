@@ -43,7 +43,8 @@ namespace PESWeb.Groups
                 Literal litImageID = e.Item.FindControl("litImageID") as Literal;
                 Literal litPageName = e.Item.FindControl("litPageName") as Literal;
                 LinkButton lbPageName = e.Item.FindControl("lbPageName") as LinkButton;
-
+                HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
+                lnkImage.NavigateUrl = "~/Groups/" + litPageName.Text + ".aspx";
                 lbPageName.Attributes.Add("PageName", litPageName.Text);
                 imgGroupImage.ImageUrl = "/files/photos/" + _presenter.GetImageByID(Convert.ToInt64(litImageID.Text),File.Sizes.S);
             }

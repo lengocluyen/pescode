@@ -12,11 +12,7 @@
     </div>
 </asp:Content>--%>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
-    <!--Rating-->
-    <%--<PES:Ratings ID="Rating1" runat="server" SystemObjectID="5" SystemObjectRecordID="127"/>--%>
-    <!--Tagd-->
-    <%--<PES:Tags Display="ShowCloudAndTagBox" runat="server" SystemObjectID="5" SystemObjectRecordID="114" />--%>
-    <div class="grid_15">
+   <div class="grid_15">
         <div id="title">
             <h1>
                 <%=Resources.PESResources.newsfeed %></h1>

@@ -42,7 +42,6 @@ namespace PESWeb.Groups
                 Image imgGroupImage = e.Item.FindControl("imgGroupImage") as Image;
                 Literal litImageID = e.Item.FindControl("litImageID") as Literal;
                 Literal litPageName = e.Item.FindControl("litPageName") as Literal;
-                LinkButton lbPageName = e.Item.FindControl("lbPageName") as LinkButton;
                 ImageButton ibDelete = e.Item.FindControl("ibDelete") as ImageButton;
                 Literal litGroupID = e.Item.FindControl("litGroupID") as Literal;
                 ImageButton ibEdit = e.Item.FindControl("ibEdit") as ImageButton;
@@ -50,8 +49,12 @@ namespace PESWeb.Groups
                 ibDelete.Attributes.Add("GroupID", litGroupID.Text);
                 ibEdit.Attributes.Add("GroupID", litGroupID.Text);
                 ibDelete.Attributes.Add("onclick","return confirm('Bạn có thật sự muốn xóa nhóm này?');");
-                lbPageName.Attributes.Add("PageName", litPageName.Text);
                 imgGroupImage.ImageUrl = "/files/photos/" + _presenter.GetImageByID(Convert.ToInt64(litImageID.Text), File.Sizes.S);
+
+                HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
+                lnkImage.NavigateUrl = "~/Groups/" + litPageName.Text + ".aspx";
+                imgGroupImage.ImageUrl = "/files/photos/" + _presenter.GetImageByID(Convert.ToInt64(litImageID.Text), File.Sizes.S);
+    
             }
         }
 

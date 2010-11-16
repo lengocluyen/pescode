@@ -31,6 +31,11 @@ namespace PESWeb.Groups
                 lbPrevious.Visible = false;
             if (repMembers.Items.Count == 0)
                 lbNext.Visible = false;
+            if (repMembers.Items.Count < 10)
+            {
+                lbNext.Visible = false;
+                lbPrevious.Visible = false;
+            }
         }
 
         public void SetButtonsVisibility(bool Visible)
@@ -39,16 +44,45 @@ namespace PESWeb.Groups
         }
 
         public void LoadData(List<Account> Members, List<Account> MembersToApprove)
-        {
-            if (Members.Count > 0)
+        {  
+            //if (Members.Count > 0&&MembersToApprove.Count>0)
+            //{
+            //    pnchooseMember.Visible = true;
+            //    pnMemberdisplay.Visible = true;
+            //    repMembers.DataSource = Members;
+            //    repMembers.DataBind();
+            //    repMembersToApprove.DataSource = MembersToApprove;
+            //    repMembersToApprove.DataBind();
+            //    return;
+            //}
+            //else
+            //{
+            //    pnMemeber.Visible = false;
+            //    ShowMessage("Hiện chưa thành viên nào!");
+            //    return;
+            //}
+            if (Members.Count < 1)
             {
-                repMembers.DataSource = Members;
-                repMembers.DataBind();
-                repMembersToApprove.DataSource = MembersToApprove;
-                repMembersToApprove.DataBind();
+                pnMemberdisplay.Visible = false;
             }
             else
-                ShowMessage("Hiện chưa thành viên nào!");
+            {
+                pnMemberdisplay.Visible = true;
+                repMembers.DataSource = Members;
+                repMembers.DataBind();
+            }
+            if (MembersToApprove.Count < 1)
+            {
+                pnchooseMember.Visible = false;
+            }
+            else
+            {
+                pnchooseMember.Visible = true;
+                repMembersToApprove.DataSource = MembersToApprove;
+                repMembersToApprove.DataBind();
+            
+            }
+          
         }
 
         public void lbPrevious_Click(object sender, EventArgs e)

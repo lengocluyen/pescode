@@ -33,7 +33,12 @@ namespace PESWeb.Friends
         {
             repFriends.DataSource = Accounts;
             repFriends.DataBind();
-            lbCountFriends.Text = Accounts.Count.ToString();
+            if (Accounts.Count < 1)
+            {
+                lbCountFriends.Text = "Bạn chưa có bạn bè nào";
+                return;
+            }else
+            lbCountFriends.Text = "Bạn có " + Accounts.Count.ToString() + " bạn bè";
         }
     }
 }

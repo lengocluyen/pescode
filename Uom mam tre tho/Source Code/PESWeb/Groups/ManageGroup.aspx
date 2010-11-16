@@ -12,58 +12,60 @@
     </div>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="Content">
-    <div class="grid_16">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Quản Lý Nhóm</h1>
             <div class="alignright">
-                <a href="#" class="button gray">Tạo nhóm</a>
+                <a href="/Groups/mygroups.aspx" class="button green">Nhóm của tôi</a>
             </div>
         </div>
         <div class="clear">
         </div>
-        <div class="divContainerRow">
+        <div class="post">
             <asp:Label ID="lblMessage" ForeColor="Red" runat="server"></asp:Label>
             <div class="divContainerCellHeader">
-                Tên:
+                Tên nhóm:
+            </div>
+            <div class="divContainerCell">
+                <asp:TextBox ID="txtName" Width="500px" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="txtName" ErrorMessage="*"
                     ForeColor="Red"></asp:RequiredFieldValidator></div>
-            <div class="divContainerCell">
-                <asp:TextBox ID="txtName" runat="server"></asp:TextBox></div>
             <div class="divContainerCellHeader">
                 Công khai:</div>
             <div class="divContainerCell">
                 <asp:CheckBox ID="chkIsPublic" runat="server" /></div>
             <div class="divContainerCellHeader">
-                Tên Trang:<asp:RequiredFieldValidator runat="server" ControlToValidate="txtPageName"
-                    ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></div>
+                Tên Trang:</div>
             <div class="divContainerCell">
-                <asp:TextBox ID="txtPageName" runat="server"></asp:TextBox></div>
+                <asp:TextBox ID="txtPageName" Width="500px" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtPageName" ErrorMessage="*"
+                    ForeColor="Red"></asp:RequiredFieldValidator></div>
             <div class="divContainerCellHeader">
-                Logo:</div>
+                Logo của nhóm:</div>
             <div class="divContainerCell">
                 <asp:FileUpload ID="fuLogo" runat="server" /></div>
             <div class="divContainerCell">
                 <asp:Image ID="imgLogo" runat="server" /></div>
-            <div class="divContainerCellHeader">
-                Mô tả:<asp:RequiredFieldValidator runat="server" ControlToValidate="txtDescription"
-                    ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator></div>
+            <div style="padding-bottom: 5px;">
+                <b>Mô tả:</b></div>
             <div class="divContainerCell">
-                &nbsp;</div>
-            <textarea id="txtDescription" name="txtDescription" cols="92" rows="20" runat="server" />
-            <div class="divContainerCell">
-                <div style="font-size: 10px; color: #FF0000;">
+                <textarea id="txtDescription" name="txtDescription" cols="92" rows="20" runat="server" />
+                <asp:RequiredFieldValidator runat="server" ControlToValidate="txtDescription" ErrorMessage="*"
+                    ForeColor="Red"></asp:RequiredFieldValidator>
+                <div class="divContainerCell">
+                    <div style="font-size: 10px; color: #FF0000; padding: 5px;">
+                        Được công khai.</div>
                 </div>
-                Được công khai.</div>
-            <div class="divContainerCellHeader">
-                Nội Dung:<asp:RequiredFieldValidator runat="server" ControlToValidate="txtBody" ErrorMessage="*"
-                    ForeColor="Red"></asp:RequiredFieldValidator></div>
-            <div class="divContainerCell">
-                &nbsp;</div>
+            </div>
+            <div style="padding-bottom: 5px;">
+                <b>Nội Dung:</b></div>
             <div class="divContainerCell">
                 <textarea id="txtBody" name="txtBody" cols="92" rows="20" runat="server" />
+                <asp:RequiredFieldValidator ID="rfvBody" runat="server" ControlToValidate="txtBody"
+                    ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                 <div class="divContainerCell">
-                    <div style="font-size: 10px; color: #FF0000;">
+                    <div style="font-size: 10px; color: #FF0000; padding: 5px;">
                         Chỉ thành viên mới thấy nội dung này.</div>
                 </div>
                 <div class="divContainerCellHeader">
@@ -80,10 +82,11 @@
                 <asp:Literal Visible="false" ID="litFileID" Text="0" runat="server"></asp:Literal>
             </div>
             <div class="divContainerFooter">
-                <asp:Button ID="btnSubmit" Text="Submit" CssClass="button" OnClick="btnSubmit_Click"
+                <asp:Button ID="btnSubmit" Text="Tạo Nhóm" CssClass="button green" OnClick="btnSubmit_Click"
                     runat="server" />
             </div>
         </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
