@@ -15,7 +15,8 @@ namespace Pes.Core
             BoardPosts = 4,
             Files = 5,
             Groups = 6,
-            Alerts = 7
+            Alerts = 7,
+            Album = 8
         }
     }
 }
