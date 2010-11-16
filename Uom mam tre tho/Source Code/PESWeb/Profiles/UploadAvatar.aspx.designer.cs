@@ -59,15 +59,6 @@ namespace PESWeb.Profiles {
         protected global::System.Web.UI.WebControls.FileUpload fuAvatarUpload;
         
         /// <summary>
-        /// lblMessage control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
-        
-        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
@@ -75,6 +66,15 @@ namespace PESWeb.Profiles {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// lblMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
         /// pnlCrop control.
@@ -158,13 +158,13 @@ namespace PESWeb.Profiles {
         protected global::System.Web.UI.WebControls.Button btnCrop;
         
         /// <summary>
-        /// btnComplete control.
+        /// btnIgnorCrop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnComplete;
+        protected global::System.Web.UI.WebControls.Button btnIgnorCrop;
         
         /// <summary>
         /// lblCropInfo control.
