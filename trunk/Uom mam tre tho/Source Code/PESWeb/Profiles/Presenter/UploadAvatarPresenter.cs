@@ -54,7 +54,11 @@ namespace PESWeb.Profiles.Presenter
             _redirector.GoToProfilesProfile();
             _userSession.UploadImage = null;
         }
-
+        public void Ignore()
+        {
+            _userSession.UploadImage = null;
+            _view.HideCropPanel();
+        }
         public void GetOriginalImage()
         {
             profile.Avatar = _userSession.UploadImage;
@@ -123,7 +127,7 @@ namespace PESWeb.Profiles.Presenter
                 File.InputStream.Read(uploadedImage, 0, uploadedImage.Length);
                 // _userSession.UploadImage = uploadedImage;
 
-                _userSession.UploadImage = ImageResize.ResizeFromByteArray(570, uploadedImage, File.FileName);
+                _userSession.UploadImage = ImageResize.ResizeFromByteArray(700, uploadedImage, File.FileName);
 
 
                 //profile.Avatar = uploadedImage;
@@ -141,6 +145,8 @@ namespace PESWeb.Profiles.Presenter
 
 
         }
+
+      
     }
 
 }

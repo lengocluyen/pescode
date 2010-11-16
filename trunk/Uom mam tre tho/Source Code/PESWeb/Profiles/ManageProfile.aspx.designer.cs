@@ -14,13 +14,22 @@ namespace PESWeb.Profiles {
     public partial class ManageProfile {
         
         /// <summary>
-        /// imgAvatar control.
+        /// Image1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgAvatar;
+        protected global::System.Web.UI.WebControls.Image Image1;
+        
+        /// <summary>
+        /// lnkChangePicture control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkChangePicture;
         
         /// <summary>
         /// txtYearOfFirstTank control.
@@ -68,24 +77,6 @@ namespace PESWeb.Profiles {
         protected global::System.Web.UI.WebControls.TextBox txtSignature;
         
         /// <summary>
-        /// txtIMMSN control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIMMSN;
-        
-        /// <summary>
-        /// txtIMAOL control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIMAOL;
-        
-        /// <summary>
         /// txtIMGIM control.
         /// </summary>
         /// <remarks>
@@ -102,6 +93,24 @@ namespace PESWeb.Profiles {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtIMYIM;
+        
+        /// <summary>
+        /// txtIMMSN control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIMMSN;
+        
+        /// <summary>
+        /// txtIMAOL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtIMAOL;
         
         /// <summary>
         /// txtIMICQ control.
@@ -131,6 +140,15 @@ namespace PESWeb.Profiles {
         protected global::System.Web.UI.WebControls.PlaceHolder phAttributes;
         
         /// <summary>
+        /// pnlError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel pnlError;
+        
+        /// <summary>
         /// lblErrorMessage control.
         /// </summary>
         /// <remarks>
@@ -138,6 +156,15 @@ namespace PESWeb.Profiles {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblErrorMessage;
+        
+        /// <summary>
+        /// btnSave control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSave;
         
         /// <summary>
         /// lblProfileID control.
@@ -156,14 +183,5 @@ namespace PESWeb.Profiles {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblProfileTimestamp;
-        
-        /// <summary>
-        /// btnSave control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }

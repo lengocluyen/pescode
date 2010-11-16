@@ -23,13 +23,13 @@ namespace PESWeb.Profiles
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
+            //btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
         }
 
         void btnAddStatus_Click(object sender, EventArgs e)
         {
-            _presenter.AddStatus(txtStatus.Text);
-            txtStatus.Text = "";
+            //_presenter.AddStatus(txtStatus.Text);
+            //txtStatus.Text = "";
         }
         public void SetAvatar(Int32 AccountID)
         {

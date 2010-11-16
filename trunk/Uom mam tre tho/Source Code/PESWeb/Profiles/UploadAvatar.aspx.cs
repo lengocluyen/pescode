@@ -21,12 +21,17 @@ namespace PESWeb.Profiles
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
-            btnComplete.Click += new EventHandler(btnComplete_Click);
+            //btnComplete.Click += new EventHandler(btnComplete_Click);
             //btnStartNew.Click += new EventHandler(btnStartNew_Click);
             btnCrop.Click += new EventHandler(btnCrop_Click);
-            //btnIgnorCrop.Click += new EventHandler(btnComplete_Click);
+            btnIgnorCrop.Click += new EventHandler(btnIgnorCrop_Click);
             btnSubmit.Click += new EventHandler(btnSubmit_Click);
             btnUseGravatar.Click += new EventHandler(btnUseGravatar_Click);
+        }
+
+        void btnIgnorCrop_Click(object sender, EventArgs e)
+        {
+            _presenter.Ignore();
         }
 
         void btnUseGravatar_Click(object sender, EventArgs e)

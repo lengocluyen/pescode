@@ -8,6 +8,7 @@ using PESWeb.Profiles.Interface;
 using PESWeb.Profiles.Presenter;
 using Pes.Core;
 using Pes.Core.Impl;
+using System.Web.UI.HtmlControls;
 
 namespace PESWeb.Profiles
 {
@@ -30,6 +31,7 @@ namespace PESWeb.Profiles
 
         void btnSave_Click(object sender, EventArgs e)
         {
+            pnlError.Visible = false;
             Profile profile = _presenter.GetProfile();
             if (profile == null)
                 profile = new Profile();
@@ -94,6 +96,7 @@ namespace PESWeb.Profiles
         }
         public void ShowMessage(string Message)
         {
+            pnlError.Visible = true;
             lblErrorMessage.Text = Message;
         }
 
@@ -139,19 +142,22 @@ namespace PESWeb.Profiles
                 CustomValidator cv = new CustomValidator();
                 cv.ControlToValidate = "txtProfileAttribute" + type.ProfileAttributeTypeID.ToString();
                 cv.ClientValidationFunction = "MaxLength2000";
-                cv.ErrorMessage = "This field can only be 2000 characters long!";
+                cv.ErrorMessage = "Nhập không quá 2000 kí tự";
                 cv.Text = "*";
                 cv.ForeColor = System.Drawing.Color.Red;
+                HtmlGenericControl div = new HtmlGenericControl("div");
+                div.Attributes["class"] = "form-input";
 
 
-                phAttributes.Controls.Add(lblAttributeTypeID);
-                phAttributes.Controls.Add(lblProfileAttributeID);
-                phAttributes.Controls.Add(lblProfileAttributeTimestamp);
-                phAttributes.Controls.Add(lbl);
-                phAttributes.Controls.Add(new LiteralControl("<BR>"));
-                phAttributes.Controls.Add(tb);
-                phAttributes.Controls.Add(cv);
-                phAttributes.Controls.Add(new LiteralControl("<BR>"));
+                div.Controls.Add(lblAttributeTypeID);
+                div.Controls.Add(lblProfileAttributeID);
+                div.Controls.Add(lblProfileAttributeTimestamp);
+                div.Controls.Add(lbl);
+                div.Controls.Add(tb);
+                div.Controls.Add(cv);
+
+                phAttributes.Controls.Add(div);
+
             }
         }
 
