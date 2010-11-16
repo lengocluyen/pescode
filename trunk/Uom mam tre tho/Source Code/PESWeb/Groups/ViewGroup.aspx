@@ -16,37 +16,53 @@
         <div id="title">
             <h1>
                 Nhóm</h1>
-            <div class="alignright">
-                <a href="#" class="button gray">Tạo nhóm</a>
-            </div>
+            <%--<div class="alignright">
+                <a href="../Groups/ManageGroup.aspx" class="button green">Tạo nhóm mới</a>
+            </div>--%>
         </div>
         <div class="clear">
         </div>
-        <div class="divContainerRow">
-            <asp:Label ForeColor="Red" ID="lblMessage" runat="server"></asp:Label>
-            <asp:Panel ID="pnlPublic" runat="server">
-                <div style="float: none;">
-                    <div style="float: left; margin: 10px">
-                        <asp:Image ID="imgGroupLogo" runat="server" /></div>
-                    <div style="text-align: right;">
+        <div class="toolbar">
+            <div class="buttons">
+                <div class="alignleft">
+                        <asp:Label ForeColor="Red" ID="lblMessage" runat="server"></asp:Label>
+                        &nbsp;&nbsp;&nbsp;
                         <asp:Label ID="lblPrivateMessage" ForeColor="Red" runat="server" Text="Nhóm riêng tư!"></asp:Label>
-                        <asp:LinkButton ID="lbRequestMembership" OnClick="lbRequestMembership_Click" Text="Gia nhập nhóm"
-                            runat="server"></asp:LinkButton>
-                    </div>
+                        
                 </div>
-                Ngày tạo:
-                <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
-                Lần cập nhật cuối:
-                <asp:Label ID="lblUpdateDate" runat="server"></asp:Label><br />
-                <asp:Label ID="lblDescription" runat="server"></asp:Label><br />
-                <br />
-            </asp:Panel>
-            <asp:Panel ID="pnlPrivate" runat="server">
-                <%--<asp:LinkButton ID="lbForum" OnClick="lbForum_Click" Text="View Forum" runat="server"></asp:LinkButton>&nbsp;--%>
-                <asp:LinkButton ID="lbViewMembers" OnClick="lbViewMembers_Click" Text="Danh sách thành viên"
-                    runat="server"></asp:LinkButton>
-                <asp:Label ID="lblBody" runat="server"></asp:Label>
-            </asp:Panel>
+                <div class="alignright">
+                    <asp:LinkButton ID="lbViewMembers" CssClass="button green" OnClick="lbViewMembers_Click"
+                        Text="Danh sách thành viên" runat="server"></asp:LinkButton>
+                    &nbsp;<asp:LinkButton CssClass="button green" ID="lbRequestMembership" OnClick="lbRequestMembership_Click"
+                        Text="Gia nhập nhóm" runat="server"></asp:LinkButton>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
         </div>
+        
+        <asp:Panel ID="pnlPublic" runat="server">
+            <div class="post-gravatar">
+                <asp:HyperLink ID="linkAvatar" runat="server">
+                    <asp:Image ID="imgGroupLogo" runat="server" Width="100" Height="100" CssClass="avatar" />
+                </asp:HyperLink>
+            </div>
+            <div class="post-text">
+                <h2 class="title">
+                    <asp:HyperLink ID="linkTitle" runat="server"></asp:HyperLink></h2>
+                <div class="body">
+                    <asp:Label ID="lblDescription" runat="server"></asp:Label><br />
+                </div>
+                <div class="meta">
+                    <asp:Label ID="lblCreateDate" runat="server"></asp:Label><br />
+                    <br />
+                    <asp:Label ID="lblUpdateDate" runat="server"></asp:Label><br />
+                    <br />
+                </div>
+            </div>
+        </asp:Panel>
+        <asp:Panel ID="pnlPrivate" runat="server">
+            <asp:Label ID="lblBody" runat="server"></asp:Label>
+        </asp:Panel>
     </div>
 </asp:Content>

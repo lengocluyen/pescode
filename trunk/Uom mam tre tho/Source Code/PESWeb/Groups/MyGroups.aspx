@@ -12,17 +12,17 @@
     </div>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_16">
+    <div class="grid_20">
         <div id="title">
             <h1>
                 Nhóm Của Tôi</h1>
             <div class="alignright">
-                <a href="#" class="button gray">Tạo nhóm</a>
+                <a href="../Groups/ManageGroup.aspx" class="button green">Tạo nhóm mới</a>
             </div>
         </div>
         <div class="clear">
         </div>
-        <div id="photos">
+        <div class="post">
             <asp:Label ID="lblMessage" ForeColor="Red" runat="server"></asp:Label>
             <asp:ListView ID="lvGroups" GroupItemCount="4" runat="server" OnItemDataBound="lvGroups_ItemDataBound">
                 <LayoutTemplate>
@@ -30,24 +30,28 @@
                 </LayoutTemplate>
                 <GroupTemplate>
                     <table class="photo-grid">
-                        <tr>
-                            <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                        </tr>
+                        <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                     </table>
                 </GroupTemplate>
                 <ItemTemplate>
                     <td>
                         <asp:Literal Visible="false" ID="litImageID" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).FileID %>'></asp:Literal>
                         <asp:Literal ID="litPageName" Visible="false" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).PageName %>'></asp:Literal>
-                        <div>
-                            <div style="float: left;">
-                                <asp:LinkButton OnClick="lbPageName_Click" ID="lbPageName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:LinkButton></div>
-                            <div style="text-align: right;">
-                                <asp:ImageButton ID="ibDelete" OnClick="ibDelete_Click" runat="server" ImageUrl="/images/icon_close.gif" />
-                                <asp:ImageButton ID="ibEdit" OnClick="ibEdit_Click" runat="server" ImageUrl="/images/icon_pencil.gif" /></div>
+                        <div style="text-align: right;">
+                            <asp:ImageButton ID="ibEdit" OnClick="ibEdit_Click" runat="server" ImageUrl="/images/icon_pencil.gif" />
+                            <asp:ImageButton ID="ibDelete" OnClick="ibDelete_Click" runat="server" ImageUrl="/images/icon_close.gif" />
                         </div>
-                        <asp:Image ID="imgGroupImage" runat="server" />
-                        <asp:Label ID="lblName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:Label>
+                        <asp:HyperLink ID="lnkImage" runat="server">
+                            <div class="pg-album">
+                                <asp:Image ID="imgGroupImage" runat="server" />
+                            </div>
+                        </asp:HyperLink>
+                        <div class="pg-detail">
+                            <div class="pg-name">
+                                <asp:LinkButton OnClick="lbPageName_Click" ID="lbPageName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:LinkButton>
+                            </div>
+                        </div>
+                        <%--<asp:Label ID="lblName" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).Name %>'></asp:Label>--%>
                         <asp:Literal Visible="false" ID="litGroupID" runat="server" Text='<%# ((Pes.Core.Group)Container.DataItem).GroupID %>'></asp:Literal>
                     </td>
                 </ItemTemplate>

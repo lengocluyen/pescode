@@ -17,82 +17,100 @@
         <div id="title">
             <h1>
                 Thành viên của nhóm</h1>
-            <%=Resources.PESResources.group%></h1>
-            <div class="alignright">
+            <%--<div class="alignright">
                 <a href="#" class="button gray">Tạo nhóm</a>
-            </div>
+            </div>--%>
         </div>
         <div class="clear">
         </div>
+        <div class="toolbar">
+            <div class="buttons">
+                <div class="alignleft">
+                    <asp:Label ForeColor="Red" runat="server" ID="lblMessage"></asp:Label>
+                </div>
+                <div class="alignright">
+                    <asp:Panel ID="pnlButtons" runat="server">
+                        <asp:Button ID="btnApprove" CssClass="button green" OnClick="btnApprove_Click" runat="server"
+                            Text="Chấp thuận" />
+                        <asp:Button ID="btnDelete" CssClass="button green" OnClick="btnDelete_Click" runat="server"
+                            Text="Xóa" />
+                        <asp:Button ID="btnPromoteToAdmin" CssClass="button green" OnClick="btnPromoteToAdmin_Click"
+                            runat="server" Text="Nâng cấp Quản trị" />
+                        <asp:Button ID="btnDemoteAdmins" CssClass="button green" OnClick="btnDemoteAdmins_Click"
+                            runat="server" Text="Hạ cấp Quản trị" />
+                    </asp:Panel>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
         <div class="divContainerRow">
             <div style="float: left;">
-                <asp:LinkButton OnClick="lbBack_Click" ID="lbBack" runat="server" Text="Back"></asp:LinkButton>&nbsp;</div>
+                <asp:LinkButton OnClick="lbBack_Click" ID="lbBack" runat="server" Text="Trở lại"></asp:LinkButton>&nbsp;</div>
             <div style="float: left;">
-                <asp:LinkButton OnClick="lbPrevious_Click" ID="lbPrevious" runat="server" Text="Previous"></asp:LinkButton>&nbsp;</div>
+                <asp:LinkButton OnClick="lbPrevious_Click" ID="lbPrevious" runat="server" Text="Trước đó"></asp:LinkButton>&nbsp;</div>
             <div style="text-align: right;">
-                <asp:LinkButton OnClick="lbNext_Click" ID="lbNext" runat="server" Text="Next"></asp:LinkButton>&nbsp;</div>
+                <asp:LinkButton OnClick="lbNext_Click" ID="lbNext" runat="server" Text="Kế tiếp"></asp:LinkButton>&nbsp;</div>
         </div>
-        <div class="divContainerTitle">
-            Chọn thành viên:</div>
-        <div class="divContainerRow">
-            <asp:Repeater ID="repMembersToApprove" runat="server" OnItemDataBound="repMembersToApprove_ItemDataBound">
-                <ItemTemplate>
-                    <div style="width: 100%">
-                        <div style="float: left; padding: 15px 10px 20px 10px">
-                            <asp:CheckBox ID="chkProfile" runat="server" /></div>
-                        <div style="float: left;">
-                            <PES:Profile ID="Profile1" ShowDeleteButton="false" runat="server" />
-                        </div>
-                    </div>
-                    <div class="clear">
-                    </div>
-                </ItemTemplate>
-            </asp:Repeater>
-        </div>
-        <div class="divContainerTitle">
-            Thành viên</div>
-        <div class="divContainerRow">
-            <asp:Repeater ID="repMembers" runat="server" OnItemDataBound="repMembers_ItemDataBound">
-                <HeaderTemplate>
-                    <table>
+        <asp:Panel ID="pnMemeber" runat="server">
+            <asp:Panel ID="pnchooseMember" runat="server">
+                <div class="title"><h2>
+                    Chọn thành viên</h2></div>
+                <asp:Repeater ID="repMembersToApprove" runat="server" OnItemDataBound="repMembersToApprove_ItemDataBound">
+                    <HeaderTemplate>
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                    </HeaderTemplate>
+                    <ItemTemplate>
                         <tr>
-                            <td>
-                                &nbsp;
+                        <td style="width:3%;">
+                            <asp:CheckBox ID="chkProfile" runat="server" /></div>
+                        </td>
+                        <td style="width:94%;">
+                            <PES:Profile ID="Profile1" ShowDeleteButton="false" runat="server" />
+                        </td>
+                        </tr>
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </table></FooterTemplate>
+                </asp:Repeater>
+            </asp:Panel>
+            <asp:Panel ID="pnMemberdisplay" runat="server">
+                <div class="title"><h2>
+                    Thành viên</h2></div>
+                <asp:Repeater ID="repMembers" runat="server" OnItemDataBound="repMembers_ItemDataBound">
+                    <HeaderTemplate>
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    &nbsp;
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <tr>
+                            <td style="width:3%;">
+                                <asp:CheckBox ID="chkProfile" runat="server" />
                             </td>
-                            <td>
-                                &nbsp;
+                            <td style="width:94%;">
+                                <PES:Profile ID="Profile1" ShowDeleteButton="false" runat="server" />
                             </td>
                         </tr>
-                </HeaderTemplate>
-                <ItemTemplate>
-                    <tr>
-                        <td>
-                            <asp:CheckBox ID="chkProfile" runat="server" />
-                        </td>
-                        <td>
-                            <PES:Profile ID="Profile1" ShowDeleteButton="false" runat="server" />
-                        </td>
-                    </tr>
-                </ItemTemplate>
-                <FooterTemplate>
-                    </table></FooterTemplate>
-            </asp:Repeater>
-        </div>
-        <div class="divContainerRow">
-            <asp:Label ForeColor="Red" runat="server" ID="lblMessage"></asp:Label>
-        </div>
-        <div class="divContainerFooter">
-            &nbsp;
-            <asp:Panel ID="pnlButtons" runat="server">
-                <asp:Button ID="btnApprove" CssClass="button" OnClick="btnApprove_Click" runat="server"
-                    Text="Chấp thuận" />
-                <asp:Button ID="btnDelete" CssClass="button" OnClick="btnDelete_Click" runat="server"
-                    Text="Xóa" />
-                <asp:Button ID="btnPromoteToAdmin" CssClass="button" OnClick="btnPromoteToAdmin_Click"
-                    runat="server" Text="Nâng cấp Quản trị" />
-                <asp:Button ID="btnDemoteAdmins" CssClass="button" OnClick="btnDemoteAdmins_Click"
-                    runat="server" Text="Hạ cấp Quản trị" />
+                    </ItemTemplate>
+                    <FooterTemplate>
+                        </table></FooterTemplate>
+                </asp:Repeater>
             </asp:Panel>
-        </div>
+        </asp:Panel>
     </div>
 </asp:Content>

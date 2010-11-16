@@ -23,6 +23,33 @@ namespace PESWeb.Groups {
         protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
+        /// lblPrivateMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrivateMessage;
+        
+        /// <summary>
+        /// lbViewMembers control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbViewMembers;
+        
+        /// <summary>
+        /// lbRequestMembership control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbRequestMembership;
+        
+        /// <summary>
         /// pnlPublic control.
         /// </summary>
         /// <remarks>
@@ -30,6 +57,15 @@ namespace PESWeb.Groups {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlPublic;
+        
+        /// <summary>
+        /// linkAvatar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink linkAvatar;
         
         /// <summary>
         /// imgGroupLogo control.
@@ -41,22 +77,22 @@ namespace PESWeb.Groups {
         protected global::System.Web.UI.WebControls.Image imgGroupLogo;
         
         /// <summary>
-        /// lblPrivateMessage control.
+        /// linkTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrivateMessage;
+        protected global::System.Web.UI.WebControls.HyperLink linkTitle;
         
         /// <summary>
-        /// lbRequestMembership control.
+        /// lblDescription control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbRequestMembership;
+        protected global::System.Web.UI.WebControls.Label lblDescription;
         
         /// <summary>
         /// lblCreateDate control.
@@ -77,15 +113,6 @@ namespace PESWeb.Groups {
         protected global::System.Web.UI.WebControls.Label lblUpdateDate;
         
         /// <summary>
-        /// lblDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDescription;
-        
-        /// <summary>
         /// pnlPrivate control.
         /// </summary>
         /// <remarks>
@@ -93,15 +120,6 @@ namespace PESWeb.Groups {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel pnlPrivate;
-        
-        /// <summary>
-        /// lbViewMembers control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbViewMembers;
         
         /// <summary>
         /// lblBody control.

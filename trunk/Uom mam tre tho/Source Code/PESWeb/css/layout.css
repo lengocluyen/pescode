@@ -567,7 +567,7 @@ td.im-detail {
     margin-top: 11px;
 }
 .photo-grid td {
-    padding: 0 10px 8px 0;
+    padding: 0 31px 8px 1px;
     width: 171px;
     vertical-align: top;
     text-align: left;

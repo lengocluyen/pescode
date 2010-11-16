@@ -14,15 +14,6 @@ namespace PESWeb.Friends {
     public partial class Default {
         
         /// <summary>
-        /// repFriends control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repFriends;
-        
-        /// <summary>
         /// lbCountFriends control.
         /// </summary>
         /// <remarks>
@@ -30,5 +21,14 @@ namespace PESWeb.Friends {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbCountFriends;
+        
+        /// <summary>
+        /// repFriends control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater repFriends;
     }
 }

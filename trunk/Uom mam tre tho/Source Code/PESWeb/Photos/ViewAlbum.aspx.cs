@@ -29,7 +29,7 @@ namespace PESWeb.Photos
         {
 
         }
-        public long albumID = 0;
+        public long albumID=0;
         protected override void OnInit(EventArgs e)
         {
             _webContext = ObjectFactory.GetInstance<IWebContext>();
@@ -45,27 +45,21 @@ namespace PESWeb.Photos
             {
                 File data = ((ListViewDataItem)e.Item).DataItem as File;
 
-                Literal litImageName = e.Item.FindControl("litImageName") as Literal;
-                //Label lblFileName = e.Item.FindControl("lblFileName") as Label;
-                //if (lblFileName.Text.Length > 25)
-                //    lblFileName.Text = lblFileName.Text.Substring(0, 25);
-                Literal litFileExtension = e.Item.FindControl("litFileExtension") as Literal;
-                Literal litFileID = e.Item.FindControl("litFileID") as Literal;
                 HyperLink lnkView = e.Item.FindControl("lnkView") as HyperLink;
                 HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
-                string pathToImage = "~/files/photos/" + lnkImage.NavigateUrl + "/" + litImageName.Text;
+                string pathToImage = "~/files/photos/" + lnkImage.NavigateUrl + "/" + data.FileSystemName;
 
-
-                lnkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
+                 lnkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
 
                 lnkView.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
                 string name = data.FileName;
                 if (name.Length > 25)
                     name = name.Substring(0, 25);
                 lnkView.Text = System.IO.Path.GetFileNameWithoutExtension(name);
-
+                lnkView.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
+               
                 Image image = e.Item.FindControl("Image") as Image;
-                image.ImageUrl = pathToImage + "__s." + litFileExtension.Text;
+                image.ImageUrl = pathToImage + "__s." + data.Extension;
                 image.AlternateText = data.FileName;
 
             }
@@ -91,6 +85,7 @@ namespace PESWeb.Photos
             }
             albumID = folder.FolderID;
             comments.SystemObjectRecordID = folder.FolderID;
+            Tags1.SystemObjectRecordID = folder.FolderID;
         }
 
         public void LoadPhotos(List<File> files)
