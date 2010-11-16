@@ -90,7 +90,7 @@
         <%--<asp:PlaceHolder ID="phAttributes" runat="server" />--%>
     </div>
     <div class="grid_14 ">
-        <div id="categories">
+     <%--   <div id="categories">
             <ul>
                 <li class="current-cat"><a>Tường nhà</a></li>
                 <li class="cat-item">
@@ -102,7 +102,7 @@
                         Text="Hình ảnh" />
                 </li>
             </ul>
-        </div>
+        </div>--%>
         <div id="composer" class="composer_wrapper">
             <div id="c-mention">
                 <textarea>Bạn đang nghĩ gì?</textarea>

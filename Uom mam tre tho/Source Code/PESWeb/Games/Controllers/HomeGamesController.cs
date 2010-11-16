@@ -26,8 +26,8 @@ namespace PESWeb.Controllers
         public HomeGamesController(IGameService gameRepository)
         {
             _gameRepository = gameRepository;
-            _userSession = ObjectFactory.GetInstance<IUserSession>();
-            _webContext = ObjectFactory.GetInstance<IWebContext>();
+            //_userSession = ObjectFactory.GetInstance<IUserSession>();
+            //_webContext = ObjectFactory.GetInstance<IWebContext>();
         }
 
         public ActionResult Index()
