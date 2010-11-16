@@ -17,7 +17,7 @@
             <h1>
                 <%=Resources.PESResources.group%></h1>
             <div class="alignright">
-                <a href="../Groups/ManageGroup.aspx" class="button green">Tạo nhóm mới</a>
+                <a href="../Groups/ManageGroup.aspx" class="button gray">Tạo nhóm mới</a>
             </div>
         </div>
         <div class="clear">

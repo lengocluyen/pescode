@@ -30,13 +30,13 @@
                 </div>
                 <div class="alignright">
                     <asp:Panel ID="pnlButtons" runat="server">
-                        <asp:Button ID="btnApprove" CssClass="button green" OnClick="btnApprove_Click" runat="server"
+                        <asp:Button ID="btnApprove" CssClass="button gray" OnClick="btnApprove_Click" runat="server"
                             Text="Chấp thuận" />
-                        <asp:Button ID="btnDelete" CssClass="button green" OnClick="btnDelete_Click" runat="server"
+                        <asp:Button ID="btnDelete" CssClass="button gray" OnClick="btnDelete_Click" runat="server"
                             Text="Xóa" />
-                        <asp:Button ID="btnPromoteToAdmin" CssClass="button green" OnClick="btnPromoteToAdmin_Click"
+                        <asp:Button ID="btnPromoteToAdmin" CssClass="button gray" OnClick="btnPromoteToAdmin_Click"
                             runat="server" Text="Nâng cấp Quản trị" />
-                        <asp:Button ID="btnDemoteAdmins" CssClass="button green" OnClick="btnDemoteAdmins_Click"
+                        <asp:Button ID="btnDemoteAdmins" CssClass="button gray" OnClick="btnDemoteAdmins_Click"
                             runat="server" Text="Hạ cấp Quản trị" />
                     </asp:Panel>
                 </div>
