@@ -44,7 +44,7 @@
             <div class="divContainerCellHeader">
                 Logo của nhóm:</div>
             <div class="divContainerCell">
-                <asp:FileUpload ID="fuLogo" runat="server" /></div>
+                <asp:FileUpload ID="fuLogo" runat="server"/></div>
             <div class="divContainerCell">
                 <asp:Image ID="imgLogo" runat="server" /></div>
             <div style="padding-bottom: 5px;">
