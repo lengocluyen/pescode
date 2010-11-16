@@ -28,17 +28,15 @@ namespace PESWeb.Friends
                 pdProfileDisplay.LoadDisplay(((Account)e.Item.DataItem));
             }
         }
-        
+
         public void LoadDisplay(List<Account> Accounts)
         {
             repFriends.DataSource = Accounts;
             repFriends.DataBind();
             if (Accounts.Count < 1)
-            {
                 lbCountFriends.Text = "Bạn chưa có bạn bè nào";
-                return;
-            }else
-            lbCountFriends.Text = "Bạn có " + Accounts.Count.ToString() + " bạn bè";
+            else
+                lbCountFriends.Text = "Bạn có " + Accounts.Count.ToString() + " bạn bè";
         }
     }
 }

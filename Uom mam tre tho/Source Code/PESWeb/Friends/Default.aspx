@@ -4,33 +4,16 @@
 <%@ Import Namespace="Pes.Core" %>
 <%@ Register Src="~/UserControls/ProfileDisplay.ascx" TagPrefix="uc" TagName="ProfileDisplay" %>
 <asp:Content ID="Content6" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_14">
+    <div class="grid_14 prefix_1">
         <div id="title">
             <h1>
                 Danh sách bạn bè</h1>
         </div>
         <div class="clear">
         </div>
-        <div class="toolbar">
-            <div class="alignleft">
-                <span class="gray">
-                    <asp:Label ID="lbCountFriends" runat="server"></asp:Label></span>
-                <%--<select>
-                    <option>Tat ca ban be</option>
-                    <option>Ban be moi</option>
-                    <option>Tinh</option>
-                    <option>Thanh pho</option>
-                    <option>Truong</option>
-                    <option>So thich</option>
-                </select>--%>
-            </div>
-            <div class="alignright">
-                <%-- <div class="comment-form">
-                    <input type="text" size="30" />
-                </div>--%>
-            </div>
-            <div class="clear">
-            </div>
+        <div class="mb info">
+            <asp:Label ID="lbCountFriends" runat="server"></asp:Label></div>
+        <div class="clear">
         </div>
         <div id="friend-container">
             <div id="friends">
@@ -43,7 +26,6 @@
         </div>
         <div class="f-pager">
             <div class="alignleft">
-               
             </div>
             <%--   <div class="alignright">
                 <a href="#">< Trước</a> | <a href="#">Sau ></a>
