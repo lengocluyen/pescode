@@ -3,17 +3,17 @@
 
 <%@ Register Src="~/UserControls/ProfileDisplay.ascx" TagPrefix="PES" TagName="Profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Groups" runat="server">
-    <div style="padding-left: 10px;">
+      <div style="padding-left: 10px;">
         <ul class="menu1" style="margin-top: 8px;">
-            <li><a href="/Groups/ManageGroup.aspx">
-                <img src="/images/group.gif" alt="" />Tạo nhóm mới</a></li>
-            <li><a href="/Groups/mygroups.aspx">
-                <img src="/images/group.gif" alt="" />Nhóm của tôi</a></li>
+            <li>
+                <img src="/images/group.gif" alt="" /><a href="/Groups/ManageGroup.aspx">Tạo nhóm mới</a></li>
+            <li>
+                <img src="/images/group.gif" alt="" /><a href="/Groups/mygroups.aspx">Nhóm của tôi</a></li>
         </ul>
     </div>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 Thành viên của nhóm</h1>
