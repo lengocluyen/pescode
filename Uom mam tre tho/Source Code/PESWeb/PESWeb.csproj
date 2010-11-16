@@ -3543,7 +3543,11 @@
     <Content Include="images\delete15.png" />
     <Content Include="images\group.gif" />
     <Content Include="images\HomeTopBack.png" />
+<<<<<<< .mine
+    <Content Include="images\indicator_small.gif" />
+=======
     <Content Include="images\icon_pencil.gif" />
+>>>>>>> .r79
     <Content Include="images\letter.gif" />
     <Content Include="images\mailbox.gif" />
     <Content Include="images\menu_ico_next.gif" />
@@ -3561,12 +3565,19 @@
     <Content Include="images\Text2.png" />
     <Content Include="images\write.gif" />
     <Content Include="js\jquery-1.4.3.min.js" />
+<<<<<<< .mine
+    <Content Include="js\jquery-jtemplates.js" />
+    <Content Include="js\jquery.alerts.js" />
+=======
+>>>>>>> .r79
     <Content Include="js\jquery.autogrow.js" />
     <Content Include="js\script.js" />
     <Content Include="Learning\Testing.aspx" />
     <Content Include="Photos\ReviewPhoto.aspx" />
     <Content Include="Photos\ViewView.aspx" />
     <Content Include="Tags\Tags.aspx" />
+    <Content Include="Template\TemplateStatus.htm" />
+    <Content Include="Template\TemplateComment.htm" />
     <Content Include="UserControls\PESBanner.ascx" />
   </ItemGroup>
   <ItemGroup>
