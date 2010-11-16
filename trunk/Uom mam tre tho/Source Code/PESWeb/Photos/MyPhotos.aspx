@@ -12,6 +12,28 @@
         </div>
         <div class="clear">
         </div>
+        <div id="photos">
+            <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
+                <LayoutTemplate>
+                    <table class="photo-grid">
+                        <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
+                    </table>
+                </LayoutTemplate>
+                <GroupTemplate>
+                    <tr>
+                        <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
+                    </tr>
+                </GroupTemplate>
+                <ItemTemplate>
+                    <td>
+                        <div class="pg-action">
+                            <asp:HyperLink CssClass="albumsActionLink" ID="lnkEdit" Text="Chỉnh sửa" runat="server"></asp:HyperLink>
+                            <asp:LinkButton CssClass="albumsActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
+                                runat="server"></asp:LinkButton>
+                        </div>
+                        <asp:HyperLink ID="lnkImage" runat="server">
+                            <div class="pg-album">
+                                <asp:Image ID="Image" runat="server" />
         <div class="post">
             <div id="photos">
                 <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
