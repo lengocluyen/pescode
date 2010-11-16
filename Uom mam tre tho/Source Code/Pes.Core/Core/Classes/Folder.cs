@@ -103,7 +103,11 @@ namespace Pes.Core
             Add(folder);
             return folder.FolderID;
         }
-
+        public static Int64 UpdateFolder(Folder folder)
+        {
+            Update(folder);
+            return folder.FolderID;
+        }
         public static void DeleteFolder(Folder folder)
         {
             //string cache_key = "GetFoldersByAccountID_" + folder.AccountID;

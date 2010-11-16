@@ -41,7 +41,7 @@ namespace Pes.Core.Impl
         public void AddAccountCreatedAlert()
         {
             Init();
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) + " vừa đăng nhập!</div>";
+            alertMessage = "<div class=\"AlertHeader\"> <div class='title'><h2>" + GetProfileUrl(account.Username) + "</h2></div> vừa đăng nhập!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(account.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.AccountCreated;
@@ -51,7 +51,7 @@ namespace Pes.Core.Impl
         public void AddAccountModifiedAlert(Account modifiedAccount)
         {
             Init(modifiedAccount);
-            alertMessage = string.Format("<div class='AlertHeader'>{0} cập nhật thông tin tài khoản.</div>",
+            alertMessage = string.Format("<div class='AlertHeader'> <div class='title'><h2>{0} </h2></div> cập nhật thông tin tài khoản.</div>",
                                     GetProfileUrl(account.Username));
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.AccountModified;
@@ -62,7 +62,7 @@ namespace Pes.Core.Impl
         public void AddProfileCreatedAlert()
         {
             Init();
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) +
+            alertMessage = "<div class=\"AlertHeader\"> <div class='title'><h2>" + GetProfileUrl(account.Username) + "</h2></div>" +
                            " vừa tạo thông tin cá nhân!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(account.AccountID) + "</div>";
             alert.Message = alertMessage;
@@ -74,7 +74,7 @@ namespace Pes.Core.Impl
         public void AddProfileModifiedAlert()
         {
             Init();
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(account.Username) +
+            alertMessage = "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileUrl(account.Username) + "</h2></div>" +
                            " cập nhật thông tin cá nhân.</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.ProfileModified;
@@ -86,7 +86,7 @@ namespace Pes.Core.Impl
         {
             Init();
             alertMessage =
-                "<div class=\"AlertHeader\">" + GetProfileImage(account.AccountID) + GetProfileUrl(account.Username) + " cập nhật avatar .</div>";
+                "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileImage(account.AccountID) + GetProfileUrl(account.Username) + "</h2></div>" + " cập nhật avatar .</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.NewAvatar;
             SaveAlert(alert);
@@ -182,7 +182,7 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestFrom.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestTo.AccountID) + GetProfileUrl(FriendRequestTo.Username) + " là bạn ngay bây giờ!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileImage(FriendRequestTo.AccountID) + GetProfileUrl(FriendRequestTo.Username) + "</h2></div>" + " là bạn ngay bây giờ!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(FriendRequestTo.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
@@ -191,7 +191,7 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestTo.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " là bạn ngay bây giờ!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) +"</h2></div>"+ " là bạn ngay bây giờ!</div>";
             alertMessage += "<div class=\"AlertRow\">" + GetSendMessageUrl(FriendRequestFrom.AccountID) + "</div>";
             alert.Message = alertMessage;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
@@ -200,8 +200,8 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AlertTypeID = (int)AlertType.AlertTypes.FriendAdded;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileUrl(FriendRequestFrom.Username) + " và " +
-                           GetProfileUrl(FriendRequestTo.Username) + " làm bạn ngay bay giờ!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileUrl(FriendRequestFrom.Username) + " và " +
+                           GetProfileUrl(FriendRequestTo.Username) + "</h2></div>" + " làm bạn ngay bay giờ!</div>";
             alert.Message = alertMessage;
 
             alert.AccountID = FriendRequestFrom.AccountID;
@@ -216,7 +216,7 @@ namespace Pes.Core.Impl
             alert = new Alert();
             alert.CreateDate = DateTime.Now;
             alert.AccountID = FriendRequestTo.AccountID;
-            alertMessage = "<div class=\"AlertHeader\">" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + " muốn được kết bạn!</div>";
+            alertMessage = "<div class=\"AlertHeader\">" + "<div class='title'><h2>" + GetProfileImage(FriendRequestFrom.AccountID) + GetProfileUrl(FriendRequestFrom.Username) + "</h2></div>" + " muốn được kết bạn!</div>";
             alertMessage += "<div class=\"AlertRow\">";
             alertMessage += FriendRequestFrom.FirstName + " " + FriendRequestFrom.LastName +
                             " muốn là bạn của bạn!  Nhấn chuột vào liên kết để kết bạn: ";
@@ -294,8 +294,9 @@ namespace Pes.Core.Impl
 
         private string GetProfileImage(Int32 AccountID)
         {
-            return "<img width=\"50\" height=\"50\" src=\"[rootUrl]images/ProfileAvatar/ProfileImage.aspx?AccountID=" +
-                AccountID.ToString() + "&w=50&h=50\" align=\"absmiddle\">";
+            //return "<img width=\"50\" height=\"50\" src=\"[rootUrl]images/ProfileAvatar/ProfileImage.aspx?AccountID=" +
+            //    AccountID.ToString() + "&w=50&h=50\" align=\"absmiddle\">";
+            return "";
         }
         private string GetProfileUrl(string username)
         {
@@ -314,7 +315,7 @@ namespace Pes.Core.Impl
             alert.AlertTypeID = (int)AlertType.AlertTypes.NewBlogPost;
             alertMessage = "<div class=\"AlertHeader\">" +
                       GetProfileImage(_userSession.CurrentUser.AccountID)
-                     + GetProfileUrl(_userSession.CurrentUser.Username)
+                     +"<div class='title'><h2>"+ GetProfileUrl(_userSession.CurrentUser.Username)+"</h2></div>"
                      + " đã viết blog: <b><a href='[rootUrl]blogs/" + _webContext.Username + "/" + blog.PageName + ".aspx'>"
 + blog.Title + "</a></b></div>";
             alert.Message = alertMessage;
@@ -327,10 +328,10 @@ namespace Pes.Core.Impl
             alert.CreateDate = DateTime.Now;
             alert.AccountID = _userSession.CurrentUser.AccountID;
             alert.AlertTypeID = (int)AlertType.AlertTypes.NewBlogPost;
-            alertMessage = "<div class=\"AlertHeader\">" +
+            alertMessage = "<div class=\"AlertHeader\"><div class='title'><h2>" +
                           GetProfileImage(_userSession.CurrentUser.AccountID)
                           + GetProfileUrl(_userSession.CurrentUser.Username)
-                          + " đã cập nhật <b>" + blog.Title +
+                          + " </h2></div> đã cập nhật <b>" + blog.Title +
                           "!</div>";
             alert.Message = alertMessage;
             SaveAlert(alert);
