@@ -50,6 +50,15 @@ namespace PESWeb.Mail {
         protected global::System.Web.UI.WebControls.HyperLink linkPrevious;
         
         /// <summary>
+        /// lbnextPrev control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbnextPrev;
+        
+        /// <summary>
         /// linkNext control.
         /// </summary>
         /// <remarks>
@@ -75,6 +84,15 @@ namespace PESWeb.Mail {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.HyperLink HyperLink_BootomNPrev;
+        
+        /// <summary>
+        /// lbnextprev_bottom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbnextprev_bottom;
         
         /// <summary>
         /// HyperLink_BootomNext control.
