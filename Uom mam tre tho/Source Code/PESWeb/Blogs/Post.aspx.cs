@@ -64,6 +64,7 @@ namespace PESWeb.Blogs
 
         public void ShowError(string ErrorMessage)
         {
+            pnlMessage.Visible = true;
             lblErrorMessage.Text = ErrorMessage;
         }
     }
