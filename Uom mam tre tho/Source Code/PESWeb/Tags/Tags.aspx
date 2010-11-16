@@ -7,7 +7,7 @@
             <h1>
                 Bảng từ khóa</h1>
         </div>
-        <table width="100%">
+        <table class="tag-list">
             <tr>
                 <td colspan="2">
                     <b>Tài Khoản</b>
@@ -76,15 +76,14 @@
             <asp:Repeater ID="repFiles" runat="server">
                 <ItemTemplate>
                     <tr>
-                        <td>
+                        <td class="label">
                             <%#((SystemObjectTagWithObjects)Container.DataItem).File.FileName %>
                         </td>
                         <td>
-                            <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# "Nhấn để xem album: " + ((SystemObjectTagWithObjects)Container.DataItem).Folder.Name %>'
+                            <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# "Xem album: " + ((SystemObjectTagWithObjects)Container.DataItem).Folder.Name %>'
                                 NavigateUrl='<%# "~/photos/ViewAlbum.aspx?AlbumID=" + ((SystemObjectTagWithObjects)Container.DataItem).File.DefaultFolderID %>'></asp:HyperLink>
-                            or
-                            <asp:HyperLink ID="HyperLink2" runat="server" Text='<%# "Nhấn để xem hình ảnh: " + ((SystemObjectTagWithObjects)Container.DataItem).File.FileName %>'
-                                NavigateUrl='<%# "~/files/photos/" + ((SystemObjectTagWithObjects)Container.DataItem).File.CreateDate.Year.ToString() + ((SystemObjectTagWithObjects)Container.DataItem).File.CreateDate.Month.ToString() + "/" + ((SystemObjectTagWithObjects)Container.DataItem).File.FileSystemName + "__O." + ((SystemObjectTagWithObjects)Container.DataItem).File.Extension %>'></asp:HyperLink>
+                            <asp:HyperLink ID="HyperLink2" runat="server" Text='<%# "Xem hình ảnh: " + ((SystemObjectTagWithObjects)Container.DataItem).File.FileName %>'
+                                NavigateUrl='<%#"~/photos/viewview.aspx?FileID=" + ((SystemObjectTagWithObjects)Container.DataItem).File.FileID %>'></asp:HyperLink>
                         </td>
                     </tr>
                 </ItemTemplate>
