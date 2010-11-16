@@ -31,9 +31,9 @@
                         
                 </div>
                 <div class="alignright">
-                    <asp:LinkButton ID="lbViewMembers" CssClass="button green" OnClick="lbViewMembers_Click"
+                    <asp:LinkButton ID="lbViewMembers" CssClass="button gray" OnClick="lbViewMembers_Click"
                         Text="Danh sách thành viên" runat="server"></asp:LinkButton>
-                    &nbsp;<asp:LinkButton CssClass="button green" ID="lbRequestMembership" OnClick="lbRequestMembership_Click"
+                    &nbsp;<asp:LinkButton CssClass="button gray" ID="lbRequestMembership" OnClick="lbRequestMembership_Click"
                         Text="Gia nhập nhóm" runat="server"></asp:LinkButton>
                 </div>
                 <div class="clear">

@@ -17,7 +17,7 @@
             <h1>
                 Quản Lý Nhóm</h1>
             <div class="alignright">
-                <a href="/Groups/mygroups.aspx" class="button green">Nhóm của tôi</a>
+                <a href="/Groups/mygroups.aspx" class="button gray">Nhóm của tôi</a>
             </div>
         </div>
         <div class="clear">
