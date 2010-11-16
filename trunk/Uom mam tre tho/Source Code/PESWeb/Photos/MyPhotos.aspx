@@ -17,62 +17,38 @@
         <div id="photos">
             <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
                 <LayoutTemplate>
-                    <table class="photo-grid">
-                        <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
-                    </table>
+                    <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
                 </LayoutTemplate>
                 <GroupTemplate>
-                    <tr>
+                    <table class="photo-grid">
                         <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                    </tr>
+                    </table>
                 </GroupTemplate>
                 <ItemTemplate>
                     <td>
                         <div class="pg-action">
                             <asp:HyperLink CssClass="albumsActionLink" ID="lnkEdit" Text="Chỉnh sửa" runat="server"></asp:HyperLink>
-                            <asp:LinkButton CssClass="albumsActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
+                            <asp:LinkButton CssClass="albuActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
                                 runat="server"></asp:LinkButton>
                         </div>
                         <asp:HyperLink ID="lnkImage" runat="server">
                             <div class="pg-album">
                                 <asp:Image ID="Image" runat="server" />
-        <div class="post">
-            <div id="photos">
-                <asp:ListView ID="lvAlbums" GroupItemCount="4" runat="server" OnItemDataBound="lbAlbums_ItemDataBound">
-                    <LayoutTemplate>
-                        <asp:PlaceHolder ID="groupPlaceholder" runat="server"></asp:PlaceHolder>
-                    </LayoutTemplate>
-                    <GroupTemplate>
-                        <table class="photo-grid">
-                            <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
-                        </table>
-                    </GroupTemplate>
-                    <ItemTemplate>
-                        <td>
-                            <div class="pg-action">
-                                <asp:HyperLink CssClass="albumsActionLink" ID="lnkEdit" Text="Chỉnh sửa" runat="server"></asp:HyperLink>
-                                <asp:LinkButton CssClass="albuActionLink" ID="linkDeleteAlbum" Text="Xóa" OnClick="linkDeleteAlbum_Click"
-                                    runat="server"></asp:LinkButton>
                             </div>
-                            <asp:HyperLink ID="lnkImage" runat="server">
-                                <div class="pg-album">
-                                    <asp:Image ID="Image" runat="server" />
-                                </div>
-                            </asp:HyperLink>
-                            <div class="pg-detail">
-                                <div class="pg-name">
-                                    <asp:HyperLink ID="lnkView" runat="server" />
-                                </div>
+                        </asp:HyperLink>
+                        <div class="pg-detail">
+                            <div class="pg-name">
+                                <asp:HyperLink ID="lnkView" runat="server" />
                             </div>
-                        </td>
-                    </ItemTemplate>
-                    <EmptyDataTemplate>
-                        <div class="mb info">
-                            Bạn hiện không có hình ảnh nào!
                         </div>
-                    </EmptyDataTemplate>
-                </asp:ListView>
-            </div>
+                    </td>
+                </ItemTemplate>
+                <EmptyDataTemplate>
+                    <div class="mb info">
+                        Bạn hiện không có hình ảnh nào!
+                    </div>
+                </EmptyDataTemplate>
+            </asp:ListView>
         </div>
     </div>
 </asp:Content>
