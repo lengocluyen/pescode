@@ -3,13 +3,13 @@
 
 <%@ Register Src="~/Mail/UserControls/Friends.ascx" TagPrefix="PES" TagName="Friends" %>
 <%@ Register Src="~/Mail/UserControls/Folders.ascx" TagPrefix="PES" TagName="Folders" %>
-<asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" runat="server">
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="LeftContent" runat="server">
     <div class="grid_4">
         LeftContent
     </div>
-</asp:Content>
+</asp:Content>--%>
 <asp:Content ID="ContentNewMessages" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <PES:Folders ID="Folders1" runat="server"></PES:Folders>
         <div class="clear">
         </div>
