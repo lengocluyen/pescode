@@ -34,7 +34,9 @@
                     <asp:Label ID="lblDescription" runat="server"> </asp:Label>
                 </div>
                 <asp:Literal Visible="false" ID="litFileID" runat="server"></asp:Literal>
-                <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" Display="ShowCloudAndTagBox" />
+                <div style="margin:10px 0">
+                    <PES:Tags ID="Tags1" runat="server" SystemObjectID="5" Display="ShowCloudAndTagBox" />
+                </div>
                 <div class="post-text">
                     <div class="body">
                     </div>

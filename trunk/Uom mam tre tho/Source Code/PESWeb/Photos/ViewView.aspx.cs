@@ -16,7 +16,7 @@ namespace PESWeb.Photos
         protected void Page_Load(object sender, EventArgs e)
         {
             _presenter = new ViewViewPresenter(this);
-                _presenter.Init();
+            _presenter.Init();
         }
         public string fileID = "";
         public string createday = "";
@@ -24,7 +24,7 @@ namespace PESWeb.Photos
         {
             fileID = file.FileID.ToString();
             string path1 = file.CreateDate.Year.ToString() + file.CreateDate.Month.ToString();
-            lblFileName.Text = file.FileName;
+            lblFileName.Text = System.IO.Path.GetFileNameWithoutExtension(file.FileName);
             litImageName.Text = file.FileSystemName.ToString();
             litFileExtension.Text = file.Extension.ToString();
             lblDescription.Text = file.Description;
@@ -40,7 +40,7 @@ namespace PESWeb.Photos
             linkNext.NavigateUrl = "~/photos/ViewView.aspx?FileID=" + _presenter.ImageNext(file.FileID);
             linkPrivious.NavigateUrl = "~/photos/ViewView.aspx?FileID=" + _presenter.ImagePrivious(file.FileID);
             lblCreated.Text = file.CreateDate.ToString("dd-MM-yyyy lúc HH:mm");
-            
+
         }
     }
 }

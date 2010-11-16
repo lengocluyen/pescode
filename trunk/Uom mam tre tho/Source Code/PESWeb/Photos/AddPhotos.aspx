@@ -5,15 +5,20 @@
     <div class="grid_20">
         <div id="title">
             <h1>
-                Album mới</h1>
+                Album mới - Đăng ảnh</h1>
         </div>
         <div id="photos">
             <table class="photo-grid">
                 <tr>
                     <td>
-                        <h2>
-                            <%=Resources.PESResources.uploadImage%></h2>
-                        <div style="text-align: center;">
+                        <div class="mb info">
+                            <%=Resources.PESResources.uploadImagedetail%>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
                             <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
                                 width="550" height="400" id="FileUpload" align="middle">
                                 <param name="allowScriptAccess" value="sameDomain" />
@@ -29,10 +34,12 @@
                 </tr>
                 <tr>
                     <td>
-                        <%=Resources.PESResources.uploadImagedetail%>
-                        <asp:LinkButton ID="lbViewAlbum" OnClick="lbViewAlbum_Click" runat="server">Xem album</asp:LinkButton>
-                        <%=Resources.PESResources.or%>
-                        <asp:LinkButton ID="lbEditPhotos" OnClick="lbEditPhotos_Click" runat="server">Chỉnh sửa album</asp:LinkButton>
+                        <div class="form_submit_right">
+                            <asp:LinkButton ID="lbViewAlbum" CssClass="button green" OnClick="lbViewAlbum_Click"
+                                runat="server">Xem album</asp:LinkButton>
+                            <asp:LinkButton ID="lbEditPhotos" CssClass="button green" OnClick="lbEditPhotos_Click"
+                                runat="server">Chỉnh sửa album</asp:LinkButton>
+                        </div>
                         .
                     </td>
                 </tr>

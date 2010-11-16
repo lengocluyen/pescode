@@ -13,6 +13,7 @@ using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using Pes.Core;
 using StructureMap;
+using SubSonic.Extensions;
 
 namespace PESWeb.Photos
 {
@@ -45,18 +46,23 @@ namespace PESWeb.Photos
                 File data = ((ListViewDataItem)e.Item).DataItem as File;
 
                 Literal litImageName = e.Item.FindControl("litImageName") as Literal;
-                Label lblFileName = e.Item.FindControl("lblFileName") as Label;
-                if (lblFileName.Text.Length > 25)
-                    lblFileName.Text = lblFileName.Text.Substring(0, 25);
+                //Label lblFileName = e.Item.FindControl("lblFileName") as Label;
+                //if (lblFileName.Text.Length > 25)
+                //    lblFileName.Text = lblFileName.Text.Substring(0, 25);
                 Literal litFileExtension = e.Item.FindControl("litFileExtension") as Literal;
                 Literal litFileID = e.Item.FindControl("litFileID") as Literal;
-
+                HyperLink lnkView = e.Item.FindControl("lnkView") as HyperLink;
                 HyperLink lnkImage = e.Item.FindControl("lnkImage") as HyperLink;
                 string pathToImage = "~/files/photos/" + lnkImage.NavigateUrl + "/" + litImageName.Text;
 
 
                 lnkImage.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
 
+                lnkView.NavigateUrl = "~/Photos/ViewView.aspx?FileID=" + data.FileID;
+                string name = data.FileName;
+                if (name.Length > 25)
+                    name = name.Substring(0, 25);
+                lnkView.Text = System.IO.Path.GetFileNameWithoutExtension(name);
 
                 Image image = e.Item.FindControl("Image") as Image;
                 image.ImageUrl = pathToImage + "__s." + litFileExtension.Text;
