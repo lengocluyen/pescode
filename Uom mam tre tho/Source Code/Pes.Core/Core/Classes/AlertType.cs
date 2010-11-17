@@ -22,7 +22,8 @@ namespace Pes.Core
             NewBlogPost = 11,
             UpdatedBlogPost = 12,
             NewBoardPost = 13,
-            NewBoardThread = 14
+            NewBoardThread = 14,
+            WriteWall = 15
         }
     }
 }

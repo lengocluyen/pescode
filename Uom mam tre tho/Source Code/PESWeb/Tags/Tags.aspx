@@ -2,7 +2,7 @@
     CodeBehind="Tags.aspx.cs" Inherits="PESWeb.Tags.Tags" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="Content">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
             <h1>
                 Bảng từ khóa</h1>

@@ -12,7 +12,7 @@ input, textarea {
 }
 
 a {
-    color: #3B5998;
+    color: #006600;
     text-decoration: none;
 }
 a:hover {
@@ -117,8 +117,8 @@ input.del11:hover, a.del11:hover {
 #header {
     height: 34px;
 }
-#avatar-info{
-    margin-top:20px
+#avatar-info {
+    margin-top: 20px;
 }
 /* title */
 #title {
@@ -300,7 +300,7 @@ input.del11:hover, a.del11:hover {
 }
 
 .index-comment {
-    background: #ECEFF5;
+    background: #D3EDBA;
     width: 385px;
     float: left;
     clear: both; /*margin-top: 2px;*/
@@ -408,6 +408,7 @@ textarea.respondtext {
     padding: 3px 7px 4px 0;
     float: left;
     width: 100%;
+    font-weight: bold;
 }
 
 .next {
@@ -471,30 +472,29 @@ textarea.respondtext {
 
 .widget li {
     margin-top: 5px;
-    
 }
 .widget ul li a {
     margin: 0;
     padding: 0;
 }
-ul.menuleft{
-    border-top:solid 1px #ccc;
-    margin-top:20px;
+ul.menuleft {
+    border-top: solid 1px #ccc;
+    margin-top: 20px;
 }
-ul.menuleft li{
-    display:block;
-    clear:both;
-    line-height:1.7;
-    padding-bottom:20px;
+ul.menuleft li {
+    display: block;
+    clear: both;
+    line-height: 1.7;
+    padding-bottom: 20px;
 }
-ul.menuleft a{
-    font-weight:bold;
-    float:left
+ul.menuleft a {
+    font-weight: bold;
+    float: left;
 }
-ul.menuleft img{
-    width:20px;
-    float:left;
-    margin-right:5px;
+ul.menuleft img {
+    width: 20px;
+    float: left;
+    margin-right: 5px;
 }
 
 .widget-content {

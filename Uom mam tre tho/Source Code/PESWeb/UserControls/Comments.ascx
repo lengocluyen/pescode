@@ -47,6 +47,6 @@
         <textarea class="focus" attrName="Body"></textarea>
     </div>
     <div class="form_submit form_submit_right">
-        <input type="button" class="button blue addcomment" value="Đăng" container='commentform-<%=SystemObjectRecordID%>' />
+        <input type="button" class="button green addcomment" value="Đăng" container='commentform-<%=SystemObjectRecordID%>' />
     </div>
 </div>

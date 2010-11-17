@@ -12,8 +12,8 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
-        <div class="title">
+    <div class="grid_19 omega">
+        <div id="title">
             <h2>
                 Tìm kiếm</h2>
         </div>

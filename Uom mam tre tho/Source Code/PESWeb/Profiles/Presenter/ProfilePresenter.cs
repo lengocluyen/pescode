@@ -21,7 +21,7 @@ namespace PESWeb.Profiles.Presenter
         private Account _accountBeingViewed;
         private Account _account;
         private List<PrivacyFlag> _privacyFlags;
-
+        public int AccountID { get{return _accountBeingViewed.AccountID;} }
         public ProfilePresenter()
         {
             _redirector = ObjectFactory.GetInstance<IRedirector>();
@@ -89,7 +89,9 @@ namespace PESWeb.Profiles.Presenter
 
         private void ShowDisplay()
         {
-            _view.ShowAlerts(_alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID));
+            List<Alert> list = _alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID);
+            _view.ShowAlerts(list);
+            _view.ShowNavigation(list.Count == 20);
         }
 
         public void AddStatus(string text)

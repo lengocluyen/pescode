@@ -13,8 +13,33 @@ namespace Pes.Core
         {
             get { return CreateDate.ToString("dd-MM-yyyy lúc HH:mm"); }
         }
+        [SubSonicIgnore]
+        public int More { get; set; }
 
-        public  static void SaveAlert(Alert alert)
+        private List<Comment> _Comments;
+        public List<Comment> Comments
+        {
+            get
+            {
+                if (_Comments == null)
+                    _Comments = GetTopComments();
+                return _Comments;
+            }
+            set
+            {
+                _Comments = value;
+            }
+        }
+
+        public List<Comment> GetTopComments()
+        {
+            int more;
+            List<Comment> list= Comment.GetTopCommentsBySystemObjectAjax((int)SystemObject.Names.Alerts, AlertID, out more);
+            More = more;
+            return list;
+        }
+
+        public static void SaveAlert(Alert alert)
         {
             if (alert.AlertID > 0)
             {
@@ -35,14 +60,31 @@ namespace Pes.Core
                          select a).Take(20);
             return query.ToList();
         }
+
+        public static List<Alert> GetAlertsByAccountID(int accountID, int skip)
+        {
+            if (skip > 0)
+            {
+                var query = (from a in Alert.All()
+                             where a.AccountID == accountID
+                             orderby a.CreateDate descending
+                             select a).Skip(skip).Take(20);
+                return query.ToList();
+            }
+            return (from a in Alert.All()
+                    where a.AccountID == accountID
+                    orderby a.CreateDate descending
+                    select a).ToList();
+        }
+
         public static Int32 CountAlertsByAccountID(int accountID)
         {
             return (from a in Alert.All()
-                         where a.AccountID == accountID
-                         orderby a.CreateDate descending
-                         select a).Count();
+                    where a.AccountID == accountID
+                    orderby a.CreateDate descending
+                    select a).Count();
         }
-        public static List<Alert> GetAlertsByAccountID(int accountID,int currentIndex, int itemNum)
+        public static List<Alert> GetAlertsByAccountID(int accountID, int currentIndex, int itemNum)
         {
             var query = (from a in Alert.All()
                          where a.AccountID == accountID
@@ -52,17 +94,17 @@ namespace Pes.Core
         }
         public static List<Alert> GetAlertByAccountIDofMeAndFriend(int accountID)
         {
-            List<Friend> listFriends = (from f in Friend.All() where f.AccountID==accountID||f.MyFriendsAccountID==accountID orderby f.CreateDate descending select f).ToList();
+            List<Friend> listFriends = (from f in Friend.All() where f.AccountID == accountID || f.MyFriendsAccountID == accountID orderby f.CreateDate descending select f).ToList();
 
             var queryAlert = (from i in Alert.All()
                               orderby i.CreateDate descending
                               select i);
             List<Alert> temp = new List<Alert>();
-            foreach(Alert i in queryAlert)
-                if(CheckFriendByAccount(listFriends,i.AccountID)&&CheckAlert(temp,i))
+            foreach (Alert i in queryAlert)
+                if (CheckFriendByAccount(listFriends, i.AccountID) && CheckAlert(temp, i))
                     temp.Add(i);
             return temp.Take(20).ToList();
-                              
+
 
         }
         public static bool CheckFriendByAccount(List<Friend> list, int accID)

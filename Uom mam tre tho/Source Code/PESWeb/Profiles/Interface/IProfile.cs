@@ -17,6 +17,7 @@ namespace PESWeb.Profiles.Interface
         void LoadFriends(List<Account> Accounts);
         //void LoadStatusUpdates(List<StatusUpdate> StatusUpdates);
         void ShowAlerts(List<Alert> alerts);
+        void ShowNavigation(bool Value);
 
     }
 }

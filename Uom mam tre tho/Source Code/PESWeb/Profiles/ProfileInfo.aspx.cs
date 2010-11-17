@@ -127,5 +127,15 @@ namespace PESWeb.Profiles
         }
 
         #endregion
+
+        #region IProfile Members
+
+
+        public void ShowNavigation(bool Value)
+        {
+           
+        }
+
+        #endregion
     }
 }

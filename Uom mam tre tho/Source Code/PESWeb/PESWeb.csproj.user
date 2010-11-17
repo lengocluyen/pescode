@@ -3,19 +3,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-<<<<<<< .mine
-          <StartPageUrl>
-          </StartPageUrl>
-          <StartAction>CurrentPage</StartAction>
-=======
           <StartPageUrl>Home.aspx</StartPageUrl>
           <StartAction>SpecificPage</StartAction>
->>>>>>> .r79
           <AspNetDebugging>True</AspNetDebugging>
-<<<<<<< .mine
-=======
-          <SilverlightDebugging>False</SilverlightDebugging>
->>>>>>> .r79
           <NativeDebugging>False</NativeDebugging>
           <SQLDebugging>False</SQLDebugging>
           <PublishCopyOption>RunFiles</PublishCopyOption>
