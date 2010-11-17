@@ -13,15 +13,15 @@ namespace PESWeb
 {
     public partial class Default : System.Web.UI.Page, IDefault
     {
-        DefaultPresenter _presenter;
+        public DefaultPresenter _presenter;
         public int ItemAdd { get; set; }
         public int TotalItem { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
         }
         protected override void OnInit(EventArgs e)
         {
-            ItemAdd = 5;
             //btnAddStatus.Click += new EventHandler(btnAddStatus_Click);
             _presenter = new DefaultPresenter();
             _presenter.Init(this, IsPostBack);
@@ -38,5 +38,9 @@ namespace PESWeb
             repFilter.DataBind();
         }
 
+        public void ShowNavigation(bool Value)
+        {
+            pnlNavigation.Visible = Value;
+        }
     }
 }

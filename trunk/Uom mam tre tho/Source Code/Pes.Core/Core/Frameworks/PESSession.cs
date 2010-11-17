@@ -15,7 +15,7 @@ public class PESSession
     public static object Get(string key)
     {
         object obj = new object();
-        obj = HttpContext.Current.Session["CurrentUser"];
+        obj = HttpContext.Current.Session["CurrentUserGame"];
         
         return obj;
     }
@@ -32,11 +32,11 @@ public class PESSession
     }
     public static void Set(string key, object value)
     {
-        HttpContext.Current.Session.Add("CurrentUser", value);
+        HttpContext.Current.Session.Add("CurrentUserGame", value);
     }
     public static void Remove(string key)
     {
-        HttpContext.Current.Session.Remove("CurrentUser");
+        HttpContext.Current.Session.Remove("CurrentUserGame");
     }
 
 

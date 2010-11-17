@@ -60,9 +60,13 @@ namespace Pes.Core.Impl
                 {
                     if (account.EmailVerified == true)
                     {
+
                         _userSession.LoggedIn = true;
                         _userSession.Username = username;
                         _userSession.CurrentUser = GetAccountByID(account.AccountID);
+
+
+
 
                         if (!string.IsNullOrEmpty(_webContext.FriendshipRequest))
                             _friendService.CreateFriendFromFriendInvitation(new Guid(_webContext.FriendshipRequest), _userSession.CurrentUser);

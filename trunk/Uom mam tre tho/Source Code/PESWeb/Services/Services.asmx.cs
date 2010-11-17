@@ -50,21 +50,47 @@ namespace PESWeb.Services
                 return Comment.GetMoreCommentsBySystemObject(SystemObjectID, SystemObjectRecordID, More);
             return new List<Comment>();
         }
+
         [WebMethod(EnableSession = true)]
-        public List<Alert> AddStatusUpdate(string Text)
+        public List<Alert> MoreAlerts(int AccountID, int Skip)
         {
             if (IsValid())
             {
+                IAlertService alertService = ObjectFactory.GetInstance<IAlertService>();
+                //return alertService.GetAlertsByAccountID(AccountID, Skip);
+
+                List<Alert> list = alertService.GetAlertsByAccountID(AccountID, Skip);
+                list.ForEach(x => {
+                    x.Comments = x.GetTopComments();
+                });
+                return list;
+            }
+            return new List<Alert>();
+        }
+
+        [WebMethod(EnableSession = true)]
+        public List<Alert> AddStatusUpdate(string Text, int AccountID)
+        {
+            if (IsValid())
+            {
+                long alertID = 0;
                 IUserSession userSession = ObjectFactory.GetInstance<IUserSession>();
                 IAlertService alertService = ObjectFactory.GetInstance<IAlertService>();
-                StatusUpdate su = new StatusUpdate();
-                su.CreateDate = DateTime.Now;
-                su.AccountID = userSession.CurrentUser.AccountID;
-                su.Status = Text;
+                if (userSession.CurrentUser.AccountID == AccountID)
+                {
+                    StatusUpdate su = new StatusUpdate();
+                    su.CreateDate = DateTime.Now;
+                    su.AccountID = userSession.CurrentUser.AccountID;
+                    su.Status = Text;
+                    StatusUpdate.SaveStatusUpdate(su);
+                    alertID = alertService.AddStatusUpdateAlert(su);
+                }
+                else
+                {
+                    alertID = alertService.AddAlertToWallFriend(Text, AccountID);
+                }
+                return alertService.GetAlertsByAlertID(alertID);
 
-                StatusUpdate.SaveStatusUpdate(su);
-                long alertID = alertService.AddStatusUpdateAlert(su);
-                return Alert.Find(x => x.AlertID == alertID).ToList(); ;
             }
             return null;
         }

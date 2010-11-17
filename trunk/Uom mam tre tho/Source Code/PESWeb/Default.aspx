@@ -12,7 +12,7 @@
     </div>
 </asp:Content>--%>
 <asp:Content ID="Content" ContentPlaceHolderID="Content" runat="server">
-   <div class="grid_14">
+    <div class="grid_14">
         <div id="title">
             <h1>
                 <%=Resources.PESResources.newsfeed %></h1>
@@ -31,7 +31,7 @@
                 </div>
                 <div id="c-buttons" class="alignright">
                     <%--<asp:Button ID="btnAddStatus" runat="server" CssClass="submit" Text="Chia sẽ" />--%>
-                    <input type="button" class="submit" value="Chia sẽ" id="addstatus"/>
+                    <input type="button" class="submit green" value="Chia sẽ" id="addstatus" data='<%=_presenter.AccountID %>' />
                 </div>
             </div>
         </div>
@@ -44,13 +44,13 @@
                     <asp:Repeater ID="repFilter" runat="server">
                         <ItemTemplate>
                             <div class="post" id='post-<%#Eval("AlertID")  %>'>
-                                <div class="post-gravatar">
-                                    <a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
-                                        <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("AccountID")%>"
-                                            width="50" height="50" class="avatar" />
-                                    </a>
-                                </div>
                                 <div class="post-text">
+                                  <%--  <div class="post-gravatar">
+                                        <a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
+                                            <img alt="" src="images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("AccountID")%>"
+                                                width="50" height="50" class="avatar" />
+                                        </a>
+                                    </div>--%>
                                     <%--<div class="body">
                                         <span class="title"><a href='profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
                                            Cuong Do
@@ -76,15 +76,16 @@
         </div>
         <asp:Label ID="lblMessage" runat="server"></asp:Label>
         <!-- Navigation -->
-        <div class="navigation">
+        <asp:Panel runat="server" ID="pnlNavigation" class="navigation">
             <div class="next">
-                <a href="#">Xem thêm</a>
+                <a href="#" id="nextStatus" data='<%=_presenter.AccountID %>-20'>Xem thêm</a>
+                <img src="images/indicator_small.gif" alt="" style="display:none"/>
             </div>
-        </div>
+        </asp:Panel>
         <div class="clear">
         </div>
     </div>
-    <div class="grid_5" style="margin-top:20px;">
+    <div class="grid_5" style="margin-top: 20px;">
         <PES:Friends runat="server" ID="friens" />
         <%--<div class="box">
             <h2>

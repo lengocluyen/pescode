@@ -14,7 +14,8 @@
                 Thông tin cá nhân</h1>
         </div>
     </div>
-    <div class="clear"></div>
+    <div class="clear">
+    </div>
     <div class="grid_5 alpha">
         <div class="widget">
             <div class="widget-content">
@@ -90,7 +91,7 @@
         <%--<asp:PlaceHolder ID="phAttributes" runat="server" />--%>
     </div>
     <div class="grid_14 ">
-     <%--   <div id="categories">
+        <%--   <div id="categories">
             <ul>
                 <li class="current-cat"><a>Tường nhà</a></li>
                 <li class="cat-item">
@@ -112,7 +113,8 @@
                     <textarea class="focus"></textarea>
                 </div>
                 <div id="c-buttons" class="alignright">
-                    <input type="button" class="submit" value="Chia sẽ" id="addstatus" />
+                    <input type="button" class="submit green" value="Chia sẽ" id="addstatus"
+                        data="<%=_presenter.AccountID %>" />
                 </div>
             </div>
             <div class="clear">
@@ -124,12 +126,12 @@
                     <asp:Repeater ID="repFilter" runat="server">
                         <ItemTemplate>
                             <div class="post" id='post-<%#Eval("AlertID")  %>'>
-                                <div class="post-gravatar">
+                                <%-- <div class="post-gravatar">
                                     <a href='/profiles/profile.aspx?AccountID=<%#Eval("AccountID")%>'>
                                         <img alt="" src="/images/ProfileAvatar/ProfileImage.aspx?AccountID=<%#Eval("AccountID")%>"
                                             width="50" height="50" class="avatar" />
                                     </a>
-                                </div>
+                                </div>--%>
                                 <div class="post-text">
                                     <%# Eval("Message")  %>
                                     <div class="meta">
@@ -149,6 +151,13 @@
                 </div>
             </div>
         </div>
+        
+        <asp:Panel runat="server" ID="pnlNavigation" class="navigation">
+            <div class="next">
+                <a href="#" id="nextStatus" data='<%=_presenter.AccountID %>-20'>Xem thêm</a>
+            </div>
+        </asp:Panel>
+        
     </div>
     <div class="grid_5 omega">
         <div class="widget">

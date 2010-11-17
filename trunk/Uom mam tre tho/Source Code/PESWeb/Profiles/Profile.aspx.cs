@@ -13,7 +13,7 @@ namespace PESWeb.Profiles
 {
     public partial class ViewProfile : System.Web.UI.Page, IProfile
     {
-        private ProfilePresenter _presenter;
+        public ProfilePresenter _presenter;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,6 +31,7 @@ namespace PESWeb.Profiles
             //_presenter.AddStatus(txtStatus.Text);
             //txtStatus.Text = "";
         }
+
         public void SetAvatar(Int32 AccountID)
         {
             if (!imgAvatar.ImageUrl.Contains("AccountID="))
@@ -135,9 +136,6 @@ namespace PESWeb.Profiles
             lnkEditProfile.Visible = value;
         }
 
-
-        #region IDefault Members
-
         public void ShowAlerts(List<Alert> alerts)
         {
             repFilter.DataSource = alerts;
@@ -147,6 +145,10 @@ namespace PESWeb.Profiles
                 lblMessage.Text = "Bạn chưa đăng tin nào!";
         }
 
-        #endregion
+        public void ShowNavigation(bool Value)
+        {
+            pnlNavigation.Visible = Value;
+        }
+
     }
 }

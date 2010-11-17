@@ -19,6 +19,9 @@ namespace PESWeb.Presenter
         private IPrivacyService _privacyService;
         private Account _accountBeingViewed;
         public static int currentItem = 20;
+
+        public int AccountID { get { return _accountBeingViewed.AccountID; } }
+
         public DefaultPresenter()
         {
             _redirector = ObjectFactory.GetInstance<IRedirector>();
@@ -56,7 +59,9 @@ namespace PESWeb.Presenter
         }
         private void ShowDisplay()
         {
-            _view.ShowAlerts(_alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID));
+            List<Alert> list = _alertService.GetAlertsByAccountID(_accountBeingViewed.AccountID);
+            _view.ShowAlerts(list);
+            _view.ShowNavigation(list.Count == 20);
         }
 
     }

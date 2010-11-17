@@ -27,7 +27,7 @@
                         </div>
                         <div class="alignright">
                             <asp:HyperLink ID="linkPrevious" runat="server" CssClass="next" Text="&lt Trước"></asp:HyperLink>
-                            <asp:Label runat="server" ID="lbnextPrev"> | </asp:Label>
+                            &nbsp; &nbsp;
                             <asp:HyperLink ID="linkNext" runat="server" CssClass="prev" Text="Sau &gt"></asp:HyperLink>
                         </div>
                         <div class="clear">
@@ -80,7 +80,7 @@
                 <div class="mailtoolbar">
                     <div class="alignright">
                         <asp:HyperLink ID="HyperLink_BootomNPrev" CssClass="next" runat="server" Text="&lt Trước"></asp:HyperLink>
-                        <asp:Label runat="server" ID="lbnextprev_bottom"> | </asp:Label>
+                        &nbsp; &nbsp;
                         <asp:HyperLink ID="HyperLink_BootomNext" CssClass="prev" runat="server" Text="Sau &gt"></asp:HyperLink>
                     </div>
                     <div class="clear">

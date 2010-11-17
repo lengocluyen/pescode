@@ -81,10 +81,14 @@ namespace Pes.Core
 
         public static List<Account> SearchAccounts(string SearchText)
         {
-            return All().Where(a => (a.FirstName + " " + a.LastName).Contains(SearchText) ||
+            List<Account> list =  All().Where(a => (a.FirstName + " " + a.LastName).Contains(SearchText) ||
                             a.Email.Contains(SearchText) ||
                             a.Username.Contains(SearchText)).ToList();
-
+            List<Account> result = new List<Account>();
+            foreach (Account i in list)
+                if (Profile.GetProfileByAccountID(i.AccountID) != null)
+                    result.Add(i);
+            return result;
         }
 
         public static List<Account> GetApprovedAccountsByGroupID(int GroupID, int PageNumber)

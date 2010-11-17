@@ -2,9 +2,9 @@
     CodeBehind="InviteFriends.aspx.cs" Inherits="PESWeb.Friends.InviteFriends" %>
 
 <asp:Content ID="Content6" ContentPlaceHolderID="Content" runat="server">
-    <div class="grid_20">
+    <div class="grid_19">
         <div id="title">
-            <h1>
+            <h2>
             Mời bạn bè</h2>
         </div>
         <div class="clear">

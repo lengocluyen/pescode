@@ -14,7 +14,8 @@ namespace Pes.Core
         void AddNewAvatarAlert();
         List<Alert> GetAlertsByAccountID(Int32 AccountID);
         List<Alert> GetAlertsByAccountID(int AccountID, int currentIndex, int itemAdd);
-
+        List<Alert> GetAlertsByAlertID(long AlertID);
+        List<Alert> GetAlertsByAccountID(int AccountID, int Skip);
         void AddFriendAddedAlert(Account FriendRequestFrom, Account FriendRequestTo);
         void AddFriendRequestAlert(Account FriendRequestFrom, Account FriendRequestTo, Guid requestGuid, string Message);
         long AddStatusUpdateAlert(StatusUpdate statusUpdate);
@@ -23,6 +24,7 @@ namespace Pes.Core
         void AddNewBoardThreadAlert(BoardCategory category, BoardForum forum, BoardPost post, Group group);
         void AddNewBoardPostAlert(BoardCategory category, BoardForum forum, BoardPost post, BoardPost thread,
                                   Group group);
+        long AddAlertToWallFriend(string Text, int FriendAccountID);
         void AddNewBlogPostAlert(Blog blog);
         void AddUpdatedBlogPostAlert(Blog blog);
         List<Alert> GetAlertsOfMeAndFriendByAccountID(int accID);

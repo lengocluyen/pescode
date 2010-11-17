@@ -51,19 +51,15 @@ namespace PESWeb.UserControls
         {
             if (e.Item.ItemType == ListItemType.Item || e.Item.ItemType == ListItemType.AlternatingItem)
             {
-                //ProfileDisplay pdProfileDisplay = e.Item.FindControl("pdProfileDisplay") as ProfileDisplay;
-                //pdProfileDisplay.LoadDisplay(((Account)e.Item.DataItem));
                 Image imgAvatar = e.Item.FindControl("imgAvatar") as Image;
-                //LinkButton ibDelete = e.Item.FindControl("ibDelete") as LinkButton;
                 Label lblName = e.Item.FindControl("lblName") as Label;
-
+                HyperLink linkProfile = e.Item.FindControl("linkProfile") as HyperLink;
                 Account acc = e.Item.DataItem as Account;
-                //ibDelete.Attributes.Add("onclick", "javascript:return confirm('Bạn có chắc chắn muốn xóa người bạn này?')");
-                //ibDelete.Attributes.Add("FriendsID", acc.AccountID.ToString());
-
+                HyperLink linkProfileName = e.Item.FindControl("linkProfileName") as HyperLink;
                 imgAvatar.ImageUrl += "?AccountID=" + acc.AccountID.ToString();
-
+                linkProfileName.NavigateUrl = "~/Profiles/Profile.aspx?AccountID=" + acc.AccountID;
                 lblName.Text = acc.LastName + " " + acc.FirstName;
+                linkProfile.NavigateUrl = "~/Profiles/Profile.aspx?AccountID=" + acc.AccountID;
 
             }
         }

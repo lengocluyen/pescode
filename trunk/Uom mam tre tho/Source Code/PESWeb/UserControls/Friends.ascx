@@ -10,16 +10,17 @@
                     <ItemTemplate>
                         <div class="friendBox">
                             <div class="f-gravatar">
-                                <a class="image" href="/Profiles/Profile.aspx?AccountID=<asp:Literal id='litAccountID' runat='server'></asp:Literal>">
+                                <asp:HyperLink ID="linkProfile" runat="server">
                                     <asp:Image ImageAlign="Left" ID="imgAvatar" ImageUrl="~/images/ProfileAvatar/ProfileImage.aspx"
-                                        runat="server" /></a>
+                                        runat="server" />
+                                </asp:HyperLink>
                             </div>
                             <div class="clear">
                             </div>
                             <div class="friendName">
-                                <a class="bold" href="/Profiles/Profile.aspx?AccountID=<asp:Literal id='litAccountID2' runat='server'></asp:Literal>">
+                                <asp:HyperLink ID="linkProfileName" runat="server">
                                     <asp:Label ID="lblName" runat="server"></asp:Label>
-                                </a>
+                                </asp:HyperLink>
                             </div>
                         </div>
                     </ItemTemplate>
