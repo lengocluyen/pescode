@@ -94,7 +94,8 @@ if (typeof jQuery == "function") {
                 }
                 return false;
             });
-
+           
+            
             // Xem tat ca
             selector.find(".morecomments .viewmore").click(function() {
                 $this = $(this);
@@ -210,7 +211,7 @@ if (typeof jQuery == "function") {
             $("#c-form .focus:first").focus();
         });
 
-      
+
         $('#c-input textarea').blur(function() {
             if ($(this).val().length == 0) {
                 $('#c-mention').css("display", "block");
@@ -226,10 +227,11 @@ if (typeof jQuery == "function") {
             if ($textarea.attr("disabled") == "disabled")
                 return;
             $textarea.attr("disabled", "disabled");
+
             $.ajax({
                 type: "POST",
                 url: "/Services/Services.asmx/AddStatusUpdate",
-                data: "{Text:\"" + $textarea.val() + "\"}",
+                data: "{Text:" + JSON.stringify($textarea.val()) + ",AccountID:\"" + $this.attr('data') + "\"}",
                 contentType: "application/json; charset=utf-8",
                 dataType: "json",
                 success: function(msg) {
@@ -253,6 +255,51 @@ if (typeof jQuery == "function") {
                 error: function(XMLHttpRequest, textStatus, errorThrown) {
                     jAlert('error', textStatus, 'Thông báo');
                     $textarea.attr("disabled", "");
+                }
+            });
+            return false;
+        });
+
+        $("#nextStatus").click(function() {
+            $this = $(this);
+            $img = $this.next();
+            $this.hide();
+            $img.show();
+            var array = $(this).attr('data').split("-");
+            $.ajax({
+                type: "POST",
+                url: "/Services/Services.asmx/MoreAlerts",
+                data: "{AccountID:\"" + array[0] + "\", Skip:\"" + array[1] + "\"}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function(msg) {
+                    if (msg.d.length > 0) {
+                        $container = $("#posts .post-list");
+                        $last = $container.children(".post:last");
+                        $temp = $("<div></div>");
+                        $temp.setTemplateURL('/Template/TemplateStatus.htm',
+                            null, { filter_data: false });
+                        $temp.processTemplate(msg.d);
+                        $container.append($temp.children());
+                        var skip = (parseInt(array[1]) + 20);
+                        $this.attr('data', array[0] + '-' + skip);
+
+                        var posttext = $last.nextAll().children(".post-text");
+                        initAddComment(posttext);
+                        initDelComment(posttext.find(".commentcontainer .notinit").removeClass("notinit"));
+
+                        $this.show();
+                        $img.hide();
+                    }
+                    else {
+                        $this.parent().parent().remove();
+                    }
+                    return false;
+                },
+                error: function(XMLHttpRequest, textStatus, errorThrown) {
+                    jAlert('error', textStatus, 'Thông báo');
+                    $this.show();
+                    $img.hide();
                 }
             });
             return false;
