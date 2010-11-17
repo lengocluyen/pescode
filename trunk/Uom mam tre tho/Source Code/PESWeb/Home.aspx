@@ -146,7 +146,7 @@
                     &nbsp;
                 </td>
                 <td>
-                    <asp:CheckBox ID="chkAgreeWithTerms" runat="server" ValidationGroup="gr" Text="Đồng ý thỏa thuận <a href='Terms.aspx'>điều kiện</a>" />
+                    <asp:CheckBox ID="chkAgreeWithTerms" runat="server" ValidationGroup="gr" Text="Đồng ý thỏa thuận điều kiện" />
                 </td>
                 <td>
                 </td>
