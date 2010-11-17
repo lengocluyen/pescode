@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-    <siteMapNode url="default.aspx" title="Home"  description="Home page" pageTitle=".: Flychips Space For Education :." roles="PUBLIC">
+    <siteMapNode url="default.aspx" title="Home"  description="Home page" pageTitle="Mạng Xã Hội Ươm Mầm Trẻ Thơ" roles="PUBLIC">
 <!-- TOP NAV NODES -->      
       <siteMapNode url="/accounts/default.aspx" title="My Account" description="" pageTitle="" roles="REGISTERED" visible="1">
         <siteMapNode url="/accounts/EditAccount.aspx" title="Edit Account" description="" pageTitle="Edit Account" roles="REGISTERED" visible="1" />
