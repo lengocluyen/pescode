@@ -57,7 +57,10 @@ table.login
 {
     font-size: 11px;
 }
-
+.formRegister td
+{
+	padding:2px;
+}
 .formRegister td.label
 {
     text-align: right;

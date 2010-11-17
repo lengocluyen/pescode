@@ -458,12 +458,13 @@ textarea.respondtext {
     padding-bottom: 10px;
 }
 .widget h2 {
-    background: #D3EDBA scroll 0px 0px;
+    background: #4CA707 scroll 0px 0px;
     border-top: 0 none;
     display: block;
     font-size: 11px;
     margin-bottom: 5px;
     padding: 5px 8px;
+    color:White;
 }
 .widget ul {
     list-style: none;
@@ -699,7 +700,7 @@ td.im-detail {
 }
 
 .ip-img img {
-    max-width: 790px;
+    max-width: 750px;
 }
 .ip-desc {
     line-height: 1.4;
