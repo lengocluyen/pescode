@@ -134,7 +134,7 @@ public class LearningServices : ILearningServices
     {
         try
         {
-            List<T_Question> list = T_Question.GetAllQuestionByLevelID(levelID);
+            List<T_Question> list = T_Question.GetAllQuestionByLevelID(levelID); //levelID duoc hieu la lessonID
             return list;
         }
         catch

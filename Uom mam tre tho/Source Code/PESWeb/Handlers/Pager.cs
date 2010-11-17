@@ -255,7 +255,7 @@ namespace PESWeb
         /// <summary>
         /// Gets or sets a value that indicates whether Pager renders PageSize section is redered.
         /// </summary>
-        private bool _pageSizeVisible = true;
+        private bool _pageSizeVisible = false;
         [Category("Behavioural")]
         public bool GeneratePageSizeSection
         {
@@ -327,7 +327,7 @@ namespace PESWeb
         /// Gets or sets the text caption displayed as "of" in the pager control.
         /// Default value: of
         /// </summary>
-        private string _OF = " của ";
+        private string _OF = " / ";
         [Category("Globalization")]
         public string OfClause
         {
