@@ -185,7 +185,7 @@ input.del11:hover, a.del11:hover {
 #categories li {
     text-transform: capitalize;
     float: left;
-    background: #D8DFEA;
+    background: #CDEBCD;
     margin-left: 3px;
 }
 #categories li a {
@@ -198,7 +198,7 @@ input.del11:hover, a.del11:hover {
 #categories li a:hover {
     color: #fff;
     text-decoration: none;
-    background: #627AAD;
+    background: #9ADE29;
 }
 
 #categories .current-cat {
@@ -221,14 +221,14 @@ input.del11:hover, a.del11:hover {
 }
 
 #categories #plus:hover, #categories #plus.hover {
-    background: #627AAD url(../images/plus.gif) no-repeat left -25px;
+    background: #9ADE29 url(../images/plus.gif) no-repeat left -25px;
 }
 /* end categories */
 
 
 .post {
     clear: both; /*  float: left;*/
-    border-top: 1px solid #D8DFEA;
+    border-top: 1px solid #CDEBCD;
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 8px;
@@ -403,7 +403,7 @@ textarea.respondtext {
 
 .navigation {
     background: #ECEFF5 none repeat scroll 0 0;
-    border-top: 1px solid #D8DFEA;
+    border-top: 1px solid #CDEBCD;
     margin-top: 8px;
     padding: 3px 7px 4px 0;
     float: left;
@@ -434,7 +434,7 @@ textarea.respondtext {
     color: Black;
 }
 #profile-info .widget {
-    border: solid 1px #D8DFEA;
+    border: solid 1px #CDEBCD;
     margin-bottom: 10px;
     background-color: #f8f8f8;
 }
@@ -449,12 +449,12 @@ textarea.respondtext {
 /* end post */
 
 .widget {
-    /* border-right: 1px solid #D8DFEA;     border-top: 1px solid #94A3C4;*/
+    /* border-right: 1px solid #CDEBCD;     border-top: 1px solid #94A3C4;*/
     padding-bottom: 10px;
 }
 
 .widget {
-    /* border-right: 1px solid #D8DFEA;     border-top: 1px solid #94A3C4;*/
+    /* border-right: 1px solid #CDEBCD;     border-top: 1px solid #94A3C4;*/
     padding-bottom: 10px;
 }
 .widget h2 {
@@ -597,7 +597,7 @@ td.im-detail {
 
 .friend {
     /*clear: both;*/
-    border-bottom: 1px solid #D8DFEA;
+    border-bottom: 1px solid #CDEBCD;
     margin-bottom: 5px;
     position: relative;
 }
