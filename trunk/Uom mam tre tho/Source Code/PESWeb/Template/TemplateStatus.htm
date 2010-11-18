@@ -1,0 +1,62 @@
+﻿{#foreach $T as Alert}
+<div class="post" id='post-{$T.Alert.AlertID}'>
+    <div class="post-text">
+        {$T.Alert.Message}
+        <div class="meta">
+            {$T.Alert.CreateDateString} - <a href="#" id='respondlink-{$T.Alert.AlertID}' class="respondlink">
+                Cảm nhận</a>
+        </div>
+        <div class="commentcontainer">
+            {#if $T.Alert.More > 0}
+            <div class="index-comment morecomments" runat="server">
+                <a href="#" class="viewmore" data="7-{$T.Alert.AlertID}-{$T.Alert.More}">
+                Xem tất cả ({$T.Alert.More})
+                </a>
+            </div>
+            {#/if} 
+            {#foreach $T.Alert.Comments as Comment}
+            <div class="index-comment notinit">
+                <div class="ic-avatar">
+                    <a href='/profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}'>
+                        <img alt="" src="/images/ProfileAvatar/ProfileImage.aspx?AccountID={$T.Comment.CommentByAccountID}"
+                            class="avatar" />
+                    </a>
+                </div>
+                <div class="ic-text">
+                    <div class="ic-meta ic-author">
+                        <a href='/profiles/profile.aspx?AccountID={$T.Comment.CommentByAccountID}' class="url">
+                            {$T.Comment.CommentByUsername}</a>
+                    </div>
+                    <div class="ic-content">
+                        {$T.Comment.Body}
+                    </div>
+                    <div class="ic-meta ic-date">
+                        {$T.Comment.CreateDateString}
+                    </div>
+                </div>
+                {#if $T.Comment.AuthorCanDelete == true}
+                <div class="ic-edit" style="display: none">
+                    <a class="del15 confirm" data="{$T.Comment.CommentID}"></a>
+                </div>
+                {#/if}
+            </div>
+            {#/for}
+        </div>
+        <div class="index-comment" style="display: none">
+            <textarea class="respondtext" id='respondtext-{$T.Alert.AlertID}'>Viết cảm nhận ...</textarea>
+        </div>
+        <div id='commentform-{$T.Alert.AlertID}' class="index-comment comment-form" style="display: none">
+            <input type="hidden" value='{$T.Alert.AlertID}' attrname="SystemObjectRecordID" />
+            <input type="hidden" value='7' attrname="SystemObjectID" />
+            <div class="form_comment">
+                <textarea class="focus" attrname="Body"></textarea>
+            </div>
+            <div class="form_submit form_submit_right">
+                <input type="button" class="button blue addcomment" value="Đăng" container='commentform-{$T.Alert.AlertID}' />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clear">
+</div>
+{#/for}
