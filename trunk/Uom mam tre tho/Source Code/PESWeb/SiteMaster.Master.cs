@@ -44,8 +44,8 @@ namespace PESWeb
                 _redirector.GoToAccountLoginPage();
             //check profile of current user
             Profile profiles = Profile.GetProfileByAccountID(_userSession.CurrentUser.AccountID);
-            if (profiles == null)
-                _redirector.GoToProfilesManageProfile();
+            //if (profiles == null)
+            //    _redirector.GoToProfilesManageProfile();
 
             if (txtusernam != null)
                 txtusernam.InnerHtml = _userSession.CurrentUser.FirstName + " " + _userSession.CurrentUser.LastName;
